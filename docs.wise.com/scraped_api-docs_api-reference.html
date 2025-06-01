@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html dir="ltr">
+ <head>
+  <meta charset="utf-8" data-next-head=""/>
+  <meta content="initial-scale=1.0, width=device-width" data-next-head="" name="viewport"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon.png" rel="icon" type="image/x-icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/apple_touch_icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon_32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon_16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link color="#083400" data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/safari_pinned_tab.svg" rel="mask-icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/android_chrome_192x192.png" rel="icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/android_chrome_256x256.png" rel="icon"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/mstile_150x150.png" data-next-head="" name="msapplication-square150x150logo"/>
+  <meta content="IE=edge" data-next-head="" http-equiv="X-UA-Compatible"/>
+  <meta content="1510092490" data-next-head="" property="twitter:account_id"/>
+  <meta content="on" data-next-head="" property="twitter:widgets:csp"/>
+  <meta content="@wise" data-next-head="" property="twitter:creator"/>
+  <meta content="summary_large_image" data-next-head="" property="twitter:card"/>
+  <meta content="@wise" data-next-head="" property="twitter:site"/>
+  <meta content="The clever new way to send money abroad" data-next-head="" property="twitter:title"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/share_landscape.png" data-next-head="" property="twitter:image:src"/>
+  <meta content="Wise" data-next-head="" property="og:site_name"/>
+  <meta content="274548709260402" data-next-head="" property="fb:app_id"/>
+  <meta content="en_US" data-next-head="" property="og:locale"/>
+  <meta content="website" data-next-head="" property="og:type"/>
+  <meta content="Wise: Online Money Transfers | International Banking Features" data-next-head="" property="og:title"/>
+  <meta content="https://wise.com" data-next-head="" property="og:url"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/share_landscape.png" data-next-head="" property="og:image"/>
+  <title data-next-head="">
+   Wise Platform API Reference
+  </title>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" property="twitter:description"/>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" name="description"/>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" property="og:description"/>
+  <meta content="index, follow" data-next-head="" name="robots"/>
+  <script defer="" src="/cookie-consent.js" type="application/javascript">
+  </script>
+  <link crossorigin="anonymous" data-next-font="" href="/" rel="preconnect"/>
+  <link as="style" href="/_next/static/css/c4c155c6526e11a0.css" rel="preload"/>
+  <link data-n-g="" href="/_next/static/css/c4c155c6526e11a0.css" rel="stylesheet"/>
+  <link as="style" href="/_next/static/css/8802e5776c71f68f.css" rel="preload"/>
+  <link data-n-p="" href="/_next/static/css/8802e5776c71f68f.css" rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/webpack-a3dfc11d90730421.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/framework-558e77ae091159bb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/main-d58d219f1c012128.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_app-d3f53e26933ff90b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/bd9af3fa-27972a22c0a800d5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8535-ae87c4d5a6c311a4.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/public/api-docs/%5B%5B...slug%5D%5D-75ea8ebab99ef301.js">
+  </script>
+  <script defer="" src="/_next/static/api-documentation_master_4861d85/_buildManifest.js">
+  </script>
+  <script defer="" src="/_next/static/api-documentation_master_4861d85/_ssgManifest.js">
+  </script>
+ </head>
+ <body>
+  <div id="__next">
+   <div class="np-theme-personal">
+    <div class="api-documentation">
+     <div class="site-body">
+      <header class="Header_header__MwWvM">
+       <div class="site-container site-container--full-width">
+        <div class="d-flex align-items-center">
+         <a class="Header_logo__V9h3K" href="/api-docs">
+          <span aria-label="Wise" class="d-block np-logo" role="img">
+           <svg class="np-logo-svg np-logo-svg--size-sm" fill="none" height="24" width="26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.82603 7.23227 0 15.2096h12.1882l1.3696-3.7616H8.33504l3.19126-3.68968.0102-.09787-2.07504-3.57192h9.33564L11.5604 24h4.9522l8.7385-24H2.6758l4.15023 7.23227Z" fill="#163300">
+            </path>
+           </svg>
+           <svg class="np-logo-svg np-logo-svg--size-md" fill="none" height="24" width="106" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58.7377.358803h6.4982L61.9668 23.681h-6.4983L58.7377.358803Zm-8.1922 0L46.1602 13.794 44.2465.358803h-4.5448L33.9608 13.7541 33.2433.358803h-6.2991L29.1369 23.681h5.2226L40.818 8.93022 43.0904 23.681h5.1428L56.7249.358803h-6.1794ZM105.103 13.9136H89.6744c.0798 3.0299 1.8937 5.0233 4.5648 5.0233 2.0133 0 3.608-1.0765 4.8439-3.1296l5.2079 2.3674C102.501 21.7017 98.729 24 94.0798 24 87.741 24 83.535 19.7342 83.535 12.8771 83.535 5.34221 88.4784 0 95.4552 0c6.1398 0 10.0068 4.14618 10.0068 10.6046 0 1.0765-.12 2.1528-.359 3.309Zm-5.7807-4.46512c0-2.71095-1.515-4.42525-3.9468-4.42525-2.5117 0-4.5848 1.79402-5.143 4.42525h9.0898ZM6.63326 7.38685 0 15.1389h11.844l1.3309-3.6553H8.09965l3.10105-3.58555.01-.09511L9.19424 4.3319h9.07196l-7.0323 19.3492h4.8124L24.538.358823H2.60021L6.63326 7.38685Zm69.16744-2.3636c2.2923 0 4.301 1.23273 6.0551 3.34565l.9216-6.57488C81.1429.687707 78.9303 0 76 0c-5.8205 0-9.0896 3.40865-9.0896 7.73421 0 2.99999 1.6744 4.83389 4.4252 6.01989l1.3156.598c2.4518 1.0466 3.1097 1.5649 3.1097 2.6712 0 1.1461-1.1064 1.8737-2.7907 1.8737-2.7808.01-5.0332-1.4153-6.7276-3.8472l-.939 6.699C67.2332 23.2201 69.7067 24 72.9702 24c5.5315 0 8.9302-3.1894 8.9302-7.6147 0-3.0099-1.3355-4.9434-4.7044-6.4584l-1.4351-.67772c-1.9934-.88708-2.6711-1.37543-2.6711-2.35216 0-1.05647.9269-1.87377 2.7109-1.87377Z" fill="#163300">
+            </path>
+           </svg>
+          </span>
+         </a>
+        </div>
+        <input class="Header_menuToggleCheckbox___V6yA hidden" id="menu-toggle" type="checkbox"/>
+        <label class="Header_menuButton__0azx_" for="menu-toggle">
+         <span class="tw-icon tw-icon-menu" data-testid="menu-icon">
+          <svg aria-hidden="true" fill="currentColor" focusable="false" height="24" role="none" viewbox="0 0 24 24" width="24">
+           <path clip-rule="evenodd" d="M20 7H4V5h16zm0 6H4v-2h16zM4 19h16v-2H4z" fill-rule="evenodd">
+           </path>
+          </svg>
+         </span>
+        </label>
+        <nav class="Header_navigation__57bfi">
+         <ul class="list-unstyled m-a-0">
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/guides">
+            Guides
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration Header_navigationLinkActive__n1mWP" href="/api-docs/api-reference">
+            API Reference
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/changelog">
+            Changelog
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/support">
+            Support
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/search">
+            <span class="tw-icon tw-icon-search" data-testid="search-icon">
+             <svg aria-hidden="true" fill="currentColor" focusable="false" height="24" role="none" viewbox="0 0 24 24" width="24">
+              <path clip-rule="evenodd" d="M17 11a6 6 0 1 1-12 0 6 6 0 0 1 12 0m-1.094 6.32a8 8 0 1 1 1.414-1.414l3.887 3.887-1.414 1.414z" fill-rule="evenodd">
+              </path>
+             </svg>
+            </span>
+           </a>
+          </li>
+         </ul>
+         <ul class="Header_subNavigation__gLQq2 list-unstyled">
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration Header_navigationLinkActive__n1mWP" href="/api-docs/api-reference">
+            Intro
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/environments">
+            Environments
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/security">
+            Security &amp; Access
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/versioning">
+            Versioning
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/language-support">
+            Language Support
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/errors">
+            Errors
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/webhooks-notifications">
+            Webhooks
+           </a>
+           <hr class="m-y-2"/>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/3ds">
+            3D Secure Authentication
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/verification">
+            Additional Customer Verification
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/activity">
+            Activity
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/address">
+            Address
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/balance">
+            Balance
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/balance-statement">
+            Balance Statement
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/bank-account-details">
+            Bank Account Details
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/batch-group">
+            Batch Group
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/bulk-settlement">
+            Bulk Settlement
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/card">
+            Card
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/card-order">
+            Card Order
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/card-kiosk-collection">
+            Card Kiosk Collection
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/card-transaction">
+            Card Transactions
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/claim-account">
+            Claim Account
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/client-credentials-token">
+            Client Credentials Token
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/comparison">
+            Comparison
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/contact">
+            Contact
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/currencies">
+            Currencies
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/delivery-estimate">
+            Delivery Estimate
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/direct-debit-account">
+            Direct Debit Account
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/disputes">
+            Disputes
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/facetec">
+            FaceTec
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/multi-currency-account">
+            Multi Currency Account
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/strong-customer-authentication">
+            Strong Customer Authentication
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/one-time-token">
+            One Time Token
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/jose">
+            JOSE
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/kyc-review">
+            KYC Review
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/case">
+            Partner Cases
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/payin-deposit-detail">
+            Payin Deposit Detail
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/profile">
+            Profile
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/push-provisioning">
+            Push Provisioning
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/quote">
+            Quote
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/rate">
+            Rate
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/recipient">
+            Recipient Account
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/simulation">
+            Simulation
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/spend-controls">
+            Spend Controls
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/spend-limits">
+            Spend Limits
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/transfer">
+            Transfer
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/user">
+            User
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/user-security">
+            User Security
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/user-tokens">
+            User Tokens
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/webhook">
+            Webhook
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference/deprecated">
+            Deprecated APIs
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </header>
+      <div class="site-container">
+       <div class="SideBar_sidebar__zsMpQ">
+        <nav class="SideBar_sidebarScrollable__0O2Mx">
+         <ul class="list-unstyled m-l-1 m-r-3">
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c SideBar_linkActive__pdpf3" href="/api-docs/api-reference">
+            Intro
+           </a>
+           <ul class="SideBar_subMenu__g6HDJ list-unstyled">
+           </ul>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/environments">
+            Environments
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/security">
+            Security &amp; Access
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/versioning">
+            Versioning
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/language-support">
+            Language Support
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/errors">
+            Errors
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/webhooks-notifications">
+            Webhooks
+           </a>
+           <hr class="m-y-2"/>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/3ds">
+            3D Secure Authentication
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/verification">
+            Additional Customer Verification
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/activity">
+            Activity
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/address">
+            Address
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/balance">
+            Balance
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/balance-statement">
+            Balance Statement
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/bank-account-details">
+            Bank Account Details
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/batch-group">
+            Batch Group
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/bulk-settlement">
+            Bulk Settlement
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/card">
+            Card
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/card-order">
+            Card Order
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/card-kiosk-collection">
+            Card Kiosk Collection
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/card-transaction">
+            Card Transactions
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/claim-account">
+            Claim Account
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/client-credentials-token">
+            Client Credentials Token
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/comparison">
+            Comparison
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/contact">
+            Contact
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/currencies">
+            Currencies
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/delivery-estimate">
+            Delivery Estimate
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/direct-debit-account">
+            Direct Debit Account
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/disputes">
+            Disputes
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/facetec">
+            FaceTec
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/multi-currency-account">
+            Multi Currency Account
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/strong-customer-authentication">
+            Strong Customer Authentication
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/one-time-token">
+            One Time Token
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/jose">
+            JOSE
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/kyc-review">
+            KYC Review
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/case">
+            Partner Cases
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/payin-deposit-detail">
+            Payin Deposit Detail
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/profile">
+            Profile
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/push-provisioning">
+            Push Provisioning
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/quote">
+            Quote
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/rate">
+            Rate
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/recipient">
+            Recipient Account
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/simulation">
+            Simulation
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/spend-controls">
+            Spend Controls
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/spend-limits">
+            Spend Limits
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/transfer">
+            Transfer
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/user">
+            User
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/user-security">
+            User Security
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/user-tokens">
+            User Tokens
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/webhook">
+            Webhook
+           </a>
+          </li>
+          <li>
+           <a class="SideBar_menuItem__xF1fY SideBar_link__Hj_4c" href="/api-docs/api-reference/deprecated">
+            Deprecated APIs
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+       <main class="site-main c-main-content">
+        <article>
+         <h1 class="">
+          Wise API
+         </h1>
+         <p>
+          All the technical details of our APIs can be found here.
+         </p>
+         <p>
+          We recommend starting from the
+          <a href="/api-docs/guides">
+           Integration Guides
+          </a>
+          to work through specific examples of how to integrate with the Wise API.
+         </p>
+         <div class="Heading_container___Di4e">
+          <a class="d-inline-block text-no-decoration" href="#api-reference">
+           <h2 class="Heading_headingAsLink__mOAWb" id="api-reference">
+            Sending Money with Wise's APIs
+           </h2>
+          </a>
+         </div>
+         <p>
+          Explore the comprehensive technical reference documentation for integrating with the Wise Platform API, with examples of all calls as they relate to the important flows for transfer creation, multi currency accounts, and much more.
+         </p>
+         <p>
+          Below are the standard API endpoints used for our
+          <a href="/api-docs/guides/send-money">
+           Send Money Flow
+          </a>
+          :
+         </p>
+         <div class="m-b-3">
+          <div class="np-decision d-flex flex-column">
+           <a class="np-option np-navigation-option decision np-option__sm-media" href="/api-docs/api-reference/quote">
+            <div class="media">
+             <div class="media-left">
+              <div class="np-option__no-media-circle">
+               <picture>
+                <img alt="Convert" class="wds-illustration wds-illustration-convert wds-illustration-padding" data-testid="wds-convert-illustration" height="200" loading="eager" src="https://wise.com/web-art/assets/illustrations/convert-small@1x.webp" srcset="https://wise.com/web-art/assets/illustrations/convert-small@2x.webp 2x" width="200"/>
+               </picture>
+              </div>
+             </div>
+             <div class="media-body">
+              <div aria-level="4" class="np-text-body-large-bold text-primary np-option__title" role="heading">
+               Quote
+              </div>
+              <div class="np-text-body-default d-block np-option__body">
+               The quote resource defines the basic information required for a Wise transfer - the currencies to send between, the amount to send and the profile who is sending the money.
+              </div>
+             </div>
+             <div class="media-right">
+              <span class="tw-icon tw-icon-chevron-up tw-chevron chevron-color right d-block" data-testid="chevron-up-icon">
+               <svg aria-hidden="true" fill="currentColor" focusable="false" height="16" role="none" viewbox="0 0 24 24" width="16">
+                <path clip-rule="evenodd" d="m12 9.414 7.293 7.293 1.414-1.414L12.714 7.3a1.01 1.01 0 0 0-1.428 0l-7.993 7.993 1.414 1.414z" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </div>
+           </a>
+           <a class="np-option np-navigation-option decision np-option__sm-media" href="/api-docs/api-reference/recipient">
+            <div class="media">
+             <div class="media-left">
+              <div class="np-option__no-media-circle">
+               <picture>
+                <img alt="ID card" class="wds-illustration wds-illustration-id-card wds-illustration-padding" data-testid="wds-id-card-illustration" height="200" loading="eager" src="https://wise.com/web-art/assets/illustrations/id-card-small@1x.webp" srcset="https://wise.com/web-art/assets/illustrations/id-card-small@2x.webp 2x" width="200"/>
+               </picture>
+              </div>
+             </div>
+             <div class="media-body">
+              <div aria-level="4" class="np-text-body-large-bold text-primary np-option__title" role="heading">
+               Recipient
+              </div>
+              <div class="np-text-body-default d-block np-option__body">
+               The recipient resource defines the information needed to create a transfer to the intended beneficiary - type of recipient, bank account information, contact details.
+              </div>
+             </div>
+             <div class="media-right">
+              <span class="tw-icon tw-icon-chevron-up tw-chevron chevron-color right d-block" data-testid="chevron-up-icon">
+               <svg aria-hidden="true" fill="currentColor" focusable="false" height="16" role="none" viewbox="0 0 24 24" width="16">
+                <path clip-rule="evenodd" d="m12 9.414 7.293 7.293 1.414-1.414L12.714 7.3a1.01 1.01 0 0 0-1.428 0l-7.993 7.993 1.414 1.414z" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </div>
+           </a>
+           <a class="np-option np-navigation-option decision np-option__sm-media" href="/api-docs/api-reference/transfer">
+            <div class="media">
+             <div class="media-left">
+              <div class="np-option__no-media-circle">
+               <picture>
+                <img alt="Plane" class="wds-illustration wds-illustration-plane wds-illustration-padding" data-testid="wds-plane-illustration" height="200" loading="eager" src="https://wise.com/web-art/assets/illustrations/plane-small@1x.webp" srcset="https://wise.com/web-art/assets/illustrations/plane-small@2x.webp 2x" width="200"/>
+               </picture>
+              </div>
+             </div>
+             <div class="media-body">
+              <div aria-level="4" class="np-text-body-large-bold text-primary np-option__title" role="heading">
+               Transfer
+              </div>
+              <div class="np-text-body-default d-block np-option__body">
+               The transfer resource defines a payment order to a selected recipient account based on a selected quote.
+              </div>
+             </div>
+             <div class="media-right">
+              <span class="tw-icon tw-icon-chevron-up tw-chevron chevron-color right d-block" data-testid="chevron-up-icon">
+               <svg aria-hidden="true" fill="currentColor" focusable="false" height="16" role="none" viewbox="0 0 24 24" width="16">
+                <path clip-rule="evenodd" d="m12 9.414 7.293 7.293 1.414-1.414L12.714 7.3a1.01 1.01 0 0 0-1.428 0l-7.993 7.993 1.414 1.414z" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </div>
+           </a>
+           <a class="np-option np-navigation-option decision np-option__sm-media" href="/api-docs/api-reference/transfer#fund">
+            <div class="media">
+             <div class="media-left">
+              <div class="np-option__no-media-circle">
+               <picture>
+                <img alt="Wallet" class="wds-illustration wds-illustration-wallet wds-illustration-padding" data-testid="wds-wallet-illustration" height="200" loading="eager" src="https://wise.com/web-art/assets/illustrations/wallet-small@1x.webp" srcset="https://wise.com/web-art/assets/illustrations/wallet-small@2x.webp 2x" width="200"/>
+               </picture>
+              </div>
+             </div>
+             <div class="media-body">
+              <div aria-level="4" class="np-text-body-large-bold text-primary np-option__title" role="heading">
+               Fund
+              </div>
+              <div class="np-text-body-default d-block np-option__body">
+               In order for transfers to complete, they must be funded after creation. Multiple methods of funding transfers exist depending on your integration method.
+              </div>
+             </div>
+             <div class="media-right">
+              <span class="tw-icon tw-icon-chevron-up tw-chevron chevron-color right d-block" data-testid="chevron-up-icon">
+               <svg aria-hidden="true" fill="currentColor" focusable="false" height="16" role="none" viewbox="0 0 24 24" width="16">
+                <path clip-rule="evenodd" d="m12 9.414 7.293 7.293 1.414-1.414L12.714 7.3a1.01 1.01 0 0 0-1.428 0l-7.993 7.993 1.414 1.414z" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </div>
+           </a>
+          </div>
+         </div>
+        </article>
+       </main>
+      </div>
+      <footer class="Footer_footer__OYoYH">
+       <div class="site-container site-container--full-width Footer_container__7AGDW">
+        <div>
+         <a href="/api-docs">
+          <span aria-label="Wise" class="np-logo" role="img">
+           <svg class="np-logo-svg np-logo-svg--size-sm" fill="none" height="24" width="26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.82603 7.23227 0 15.2096h12.1882l1.3696-3.7616H8.33504l3.19126-3.68968.0102-.09787-2.07504-3.57192h9.33564L11.5604 24h4.9522l8.7385-24H2.6758l4.15023 7.23227Z" fill="#163300">
+            </path>
+           </svg>
+           <svg class="np-logo-svg np-logo-svg--size-md" fill="none" height="24" width="106" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58.7377.358803h6.4982L61.9668 23.681h-6.4983L58.7377.358803Zm-8.1922 0L46.1602 13.794 44.2465.358803h-4.5448L33.9608 13.7541 33.2433.358803h-6.2991L29.1369 23.681h5.2226L40.818 8.93022 43.0904 23.681h5.1428L56.7249.358803h-6.1794ZM105.103 13.9136H89.6744c.0798 3.0299 1.8937 5.0233 4.5648 5.0233 2.0133 0 3.608-1.0765 4.8439-3.1296l5.2079 2.3674C102.501 21.7017 98.729 24 94.0798 24 87.741 24 83.535 19.7342 83.535 12.8771 83.535 5.34221 88.4784 0 95.4552 0c6.1398 0 10.0068 4.14618 10.0068 10.6046 0 1.0765-.12 2.1528-.359 3.309Zm-5.7807-4.46512c0-2.71095-1.515-4.42525-3.9468-4.42525-2.5117 0-4.5848 1.79402-5.143 4.42525h9.0898ZM6.63326 7.38685 0 15.1389h11.844l1.3309-3.6553H8.09965l3.10105-3.58555.01-.09511L9.19424 4.3319h9.07196l-7.0323 19.3492h4.8124L24.538.358823H2.60021L6.63326 7.38685Zm69.16744-2.3636c2.2923 0 4.301 1.23273 6.0551 3.34565l.9216-6.57488C81.1429.687707 78.9303 0 76 0c-5.8205 0-9.0896 3.40865-9.0896 7.73421 0 2.99999 1.6744 4.83389 4.4252 6.01989l1.3156.598c2.4518 1.0466 3.1097 1.5649 3.1097 2.6712 0 1.1461-1.1064 1.8737-2.7907 1.8737-2.7808.01-5.0332-1.4153-6.7276-3.8472l-.939 6.699C67.2332 23.2201 69.7067 24 72.9702 24c5.5315 0 8.9302-3.1894 8.9302-7.6147 0-3.0099-1.3355-4.9434-4.7044-6.4584l-1.4351-.67772c-1.9934-.88708-2.6711-1.37543-2.6711-2.35216 0-1.05647.9269-1.87377 2.7109-1.87377Z" fill="#163300">
+            </path>
+           </svg>
+          </span>
+         </a>
+        </div>
+        <nav class="Footer_navigation__qQ48w">
+         <ul class="list-unstyled m-a-0">
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/guides">
+            Guides
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/api-reference">
+            API Reference
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/changelog">
+            Changelog
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/support">
+            Support
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/search">
+            Search
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+       <div class="site-container site-container--full-width Footer_legal__6NDdS">
+        <div class="small Footer_legalCopy__BXHOQ">
+         Wise Platform ©
+         <!-- -->
+         2025
+        </div>
+       </div>
+      </footer>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"componentInitialProps":{},"templateInitialProps":{},"__N_SSG":true,"pageProps":{"page":{"frontmatter":{"path":"/api-reference","title":"Wise Platform API Reference","navigation":[{"reference":"./environments/index.md"},{"reference":"./security/index.md"},{"reference":"./versioning/index.md"},{"reference":"./language-support/index.md"},{"reference":"./errors/index.md"},{"link":"/api-docs/webhooks-notifications","title":"Webhooks","showSeparator":true},{"reference":"./3ds/index.md"},{"reference":"./verification/index.md"},{"reference":"./activity/index.md"},{"reference":"./address/index.md"},{"reference":"./balance/index.md"},{"reference":"./balance-statement/index.md"},{"reference":"./bank-account-details/index.md"},{"reference":"./batch-group/index.md"},{"reference":"./bulk-settlement/index.md"},{"reference":"./card/index.md"},{"reference":"./card-order/index.md"},{"reference":"./card-kiosk-collection/index.md"},{"reference":"./card-transaction/index.md"},{"reference":"./claim-account/index.md"},{"reference":"./client-credentials-token/index.md"},{"reference":"./comparison/index.md"},{"reference":"./contact/index.md"},{"reference":"./currencies/index.md"},{"reference":"./delivery-estimate/index.md"},{"reference":"./direct-debit-account/index.md"},{"reference":"./disputes/index.md"},{"reference":"./facetec/index.md"},{"reference":"./multi-currency-account/index.md"},{"reference":"./strong-customer-authentication/index.md"},{"reference":"./one-time-token/index.md"},{"reference":"./jose/index.md"},{"reference":"./kyc-review/index.md"},{"reference":"./case/index.md"},{"reference":"./payin-deposit-detail/index.md"},{"reference":"./profile/index.md"},{"reference":"./push-provisioning/index.md"},{"reference":"./quote/index.md"},{"reference":"./rate/index.md"},{"reference":"./recipient/index.md"},{"reference":"./simulation/index.md"},{"reference":"./spend-controls/index.md"},{"reference":"./spend-limits/index.md"},{"reference":"./transfer/index.md"},{"reference":"./user/index.md"},{"reference":"./user-security/index.md"},{"reference":"./user-tokens/index.md"},{"reference":"./webhook/index.md"},{"reference":"./deprecated/index.md"}]},"content":{"$$mdtype":"Tag","name":"article","attributes":{},"children":[{"$$mdtype":"Tag","name":"Heading","attributes":{"level":1},"children":["Wise API"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["All the technical details of our APIs can be found here."]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["We recommend starting from the ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"/api-docs/guides"},"children":["Integration Guides"]}," to work through specific examples of how to integrate with the Wise API."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"id":"api-reference","level":2,"isHiddenFromMenu":true},"children":["Sending Money with Wise's APIs "]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["Explore the comprehensive technical reference documentation for integrating with the Wise Platform API, with examples of all calls as they relate to the important flows for transfer creation, multi currency accounts, and much more."]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["Below are the standard API endpoints used for our ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"/api-docs/guides/send-money"},"children":["Send Money Flow"]},":"]},{"$$mdtype":"Tag","name":"Decision","attributes":{"options":[{"title":"Quote","href":"/api-docs/api-reference/quote","description":"The quote resource defines the basic information required for a Wise transfer - the currencies to send between, the amount to send and the profile who is sending the money.","illustration":{"name":"convert","alt":"Convert"}},{"title":"Recipient","href":"/api-docs/api-reference/recipient","description":"The recipient resource defines the information needed to create a transfer to the intended beneficiary - type of recipient, bank account information, contact details.","illustration":{"name":"id-card","alt":"ID card"}},{"title":"Transfer","href":"/api-docs/api-reference/transfer","description":"The transfer resource defines a payment order to a selected recipient account based on a selected quote.","illustration":{"name":"plane","alt":"Plane"}},{"title":"Fund","href":"/api-docs/api-reference/transfer#fund","description":"In order for transfers to complete, they must be funded after creation. Multiple methods of funding transfers exist depending on your integration method.","illustration":{"name":"wallet","alt":"Wallet"}}],"trackingEventName":"API Home - Reference click"},"children":[]}]},"navigation":{"items":[{"title":"Intro","link":"/api-docs/api-reference","active":true,"subitems":[]},{"title":"Environments","link":"/api-docs/api-reference/environments","showSeparator":false},{"title":"Security \u0026 Access","link":"/api-docs/api-reference/security","showSeparator":false},{"title":"Versioning","link":"/api-docs/api-reference/versioning","showSeparator":false},{"title":"Language Support","link":"/api-docs/api-reference/language-support","showSeparator":false},{"title":"Errors","link":"/api-docs/api-reference/errors","showSeparator":false},{"link":"/api-docs/webhooks-notifications","title":"Webhooks","showSeparator":true},{"title":"3D Secure Authentication","link":"/api-docs/api-reference/3ds","showSeparator":false},{"title":"Additional Customer Verification","link":"/api-docs/api-reference/verification","showSeparator":false},{"title":"Activity","link":"/api-docs/api-reference/activity","showSeparator":false},{"title":"Address","link":"/api-docs/api-reference/address","showSeparator":false},{"title":"Balance","link":"/api-docs/api-reference/balance","showSeparator":false},{"title":"Balance Statement","link":"/api-docs/api-reference/balance-statement","showSeparator":false},{"title":"Bank Account Details","link":"/api-docs/api-reference/bank-account-details","showSeparator":false},{"title":"Batch Group","link":"/api-docs/api-reference/batch-group","showSeparator":false},{"title":"Bulk Settlement","link":"/api-docs/api-reference/bulk-settlement","showSeparator":false},{"title":"Card","link":"/api-docs/api-reference/card","showSeparator":false},{"title":"Card Order","link":"/api-docs/api-reference/card-order","showSeparator":false},{"title":"Card Kiosk Collection","link":"/api-docs/api-reference/card-kiosk-collection","showSeparator":false},{"title":"Card Transactions","link":"/api-docs/api-reference/card-transaction","showSeparator":false},{"title":"Claim Account","link":"/api-docs/api-reference/claim-account","showSeparator":false},{"title":"Client Credentials Token","link":"/api-docs/api-reference/client-credentials-token","showSeparator":false},{"title":"Comparison","link":"/api-docs/api-reference/comparison","showSeparator":false},{"title":"Contact","link":"/api-docs/api-reference/contact","showSeparator":false},{"title":"Currencies","link":"/api-docs/api-reference/currencies","showSeparator":false},{"title":"Delivery Estimate","link":"/api-docs/api-reference/delivery-estimate","showSeparator":false},{"title":"Direct Debit Account","link":"/api-docs/api-reference/direct-debit-account","showSeparator":false},{"title":"Disputes","link":"/api-docs/api-reference/disputes","showSeparator":false},{"title":"FaceTec","link":"/api-docs/api-reference/facetec","showSeparator":false},{"title":"Multi Currency Account","link":"/api-docs/api-reference/multi-currency-account","showSeparator":false},{"title":"Strong Customer Authentication","link":"/api-docs/api-reference/strong-customer-authentication","showSeparator":false},{"title":"One Time Token","link":"/api-docs/api-reference/one-time-token","showSeparator":false},{"title":"JOSE","link":"/api-docs/api-reference/jose","showSeparator":false},{"title":"KYC Review","link":"/api-docs/api-reference/kyc-review","showSeparator":false},{"title":"Partner Cases","link":"/api-docs/api-reference/case","showSeparator":false},{"title":"Payin Deposit Detail","link":"/api-docs/api-reference/payin-deposit-detail","showSeparator":false},{"title":"Profile","link":"/api-docs/api-reference/profile","showSeparator":false},{"title":"Push Provisioning","link":"/api-docs/api-reference/push-provisioning","showSeparator":false},{"title":"Quote","link":"/api-docs/api-reference/quote","showSeparator":false},{"title":"Rate","link":"/api-docs/api-reference/rate","showSeparator":false},{"title":"Recipient Account","link":"/api-docs/api-reference/recipient","showSeparator":false},{"title":"Simulation","link":"/api-docs/api-reference/simulation","showSeparator":false},{"title":"Spend Controls","link":"/api-docs/api-reference/spend-controls","showSeparator":false},{"title":"Spend Limits","link":"/api-docs/api-reference/spend-limits","showSeparator":false},{"title":"Transfer","link":"/api-docs/api-reference/transfer","showSeparator":false},{"title":"User","link":"/api-docs/api-reference/user","showSeparator":false},{"title":"User Security","link":"/api-docs/api-reference/user-security","showSeparator":false},{"title":"User Tokens","link":"/api-docs/api-reference/user-tokens","showSeparator":false},{"title":"Webhook","link":"/api-docs/api-reference/webhook","showSeparator":false},{"title":"Deprecated APIs","link":"/api-docs/api-reference/deprecated","showSeparator":false}]}},"navigation":{"homeLink":"/api-docs","items":[{"title":"Guides","link":"/api-docs/guides","active":false},{"title":"API Reference","link":"/api-docs/api-reference","active":true},{"title":"Changelog","link":"/api-docs/changelog","active":false},{"title":"Support","link":"/api-docs/support","active":false},{"title":"Search","icon":"search","link":"/api-docs/search","active":false}]}}},"page":"/public/api-docs/[[...slug]]","query":{"slug":["api-reference"]},"buildId":"api-documentation_master_4861d85","runtimeConfig":{"rollbar":{"accessToken":"e4fff9b0e8434b0f8f2c5a429fb76292","sourceMapEnabled":false,"enabled":false}},"isFallback":false,"gsp":true,"appGip":true,"scriptLoader":[]}
+  </script>
+ </body>
+</html>

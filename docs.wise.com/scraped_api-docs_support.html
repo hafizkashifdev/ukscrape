@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html dir="ltr">
+ <head>
+  <meta charset="utf-8" data-next-head=""/>
+  <meta content="initial-scale=1.0, width=device-width" data-next-head="" name="viewport"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon.png" rel="icon" type="image/x-icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/apple_touch_icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon_32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/favicon_16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link color="#083400" data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/safari_pinned_tab.svg" rel="mask-icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/android_chrome_192x192.png" rel="icon"/>
+  <link data-next-head="" href="https://wise.com/public-resources/assets/icons/wise-personal/android_chrome_256x256.png" rel="icon"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/mstile_150x150.png" data-next-head="" name="msapplication-square150x150logo"/>
+  <meta content="IE=edge" data-next-head="" http-equiv="X-UA-Compatible"/>
+  <meta content="1510092490" data-next-head="" property="twitter:account_id"/>
+  <meta content="on" data-next-head="" property="twitter:widgets:csp"/>
+  <meta content="@wise" data-next-head="" property="twitter:creator"/>
+  <meta content="summary_large_image" data-next-head="" property="twitter:card"/>
+  <meta content="@wise" data-next-head="" property="twitter:site"/>
+  <meta content="The clever new way to send money abroad" data-next-head="" property="twitter:title"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/share_landscape.png" data-next-head="" property="twitter:image:src"/>
+  <meta content="Wise" data-next-head="" property="og:site_name"/>
+  <meta content="274548709260402" data-next-head="" property="fb:app_id"/>
+  <meta content="en_US" data-next-head="" property="og:locale"/>
+  <meta content="website" data-next-head="" property="og:type"/>
+  <meta content="Wise: Online Money Transfers | International Banking Features" data-next-head="" property="og:title"/>
+  <meta content="https://wise.com" data-next-head="" property="og:url"/>
+  <meta content="https://wise.com/public-resources/assets/icons/wise-personal/share_landscape.png" data-next-head="" property="og:image"/>
+  <title data-next-head="">
+   Wise Platform API Support
+  </title>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" property="twitter:description"/>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" name="description"/>
+  <meta content="Integrate with Wise Platform to offer best-in-class FX products to your customers: fast, easy, low-cost and transparent." data-next-head="" property="og:description"/>
+  <meta content="noindex,nofollow" data-next-head="" name="robots"/>
+  <script defer="" src="/cookie-consent.js" type="application/javascript">
+  </script>
+  <link crossorigin="anonymous" data-next-font="" href="/" rel="preconnect"/>
+  <link as="style" href="/_next/static/css/c4c155c6526e11a0.css" rel="preload"/>
+  <link data-n-g="" href="/_next/static/css/c4c155c6526e11a0.css" rel="stylesheet"/>
+  <link as="style" href="/_next/static/css/8802e5776c71f68f.css" rel="preload"/>
+  <link data-n-p="" href="/_next/static/css/8802e5776c71f68f.css" rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/webpack-a3dfc11d90730421.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/framework-558e77ae091159bb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/main-d58d219f1c012128.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_app-d3f53e26933ff90b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/bd9af3fa-27972a22c0a800d5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8535-ae87c4d5a6c311a4.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/public/api-docs/%5B%5B...slug%5D%5D-75ea8ebab99ef301.js">
+  </script>
+  <script defer="" src="/_next/static/api-documentation_master_4861d85/_buildManifest.js">
+  </script>
+  <script defer="" src="/_next/static/api-documentation_master_4861d85/_ssgManifest.js">
+  </script>
+ </head>
+ <body>
+  <div id="__next">
+   <div class="np-theme-personal">
+    <div class="api-documentation">
+     <div class="site-body">
+      <header class="Header_header__MwWvM">
+       <div class="site-container site-container--full-width">
+        <div class="d-flex align-items-center">
+         <a class="Header_logo__V9h3K" href="/api-docs">
+          <span aria-label="Wise" class="d-block np-logo" role="img">
+           <svg class="np-logo-svg np-logo-svg--size-sm" fill="none" height="24" width="26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.82603 7.23227 0 15.2096h12.1882l1.3696-3.7616H8.33504l3.19126-3.68968.0102-.09787-2.07504-3.57192h9.33564L11.5604 24h4.9522l8.7385-24H2.6758l4.15023 7.23227Z" fill="#163300">
+            </path>
+           </svg>
+           <svg class="np-logo-svg np-logo-svg--size-md" fill="none" height="24" width="106" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58.7377.358803h6.4982L61.9668 23.681h-6.4983L58.7377.358803Zm-8.1922 0L46.1602 13.794 44.2465.358803h-4.5448L33.9608 13.7541 33.2433.358803h-6.2991L29.1369 23.681h5.2226L40.818 8.93022 43.0904 23.681h5.1428L56.7249.358803h-6.1794ZM105.103 13.9136H89.6744c.0798 3.0299 1.8937 5.0233 4.5648 5.0233 2.0133 0 3.608-1.0765 4.8439-3.1296l5.2079 2.3674C102.501 21.7017 98.729 24 94.0798 24 87.741 24 83.535 19.7342 83.535 12.8771 83.535 5.34221 88.4784 0 95.4552 0c6.1398 0 10.0068 4.14618 10.0068 10.6046 0 1.0765-.12 2.1528-.359 3.309Zm-5.7807-4.46512c0-2.71095-1.515-4.42525-3.9468-4.42525-2.5117 0-4.5848 1.79402-5.143 4.42525h9.0898ZM6.63326 7.38685 0 15.1389h11.844l1.3309-3.6553H8.09965l3.10105-3.58555.01-.09511L9.19424 4.3319h9.07196l-7.0323 19.3492h4.8124L24.538.358823H2.60021L6.63326 7.38685Zm69.16744-2.3636c2.2923 0 4.301 1.23273 6.0551 3.34565l.9216-6.57488C81.1429.687707 78.9303 0 76 0c-5.8205 0-9.0896 3.40865-9.0896 7.73421 0 2.99999 1.6744 4.83389 4.4252 6.01989l1.3156.598c2.4518 1.0466 3.1097 1.5649 3.1097 2.6712 0 1.1461-1.1064 1.8737-2.7907 1.8737-2.7808.01-5.0332-1.4153-6.7276-3.8472l-.939 6.699C67.2332 23.2201 69.7067 24 72.9702 24c5.5315 0 8.9302-3.1894 8.9302-7.6147 0-3.0099-1.3355-4.9434-4.7044-6.4584l-1.4351-.67772c-1.9934-.88708-2.6711-1.37543-2.6711-2.35216 0-1.05647.9269-1.87377 2.7109-1.87377Z" fill="#163300">
+            </path>
+           </svg>
+          </span>
+         </a>
+        </div>
+        <input class="Header_menuToggleCheckbox___V6yA hidden" id="menu-toggle" type="checkbox"/>
+        <label class="Header_menuButton__0azx_" for="menu-toggle">
+         <span class="tw-icon tw-icon-menu" data-testid="menu-icon">
+          <svg aria-hidden="true" fill="currentColor" focusable="false" height="24" role="none" viewbox="0 0 24 24" width="24">
+           <path clip-rule="evenodd" d="M20 7H4V5h16zm0 6H4v-2h16zM4 19h16v-2H4z" fill-rule="evenodd">
+           </path>
+          </svg>
+         </span>
+        </label>
+        <nav class="Header_navigation__57bfi">
+         <ul class="list-unstyled m-a-0">
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/guides">
+            Guides
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/api-reference">
+            API Reference
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/changelog">
+            Changelog
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration Header_navigationLinkActive__n1mWP" href="/api-docs/support">
+            Support
+           </a>
+          </li>
+          <li>
+           <a class="Header_navigationLink__BQZOA text-no-decoration" href="/api-docs/search">
+            <span class="tw-icon tw-icon-search" data-testid="search-icon">
+             <svg aria-hidden="true" fill="currentColor" focusable="false" height="24" role="none" viewbox="0 0 24 24" width="24">
+              <path clip-rule="evenodd" d="M17 11a6 6 0 1 1-12 0 6 6 0 0 1 12 0m-1.094 6.32a8 8 0 1 1 1.414-1.414l3.887 3.887-1.414 1.414z" fill-rule="evenodd">
+              </path>
+             </svg>
+            </span>
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </header>
+      <div class="site-container site-container--small">
+       <main class="site-main c-main-content">
+        <article>
+         <section class="d-flex flex-wrap Section_section__gjwvr Section_base__Gkj8T">
+          <h1 class="">
+           Wise Platform API Support
+          </h1>
+          <p>
+           For help with the Wise API, answers to common questions, or any additional technical support you need.
+          </p>
+          <div class="align-self-start Section_left__NrCmG Section_base__Gkj8T">
+           <div class="Heading_container___Di4e">
+            <a class="d-inline-block text-no-decoration" href="#faq">
+             <h2 class="Heading_headingAsLink__mOAWb" id="faq">
+              Frequently Asked Questions
+             </h2>
+            </a>
+           </div>
+           <h4 class="">
+            How do I get a Client ID and Client Secret?
+           </h4>
+           <p>
+            We only provide a Client ID and Client Secret for
+            <a href="https://platform.wise.com/">
+             Wise Platform
+            </a>
+            partner integrations. You can still connect with your own Wise account over API though, personal API tokens will help you achieve this.
+            <a href="/api-docs/guides/personal-tokens">
+             Learn more
+            </a>
+            .
+           </p>
+           <h4 class="">
+            Can I use Wise API to receive money in my online checkout?
+           </h4>
+           <p>
+            The main use for the Wise API is to automate payouts. We don't offer the option to build Wise into your checkout flow as a payment option to receive money.
+           </p>
+           <p>
+            The good news is that you can use the local bank details that come with your Wise account (USD, EUR, GBP, AUD, NZD and PLN) and reconcile the incoming payments via the API.
+           </p>
+           <h4 class="">
+            How do I create a payment link on the API?
+           </h4>
+           <p>
+            Unfortunately this isn't a feature that is supported on our Public API. Please continue to create these links on the Wise.com interface.
+           </p>
+           <h4 class="">
+            How can I start testing the API?
+           </h4>
+           <p>
+            You'll need to create a new account in
+            <a href="https://sandbox.transferwise.tech/">
+             Wise Sandbox
+            </a>
+            to get started testing the API - your actual Wise account won't work. Also, logging in or registering with your Facebook or Google account is not supported.
+           </p>
+           <h4 class="">
+            Does it cost anything to use the Wise API?
+           </h4>
+           <p>
+            There aren't any additional charges for using Wise API with a personal token - the regular pricing system adopted by Wise for customers is applied. You can find out more about Wise account features and pricing
+            <a href="https://wise.com/gb/pricing/">
+             here
+            </a>
+            .
+           </p>
+           <h4 class="">
+            What currencies can I send to and from?
+           </h4>
+           <p>
+            You can find more info on which currencies you can send to and from
+            <a href="https://wise.com/help/articles/2571907/what-currencies-can-i-send-to-and-from?origin=search-currencies">
+             here
+            </a>
+            ; and which currencies you can add, keep, and receive into your Wise account
+            <a href="https://wise.com/help/articles/2897238/which-currencies-can-i-add-keep-and-receive-in-my-wise-account?origin=related-article-2897226">
+             here
+            </a>
+            .
+           </p>
+           <h4 class="">
+            I have a question about my Wise account, can you help?
+           </h4>
+           <p>
+            Head to the
+            <a href="https://wise.com/help">
+             Wise Help Centre
+            </a>
+            to get your question to the right team.
+           </p>
+           <div>
+            <p class="d-flex align-items-center">
+             <span class="Feedback_label__MBML5 text-muted">
+              Was this section helpful?
+             </span>
+             <button aria-busy="false" aria-disabled="false" aria-live="off" class="btn btn-md np-btn np-btn-md btn-accent btn-priority-3 Feedback_btn__o43HR" type="button">
+              Yes
+             </button>
+             <button aria-busy="false" aria-disabled="false" aria-live="off" class="btn btn-md np-btn np-btn-md btn-accent btn-priority-3 Feedback_btn__o43HR" type="button">
+              No
+             </button>
+            </p>
+           </div>
+           <div class="Heading_container___Di4e">
+            <a class="d-inline-block text-no-decoration" href="#contact-us">
+             <h2 class="Heading_headingAsLink__mOAWb" id="contact-us">
+              Contact Us
+             </h2>
+            </a>
+           </div>
+           <p>
+            If you are thinking about or want to learn more about a direct integration partnership with Wise, head to
+            <a href="https://platform.wise.com/">
+             Wise Platform
+            </a>
+            to find out more.
+           </p>
+           <p>
+            For technical questions about the Wise API, contact api@wise.com. To help speed up resolution, please provide an "x-trace-id" response header value, along with other relevant request details like environment, request url. Please note the x-trace-id is only useful for 7 days in the Sandbox environment, and 10 days in Production.
+           </p>
+           <p>
+            For support with our Open Banking APIs, head to our
+            <a href="https://docs.wise.com/api-docs/guides/open-banking">
+             Open Banking Guide
+            </a>
+            .
+           </p>
+           <div>
+            <p class="d-flex align-items-center">
+             <span class="Feedback_label__MBML5 text-muted">
+              Was this section helpful?
+             </span>
+             <button aria-busy="false" aria-disabled="false" aria-live="off" class="btn btn-md np-btn np-btn-md btn-accent btn-priority-3 Feedback_btn__o43HR" type="button">
+              Yes
+             </button>
+             <button aria-busy="false" aria-disabled="false" aria-live="off" class="btn btn-md np-btn np-btn-md btn-accent btn-priority-3 Feedback_btn__o43HR" type="button">
+              No
+             </button>
+            </p>
+           </div>
+          </div>
+          <div class="align-self-start Section_right__A25nU Section_base__Gkj8T">
+           <div class="Heading_container___Di4e">
+            <a class="d-inline-block text-no-decoration" href="#api-status">
+             <h2 class="Heading_headingAsLink__mOAWb" id="api-status">
+              Wise API Status
+             </h2>
+            </a>
+           </div>
+           <div class="wds-alert__liveRegion" role="status">
+            <div aria-hidden="true" class="alert d-flex alert-warning" data-testid="alert">
+             <div class="alert__icon">
+              <span class="np-circle d-flex align-items-center justify-content-center status-circle warning" data-testid="status-icon" style="--circle-size:var(--size-32);--circle-icon-size:18px;--circle-font-size:14px">
+               <span class="tw-icon tw-icon-alert status-icon dark" data-testid="alert-icon">
+                <svg aria-label="Warning:" fill="currentColor" focusable="false" height="16" role="graphics-symbol img" viewbox="0 0 24 24" width="16">
+                 <path clip-rule="evenodd" d="M13 4h-2v11h2zm.5 14.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" fill-rule="evenodd">
+                 </path>
+                </svg>
+               </span>
+              </span>
+             </div>
+             <div class="alert__content d-flex flex-grow-1">
+              <div class="alert__message">
+               <div>
+                <span class="np-text-body-large d-block">
+                 <span>
+                  If you're experiencing issues calling our API endpoints, the first place to check is the status page.
+                 </span>
+                </span>
+               </div>
+               <a aria-label="If you're experiencing issues calling our API endpoints, the first place to check is status.wise.com." class="np-link d-inline-flex np-text-link-large alert__action" href="https://status.wise.com/">
+                Wise Status Page
+                <!-- -->
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <p>
+            You can also integrate with the Wise Status Page over API.
+            <a href="https://status.wise.com/api">
+             Learn more
+            </a>
+            .
+           </p>
+          </div>
+         </section>
+        </article>
+       </main>
+      </div>
+      <footer class="Footer_footer__OYoYH">
+       <div class="site-container site-container--full-width Footer_container__7AGDW">
+        <div>
+         <a href="/api-docs">
+          <span aria-label="Wise" class="np-logo" role="img">
+           <svg class="np-logo-svg np-logo-svg--size-sm" fill="none" height="24" width="26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.82603 7.23227 0 15.2096h12.1882l1.3696-3.7616H8.33504l3.19126-3.68968.0102-.09787-2.07504-3.57192h9.33564L11.5604 24h4.9522l8.7385-24H2.6758l4.15023 7.23227Z" fill="#163300">
+            </path>
+           </svg>
+           <svg class="np-logo-svg np-logo-svg--size-md" fill="none" height="24" width="106" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58.7377.358803h6.4982L61.9668 23.681h-6.4983L58.7377.358803Zm-8.1922 0L46.1602 13.794 44.2465.358803h-4.5448L33.9608 13.7541 33.2433.358803h-6.2991L29.1369 23.681h5.2226L40.818 8.93022 43.0904 23.681h5.1428L56.7249.358803h-6.1794ZM105.103 13.9136H89.6744c.0798 3.0299 1.8937 5.0233 4.5648 5.0233 2.0133 0 3.608-1.0765 4.8439-3.1296l5.2079 2.3674C102.501 21.7017 98.729 24 94.0798 24 87.741 24 83.535 19.7342 83.535 12.8771 83.535 5.34221 88.4784 0 95.4552 0c6.1398 0 10.0068 4.14618 10.0068 10.6046 0 1.0765-.12 2.1528-.359 3.309Zm-5.7807-4.46512c0-2.71095-1.515-4.42525-3.9468-4.42525-2.5117 0-4.5848 1.79402-5.143 4.42525h9.0898ZM6.63326 7.38685 0 15.1389h11.844l1.3309-3.6553H8.09965l3.10105-3.58555.01-.09511L9.19424 4.3319h9.07196l-7.0323 19.3492h4.8124L24.538.358823H2.60021L6.63326 7.38685Zm69.16744-2.3636c2.2923 0 4.301 1.23273 6.0551 3.34565l.9216-6.57488C81.1429.687707 78.9303 0 76 0c-5.8205 0-9.0896 3.40865-9.0896 7.73421 0 2.99999 1.6744 4.83389 4.4252 6.01989l1.3156.598c2.4518 1.0466 3.1097 1.5649 3.1097 2.6712 0 1.1461-1.1064 1.8737-2.7907 1.8737-2.7808.01-5.0332-1.4153-6.7276-3.8472l-.939 6.699C67.2332 23.2201 69.7067 24 72.9702 24c5.5315 0 8.9302-3.1894 8.9302-7.6147 0-3.0099-1.3355-4.9434-4.7044-6.4584l-1.4351-.67772c-1.9934-.88708-2.6711-1.37543-2.6711-2.35216 0-1.05647.9269-1.87377 2.7109-1.87377Z" fill="#163300">
+            </path>
+           </svg>
+          </span>
+         </a>
+        </div>
+        <nav class="Footer_navigation__qQ48w">
+         <ul class="list-unstyled m-a-0">
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/guides">
+            Guides
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/api-reference">
+            API Reference
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/changelog">
+            Changelog
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/support">
+            Support
+           </a>
+          </li>
+          <li>
+           <a class="Footer_navigationLink__exKRC" href="/api-docs/search">
+            Search
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+       <div class="site-container site-container--full-width Footer_legal__6NDdS">
+        <div class="small Footer_legalCopy__BXHOQ">
+         Wise Platform ©
+         <!-- -->
+         2025
+        </div>
+       </div>
+      </footer>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"componentInitialProps":{},"templateInitialProps":{},"__N_SSG":true,"pageProps":{"page":{"frontmatter":{"path":"/support","title":"Wise Platform API Support","search":{"internalIndex":true,"externalIndex":false,"excerpt":"Contact us for help with the Wise API, how wise works, or any additional technical question you may have.","keywords":["contact","support","API","status","faq"]}},"content":{"$$mdtype":"Tag","name":"article","attributes":{},"children":[{"$$mdtype":"Tag","name":"Section","attributes":{},"children":[{"$$mdtype":"Tag","name":"Heading","attributes":{"level":1},"children":["Wise Platform API Support"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["For help with the Wise API, answers to common questions, or any additional technical support you need."]},{"$$mdtype":"Tag","name":"PanelLeft","attributes":{},"children":[{"$$mdtype":"Tag","name":"Heading","attributes":{"id":"faq","level":2},"children":["Frequently Asked Questions "]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["How do I get a Client ID and Client Secret?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["We only provide a Client ID and Client Secret for ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://platform.wise.com/"},"children":["Wise Platform"]}," partner integrations. You can still connect with your own Wise account over API though, personal API tokens will help you achieve this. ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"/api-docs/guides/personal-tokens"},"children":["Learn more"]},"."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["Can I use Wise API to receive money in my online checkout?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["The main use for the Wise API is to automate payouts. We don't offer the option to build Wise into your checkout flow as a payment option to receive money."]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["The good news is that you can use the local bank details that come with your Wise account (USD, EUR, GBP, AUD, NZD and PLN) and reconcile the incoming payments via the API."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["How do I create a payment link on the API?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["Unfortunately this isn't a feature that is supported on our Public API. Please continue to create these links on the Wise.com interface."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["How can I start testing the API?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["You'll need to create a new account in ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://sandbox.transferwise.tech/"},"children":["Wise Sandbox"]}," to get started testing the API - your actual Wise account won't work. Also, logging in or registering with your Facebook or Google account is not supported."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["Does it cost anything to use the Wise API?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["There aren't any additional charges for using Wise API with a personal token - the regular pricing system adopted by Wise for customers is applied. You can find out more about Wise account features and pricing ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://wise.com/gb/pricing/"},"children":["here"]},"."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["What currencies can I send to and from?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["You can find more info on which currencies you can send to and from ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://wise.com/help/articles/2571907/what-currencies-can-i-send-to-and-from?origin=search-currencies"},"children":["here"]},"; and which currencies you can add, keep, and receive into your Wise account ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://wise.com/help/articles/2897238/which-currencies-can-i-add-keep-and-receive-in-my-wise-account?origin=related-article-2897226"},"children":["here"]},"."]},{"$$mdtype":"Tag","name":"Heading","attributes":{"level":4},"children":["I have a question about my Wise account, can you help?"]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["Head to the ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://wise.com/help"},"children":["Wise Help Centre"]}," to get your question to the right team."]},{"$$mdtype":"Tag","name":"Feedback","attributes":{},"children":[]},{"$$mdtype":"Tag","name":"Heading","attributes":{"id":"contact-us","level":2},"children":["Contact Us "]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["If you are thinking about or want to learn more about a direct integration partnership with Wise, head to ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://platform.wise.com/"},"children":["Wise Platform"]}," to find out more."]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["For technical questions about the Wise API, contact api@wise.com. To help speed up resolution, please provide an \"x-trace-id\" response header value, along with other relevant request details like environment, request url. Please note the x-trace-id is only useful for 7 days in the Sandbox environment, and 10 days in Production."]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["For support with our Open Banking APIs, head to our ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://docs.wise.com/api-docs/guides/open-banking"},"children":["Open Banking Guide"]},"."]},{"$$mdtype":"Tag","name":"Feedback","attributes":{},"children":[]}]},{"$$mdtype":"Tag","name":"PanelRight","attributes":{},"children":[{"$$mdtype":"Tag","name":"Heading","attributes":{"id":"api-status","level":2},"children":["Wise API Status "]},{"$$mdtype":"Tag","name":"Alert","attributes":{"message":"If you're experiencing issues calling our API endpoints, the first place to check is the status page.","type":"warning","action":{"aria-label":"If you're experiencing issues calling our API endpoints, the first place to check is status.wise.com.","text":"Wise Status Page","href":"https://status.wise.com/"}},"children":[]},{"$$mdtype":"Tag","name":"p","attributes":{},"children":["You can also integrate with the Wise Status Page over API. ",{"$$mdtype":"Tag","name":"a","attributes":{"href":"https://status.wise.com/api"},"children":["Learn more"]},"."]}]}]}]}},"navigation":{"homeLink":"/api-docs","items":[{"title":"Guides","link":"/api-docs/guides","active":false},{"title":"API Reference","link":"/api-docs/api-reference","active":false},{"title":"Changelog","link":"/api-docs/changelog","active":false},{"title":"Support","link":"/api-docs/support","active":true},{"title":"Search","icon":"search","link":"/api-docs/search","active":false}]}}},"page":"/public/api-docs/[[...slug]]","query":{"slug":["support"]},"buildId":"api-documentation_master_4861d85","runtimeConfig":{"rollbar":{"accessToken":"e4fff9b0e8434b0f8f2c5a429fb76292","sourceMapEnabled":false,"enabled":false}},"isFallback":false,"gsp":true,"appGip":true,"scriptLoader":[]}
+  </script>
+ </body>
+</html>
