@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- START-PRELOAD-TAGS -->
+  <!-- CLASSIC-master-4340849 -->
+  <script nonce="9f550cf4f75146faa57526df0fd73cb1">
+   window.__buildInfo={"FRONTEND_VERSION":"CLASSIC-master-4340849","BUILD_DATE":1748620287055,"EDITOR_VERSION":"207.13.0","RENDERER_VERSION":"118.6.2","ATLASPACK_VERSION":"2.13.9","PUBLIC_PATH":"https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/"};
+  </script>
+  <!-- HEAD -->
+  <!-- JQuery -->
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.966fc25b.js" type="module">
+  </script>
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.runtime.794c0893.js" type="module">
+  </script>
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors.c912fa8e.js" type="module">
+  </script>
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/stable_vendors.41e17947.js" type="module">
+  </script>
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/atl.87332ca0.js" type="module">
+  </script>
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/ShareButton.a989ad1a.js" type="module">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery-migrate" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js">
+  </script>
+  <!-- Files -->
+  <script crossorigin="" nonce="9f550cf4f75146faa57526df0fd73cb1" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/standalone-navigation-jquery3.79aee824.js" type="module">
+  </script>
+  <!-- Set Referrer -->
+  <meta content="origin" name="referrer"/>
+  <link href="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/compiled.q77maa.css" nonce="9f550cf4f75146faa57526df0fd73cb1" rel="stylesheet"/>
+  <!-- HEAD -->
+  <!-- END-PRELOAD-TAGS -->
+  <title>
+   Content Comparison - Open Banking Security Profile - Implementer's Draft v1.1.2 (v.10 vs v.11) - Developer Zone     - Confluence
+  </title>
+  <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="/wiki" id="confluence-context-path" name="confluence-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" id="confluence-base-url" name="confluence-base-url"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" id="atlassian-token" name="atlassian-token"/>
+  <meta content="    DZ
+" id="confluence-space-key" name="confluence-space-key"/>
+  <script nonce="9f550cf4f75146faa57526df0fd73cb1" type="text/javascript">
+   var contextPath = '/wiki';
+  </script>
+  <meta content="noindex,nofollow" name="robots"/>
+  <meta content="noarchive" name="robots"/>
+  <meta content="" name="confluence-request-time"/>
+  <meta content="{}" name="ajs-discovered-plugin-features"/>
+  <meta content="253d1d43bcaa5d7fe9029b8bdddf648c2ca4cd0bf061a7a81007b7a40d5ee88f" name="ajs-keyboardshortcut-hash"/>
+  <meta content="true" name="ajs-use-keyboard-shortcuts"/>
+  <meta content="true" id="team-calendars-has-jira-link"/>
+  <meta content="displayTimeFormat12" name="ajs-team-calendars-display-time-format"/>
+  <meta content="false" id="team-calendars-display-week-number"/>
+  <meta content="UTC" id="team-calendars-user-timezone"/>
+  <script id="team-calendars-messages" title="team-calendars-messages" type="text/x-template">
+   <fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sept"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset>
+  </script>
+  <meta content="false" name="ajs-is-confluence-admin"/>
+  <meta content="60000" name="ajs-connection-timeout"/>
+  <meta content="MMM dd, yyyy" name="ajs-date.format"/>
+  <meta content="83919096" name="ajs-page-id"/>
+  <meta content="83919096" name="ajs-latest-page-id"/>
+  <meta content="page" name="ajs-content-type"/>
+  <meta content="Open Banking Security Profile - Implementer's Draft v1.1.2" name="ajs-page-title"/>
+  <meta content="Open Banking Security Profile - Implementer's Draft v1.1.2" name="ajs-latest-published-page-title"/>
+  <meta content="ARCHIVE - Specifications" name="ajs-parent-page-title"/>
+  <meta content="23922689" name="ajs-parent-page-id"/>
+  <meta content="DZ" name="ajs-space-key"/>
+  <meta content="Developer Zone" name="ajs-space-name"/>
+  <meta content="" name="ajs-from-page-title"/>
+  <meta content="false" name="ajs-can-remove-page"/>
+  <meta content="4bb5ec59-42ff-4088-a410-cc59ea51038d" name="ajs-cloud-id"/>
+  <meta content="/wiki" name="ajs-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" name="ajs-base-url"/>
+  <meta content="1000.0.0-4eacb5f92c50" name="ajs-version-number"/>
+  <meta content="6452" name="ajs-build-number"/>
+  <meta content="" name="ajs-remote-user"/>
+  <meta content="" name="ajs-remote-user-key"/>
+  <meta content="" name="ajs-atlassian-account-id"/>
+  <meta content="false" name="ajs-remote-user-has-licensed-access"/>
+  <meta content="" name="ajs-current-user-fullname"/>
+  <meta content="" name="ajs-current-user-avatar-url"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/profilepics/anonymous.png" name="ajs-current-user-avatar-uri-reference"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_" name="ajs-static-resource-url-prefix"/>
+  <meta content="1048576000" name="ajs-global-settings-attachment-max-size"/>
+  <meta content="en_GB" name="ajs-user-locale"/>
+  <meta content="jira_issues_macro_async_fetch,cc-notifications-live-page-updates,fabric_editor_blank_page,jira_premium_plans_macro_prevent_new_macros,confluence_sanitize_macro_preview_xss,confluence_live_pages_macro_copy_updates,unified.permissions,previews.conversion-service,previews.trigger-all-file-types,confluence.pagenav.deferred,filestore.direct.download,frontend.editor.plugins,previews.sharing,pdf-preview,notification.batch,editor.ajax.save,jquery.feature.detection.cache,confluence.non.polling.index.flush,com.atlassian.growth.shakuni.disabled,confluence.view.edit.transition,confluence.table.resizable,fabric.mentions,react.ui.graph,confluence-inline-comments-dangling-comment,cql.search.screen,previews.sharing.pushstate,filestore.direct.upload,jim.async.vertigo,app-switcher.new,connect.no-applinks,adg3.no.auto.optout.global.colourscheme,confluence.efi.onboarding.new.templates,sidebar.deferred,file-annotations,confluence-inline-comments-resolved,quick-reload-inline-comments-flags,atlassian.aui.raphael.disabled,clc.quick.create,confluence-inline-comments-rich-editor,confluence.sidebar.deferred,collaborative-audit-log,previews.versions,file-annotations.likes,confluence-inline-comments,fusion.bitbucket.rebrand,filestore.thumbnail,rotp.admin.shortcuts,mention.service.userbase.sync.enabled,rotp.project.shortcuts" name="ajs-enabled-dark-features"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" name="ajs-atl-token"/>
+  <meta content="ALACARTE" name="ajs-confluence-flavour"/>
+  <meta content="dd MMM yyyy" name="ajs-user-date-pattern"/>
+  <meta content="false" name="ajs-iframe-allowed-for-spa"/>
+  <meta content="false" name="ajs-content-only"/>
+  <meta content="STANDARD" name="ajs-edition"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="shortcut icon"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="icon" type="image/x-icon"/>
+  <!-- Monolith is still expecting a fallback-mode-jquery3.html file from SPA bundle -->
+  <link href="/wiki/opensearch/osd.action" rel="search" title="Confluence" type="application/opensearchdescription+xml">
+   <!-- Styles -->
+   <script nonce="9f550cf4f75146faa57526df0fd73cb1">
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio-diagram\"],\"com.addonengine.analytics\":[\"space-analytics\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"dialogOptions\":{\"com.k15t.scroll.scroll-office__web-item-export-office-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}},\"com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"}},\"inlineDialogOptions\":{},\"dialogModules\":{\"com.atlassian.confluence.plugins.confluence-office365\":{\"office365\":{\"cacheable\":false,\"options\":{\"size\":\"maximum\",\"chrome\":false},\"key\":\"office365\"}},\"com.k15t.scroll.scroll-office\":{\"k15t-cxp-office-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-office-template-editor\"},\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-export-office\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-office\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"com.k15t.scroll.scroll-pdf\":{\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-export-pdf\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-pdf\"},\"k15t-cxp-dialog-pdf-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-dialog-pdf-template-editor\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-brand-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-brand-dialog\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"org.swift.confluence.table\":{\"table-viewer-fullscreen\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"width\":\"100%\"},\"key\":\"table-viewer-fullscreen\"}},\"confluence-chats-integration\":{\"dialog\":{\"cacheable\":false,\"options\":{},\"key\":\"dialog\"},\"page-config-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"}}}}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+if(window.WRM._dataArrived)window.WRM._dataArrived();
+   </script>
+   <link data-wrm-batch-type="context" data-wrm-key="_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/4717b5ea9dcf07eebf6ecaed970652e143dc6d6d5b277396f008f20eb2d146ff/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="9f550cf4f75146faa57526df0fd73cb1" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="9f550cf4f75146faa57526df0fd73cb1" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;media=print&amp;relative-url=true" media="print" nonce="9f550cf4f75146faa57526df0fd73cb1" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-sidebar" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/be1a0f9511403efab098ae05d13741b954061736d63980f8950eda35743ce25c/_/download/batch/com.atlassian.auiplugin:aui-sidebar/com.atlassian.auiplugin:aui-sidebar.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="9f550cf4f75146faa57526df0fd73cb1" rel="stylesheet" type="text/css"/>
+   <!-- Dynamically generated colors styles -->
+   <!-- Scripts -->
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="_super" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cbc479ef16c9294c01e5c11c3a460727e14a5dbb9ea60f3aec6d28522483b157/_/download/contextbatch/js/_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/226cb897b7033af38cf4d83b58f064d9bf1aa9ea27dfd1473c20a71a8a2fee46/_/download/contextbatch/js/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:breadcrumbs" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/98cfd6888d222026ba2e847d3157d0603e04ee8c6e49cada89a75375b7a41dc7/_/download/batch/confluence.web.resources:breadcrumbs/confluence.web.resources:breadcrumbs.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:ajs-raf" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/92491fd54a35a5cfd79992635311a910eaa840da13b971dc1630da8f3cffa266/_/download/batch/com.atlassian.auiplugin:ajs-raf/com.atlassian.auiplugin:ajs-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-is-input" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d142b935c16781a34a3d3c7ac45bcf62b8aefa05959c0ed2449714e6cd02160b/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-trigger" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/2c4e87b76afb638e7aeb774669c0993cf8f918f7b8f3a567806aed3eece585bb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-trigger/com.atlassian.auiplugin:internal-src-js-aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-trigger" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/e9932d6b309e6704fc54630b89829236f3c44fa45fdb1c7cc45779ca9f86e0b6/_/download/batch/com.atlassian.auiplugin:aui-trigger/com.atlassian.auiplugin:aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-attributes" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/039b9ae634e4a301db91d8837f64fd5cf49806bbd12519a91fc46533f2b930cb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/63d0e95e71fb8f28b920125845402c0c46687f94f1ab8e2727d463e5d7baf30d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d5b76e4a74329c24960b37292fcd45e167b2d3ead953533a62b885399c1e13b7/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-inline-dialog2" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/35b967c790841bf2ccc6ca40831e21db64f16ba735f00ec5957c6c529085fe7b/_/download/batch/com.atlassian.auiplugin:aui-inline-dialog2/com.atlassian.auiplugin:aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-vendor-raf-raf" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/5c10ee22191b4d0afdb606690d2f2cd850f01a480e772a08562ab9deaffce57f/_/download/batch/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cf13df64397bd462047b299484cbd27c0cc94f12fb0040fd9ac93fed3aff67ba/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/c9d9c3b2c6b6f083bf0687811156bb6fe97ebfe1e0751984278f519b766da40d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-sidebar" nonce="9f550cf4f75146faa57526df0fd73cb1" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1482efa05fe564f5eae52ef9342e22bc7ed1bd026417497edbd66010b8b881ce/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-sidebar/com.atlassian.auiplugin:internal-src-js-aui-sidebar.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <link href="https://openbanking.atlassian.net/wiki/spaces/DZ/pages/83919096/Open+Banking+Security+Profile+-+Implementer+s+Draft+v1.1.2" rel="canonical"/>
+   <link href="https://openbanking.atlassian.net/wiki/x/_IAABQ" rel="shortlink"/>
+   <meta content="[DZ:Open Banking Security Profile - Implementer's Draft v1.1.2]" name="wikilink"/>
+   <meta content="11" name="page-version"/>
+   <meta content="11" name="ajs-page-version"/>
+  </link>
+ </head>
+ <body class="theme-default content-type-page aui-layout aui-theme-default" id="com-atlassian-confluence">
+  <script nonce="9f550cf4f75146faa57526df0fd73cb1">
+   var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+  </script>
+  <div class="banner-spacer-container">
+  </div>
+  <div data-main-container="" style="display:flex;">
+   <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+   </div>
+   <div data-flex-container="" style="flex-flow: row wrap; width: 100%">
+    <div data-main-content="" style="flex: 1 100%">
+    </div>
+    <!-- PARCEL -->
+    <!-- START-FRAGMENT standalone-navigation-jquery3.html -->
+    <style nonce="9f550cf4f75146faa57526df0fd73cb1">
+     body,body.aui-layout{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif}body{background-color:var(--ds-surface,#fff);margin:0;padding:0;font-size:14px}#main,#admin-content,#custom-content-container,.ap-servlet-placeholder{opacity:0}a{text-decoration:none}h1{font-weight:400}
+    </style>
+    <!-- END-FRAGMENT standalone-navigation-jquery3.html-->
+    <div id="header-precursor">
+     <div class="cell">
+     </div>
+    </div>
+    <!-- \#header -->
+    <main class="aui-page-panel" id="main">
+     <div class="connect-theme-background-cover">
+     </div>
+     <div id="main-header">
+      <div class="content-navigation view-information" id="navigation">
+       <ul class="ajs-menu-bar">
+        <li class="ajs-button normal">
+         <a class="aui-button aui-button-subtle view" href="/wiki/spaces/DZ/pages/83919096/Open+Banking+Security+Profile+-+Implementer+s+Draft+v1.1.2" id="viewPageLink" rel="nofollow" title="">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-back-page">
+           </span>
+           View Page
+          </span>
+         </a>
+        </li>
+        <li class="normal ajs-menu-item">
+         <a aria-haspopup="true" aria-label="More actions" aria-owns="action-menu" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" data-container="#navigation" href="#" id="action-menu-link">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-more">
+           </span>
+          </span>
+         </a>
+         <div aria-hidden="true" class="aui-dropdown2 aui-style-default" id="action-menu">
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-modify first" id="action-menu-system.content.action-modify">
+            <li>
+             <a class="action-export-word" href="/wiki/exportword?pageId=83919096" id="action-export-word-link" rel="nofollow" title="">
+              <span>
+               Export to Word
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="https://openbanking.atlassian.net/wiki/spaces/flyingpdf/pdfpageexport.action?pageId=83919096&amp;atl_token=440a17db837b27f1769019bd3a27c43953e7be74" id="action-export-pdf-link" rel="nofollow" title="">
+              <span>
+               Export to PDF
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="/wiki/pages/viewinfo.action?pageId=83919096" id="action-archive-link" rel="nofollow" title="">
+              <span>
+               Archive
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-primary" id="action-menu-system.content.action-primary">
+            <li>
+             <a class="action-view-history" href="/wiki/spaces/DZ/history/83919096" id="action-view-history-link" rel="nofollow" title="">
+              <span>
+               Version history
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="change-page-ownership" href="/wiki" id="change-page-ownership-link" rel="nofollow" title="">
+              <span>
+               View ownership
+              </span>
+             </a>
+            </li>
+            <li>
+             <a accesskey="t" class="action-view-attachments" href="/wiki/pages/viewpageattachments.action?pageId=83919096" id="view-attachments-link" rel="nofollow" title="View Attachments">
+              <span>
+               A
+               <u>
+                t
+               </u>
+               tachments (10)
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-info" href="/wiki/pages/viewinfo.action?pageId=83919096" id="view-page-info-link" rel="nofollow" title="">
+              <span>
+               Content Information
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-source popup-link" href="/wiki/plugins/viewsource/viewpagesrc.action?pageId=83919096" id="action-view-source-link" rel="nofollow" title="">
+              <span>
+               View Source
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-secondary" id="action-menu-system.content.action-secondary">
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-pdf ap-module-key-web-item-export-pdf-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-pdf/com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher?page.id=83919096&amp;space.key=DZ&amp;content.id=83919096&amp;content.version=11&amp;page.type=page&amp;page.title=Open%20Banking%20Security%20Profile%20-%20Implementer%27s%20Draft%20v1.1.2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=11" id="com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll PDF Exporter" height="16" src="https://scroll-pdf.us.exporter.k15t.app/static/assets/images/pdf/PDF_white_16px.svg" title="Export with Scroll PDF Exporter" width="16"/>
+              <span>
+               Export with Scroll PDF Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-office ap-module-key-web-item-export-office-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-office/com.k15t.scroll.scroll-office__web-item-export-office-launcher?page.id=83919096&amp;space.key=DZ&amp;content.id=83919096&amp;content.version=11&amp;page.type=page&amp;page.title=Open%20Banking%20Security%20Profile%20-%20Implementer%27s%20Draft%20v1.1.2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=11" id="com.k15t.scroll.scroll-office__web-item-export-office-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll Word Exporter" height="16" src="https://scroll-word.us.exporter.k15t.app/static/assets/images/office/OFCE_white_16px.svg" title="Export with Scroll Word Exporter" width="16"/>
+              <span>
+               Export with Scroll Word Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="ap-dialog ap-plugin-key-com.lucidchart.confluence.plugins.lucid-confluence ap-module-key-lucid-gliffy-page-conversion-menuitem ap-link-webitem" href="/wiki/plugins/servlet/ac/com.lucidchart.confluence.plugins.lucid-confluence/gliffyConversion?pageId={page.id}&amp;page.id=83919096&amp;space.key=DZ&amp;content.id=83919096&amp;content.version=11&amp;page.type=page&amp;page.title=Open%20Banking%20Security%20Profile%20-%20Implementer%27s%20Draft%20v1.1.2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=11" id="com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem" rel="nofollow" title="">
+              <span>
+               Convert Gliffy Diagrams
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="pagetitle with-breadcrumbs" id="title-heading">
+       <div aria-label="Breadcrumb" id="breadcrumb-section" role="navigation">
+        <ol id="breadcrumbs">
+         <li class="first">
+          <span class="">
+           <a href="/wiki/spaces/DZ/pages">
+            Content
+           </a>
+          </span>
+          <li id="ellipsis" title="Show all breadcrumbs">
+           <button aria-label="Show all breadcrumb links" class="unstyled-button" type="button">
+            <span>
+             <strong>
+              …
+             </strong>
+            </span>
+           </button>
+          </li>
+          <li class="hidden-crumb">
+           <span class="">
+            <a href="/wiki/spaces/DZ/overview">
+             Developer Zone
+            </a>
+           </span>
+           <li class="hidden-crumb">
+            <span class="">
+             <a href="/wiki/spaces/DZ/pages/16385802/Specifications">
+              Specifications
+             </a>
+            </span>
+            <li class="hidden-crumb">
+             <span class="">
+              <a href="/wiki/spaces/DZ/pages/23922689/ARCHIVE+-+Specifications">
+               ARCHIVE - Specifications
+              </a>
+             </span>
+             <li>
+              <span class="">
+               <a href="/wiki/spaces/DZ/pages/83919096/Open+Banking+Security+Profile+-+Implementer+s+Draft+v1.1.2">
+                Open Banking Security Profile - Implementer's Draft v1.1.2
+               </a>
+              </span>
+             </li>
+            </li>
+           </li>
+          </li>
+         </li>
+        </ol>
+       </div>
+       <h1 class="with-breadcrumbs" id="title-text">
+        Content Comparison
+       </h1>
+      </div>
+     </div>
+     <!-- \#main-header -->
+     <div class="page view-information" id="content">
+      <div id="action-messages">
+      </div>
+      <div class="diff-menu">
+       <h2 class="diff-title">
+        Versions Compared
+       </h2>
+       <div class="page-navigation section">
+        <table class="page-version">
+         <tbody class="page-version-tbody">
+          <tr>
+           <th class="assistive">
+            Version
+           </th>
+           <td class="version-title">
+            <a class="page version-navigation view-historical-version-trigger" href="viewpage.action?pageId=126419249">
+             <span class="assistive">
+              Old Version
+             </span>
+             <span class="version">
+              10
+             </span>
+            </a>
+           </td>
+           <td class="version-title">
+            <a class="page version-navigation" href="viewpage.action?pageId=83919096">
+             <span class="assistive">
+              New Version
+             </span>
+             <span class="version">
+              Current
+             </span>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Changes made by
+           </th>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/557058:19250dc2-3562-4dc6-8f26-1ca935de11e1">
+              Chris Michael
+             </a>
+            </p>
+           </td>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/557058:4441630f-54a0-47b2-bcd9-f2b1b5fa6f83">
+              Freddi Gyara (Unlicensed)
+             </a>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Saved on
+           </th>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Mon Feb 26 11:13:58 UTC 2018">
+              Feb 26, 2018
+             </time>
+            </p>
+           </td>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Mon Feb 26 12:57:01 UTC 2018">
+              Feb 26, 2018
+             </time>
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <div class="diff-navigation nav">
+         <ul>
+          <li>
+           <a class="previous version-navigation" href="diffpages.action?originalId=126320896&amp;pageId=126419249">
+            <span>
+             Previous Change: Difference between versions 9 and 10
+            </span>
+           </a>
+          </li>
+          <li>
+           <a class="all version-navigation" href="/wiki/spaces/DZ/history/83919096">
+            <span>
+             View Version History
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="legend">
+        <h2 class="legend-title">
+         Key
+        </h2>
+        <ul>
+         <li>
+          <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+           This line was added.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-removed" data-a11y-after="End of deleted content" data-a11y-before="Start of deleted content">
+           This line was removed.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           Formatting was changed.
+          </span>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="wiki-content" id="page-diffs">
+       <p class="diff-block-target">
+        <style>
+         [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-0">jeui1odk3g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-0">v85zwj3umi]{color:#707070} html[data-color-mode=dark] [data-colorid=v85zwj3umi]{color:#8f8f8f}[data-colorid=ni0utuv5lk]{color:#707070} html[data-color-mode=dark] [data-colorid=ni0utuv5lk]{color:#8f8f8f}[data-colorid=eps1khq7ky</span>]{color:#707070} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-1">jeui1odk3g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-1">eps1khq7ky</span>]{color:#8f8f8f}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-2">ino6bah7ik</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-2">fjytiiyfcw</span>]{color:#707070} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-3">ino6bah7ik</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-3">fjytiiyfcw</span>]{color:#8f8f8f}
+        </style>
+        <table class="diff-macro bodyless">
+         <thead>
+          <tr>
+           <th class="diff-macro-title">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/macrobrowser/dropdown/toc.png);">
+            </span>
+            Table of Contents
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="diff-macro-properties">
+            <table>
+             <tbody>
+              <tr>
+               <th>
+                maxLevel
+               </th>
+               <td>
+                2
+               </td>
+              </tr>
+              <tr>
+               <th>
+                outline
+               </th>
+               <td>
+                true
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <div class="table-wrap diff-block-target">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh">
+            <p>
+             Version
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Date
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Author
+            </p>
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <p>
+             Comments
+            </p>
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd">
+            v1.0.0
+           </td>
+           <td class="confluenceTd">
+            <div class="content-wrapper">
+             <p>
+              <time class="date-past" datetime="2017-07-14">
+               14 Jul 2017
+              </time>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd">
+            Open Banking Read/Write API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Published
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            Implementer's Draft v1.0.0
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <div class="content-wrapper">
+             <p>
+              <time class="date-past" datetime="2017-07-28">
+               28 Jul 2017
+              </time>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Open Banking Read/Write API Team
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Renamed to Implementer's Draft. Client Registration section moved to OB Directory Specification
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Implementer's Draft v1.0.1
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <div class="content-wrapper">
+             <p>
+              <time class="date-past" datetime="2017-07-31">
+               31 Jul 2017
+              </time>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Open Banking Read/Write API Team
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Recreating document from up to date sub sections.
+            </p>
+            <p>
+             Clarifications to Implementation Guide
+            </p>
+            <ul>
+             <li>
+              Enhanced Payments API Sequence Diagram to improve readability
+             </li>
+             <li>
+              Enhanced Accounts API Sequence Diagram to improve readability and add in the GET and DELETE flows for Account Requests
+             </li>
+             <li>
+              Removing the need to repeat the API scopes when the exchanging of an Authorization Code for an Access Token for Payments and Accounts API requests in the Sequence Diagram and example HTTP Requests
+             </li>
+            </ul>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Implementer's Draft v1.1.0
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2017-09-29">
+             29 Sep 2017
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Open Banking Read/Write API Team
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Reflecting changes to the R/W API specifications for v1.1:
+            </p>
+            <ul>
+             <li>
+              Updated Account Identification SchemeName and structure from BBAN to SortCodeAccountNumber
+             </li>
+             <li>
+              Corrected -00:00 timezone format to +00:00
+             </li>
+             <li>
+              Updated format for fields within Meta and Links sections to upper camel case
+             </li>
+             <li>
+              Corrected "AwaitingAuthentication" to "AwaitingAuthorisation” in non-normative example
+             </li>
+             <li>
+              Removed x-jws-signature headers from non-normative examples
+              <ul>
+               <li>
+                Errata to add redirect_uri to header for the Request : Access Token Request using Authorization Code
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span>
+              Implementer's Draft v1.1.1
+             </span>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Open Banking Read/Write API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Reflecting errata updates resultant from live proving
+            </p>
+            <ul>
+             <li>
+              Authorisation servers to provide a discovery endpoint over tls not ma-tls and via a browser acceptable root. TDA Decision 117
+             </li>
+            </ul>
+            <p>
+             Removing duplicate references to FAPI Read Write or Read specifications.
+            </p>
+            <p>
+             Adding explicit line number references
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <span>
+             Implementer's Draft v1.1.2
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Open Banking Read/Write API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Reflecting errata updates resultant from live proving and errata issued from the OIDF Financial API Working Group
+            </p>
+            <ul>
+             <li>
+              <a class="external-link" href="https://bitbucket.org/openid/fapi/pull-requests/44" rel="nofollow" style="text-decoration: underline;text-align: left;" title="Part 1: clarify that the returned list of scopes should be those granted">
+               Part 1: clarify that the returned list of scopes should be those granted
+              </a>
+             </li>
+             <li>
+              <a class="external-link" href="https://bitbucket.org/openid/fapi/pull-requests/42" rel="nofollow" style="text-decoration: underline;text-align: left;" title="Part 2: Require redirect_uri to be inside signed request object">
+               Part 2: Require redirect_uri to be inside signed request object
+              </a>
+             </li>
+             <li>
+              <a class="external-link" href="https://bitbucket.org/openid/fapi/pull-requests/43" rel="nofollow" style="text-decoration: underline;text-align: left;" title="Allow more ciphers between authorisation server &amp; user's browser">
+               Allow more ciphers between authorisation server &amp; user's browser
+              </a>
+             </li>
+             <li>
+              <a class="external-link" href="https://bitbucket.org/openid/fapi/issues/131/client_id-supplied-in-request-body-should" rel="nofollow" style="text-decoration: underline;text-align: left;">
+               #131: client_id supplied in request body should match the one supplied elsewhere
+              </a>
+              TDA Decision 118
+             </li>
+             <li>
+              Now includes embedded version of profile from Open ID Foundation's Bitbucket repository (rather than duplicating content)
+             </li>
+             <li>
+              <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+               Updated examples to reflect correctly namespaced intent ids
+              </span>
+             </li>
+            </ul>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="auto-cursor-target diff-block-context">
+        <br/>
+       </p>
+       <table class="diff-macro diff-block-context">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/macrobrowser/dropdown/info.png);">
+           </span>
+           Info
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               title
+              </th>
+              <td>
+               Please Note
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <p>
+            The MASTER location for this profile is located here:
+            <a class="external-link" href="https://bitbucket.org/openid/obuk/src/4630771db004da59992fb201641f5c4ff2c881f1/uk-openbanking-security-profile.md?at=master&amp;fileviewer=file-view-default" rel="nofollow">
+             https://bitbucket.org/openid/obuk/src/4630771db004da59992fb201641f5c4ff2c881f1/uk-openbanking-security-profile.md?at=master&amp;fileviewer=file-view-default
+            </a>
+           </p>
+           <p>
+            Version Control is located here:
+            <a class="external-link" href="https://bitbucket.org/openid/obuk/commits/all" rel="nofollow">
+             https://bitbucket.org/openid/obuk/commits/all
+            </a>
+            . All changes are tracked as GIT commits for 100% transparency and visibility. Ideally comments, issues and pull requests will raised against the OIDF git repository however comments raised below as comments or on feedback pages will be responded too and incorporated during a transition period.
+           </p>
+           <p>
+            The tagged version in Bitbucket which corresponds to this specification version is included below.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        Examples are non-normative
+       </p>
+       <h5 class="diff-block-target diff-block-context" id="OpenBankingSecurityProfile-Implementer'sDraftv1.1.2-HTTPRequest">
+        HTTP Request
+       </h5>
+       <table class="diff-macro diff-block-target diff-block-context diff-html-added">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+            </span>
+            Code Block
+           </span>
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                language
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                js
+               </span>
+              </td>
+             </tr>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                theme
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                Midnight
+               </span>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-1">GET</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-6"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-2">/authorize?</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-7">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-3">response_type=code%20id_token</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-8">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-4">&amp;client_id=s6BhdRkqt3</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-9">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-5">&amp;state=af0ifjsldkj&amp;</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-10">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-6">&amp;scope=openid</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-11">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-7">&amp;nonce=n-0S6_WzA2Mj</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-12">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-8">&amp;redirect_uri=https:</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-9">//</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-10">api.mytpp.com/cb</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-13">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-11">&amp;request=CJleHAiOjE0OTUxOTk1ODd.....JjVqsDuushgpwp0E.5leGFtcGxlIiwianRpIjoiM....JleHAiOjE0.olnx_YKAm2J1rbpOP8wGhi1BDNHJjVqsDuushgpwp0E</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <h5 class="diff-block-context" id="OpenBankingSecurityProfile-Implementer'sDraftv1.1.2-RequestJWS(WithoutBase64encoding)">
+        Request JWS (Without Base64 encoding)
+       </h5>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-target diff-block-context">
+        can be used to specify that it is Essential to return an auth_time Claim Value.If the value is false, it indicates that it is a Voluntary Claim. The default is false.By requesting Claims as Essential Claims, the RP indicates to the End-User that releasing these Claims will ensure a smooth authorization for the specific task requested by the End-User. Note that even if the Claims are not available because the End-User did not authorize their release or they are not present, the Authorization Server MUST NOT generate an error when Claims are not returned, whether they are Essential or Voluntary, unless otherwise specified in the description of the specific claim.
+        <a class="external-link" href="http://openid.net/specs/openid-connect-core-1_0.html#Claims" rel="nofollow">
+         OIDC Core
+        </a>
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context diff-html-added">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+            </span>
+            Code Block
+           </span>
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                language
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                js
+               </span>
+              </td>
+             </tr>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-15">
+                theme
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                Midnight
+               </span>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-14">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-16">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-15">    </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-16">"alg"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-17">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-18">"</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-17">RS256</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-19">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-20">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-18">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-21">    </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-22">"kid"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-23">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-24">"GxlIiwianVqsDuushgjE0OTUxOTk"</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-19">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-25">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-20">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-26">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-21">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-27">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-22">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-28">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-29">"aud"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-30">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-31">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-32">https://api.alphanbank.com"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-33">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-23">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-34">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-35">"iss"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-36">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-37">"s6BhdRkqt3"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-38">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-24">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-39">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-40">"response_type"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-41">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-42">"code</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-25"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-43">id_token"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-44">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-26">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-45">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-46">"client_id"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-47">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-48">"s6BhdRkqt3"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-49">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-27">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-50">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-51">"redirect_uri"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-52">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-53">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-54">https://api.mytpp.com/cb"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-55">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-28">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-56">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-57">"scope"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-58">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-59">"openid</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-29"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-60">payments</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-30"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-61">accounts"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-62">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-31">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-63">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-64">"state"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-65">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-66">"af0ifjsldkj"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-67">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-32">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-68">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-69">"nonce"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-70">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-71">"n-0S6_WzA2Mj"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-72">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-33">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-73">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-74">"max_age"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-75">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-34"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-76">86400,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-35">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-77">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-78">"claims"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-79">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-36">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-80">    </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-81">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-37">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-82">     </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-83">"userinfo"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-84">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-38">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-85">      </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-86">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-39">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-87">       </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-88">"openbanking_intent_id"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-89">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-40"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-90">{</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-91">"value"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-92">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-93">"urn:alphabank</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-41">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-94">intent</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-42">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-95">58923"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-96">, </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-97">"essential"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-98">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-43"> true</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-99">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-44">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-100">      </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-101">},</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-45">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-102">     </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-103">"id_token"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-104">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-46">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-105">      </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-106">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-47">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-107">       </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-108">"openbanking_intent_id"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-109">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-48"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-110">{</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-111">"value"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-112">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-113">"urn</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-49">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-114">alphabank</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-50">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-115">intent</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-51">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-116">58923"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-117">, </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-118">"essential"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-119">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-52"> true</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-120">},</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-53">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-121">       </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-122">"acr"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-123">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-54"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-124">{</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-125">"essential"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-126">:</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-55"> true</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-127">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-56">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-128">                </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-129">"values"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-130">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-57"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-131">[</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-132">"urn:openbanking:psd2:sca"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-133">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-58">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-134">                     </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-135">"urn:openbanking:psd2:ca"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-136">]}}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-59">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-137">      </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-138">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-60">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-139">    </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-140">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-61">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-141">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-62">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-142">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-63">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-143">&lt;&lt;signature&gt;&gt;</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <h5 class="diff-block-target diff-block-context" id="OpenBankingSecurityProfile-Implementer'sDraftv1.1.2-id_tokenreturned-SubbeingpopulatedwithanEphemeralIdoftheIntentId-NonNormative">
+        id_token returned - Sub being populated with an EphemeralId of the IntentId - Non Normative
+       </h5>
+       <table class="diff-macro diff-block-target diff-block-context diff-html-added">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+            </span>
+            Code Block
+           </span>
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                language
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                js
+               </span>
+              </td>
+             </tr>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                theme
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                Midnight
+               </span>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-146">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-65">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-147">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-148">"alg"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-149">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-150">"RS256"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-151">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-66">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-152">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-153">"kid"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-154">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-155">"12345"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-156">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-67">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-157">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-158">"typ"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-159">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-160">"JWT"</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-68">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-161">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-69">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-162">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-70">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-163">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-71">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-164">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-165">"iss"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-166">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-167">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-168">https://api.alphabank.com"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-169">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-72">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-170">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-171">"iat"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-172">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-73"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-173">1234569795,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-74">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-174">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-175">"sub"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-176">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-177">"urn</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-75">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-178">alphabank</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-76">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-179">payment</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-77">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-180">58923"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-181">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-78">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-182">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-183">"acr"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-184">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-185">"urn:openbanking:psd2:ca"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-186">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-79">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-187">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-188">"openbanking_intent_id"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-189">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-190">"urn</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-80">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-191">alphabank</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-81">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-192">payment</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-82">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-193">58923"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-194">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-83">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-195">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-196">"aud"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-197">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-198">"s6BhdRkqt3"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-199">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-84">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-200">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-201">"nonce"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-202">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-203">"n-0S6_WzA2Mj"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-204">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-85">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-205">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-206">"exp"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-207">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-86"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-208">1311281970,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-87">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-209">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-210">"s_hash"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-211">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-212">"76sa5dd"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-213">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-88">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-214">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-215">"c_hash"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-216">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-217">"asd097d"</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-89">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-218">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-219">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-90">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-220">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-91">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-221">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-92">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-222">&lt;&lt;Signature&gt;&gt;</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-93">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-223">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="auto-cursor-target diff-block-target diff-block-context">
+        <span data-colorid="eps1khq7ky" style="font-weight: bold;">
+         <br/>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-225">
+          id_token returned - Identity Claims and IntentId With sub being populated with an UserIdentifier - Non Normative
+         </span>
+        </span>
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context diff-html-added">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+            </span>
+            Code Block
+           </span>
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                language
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                js
+               </span>
+              </td>
+             </tr>
+             <tr>
+              <th>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                theme
+               </span>
+              </th>
+              <td>
+               <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+                Midnight
+               </span>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-227">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-95">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-228">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-229">"alg"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-230">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-231">"RS256"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-232">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-96">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-233">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-234">"kid"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-235">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-236">"12345"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-237">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-97">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-238">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-239">"typ"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-240">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-241">"JWT"</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-98">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-242">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-99">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-243">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-100">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-244">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-101">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-245">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-246">"iss"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-247">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-248">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-249">https://api.alphabank.com"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-250">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-102">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-251">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-252">"iat"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-253">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-103"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-254">1234569795,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-104">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-255">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-256">"sub"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-257">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-258">"ralph.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-105">bragg@raidiam</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-259">.com</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-260">"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-261">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-106">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-262">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-263">"acr"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-264">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-265">"urn:openbanking:psd2:sca"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-266">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-107">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-267">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-268">"address"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-269">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-270">"2</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-108"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-271">Thomas</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-109"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-272">More</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-110"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-273">Square"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-274">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-111">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-275">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-276">"phone"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-277">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-278">"+447890130559"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-279">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-112">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-280">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-281">"openbanking_intent_id"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-282">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-283">"urn</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-113">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-284">alphabank</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-114">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-285">payment</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-115">-</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-286">58923"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-287">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-116">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-288">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-289">"aud"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-290">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-291">"s6BhdRkqt3"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-292">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-117">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-293">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-294">"nonce"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-295">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-296">"n-0S6_WzA2Mj"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-297">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-118">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-298">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-299">"exp"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-300">:</span><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-119"> </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-301">1311281970,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-120">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-302">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-303">"s_hash"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-304">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-305">"76sa5dd"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-306">,</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-121">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-307">   </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-308">"c_hash"</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-309">: </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-310">"asd097d"</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-122">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-311">  </span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-312">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-123">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-313">.</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-124">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-314">{</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-125">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-315">&lt;&lt;Signature&gt;&gt;</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <table class="diff-macro diff-block-target diff-block-context">
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <pre><span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-126">
+</span><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-316">}</span></pre>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="auto-cursor-target diff-block-target diff-block-context">
+        <strong data-colorid="v85zwj3umi">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-318">
+          ID Token Claims Details: Where appropriate please follow the JWT Good Practice Guides
+         </span>
+         <a class="external-link" href="http://self-issued.info/docs/draft-sheffer-oauth-jwt-bcp-00.html#rfc.section.3.1" rel="nofollow">
+          <u>
+           <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+            http://self-issued.info/docs/draft-sheffer-oauth-jwt-bcp-00.html#rfc.section.3.1
+           </span>
+          </u>
+         </a>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+         </span>
+        </strong>
+       </p>
+       <div class="table-wrap diff-block-target diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Field
+             </strong>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Definition
+             </strong>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Notes
+             </strong>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Value(s)
+             </strong>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Required by
+              <br/>
+              Protocol
+             </strong>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p align="center">
+             <strong>
+              Required by
+              <br/>
+              OBIE
+             </strong>
+            </p>
+           </td>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd">
+            <p>
+             iss
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Issuer of the token
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Token issuer will be specific to the business
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             <a class="external-link" href="https://private.api.hsbc.com/" rel="nofollow">
+              <u>
+               https://private.api.hsbc.com
+              </u>
+             </a>
+            </p>
+            <p>
+             <a class="external-link" href="https://private.api.firstdirect.com/" rel="nofollow">
+              <u>
+               https://private.api.firstdirect.com
+              </u>
+             </a>
+            </p>
+            <p>
+             <a class="external-link" href="https://private.api.marksandspencer.com/" rel="nofollow">
+              <u>
+               https://private.api.marksandspencer.com
+              </u>
+             </a>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Yes
+            <br/>
+            A JSON string that represents the issuer identifier of the authorization server as defined in
+            <a class="external-link" href="https://tools.ietf.org/html/rfc7519" rel="nofollow">
+             <u>
+              RFC7519
+             </u>
+            </a>
+            . When a pure OAuth 2.0 is used, the value is the redirection URI. When OpenID Connect is used, the value is the issuer value of the authorization server.
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <p>
+             sub
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Token subject identifier
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             A unique and non-repeating identifier for the subject i.e the customer.
+             <br/>
+             couple of rules:
+            </p>
+            <ul>
+             <li>
+              It needs to be the same when created by the authorisation and Token endpoints during the Hybrid flow.
+             </li>
+            </ul>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             <strong>
+              Non Identity Services Providers:
+             </strong>
+            </p>
+            <p>
+             Use the Intent/Consent ID for this field.
+            </p>
+            <p>
+             <strong>
+              Identity Services Providers:
+             </strong>
+            </p>
+            <p>
+             Value at the discretion of the OP's.
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Yes
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes
+            </p>
+            <p>
+             <br/>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            openbanking_intent_id
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Intent ID of the originating request
+            </p>
+           </td>
+           <td class="confluenceTd">
+            A unique and non-repeating identifier containing the intentid.
+           </td>
+           <td class="confluenceTd">
+            Use the Intent/Consent ID for this field.
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            No
+           </td>
+           <td class="confluenceTd">
+            Yes - it's acknowledged that this field may duplicate the value in "sub" for many providers.
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            aud
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Audience that the ID token is intended for
+           </td>
+           <td class="confluenceTd">
+            <p>
+             OpenID Connect protocol mandates
+             <span class="diff-html-removed" data-a11y-after="End of deleted content" data-a11y-before="Start of deleted content" id="removed-diff-104">
+              this
+             </span>
+             <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content" id="added-diff-127">
+              this
+             </span>
+             <strong>
+              MUST
+             </strong>
+             include the client ID of the TPP.
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Should contain the ClientID of the TPP's OAuth Client.
+           </td>
+           <td class="confluenceTd">
+            Yes
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes - as per FAPI RW / OpenID Standard.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <p>
+             exp
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Token expiration date/time
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Expressed as an epoch i.e. number of seconds from
+            <br/>
+            1970-01-01T0:0:0Z as measured in UTC.
+            <br/>
+            <a class="external-link" href="https://tools.ietf.org/html/rfc7519" rel="nofollow">
+             <u>
+              RFC7519
+             </u>
+            </a>
+            .
+           </td>
+           <td class="confluenceTd">
+            Yes
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes
+            </p>
+            <p>
+             The validity length will be at the discretion of the Banks provided that it does not impact the functionality of the APIs. For example, an expiry time of 1 second is insufficient for all Resource Requests.
+             <br/>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            iat
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Token issuance date/time
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Expressed as an epoch i.e. number of seconds from
+             <br/>
+             1970-01-01T0:0:0Z as measured in UTC.
+            </p>
+            <p>
+             <a class="external-link" href="https://tools.ietf.org/html/rfc7519" rel="nofollow">
+              <u>
+               RFC7519
+              </u>
+             </a>
+             .
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Yes
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            auth_time
+           </td>
+           <td class="confluenceTd">
+            Date/time when End User was authorised
+           </td>
+           <td class="confluenceTd">
+            This field is
+            <strong>
+             Required
+            </strong>
+            when the max_age request is made or max_age is included as an essential claim. In order to be compliant with the protocol we therefore need to support it.
+           </td>
+           <td class="confluenceTd">
+            Expressed as an epoch i.e. number of seconds from 1970-01-01T0:0:0Z as measured in UTC.
+           </td>
+           <td class="confluenceTd">
+            Case-specific
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Case-Specific
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            nonce
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Used to help mitigate against replay attacks
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Value is passed in as a Request parameter. If present it must be replayed in the ID token
+           </td>
+           <td class="confluenceTd">
+            <p>
+             <br/>
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Case-Specific
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Required by FAPI Read Write (Hybrid explicitly required - required by OIDC Core for Hybrid Flow).
+            </p>
+            <p>
+             Hybrid Flow support is optional in the OB Security Profile.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            acr
+           </td>
+           <td class="confluenceTd">
+            Authentication Context Class Reference
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            An identifier that qualifies what conditions the authentication performed satisfied. The acr SHOULD correspond to one of the values requested by the acr_values field on the request however even if not present on the request the aspsp should populate the acr with a value that attests that the aspsp performed or NOT performed an appropriate level of authentication such that the aspsp believes it has met the requirement for "Strong Customer Authentication".
+           </td>
+           <td class="confluenceTd">
+            The values to be provided will be to
+            <strong>
+             urn:openbanking:psd2:ca
+            </strong>
+            or
+            <strong>
+             urn:openbanking:psd2:sca
+            </strong>
+            . To cover the exemptions cases of PSD2 the PISP / AISP must have a way to request that a Bank NOT perform SCA for some requests. It’s entirely within the banks gift to ignore the requested ACR_VALUES however the Bank must reply with what level of AuthN was performed. (Once RTS comes into affect).
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <br/>
+            <p>
+             No
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Yes
+            </p>
+            <p>
+             Caveated: As RTS is not signed off and will not be delivered by initial go-live aspsps do not have to provide a response value.
+            </p>
+            <p>
+             Aspsps that do not wish to provide this as a claim should remove it from the well-known configuration endpoint.
+            </p>
+            <p>
+             As per OIDC Core, marking a claim as "essential" and an ASPSP can not fulfill it then an error should not be generated.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <p>
+             amr
+            </p>
+           </td>
+           <td class="confluenceTd">
+            Authentication Methods References
+           </td>
+           <td class="confluenceTd">
+            The methods that are used in the authentication. For example, this field might contain indicators that a password was supplied or OTP initiated.
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Note – industry direction is to consolidate on
+             <a class="external-link" href="https://datatracker.ietf.org/doc/draft-richer-vectors-of-trust/" rel="nofollow">
+              <u>
+               https://datatracker.ietf.org/doc/draft-richer-vectors-of-trust
+              </u>
+             </a>
+             . so expect this field to be replaced shortly. AMR doesn’t give the flexibility to address all the actual particulars of both the authn and the identity that sits behind it.
+            </p>
+           </td>
+           <td class="confluenceTd">
+            No
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            No requirement to specify as it is to be soon superseded by Vectors of Trust.
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            azp
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            Authorized party
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             OPTIONAL. Authorized party - the party to which the ID Token was issued. If present, it MUST contain the OAuth 2.0 Client ID of this party. This Claim is only needed when the ID Token has a single audience value and that audience is different than the authorized party. It MAY be included even when the authorized party is the same as the sole audience. The azp value is a case sensitive string containing a StringOrURI value.
+            </p>
+           </td>
+           <td class="confluenceTd">
+            OB N/A
+           </td>
+           <td class="confluenceTd">
+            No
+            <br/>
+           </td>
+           <td class="confluenceTd">
+            No specific requirement from OB.
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            s_hash
+           </td>
+           <td class="confluenceTd" colspan="1">
+            State Hash Value
+           </td>
+           <td class="confluenceTd" colspan="1">
+            May include state hash,
+            <code>
+             s_hash
+            </code>
+            , in the ID Token to protect the
+            <code>
+             state
+            </code>
+            value;
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Its value is the base64url encoding of the left-most half of the hash of the octets of the ASCII representation of the state value, where the hash algorithm used is the hash algorithm used in the
+            <code>
+             alg
+            </code>
+            Header Parameter of the ID Token's JOSE Header. For instance, if the alg is HS512, hash the code value with SHA-512, then take the left-most 256 bits and base64url encode them. The
+            <code>
+             s_hash
+            </code>
+            value is a case sensitive string.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            No
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Recommended by OB
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            at_hash
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Access Token Hash Value
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Access Token hash value.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Its value is the base64url encoding of the left-most half of the hash of the octets of the ASCII representation of the access_token value, where the hash algorithm used is the hash algorithm used in the alg Header Parameter of the ID Token's JOSE Header. For instance, if the alg is RS256, hash the access_token value with SHA-256, then take the left-most 128 bits and base64url encode them. The at_hash value is a case sensitive string.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Conditional
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             As per Hybrid Flow (OIDC Core) - Yes
+            </p>
+            <p>
+             If the ID Token is issued from the Authorization Endpoint with an access_token value, which is the case for the response_type value code id_token token, this is REQUIRED; otherwise, its inclusion is OPTIONAL.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            c_hash
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Code hash value.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Code Hash Value
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Its value is the base64url encoding of the left-most half of the hash of the octets of the ASCII representation of the code value, where the hash algorithm used is the hash algorithm used in the alg Header Parameter of the ID Token's JOSE Header.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Conditional
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             As per Hybrid Flow (OIDC Core) - Yes.
+            </p>
+            <p>
+             If the ID Token is issued from the Authorization Endpoint with a code, which is the case for the response_type values code id_token and code id_token token, this is REQUIRED; otherwise, its inclusion is OPTIONAL.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-target">
+        1. The PISP can query for the status of a Payment-Submission by invoking the /payment-submissions using the known PaymentSubmissionId. This can use an existing access token with
+        <em>
+         payments
+        </em>
+        scope or the PISP can obtain a fresh access token by replaying the client credentials grant request as per Step 2 - Setup Single Payment Initiation
+        <span data-colorid="ni0utuv5lk">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-320">
+          .
+         </span>
+        </span>
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            Request: payment-submissions/{PaymentSubmissionId}
+           </th>
+           <th class="confluenceTh">
+            Response: payment-submissions
+           </th>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <div class="content-wrapper">
+             <p class="auto-cursor-target">
+              <br/>
+             </p>
+             <table class="diff-macro">
+              <thead>
+               <tr>
+                <th class="diff-macro-title">
+                 <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+                 </span>
+                 Code Block
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="diff-macro-properties">
+                 <table>
+                  <tbody>
+                   <tr>
+                    <th>
+                     theme
+                    </th>
+                    <td>
+                     Midnight
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </td>
+               </tr>
+              </tbody>
+              <tbody>
+               <tr>
+                <td class="diff-macro-body">
+                 <pre>GET /payment-submissions/58923-001 HTTP/1.1
+Authorization: Bearer SlAV32hkKG
+x-fapi-financial-id: OB/2017/001
+x-fapi-customer-last-logged-time: 2017-06-13T11:36:09
+x-fapi-customer-ip-address: 104.25.212.99
+x-fapi-interaction-id: 93bac548-d2de-4546-b106-880a5018460d
+Accept: application/json</pre>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <p class="auto-cursor-target">
+              <br/>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd">
+            <div class="content-wrapper">
+             <p class="auto-cursor-target">
+              <br/>
+             </p>
+             <table class="diff-macro">
+              <thead>
+               <tr>
+                <th class="diff-macro-title">
+                 <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);">
+                 </span>
+                 Code Block
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="diff-macro-properties">
+                 <table>
+                  <tbody>
+                   <tr>
+                    <th>
+                     theme
+                    </th>
+                    <td>
+                     Midnight
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </td>
+               </tr>
+              </tbody>
+              <tbody>
+               <tr>
+                <td class="diff-macro-body">
+                 <pre>HTTP/1.1 200 OK
+x-fapi-interaction-id: 93bac548-d2de-4546-b106-880a5018460d
+Content-Type: application/json
+ 
+{
+  "Data": {
+    "PaymentSubmissionId": "58923-001",
+    "PaymentId": "58923",
+    "Status": "AcceptedSettlementInProcess",
+    "CreationDateTime": "2017-06-05T15:15:22+00:00"
+  },
+  "Links": {
+    "Self": "https://api.alphabank.com/open-banking/v1.0/payment-submissions/58923-001"
+  },
+  "Meta": {}
+}</pre>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <p class="auto-cursor-target">
+              <br/>
+             </p>
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="diff-block-target">
+        2. A PISP can also optionally query for the status of a Payment resource by invoking /payments/{PaymentId}. This can use an existing access token with
+        <em>
+         payments
+        </em>
+        scope or the PISP can obtain a fresh access token by replaying the client credentials grant request as per Step 2 - Setup Single Payment Initiation
+        <span data-colorid="fjytiiyfcw">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-321">
+          .
+         </span>
+        </span>
+       </p>
+       <h3 class="diff-block-context" id="OpenBankingSecurityProfile-Implementer'sDraftv1.1.2-AccountAPISpecification">
+        Account API Specification
+       </h3>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+      </div>
+     </div>
+     <div class="hidden" id="space-tools-web-items">
+      <div data-href="/wiki/spaces/viewspacesummary.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="General">
+       General
+      </div>
+      <div data-href="/wiki/pages/reorderpages.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Content">
+       Content
+      </div>
+      <div data-href="/wiki/spaces/listrssfeeds.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Integrations">
+       Integrations
+      </div>
+     </div>
+    </main>
+    <!-- \#main -->
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="9f550cf4f75146faa57526df0fd73cb1">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-pdf",
+    "uniqueKey":"com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export PDF Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-pdf.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-pdf&addOnKey=com.k15t.scroll.scroll-pdf&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMTEiLCJpZCI6IjgzOTE5MDk2In0sInNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9fX0sImV4cCI6MTc0ODkwMTg3OSwiaWF0IjoxNzQ4OTAwOTc5fQ.9tLH0QyjuwFDqrZB6BTFx21_QjnKHZP3oscjXhvPrhw",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"11\",\"id\":\"83919096\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"83919096\",\"space.key\":\"DZ\",\"content.id\":\"83919096\",\"page.type\":\"page\",\"content.version\":\"11\",\"page.title\":\"Open Banking Security Profile - Implementer\'s Draft v1.1.2\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"11\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-pdf.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="9f550cf4f75146faa57526df0fd73cb1">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-office",
+    "uniqueKey":"com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export Word Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-word.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-office&addOnKey=com.k15t.scroll.scroll-office&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMTEiLCJpZCI6IjgzOTE5MDk2In0sInNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9fX0sImV4cCI6MTc0ODkwMTg3OSwiaWF0IjoxNzQ4OTAwOTc5fQ.WnYynZ8SS3ztO2shmPyScAX4jd7lbEJ61yT8RN6dxNc",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"11\",\"id\":\"83919096\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"83919096\",\"space.key\":\"DZ\",\"content.id\":\"83919096\",\"page.type\":\"page\",\"content.version\":\"11\",\"page.title\":\"Open Banking Security Profile - Implementer\'s Draft v1.1.2\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"11\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-word.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+   </div>
+  </div>
+  <!-- flex-flow: row wrap -->
+  <!-- display: flex -->
+  <span id="confluence-server-performance" style="display:none;">
+   {"serverDuration": 950, "requestCorrelationId": "9f550cf4f75146faa57526df0fd73cb1"}
+  </span>
+ </body>
+</html>

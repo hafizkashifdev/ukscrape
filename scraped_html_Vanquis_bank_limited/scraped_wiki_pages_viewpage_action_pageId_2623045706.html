@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- START-PRELOAD-TAGS -->
+  <!-- CLASSIC-master-4340849 -->
+  <script nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+   window.__buildInfo={"FRONTEND_VERSION":"CLASSIC-master-4340849","BUILD_DATE":1748620287055,"EDITOR_VERSION":"207.13.0","RENDERER_VERSION":"118.6.2","ATLASPACK_VERSION":"2.13.9","PUBLIC_PATH":"https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/"};
+  </script>
+  <!-- HEAD -->
+  <!-- JQuery -->
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.966fc25b.js" type="module">
+  </script>
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.runtime.794c0893.js" type="module">
+  </script>
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors.c912fa8e.js" type="module">
+  </script>
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/stable_vendors.41e17947.js" type="module">
+  </script>
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/atl.87332ca0.js" type="module">
+  </script>
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/ShareButton.a989ad1a.js" type="module">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery-migrate" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js">
+  </script>
+  <!-- Files -->
+  <script crossorigin="" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/standalone-navigation-jquery3.79aee824.js" type="module">
+  </script>
+  <!-- Set Referrer -->
+  <meta content="origin" name="referrer"/>
+  <link href="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/compiled.q77maa.css" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet"/>
+  <!-- HEAD -->
+  <!-- END-PRELOAD-TAGS -->
+  <title>
+   Open Data API Dashboard - Developer Zone     - Confluence
+  </title>
+  <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="/wiki" id="confluence-context-path" name="confluence-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" id="confluence-base-url" name="confluence-base-url"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" id="atlassian-token" name="atlassian-token"/>
+  <meta content="    DZ
+" id="confluence-space-key" name="confluence-space-key"/>
+  <script nonce="375be1ee6a7d4c389e5a465bddf6b8e6" type="text/javascript">
+   var contextPath = '/wiki';
+  </script>
+  <meta content="" name="confluence-request-time"/>
+  <meta content="{}" name="ajs-discovered-plugin-features"/>
+  <meta content="253d1d43bcaa5d7fe9029b8bdddf648c2ca4cd0bf061a7a81007b7a40d5ee88f" name="ajs-keyboardshortcut-hash"/>
+  <meta content="true" name="ajs-use-keyboard-shortcuts"/>
+  <meta content="true" id="team-calendars-has-jira-link"/>
+  <meta content="displayTimeFormat12" name="ajs-team-calendars-display-time-format"/>
+  <meta content="false" id="team-calendars-display-week-number"/>
+  <meta content="UTC" id="team-calendars-user-timezone"/>
+  <script id="team-calendars-messages" title="team-calendars-messages" type="text/x-template">
+   <fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sept"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset>
+  </script>
+  <meta content="false" name="ajs-is-confluence-admin"/>
+  <meta content="60000" name="ajs-connection-timeout"/>
+  <meta content="MMM dd, yyyy" name="ajs-date.format"/>
+  <meta content="2623045706" name="ajs-page-id"/>
+  <meta content="1165263140" name="ajs-latest-page-id"/>
+  <meta content="page" name="ajs-content-type"/>
+  <meta content="Open Data API Dashboard" name="ajs-page-title"/>
+  <meta content="Open Data API Dashboard" name="ajs-latest-published-page-title"/>
+  <meta content="" name="ajs-parent-page-id"/>
+  <meta content="DZ" name="ajs-space-key"/>
+  <meta content="Developer Zone" name="ajs-space-name"/>
+  <meta content="-1" name="ajs-jira-metadata-count"/>
+  <meta content="" name="ajs-from-page-title"/>
+  <meta content="false" name="ajs-can-remove-page"/>
+  <meta content="view" name="ajs-browse-page-tree-mode"/>
+  <meta content="true" name="ajs-shared-drafts"/>
+  <meta content="4bb5ec59-42ff-4088-a410-cc59ea51038d" name="ajs-cloud-id"/>
+  <meta content="/wiki" name="ajs-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" name="ajs-base-url"/>
+  <meta content="1000.0.0-4eacb5f92c50" name="ajs-version-number"/>
+  <meta content="6452" name="ajs-build-number"/>
+  <meta content="" name="ajs-remote-user"/>
+  <meta content="" name="ajs-remote-user-key"/>
+  <meta content="" name="ajs-atlassian-account-id"/>
+  <meta content="false" name="ajs-remote-user-has-licensed-access"/>
+  <meta content="" name="ajs-current-user-fullname"/>
+  <meta content="" name="ajs-current-user-avatar-url"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/profilepics/anonymous.png" name="ajs-current-user-avatar-uri-reference"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_" name="ajs-static-resource-url-prefix"/>
+  <meta content="1048576000" name="ajs-global-settings-attachment-max-size"/>
+  <meta content="en_GB" name="ajs-user-locale"/>
+  <meta content="jira_issues_macro_async_fetch,cc-notifications-live-page-updates,fabric_editor_blank_page,jira_premium_plans_macro_prevent_new_macros,confluence_sanitize_macro_preview_xss,confluence_live_pages_macro_copy_updates,unified.permissions,previews.conversion-service,previews.trigger-all-file-types,confluence.pagenav.deferred,filestore.direct.download,frontend.editor.plugins,previews.sharing,pdf-preview,notification.batch,editor.ajax.save,jquery.feature.detection.cache,confluence.non.polling.index.flush,com.atlassian.growth.shakuni.disabled,confluence.view.edit.transition,confluence.table.resizable,fabric.mentions,react.ui.graph,confluence-inline-comments-dangling-comment,cql.search.screen,previews.sharing.pushstate,filestore.direct.upload,jim.async.vertigo,app-switcher.new,connect.no-applinks,adg3.no.auto.optout.global.colourscheme,confluence.efi.onboarding.new.templates,sidebar.deferred,file-annotations,confluence-inline-comments-resolved,quick-reload-inline-comments-flags,atlassian.aui.raphael.disabled,clc.quick.create,confluence-inline-comments-rich-editor,confluence.sidebar.deferred,collaborative-audit-log,previews.versions,file-annotations.likes,confluence-inline-comments,fusion.bitbucket.rebrand,filestore.thumbnail,rotp.admin.shortcuts,mention.service.userbase.sync.enabled,rotp.project.shortcuts" name="ajs-enabled-dark-features"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" name="ajs-atl-token"/>
+  <meta content="ALACARTE" name="ajs-confluence-flavour"/>
+  <meta content="dd MMM yyyy" name="ajs-user-date-pattern"/>
+  <meta content="false" name="ajs-iframe-allowed-for-spa"/>
+  <meta content="false" name="ajs-content-only"/>
+  <meta content="STANDARD" name="ajs-edition"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="shortcut icon"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="icon" type="image/x-icon"/>
+  <!-- Monolith is still expecting a fallback-mode-jquery3.html file from SPA bundle -->
+  <link href="/wiki/opensearch/osd.action" rel="search" title="Confluence" type="application/opensearchdescription+xml">
+   <!-- Styles -->
+   <script nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:featured-macro-css-resources.featuredMacroCssData"]="{\"io.extensi-confluence-plugin-twitter-connector\":[\"twitter-connector-macro\"],\"com.lucidchart.confluence.plugins.lucid-confluence\":[\"lucidchart\"],\"com.confluence.swagger.api.document\":[\"swagger-integration\"],\"confluence-github-link-macro\":[\"github-link-macro\"],\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio\",\"inc-drawio\",\"drawio-sketch\"],\"org.swift.confluence.table\":[\"attachment-table\",\"csv\",\"table-plus\",\"json-table\",\"advanced-table-viewer\"],\"me.davidsimpson.confluence.addon.bitbucket-issues\":[\"bitbucket-single-commit-macro\",\"bitbucket-commits-macro\",\"bitbucket-snippets-macro\",\"bitbucket-issues-macro\",\"bitbucket-readme-macro\"],\"cello\":[\"trello-board\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-autoconvert-resources.connect-autoconvert-data"]="[{\"macroName\":\"lucidchart\",\"urlParameter\":\"url\",\"matchers\":[\"https://lucid.app/lucidchart/{}/edit{}\"]},{\"macroName\":\"mohamicorp-markdown-url\",\"urlParameter\":\"url\",\"matchers\":[\"http://{}\",\"https://{}\"]},{\"macroName\":\"OneDrive\",\"urlParameter\":\"url\",\"matchers\":[\"https://{}-my.sharepoint.com/{}/{}/personal/{}/_layouts/{}/{}\",\"https://{}-my.sharepoint.com/personal/{}/_layouts/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com:443/{}/{}/personal/{}/{}\",\"https://{}-my.sharepoint.com/personal/{}/Documents/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}\",\"https://{}.sharepoint.com/{}\",\"https://{}.sharepoint.com/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}/{}/{}\"]},{\"macroName\":\"trello-card\",\"urlParameter\":\"url\",\"matchers\":[\"https://trello.com/c/{}/{}\",\"https://trello.com/b/{}/{}\",\"https://trello.com/c/{}/{}/\",\"https://trello.com/b/{}/{}/\",\"https://trello.com/b/{}\",\"https://trello.com/c/{}\",\"https://trello.com/b/{}/\",\"https://trello.com/c/{}/\"]},{\"macroName\":\"twitter-connector-macro\",\"urlParameter\":\"url\",\"matchers\":[\"https://twitter.com/{}/timelines/{}\",\"https://twitter.com/{}\",\" https://twitter.com/{}/lists/{}\",\"https://twitter.com/{}/likes\"]},{\"macroName\":\"github-link-macro\",\"urlParameter\":\"link\",\"matchers\":[\"https://github.com/{}\",\"https://github.com/{}/\",\"https://github.com/{}/{}\",\"https://github.com/{}/{}/pull/{}\",\"https://github.com/{}/{}/tree/{}\",\"https://github.com/{}/{}/tree/{}/{}\",\"https://github.com/{}/{}/tree/{}/{}/{}\",\"https://github.com/{}/{}/tree/{}/{}/{}/{}\",\"https://github.com/{}/{}/issues/{}\",\"https://github.com/{}/{}/wiki/{}\",\"https://github.com/{}/{}/projects/{}\",\"https://github.com/{}/{}/blob/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://gist.github.com/{}/{}\",\"https://gist.githubusercontent.com/{}/{}/raw/{}/{}\",\"https://github.com/{}/{}/issues\",\"https://github.com/{}/{}/pulls\",\"https://github.com/{}/{}/milestone/{}\",\"https://github.com/{}/{}/releases\",\"https://github.com/{}/{}/releases/{}\",\"https://github.com/{}/{}/releases/tag/{}\",\"https://github.com/{}/{}/tags\"]}]";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources.connect-content-byline-data"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio-diagram\"],\"com.addonengine.analytics\":[\"space-analytics\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"dialogOptions\":{\"com.k15t.scroll.scroll-office__web-item-export-office-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}},\"com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"}},\"inlineDialogOptions\":{},\"dialogModules\":{\"com.atlassian.confluence.plugins.confluence-office365\":{\"office365\":{\"cacheable\":false,\"options\":{\"size\":\"maximum\",\"chrome\":false},\"key\":\"office365\"}},\"com.k15t.scroll.scroll-office\":{\"k15t-cxp-office-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-office-template-editor\"},\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-export-office\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-office\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"com.k15t.scroll.scroll-pdf\":{\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-export-pdf\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-pdf\"},\"k15t-cxp-dialog-pdf-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-dialog-pdf-template-editor\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-brand-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-brand-dialog\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"org.swift.confluence.table\":{\"table-viewer-fullscreen\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"width\":\"100%\"},\"key\":\"table-viewer-fullscreen\"}},\"confluence-chats-integration\":{\"dialog\":{\"cacheable\":false,\"options\":{},\"key\":\"dialog\"},\"page-config-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"}}}}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+if(window.WRM._dataArrived)window.WRM._dataArrived();
+   </script>
+   <link data-wrm-batch-type="context" data-wrm-key="_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/4717b5ea9dcf07eebf6ecaed970652e143dc6d6d5b277396f008f20eb2d146ff/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1e9617137a033c7cc8282466c15b6e51a775c09d7e2702ef38654d1da750234c/_/download/contextbatch/css/atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;relative-url=true" media="all" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1e9617137a033c7cc8282466c15b6e51a775c09d7e2702ef38654d1da750234c/_/download/contextbatch/css/atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;media=print&amp;relative-url=true" media="print" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-resources" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/ce2e0c82081bbdc2e1d2a2de1af9c6e091828034d17c38f15ec943103d72916c/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-resources/com.atlassian.confluence.plugins.confluence-labels:labels-resources.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:aui-forms" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/9a658364077ee786eaf82681e467641fe8957ee35f0bb4998087b280fbe45817/_/download/batch/confluence.web.resources:aui-forms/confluence.web.resources:aui-forms.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-sidebar" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/be1a0f9511403efab098ae05d13741b954061736d63980f8950eda35743ce25c/_/download/batch/com.atlassian.auiplugin:aui-sidebar/com.atlassian.auiplugin:aui-sidebar.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" rel="stylesheet" type="text/css"/>
+   <!-- Dynamically generated colors styles -->
+   <!-- Scripts -->
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="_super" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cbc479ef16c9294c01e5c11c3a460727e14a5dbb9ea60f3aec6d28522483b157/_/download/contextbatch/js/_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1fab614036f1d279be808182a1cef216c9b178315fa5d1d2a3cf14657d3a82c8/_/download/contextbatch/js/atl.confluence.macros.expand,viewcontent,atl.confluence.plugins.pagetree-desktop,main,atl.general,page,atl.comments,-_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-resources" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/ecad5866e8b814df66becef4b9ac10f9f0377e62c07491b50f0dba08ee9ab8d3/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-resources/com.atlassian.confluence.plugins.confluence-labels:labels-resources.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/27c98227b63bfacd096084c50bce73b5c8bb3474f58f9ca89d69f6b7a8877608/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy/com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:breadcrumbs" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/98cfd6888d222026ba2e847d3157d0603e04ee8c6e49cada89a75375b7a41dc7/_/download/batch/confluence.web.resources:breadcrumbs/confluence.web.resources:breadcrumbs.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:ajs-raf" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/92491fd54a35a5cfd79992635311a910eaa840da13b971dc1630da8f3cffa266/_/download/batch/com.atlassian.auiplugin:ajs-raf/com.atlassian.auiplugin:ajs-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-is-input" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d142b935c16781a34a3d3c7ac45bcf62b8aefa05959c0ed2449714e6cd02160b/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-vendor-raf-raf" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/5c10ee22191b4d0afdb606690d2f2cd850f01a480e772a08562ab9deaffce57f/_/download/batch/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cf13df64397bd462047b299484cbd27c0cc94f12fb0040fd9ac93fed3aff67ba/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/c9d9c3b2c6b6f083bf0687811156bb6fe97ebfe1e0751984278f519b766da40d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-sidebar" nonce="375be1ee6a7d4c389e5a465bddf6b8e6" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1482efa05fe564f5eae52ef9342e22bc7ed1bd026417497edbd66010b8b881ce/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-sidebar/com.atlassian.auiplugin:internal-src-js-aui-sidebar.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <meta content="Confluence" name="ajs-site-title">
+    <link href="https://openbanking.atlassian.net/wiki/spaces/DZ/pages/1165263140/Open+Data+API+Dashboard" rel="canonical"/>
+    <link href="https://openbanking.atlassian.net/wiki/x/SoBYn" rel="shortlink"/>
+    <meta content="[null:Open Data API Dashboard]" name="wikilink"/>
+    <meta content="7" name="page-version"/>
+    <meta content="7" name="ajs-page-version"/>
+   </meta>
+  </link>
+ </head>
+ <body class="theme-default content-type-page aui-layout aui-theme-default" id="com-atlassian-confluence">
+  <script nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+   var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+  </script>
+  <div class="banner-spacer-container">
+  </div>
+  <div data-main-container="" style="display:flex;">
+   <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+   </div>
+   <div data-flex-container="" style="flex-flow: row wrap; width: 100%">
+    <div data-main-content="" style="flex: 1 100%">
+    </div>
+    <!-- PARCEL -->
+    <!-- START-FRAGMENT standalone-navigation-jquery3.html -->
+    <style nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+     body,body.aui-layout{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif}body{background-color:var(--ds-surface,#fff);margin:0;padding:0;font-size:14px}#main,#admin-content,#custom-content-container,.ap-servlet-placeholder{opacity:0}a{text-decoration:none}h1{font-weight:400}
+    </style>
+    <!-- END-FRAGMENT standalone-navigation-jquery3.html-->
+    <div id="header-precursor">
+     <div class="cell">
+     </div>
+    </div>
+    <!-- \#header -->
+    <main class="aui-page-panel" id="main">
+     <div class="connect-theme-background-cover">
+     </div>
+     <div id="main-header">
+      <content tag="content-navigation">
+       <div class="content-navigation view" id="navigation">
+        <meta content="2623045706" name="ajs-page-id"/>
+        <ul class="ajs-menu-bar">
+         <li class="normal ajs-menu-item">
+          <a aria-haspopup="true" aria-label="More actions" aria-owns="action-menu" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" data-container="#navigation" href="#" id="action-menu-link">
+           <span>
+            <span class="aui-icon aui-icon-small aui-iconfont-more">
+            </span>
+           </span>
+          </a>
+          <div aria-hidden="true" class="aui-dropdown2 aui-style-default" id="action-menu">
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-modify first" id="action-menu-system.content.action-modify">
+             <li>
+              <a class="" href="https://openbanking.atlassian.net/wiki/spaces/flyingpdf/pdfpageexport.action?pageId=2623045706&amp;atl_token=440a17db837b27f1769019bd3a27c43953e7be74" id="action-export-pdf-link" rel="nofollow" title="">
+               <span>
+                Export to PDF
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-primary" id="action-menu-system.content.action-primary">
+             <li>
+              <a class="action-view-history" href="/wiki/spaces/DZ/history/1165263140" id="action-view-history-link" rel="nofollow" title="">
+               <span>
+                Version history
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="change-page-ownership" href="/wiki" id="change-page-ownership-link" rel="nofollow" title="">
+               <span>
+                View ownership
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="" href="/wiki" id="view-resolved-comments" rel="nofollow" title="">
+               <span>
+                Resolved comments
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="action-view-info" href="/wiki/pages/viewinfo.action?pageId=2623045706" id="view-page-info-link" rel="nofollow" title="">
+               <span>
+                Content Information
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="action-view-source popup-link" href="/wiki/plugins/viewsource/viewpagesrc.action?pageId=2623045706" id="action-view-source-link" rel="nofollow" title="">
+               <span>
+                View Source
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-secondary" id="action-menu-system.content.action-secondary">
+             <li>
+              <a class="ap-dialog ap-plugin-key-com.lucidchart.confluence.plugins.lucid-confluence ap-module-key-lucid-gliffy-page-conversion-menuitem ap-link-webitem" href="/wiki/plugins/servlet/ac/com.lucidchart.confluence.plugins.lucid-confluence/gliffyConversion?pageId={page.id}&amp;page.id=2623045706&amp;space.key=DZ&amp;content.id=2623045706&amp;content.version=7&amp;page.type=page&amp;page.title=Open%20Data%20API%20Dashboard&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=7" id="com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem" rel="nofollow" title="">
+               <span>
+                Convert Gliffy Diagrams
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </content>
+      <div class="pagetitle with-breadcrumbs" id="title-heading">
+       <div aria-label="Breadcrumb" id="breadcrumb-section" role="navigation">
+        <ol id="breadcrumbs">
+         <li class="first">
+          <span class="">
+           <a href="/wiki/spaces/DZ/pages">
+            Content
+           </a>
+          </span>
+          <li>
+           <span class="">
+            <a href="/wiki/spaces/DZ/overview">
+             Developer Zone
+            </a>
+           </span>
+           <li>
+            <span class="">
+             <a href="/wiki/spaces/DZ/pages/16385802/Specifications">
+              Specifications
+             </a>
+            </span>
+           </li>
+          </li>
+         </li>
+        </ol>
+       </div>
+       <a class="assistive" href="#page-banner-end">
+        Skip to end of banner
+       </a>
+       <div class="assistive" id="page-banner-start">
+       </div>
+       <div id="page-metadata-banner">
+        <ul class="banner">
+         <li class="noprint" id="system-content-items">
+          <a class="hidden" href="" id="content-metadata-page-restrictions-hidden" title="Unrestricted">
+          </a>
+         </li>
+         <li class="page-metadata-item noprinthas-button" id="content-metadata-jira-wrapper">
+          <a class="aui-button aui-button-subtle content-metadata-jira tipsy-disabled hidden" href="" id="content-metadata-jira" title="">
+           <span>
+            Jira links
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <a class="assistive" href="#page-banner-start">
+        Go to start of banner
+       </a>
+       <div class="assistive" id="page-banner-end">
+       </div>
+       <h1 class="with-breadcrumbs" id="title-text">
+        <a href="/wiki/pages/viewpage.action?pageId=2623045706">
+         Open Data API Dashboard
+        </a>
+       </h1>
+      </div>
+     </div>
+     <!-- \#main-header -->
+     <div class="page view" id="content">
+      <div id="action-messages">
+      </div>
+      <a class="assistive" href="#page-metadata-end">
+       Skip to end of metadata
+      </a>
+      <div class="assistive" id="page-metadata-start">
+      </div>
+      <div class="page-metadata">
+       <ul>
+        <li class="page-metadata-modification-info">
+         Created by
+         <span class="author">
+          <a class="url fn" href="/wiki/people/557058:4441630f-54a0-47b2-bcd9-f2b1b5fa6f83">
+           Freddi Gyara
+          </a>
+         </span>
+         , last modified on
+         <a class="last-modified" href="/pages/diffpagesbyversion.action?pageId=2623045706&amp;selectedPageVersions=6&amp;selectedPageVersions=7" title="Show changes">
+          Aug 16, 2021
+         </a>
+        </li>
+       </ul>
+      </div>
+      <a class="assistive" href="#page-metadata-start">
+       Go to start of metadata
+      </a>
+      <div class="assistive" id="page-metadata-end">
+      </div>
+      <div class="aui-message warning" id="page-history-warning">
+       <p>
+        <span class="aui-icon icon-warning">
+        </span>
+        <strong>
+         You are viewing an old version of this content. View the
+         <strong>
+          <a href="/wiki/spaces/DZ/pages/1165263140/Open+Data+API+Dashboard">
+           current version
+          </a>
+          .
+         </strong>
+        </strong>
+       </p>
+       <p class="page-history-view">
+        <a href="/wiki/pages/diffpagesbyversion.action?pageId=1165263140&amp;originalVersion=7&amp;revisedVersion=8">
+         Compare with Current
+        </a>
+        <a href="/wiki/spaces/DZ/history/1165263140">
+         View Version History
+        </a>
+       </p>
+       <p class="version-navigation-block">
+        <a class="version-navigation aui-button view-historical-version-trigger" href="/wiki/pages/viewpage.action?pageId=2182480212&amp;navigatingVersions=true">
+         « Previous
+        </a>
+        <span class="current-version-margin">
+         <strong>
+          Version 7
+         </strong>
+        </span>
+        <a class="version-navigation aui-button" href="/wiki/spaces/DZ/pages/1165263140/Open+Data+API+Dashboard" id="current-navigation">
+         Current »
+        </a>
+       </p>
+      </div>
+      <div class="wiki-content" id="main-content">
+       <div class="contentLayout2">
+        <div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+         <div class="cell normal" data-type="normal">
+          <div class="innerCell">
+           <div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="a0c2afad-afd0-412d-8d9b-6371d0dbddd4" data-macro-name="info">
+            <span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon">
+            </span>
+            <div class="confluence-information-macro-body">
+             <p>
+              <span class="legacy-color-text-default">
+               This API Dashboard provides a list of Open Data API end points. This data includes product information, ATM and branch locations plus information and metrics about service quality.
+              </span>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="cell aside" data-type="aside">
+          <div class="innerCell">
+           <div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="898c0ba4-7a9d-4670-83c8-8337b4c5e318" data-macro-name="panel" style="border-width: 1px;">
+            <div class="panelContent">
+             <p>
+              <a data-linked-resource-id="441614754" data-linked-resource-type="page" data-linked-resource-version="21209" href="/wiki/spaces/DZ/pages/441614754/API+Downtime">
+               API Downtime
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="columnLayout single" data-layout="single">
+         <div class="cell normal" data-type="normal">
+          <div class="innerCell">
+           <h1 id="OpenDataAPIDashboard-Agreement">
+            <span>
+             Agreement
+            </span>
+           </h1>
+           <p>
+            Please confirm that you have read, understood and agreed to the
+            <a class="external-link" href="https://www.openbanking.org.uk/open-licence/" rel="nofollow">
+             Open Banking Ltd Terms and Conditions and Open Data Licence.
+            </a>
+           </p>
+           <h1 class="auto-cursor-target" id="OpenDataAPIDashboard-Space">
+            <span class="legacy-color-text-inverse">
+             Space
+            </span>
+           </h1>
+           <div class="expand-container conf-macro output-block" data-hasbody="true" data-macro-id="4636c43a-be40-43be-b851-65843812b37c" data-macro-name="expand" id="expander-114829515">
+            <div class="expand-control" id="expander-control-114829515">
+             <span class="expand-control-icon icon">
+             </span>
+             <span class="expand-control-text">
+              I agree, click here for Product Information &amp; FCA Metrics API endpoints
+             </span>
+            </div>
+            <div class="expand-content expand-hidden" id="expander-content-114829515">
+             <div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="ce7eda2e-690d-468a-bd5c-36a4a4c159f5" data-macro-name="panel" style="border-width: 1px;">
+              <div class="panelContent">
+               <h2 id="OpenDataAPIDashboard-ProductInformation&amp;FCAMetrics">
+                Product Information &amp; FCA Metrics
+               </h2>
+               <p>
+                <span class="legacy-color-text-default">
+                 <a class="external-link" href="https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/master/participant_store.json" rel="nofollow">
+                  Download the JSON list
+                 </a>
+                 or view the endpoints directly below.
+                </span>
+               </p>
+               <p>
+                <br/>
+               </p>
+               <div class="table-wrap">
+                <table class="relative-table wrapped confluenceTable" style="width: 82.2148%;">
+                 <colgroup>
+                  <col style="width: 25.5276%;"/>
+                  <col style="width: 8.71341%;"/>
+                  <col style="width: 9.59837%;"/>
+                  <col style="width: 7.76038%;"/>
+                  <col style="width: 9.66644%;"/>
+                  <col style="width: 9.66644%;"/>
+                  <col style="width: 9.66644%;"/>
+                  <col style="width: 10.143%;"/>
+                  <col style="width: 9.258%;"/>
+                 </colgroup>
+                 <tbody>
+                  <tr>
+                   <th class="confluenceTh" colspan="1">
+                    Provider
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    ATM
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    Branch
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    PCA
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    BCA
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    SME
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    CCC
+                   </th>
+                   <th class="confluenceTh" colspan="1">
+                    FCA Metrics PCA
+                   </th>
+                   <th class="confluenceTh" colspan="1">
+                    FCA Metrics BCA
+                   </th>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Adam &amp; Company
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.adambank.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Allied Irish Bank (GB)
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <span class="_2w1d">
+                     <a class="external-link" href="https://openapi.aibgb.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                      v2.2
+                     </a>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.aibgb.co.uk/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.aibgb.co.uk/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <br/>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.aibgb.co.uk/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Bank of Ireland (UK)
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/branches" rel="nofollow">
+                        v2.2
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                        v2.2
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                        v2.2
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                        v2.2
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                        v2.2
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.bankofireland.com/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Bank of Scotland
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <p style="text-align: center;">
+                     <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                      v2.2
+                     </a>
+                    </p>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.bankofscotland.co.uk/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Barclays Bank
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://atlas.api.barclays/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://atlas.api.barclays/open-banking/v2.2/branches" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <a class="external-link" href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fatlas.api.barclays%2Fopen-banking%2Fv2.4%2Fpersonal-current-accounts&amp;data=04%7C01%7CFreddi.Gyara%40openbanking.org.uk%7C3e996ef5a12e46b0f28b08d96098c42a%7C3450fc49f14b45629b6a03faee2a42c4%7C0%7C0%7C637647031509959411%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=HFewLIKumQwq7jXNrAgct%2B9UDnS8hwNV12vjusXgTB0%3D&amp;reserved=0" rel="nofollow" style="" title="Original URL: https://atlas.api.barclays/open-banking/v2.4/personal-current-accounts. Click or tap if you trust this link.">
+                     v2.4
+                    </a>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://atlas.api.barclays/open-banking/v2.4/business-current-accounts" rel="nofollow">
+                      v2.4
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <a class="external-link" href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fatlas.api.barclays%2Fopen-banking%2Fv2.4%2Funsecured-sme-loans&amp;data=04%7C01%7CFreddi.Gyara%40openbanking.org.uk%7C3e996ef5a12e46b0f28b08d96098c42a%7C3450fc49f14b45629b6a03faee2a42c4%7C0%7C0%7C637647031509949415%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=5qxkQmDCf824WvkjZqLz8uf4P6qj8RZYm74qtwiG5hs%3D&amp;reserved=0" rel="nofollow" style="" title="Original URL: https://atlas.api.barclays/open-banking/v2.4/unsecured-sme-loans. Click or tap if you trust this link.">
+                     v2.4
+                    </a>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://atlas.api.barclays/open-banking/v2.4/commercial-credit-cards" rel="nofollow">
+                      v2.4
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://atlas.api.barclays/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://atlas.api.barclays/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    <p>
+                     Coutts
+                    </p>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://openapi.coutts.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    <p>
+                     Danske Bank
+                    </p>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://obp-data.danskebank.com/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Esme
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1" style="text-align: center;">
+                    <p>
+                     <a class="external-link" href="https://openapi.esmeloans.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                      v2.2
+                     </a>
+                    </p>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Allied Irish Bank (NI) (First Trust Bank)
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.firsttrustbank.co.uk/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Halifax
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.halifax.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <a class="external-link" href="https://api.halifax.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <p style="text-align: center;">
+                     <a class="external-link" href="https://api.halifax.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                      v2.2
+                     </a>
+                    </p>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.halifax.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    HSBC Group
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <a class="external-link" href="https://api.hsbc.com/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                      v2.2
+                     </a>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.hsbc.com/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Lloyds Bank
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1" style="text-align: center;">
+                    <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                     v2.2
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://api.lloydsbank.com/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Nationwide Building Society
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.nationwide.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://locations.nationwidebranches.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.nationwide.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.nationwide.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    NatWest
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1" style="text-align: center;">
+                    <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                     v2.2
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.natwest.com/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd">
+                    Royal Bank of Scotland
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.rbs.co.uk/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Santander UK
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1" style="text-align: center;">
+                    <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                     v2.2
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v2.2/commercial-credit-cards" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openbanking.santander.co.uk/sanuk/external/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" style="text-align: left;">
+                    Ulster Bank
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v2.2/atms" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v2.2/branches" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v2.2/personal-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v2.2/business-current-accounts" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v2.2/unsecured-sme-loans" rel="nofollow">
+                       v2.2
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://openapi.ulsterbank.co.uk/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Clydesdale Bank PLC
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <a class="external-link" href="https://api-ib.cybservices.co.uk/ibapi/v2/banks/CB/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                     v1.0
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <a class="external-link" href="https://api-ib.cybservices.co.uk/ibapi/v2/banks/CB/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                     v1.0
+                    </a>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Yorkshire Bank
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <a class="external-link" href="https://api-ib.cybservices.co.uk/ibapi/v2/banks/YB/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                     v1.0
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <a class="external-link" href="https://api-ib.cybservices.co.uk/ibapi/v2/banks/YB/open-banking/v1.0/fca-service-metrics/bca" rel="nofollow">
+                     v1.0
+                    </a>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    Virgin Money
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <a class="external-link" href="https://api-ib.cybservices.co.uk/ibapi/v2/banks/VM/open-banking/v1.0/fca-service-metrics/pca" rel="nofollow">
+                     v1.0
+                    </a>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <br/>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="columnLayout single" data-layout="single">
+         <div class="cell normal" data-type="normal">
+          <div class="innerCell">
+           <div class="expand-container conf-macro output-block" data-hasbody="true" data-macro-id="aa91de9e-b68e-41c6-ba60-a0bcc0d4a6bb" data-macro-name="expand" id="expander-392411292">
+            <div class="expand-control" id="expander-control-392411292">
+             <span class="expand-control-icon icon">
+             </span>
+             <span class="expand-control-text">
+              I agree, click here for CMA Service Quality Indicator API endpoints
+             </span>
+            </div>
+            <div class="expand-content expand-hidden" id="expander-content-392411292">
+             <div class="panel conf-macro output-block" data-hasbody="true" data-macro-id="a9217b62-73f2-4d20-aafd-6801b1c8380d" data-macro-name="panel" style="border-width: 1px;">
+              <div class="panelContent">
+               <h2 id="OpenDataAPIDashboard-CMAServiceQualityIndicators">
+                CMA Service Quality Indicators
+               </h2>
+               <p>
+                <span class="legacy-color-text-default">
+                 <a class="external-link" href="https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/master/cmasqi_store.json" rel="nofollow">
+                  Download the JSON list
+                 </a>
+                 or view the endpoints directly below.
+                </span>
+               </p>
+               <div class="table-wrap">
+                <table class="relative-table wrapped confluenceTable" style="width: 69.4631%;">
+                 <colgroup>
+                  <col style="width: 30.3787%;"/>
+                  <col style="width: 22.5624%;"/>
+                  <col style="width: 24.2546%;"/>
+                  <col style="width: 22.8042%;"/>
+                 </colgroup>
+                 <tbody>
+                  <tr>
+                   <th class="confluenceTh" colspan="1">
+                    Type
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    Area
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    Full
+                   </th>
+                   <th class="confluenceTh" colspan="1" style="text-align: center;">
+                    Aggregated
+                   </th>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" rowspan="2" style="text-align: left;">
+                    PCA
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    GB
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/pca/area/GB/export-type/full/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/pca/area/GB/export-type/aggregated/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" style="text-align: center;">
+                    NI
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/pca/area/NI/export-type/full/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <span class="_2w1d">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/pca/area/NI/export-type/aggregated/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </span>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" rowspan="2">
+                    BCA
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    GB
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/bca/area/GB/export-type/full/wave/latest" rel="nofollow">
+                        v1.0
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" style="text-align: center;">
+                    <div>
+                     <span class="_2w1d">
+                      <span class="_2w1d">
+                       <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/bca/area/GB/export-type/aggregated/wave/latest" rel="nofollow">
+                        v1.0
+                       </a>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     NI
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/bca/area/NI/export-type/full/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="confluenceTd" colspan="1">
+                    <div style="text-align: center;">
+                     <span class="_2w1d">
+                      <a class="external-link" href="https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product-type/bca/area/NI/export-type/aggregated/wave/latest" rel="nofollow">
+                       v1.0
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="no-print" id="likes-and-labels-container">
+       <div id="likes-section">
+       </div>
+       <div class="pageSection group" id="labels-section">
+        <div class="labels-section-content content-column" entityid="2623045706" entitytype="page">
+         <div class="labels-content">
+          <ul class="label-list label-list-right">
+           <li class="no-labels-message">
+            No labels
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="pageSection group" id="comments-section">
+      </div>
+     </div>
+     <div class="hidden" id="space-tools-web-items">
+      <div data-href="/wiki/spaces/viewspacesummary.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="General">
+       General
+      </div>
+      <div data-href="/wiki/pages/reorderpages.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Content">
+       Content
+      </div>
+      <div data-href="/wiki/spaces/listrssfeeds.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Integrations">
+       Integrations
+      </div>
+     </div>
+     <div id="custom-content-footer">
+      <p>
+       © Open Banking Limited 2019 |
+       <a class="external-link" href="https://www.openbanking.org.uk/open-licence" rel="nofollow">
+        https://www.openbanking.org.uk/open-licence
+       </a>
+       |
+       <a class="external-link" href="https://www.openbanking.org.uk" rel="nofollow">
+        https://www.openbanking.org.uk
+       </a>
+      </p>
+     </div>
+    </main>
+    <!-- \#main -->
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-pdf",
+    "uniqueKey":"com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export PDF Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-pdf.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-pdf&addOnKey=com.k15t.scroll.scroll-pdf&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7InNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9LCJjb250ZW50Ijp7InR5cGUiOiJwYWdlIiwidmVyc2lvbiI6IjciLCJpZCI6IjI2MjMwNDU3MDYifX19LCJleHAiOjE3NDg5MDI0ODcsImlhdCI6MTc0ODkwMTU4N30.7xGycb4vji5y_ulrJE-SIFeTMqvnd61Aqi19CZb87bg",    "structuredContext": "{\"confluence\":{\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"},\"content\":{\"type\":\"page\",\"version\":\"7\",\"id\":\"2623045706\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"2623045706\",\"content.id\":\"2623045706\",\"space.key\":\"DZ\",\"page.type\":\"page\",\"content.version\":\"7\",\"page.title\":\"Open Data API Dashboard\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"7\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-pdf.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="375be1ee6a7d4c389e5a465bddf6b8e6">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-office",
+    "uniqueKey":"com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export Word Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-word.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-office&addOnKey=com.k15t.scroll.scroll-office&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7InNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9LCJjb250ZW50Ijp7InR5cGUiOiJwYWdlIiwidmVyc2lvbiI6IjciLCJpZCI6IjI2MjMwNDU3MDYifX19LCJleHAiOjE3NDg5MDI0ODcsImlhdCI6MTc0ODkwMTU4N30.sh7HWzocypHuwFaua24MThrViHQLSrYq5sUVN1Ef0MM",    "structuredContext": "{\"confluence\":{\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"},\"content\":{\"type\":\"page\",\"version\":\"7\",\"id\":\"2623045706\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"2623045706\",\"content.id\":\"2623045706\",\"space.key\":\"DZ\",\"page.type\":\"page\",\"content.version\":\"7\",\"page.title\":\"Open Data API Dashboard\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"7\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-word.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+   </div>
+  </div>
+  <!-- flex-flow: row wrap -->
+  <!-- display: flex -->
+  <span id="confluence-server-performance" style="display:none;">
+   {"serverDuration": 257, "requestCorrelationId": "375be1ee6a7d4c389e5a465bddf6b8e6"}
+  </span>
+ </body>
+</html>

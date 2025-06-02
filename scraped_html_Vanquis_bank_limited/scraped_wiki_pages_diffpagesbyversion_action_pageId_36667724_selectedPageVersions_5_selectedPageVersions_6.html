@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- START-PRELOAD-TAGS -->
+  <!-- CLASSIC-master-4340849 -->
+  <script nonce="37720e3a20d24bfcba7b646d7e125ae5">
+   window.__buildInfo={"FRONTEND_VERSION":"CLASSIC-master-4340849","BUILD_DATE":1748620287055,"EDITOR_VERSION":"207.13.0","RENDERER_VERSION":"118.6.2","ATLASPACK_VERSION":"2.13.9","PUBLIC_PATH":"https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/"};
+  </script>
+  <!-- HEAD -->
+  <!-- JQuery -->
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.966fc25b.js" type="module">
+  </script>
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.runtime.794c0893.js" type="module">
+  </script>
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors.c912fa8e.js" type="module">
+  </script>
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/stable_vendors.41e17947.js" type="module">
+  </script>
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/atl.87332ca0.js" type="module">
+  </script>
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/ShareButton.a989ad1a.js" type="module">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery-migrate" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js">
+  </script>
+  <!-- Files -->
+  <script crossorigin="" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/standalone-navigation-jquery3.79aee824.js" type="module">
+  </script>
+  <!-- Set Referrer -->
+  <meta content="origin" name="referrer"/>
+  <link href="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/compiled.q77maa.css" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet"/>
+  <!-- HEAD -->
+  <!-- END-PRELOAD-TAGS -->
+  <title>
+   Content Comparison - OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2 (v.5 vs v.6) - Developer Zone     - Confluence
+  </title>
+  <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="/wiki" id="confluence-context-path" name="confluence-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" id="confluence-base-url" name="confluence-base-url"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" id="atlassian-token" name="atlassian-token"/>
+  <meta content="    DZ
+" id="confluence-space-key" name="confluence-space-key"/>
+  <script nonce="37720e3a20d24bfcba7b646d7e125ae5" type="text/javascript">
+   var contextPath = '/wiki';
+  </script>
+  <meta content="noindex,nofollow" name="robots"/>
+  <meta content="noarchive" name="robots"/>
+  <meta content="" name="confluence-request-time"/>
+  <meta content="{}" name="ajs-discovered-plugin-features"/>
+  <meta content="ae093d1a9fb91e2b714db85b91cce431dbc32ef3280f44e3c5f7055def6f0a20" name="ajs-keyboardshortcut-hash"/>
+  <meta content="true" name="ajs-use-keyboard-shortcuts"/>
+  <meta content="true" id="team-calendars-has-jira-link"/>
+  <meta content="displayTimeFormat12" name="ajs-team-calendars-display-time-format"/>
+  <meta content="false" id="team-calendars-display-week-number"/>
+  <meta content="UTC" id="team-calendars-user-timezone"/>
+  <script id="team-calendars-messages" title="team-calendars-messages" type="text/x-template">
+   <fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sept"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset>
+  </script>
+  <meta content="false" name="ajs-is-confluence-admin"/>
+  <meta content="60000" name="ajs-connection-timeout"/>
+  <meta content="MMM dd, yyyy" name="ajs-date.format"/>
+  <meta content="36667724" name="ajs-page-id"/>
+  <meta content="36667724" name="ajs-latest-page-id"/>
+  <meta content="page" name="ajs-content-type"/>
+  <meta content="OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2" name="ajs-page-title"/>
+  <meta content="OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2" name="ajs-latest-published-page-title"/>
+  <meta content="ARCHIVE - Specifications" name="ajs-parent-page-title"/>
+  <meta content="23922689" name="ajs-parent-page-id"/>
+  <meta content="DZ" name="ajs-space-key"/>
+  <meta content="Developer Zone" name="ajs-space-name"/>
+  <meta content="" name="ajs-from-page-title"/>
+  <meta content="false" name="ajs-can-remove-page"/>
+  <meta content="4bb5ec59-42ff-4088-a410-cc59ea51038d" name="ajs-cloud-id"/>
+  <meta content="/wiki" name="ajs-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" name="ajs-base-url"/>
+  <meta content="1000.0.0-4eacb5f92c50" name="ajs-version-number"/>
+  <meta content="6452" name="ajs-build-number"/>
+  <meta content="" name="ajs-remote-user"/>
+  <meta content="" name="ajs-remote-user-key"/>
+  <meta content="" name="ajs-atlassian-account-id"/>
+  <meta content="false" name="ajs-remote-user-has-licensed-access"/>
+  <meta content="" name="ajs-current-user-fullname"/>
+  <meta content="" name="ajs-current-user-avatar-url"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/profilepics/anonymous.png" name="ajs-current-user-avatar-uri-reference"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_" name="ajs-static-resource-url-prefix"/>
+  <meta content="1048576000" name="ajs-global-settings-attachment-max-size"/>
+  <meta content="en_GB" name="ajs-user-locale"/>
+  <meta content="cc-notifications-live-page-updates,jira_issues_macro_async_fetch,confluence_live_pages_macro_copy_updates,confluence_sanitize_macro_preview_xss,jira_premium_plans_macro_prevent_new_macros,fabric_editor_blank_page,editor.ajax.save,notification.batch,pdf-preview,previews.sharing,frontend.editor.plugins,filestore.direct.download,confluence.pagenav.deferred,previews.trigger-all-file-types,previews.conversion-service,unified.permissions,rotp.project.shortcuts,mention.service.userbase.sync.enabled,rotp.admin.shortcuts,filestore.thumbnail,fusion.bitbucket.rebrand,confluence-inline-comments,file-annotations.likes,previews.versions,collaborative-audit-log,confluence.sidebar.deferred,confluence-inline-comments-rich-editor,clc.quick.create,atlassian.aui.raphael.disabled,quick-reload-inline-comments-flags,confluence-inline-comments-resolved,file-annotations,sidebar.deferred,confluence.efi.onboarding.new.templates,adg3.no.auto.optout.global.colourscheme,connect.no-applinks,app-switcher.new,jim.async.vertigo,filestore.direct.upload,previews.sharing.pushstate,cql.search.screen,confluence-inline-comments-dangling-comment,react.ui.graph,fabric.mentions,confluence.table.resizable,confluence.view.edit.transition,com.atlassian.growth.shakuni.disabled,confluence.non.polling.index.flush,jquery.feature.detection.cache" name="ajs-enabled-dark-features"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" name="ajs-atl-token"/>
+  <meta content="ALACARTE" name="ajs-confluence-flavour"/>
+  <meta content="dd MMM yyyy" name="ajs-user-date-pattern"/>
+  <meta content="false" name="ajs-iframe-allowed-for-spa"/>
+  <meta content="false" name="ajs-content-only"/>
+  <meta content="STANDARD" name="ajs-edition"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="shortcut icon"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="icon" type="image/x-icon"/>
+  <!-- Monolith is still expecting a fallback-mode-jquery3.html file from SPA bundle -->
+  <link href="/wiki/opensearch/osd.action" rel="search" title="Confluence" type="application/opensearchdescription+xml">
+   <!-- Styles -->
+   <script nonce="37720e3a20d24bfcba7b646d7e125ae5">
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio-diagram\"],\"com.addonengine.analytics\":[\"space-analytics\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"dialogOptions\":{\"com.k15t.scroll.scroll-office__web-item-export-office-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}},\"com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"}},\"inlineDialogOptions\":{},\"dialogModules\":{\"com.atlassian.confluence.plugins.confluence-office365\":{\"office365\":{\"cacheable\":false,\"options\":{\"size\":\"maximum\",\"chrome\":false},\"key\":\"office365\"}},\"com.k15t.scroll.scroll-office\":{\"k15t-cxp-office-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-office-template-editor\"},\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-export-office\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-office\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"com.k15t.scroll.scroll-pdf\":{\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-export-pdf\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-pdf\"},\"k15t-cxp-dialog-pdf-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-dialog-pdf-template-editor\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-brand-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-brand-dialog\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"org.swift.confluence.table\":{\"table-viewer-fullscreen\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"width\":\"100%\"},\"key\":\"table-viewer-fullscreen\"}},\"confluence-chats-integration\":{\"dialog\":{\"cacheable\":false,\"options\":{},\"key\":\"dialog\"},\"page-config-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"}}}}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+if(window.WRM._dataArrived)window.WRM._dataArrived();
+   </script>
+   <link data-wrm-batch-type="context" data-wrm-key="_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/4717b5ea9dcf07eebf6ecaed970652e143dc6d6d5b277396f008f20eb2d146ff/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;media=print&amp;relative-url=true" media="print" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-mentions-plugin:mentions-styling" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0a038af2dbeed614155eb10ce26d4e88f9b49c2a88924b86d83d37bf02c14973/_/download/batch/com.atlassian.confluence.plugins.confluence-mentions-plugin:mentions-styling/com.atlassian.confluence.plugins.confluence-mentions-plugin:mentions-styling.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-sidebar" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/be1a0f9511403efab098ae05d13741b954061736d63980f8950eda35743ce25c/_/download/batch/com.atlassian.auiplugin:aui-sidebar/com.atlassian.auiplugin:aui-sidebar.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="37720e3a20d24bfcba7b646d7e125ae5" rel="stylesheet" type="text/css"/>
+   <!-- Dynamically generated colors styles -->
+   <!-- Scripts -->
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="_super" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cbc479ef16c9294c01e5c11c3a460727e14a5dbb9ea60f3aec6d28522483b157/_/download/contextbatch/js/_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/226cb897b7033af38cf4d83b58f064d9bf1aa9ea27dfd1473c20a71a8a2fee46/_/download/contextbatch/js/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:breadcrumbs" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/98cfd6888d222026ba2e847d3157d0603e04ee8c6e49cada89a75375b7a41dc7/_/download/batch/confluence.web.resources:breadcrumbs/confluence.web.resources:breadcrumbs.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:ajs-raf" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/92491fd54a35a5cfd79992635311a910eaa840da13b971dc1630da8f3cffa266/_/download/batch/com.atlassian.auiplugin:ajs-raf/com.atlassian.auiplugin:ajs-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-is-input" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d142b935c16781a34a3d3c7ac45bcf62b8aefa05959c0ed2449714e6cd02160b/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-trigger" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/2c4e87b76afb638e7aeb774669c0993cf8f918f7b8f3a567806aed3eece585bb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-trigger/com.atlassian.auiplugin:internal-src-js-aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-trigger" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/e9932d6b309e6704fc54630b89829236f3c44fa45fdb1c7cc45779ca9f86e0b6/_/download/batch/com.atlassian.auiplugin:aui-trigger/com.atlassian.auiplugin:aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-attributes" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/039b9ae634e4a301db91d8837f64fd5cf49806bbd12519a91fc46533f2b930cb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/63d0e95e71fb8f28b920125845402c0c46687f94f1ab8e2727d463e5d7baf30d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d5b76e4a74329c24960b37292fcd45e167b2d3ead953533a62b885399c1e13b7/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-inline-dialog2" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/35b967c790841bf2ccc6ca40831e21db64f16ba735f00ec5957c6c529085fe7b/_/download/batch/com.atlassian.auiplugin:aui-inline-dialog2/com.atlassian.auiplugin:aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-vendor-raf-raf" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/5c10ee22191b4d0afdb606690d2f2cd850f01a480e772a08562ab9deaffce57f/_/download/batch/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cf13df64397bd462047b299484cbd27c0cc94f12fb0040fd9ac93fed3aff67ba/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/c9d9c3b2c6b6f083bf0687811156bb6fe97ebfe1e0751984278f519b766da40d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-sidebar" nonce="37720e3a20d24bfcba7b646d7e125ae5" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1482efa05fe564f5eae52ef9342e22bc7ed1bd026417497edbd66010b8b881ce/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-sidebar/com.atlassian.auiplugin:internal-src-js-aui-sidebar.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <link href="https://openbanking.atlassian.net/wiki/spaces/DZ/pages/36667724/OpenBanking+OpenID+Dynamic+Client+Registration+Specification+-+v1.0.0-rc2" rel="canonical"/>
+   <link href="https://openbanking.atlassian.net/wiki/x/TIEvAg" rel="shortlink"/>
+   <meta content="[DZ:OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2]" name="wikilink"/>
+   <meta content="6" name="page-version"/>
+   <meta content="6" name="ajs-page-version"/>
+  </link>
+ </head>
+ <body class="theme-default content-type-page aui-layout aui-theme-default" id="com-atlassian-confluence">
+  <script nonce="37720e3a20d24bfcba7b646d7e125ae5">
+   var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+  </script>
+  <div class="banner-spacer-container">
+  </div>
+  <div data-main-container="" style="display:flex;">
+   <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+   </div>
+   <div data-flex-container="" style="flex-flow: row wrap; width: 100%">
+    <div data-main-content="" style="flex: 1 100%">
+    </div>
+    <!-- PARCEL -->
+    <!-- START-FRAGMENT standalone-navigation-jquery3.html -->
+    <style nonce="37720e3a20d24bfcba7b646d7e125ae5">
+     body,body.aui-layout{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif}body{background-color:var(--ds-surface,#fff);margin:0;padding:0;font-size:14px}#main,#admin-content,#custom-content-container,.ap-servlet-placeholder{opacity:0}a{text-decoration:none}h1{font-weight:400}
+    </style>
+    <!-- END-FRAGMENT standalone-navigation-jquery3.html-->
+    <div id="header-precursor">
+     <div class="cell">
+     </div>
+    </div>
+    <!-- \#header -->
+    <main class="aui-page-panel" id="main">
+     <div class="connect-theme-background-cover">
+     </div>
+     <div id="main-header">
+      <div class="content-navigation view-information" id="navigation">
+       <ul class="ajs-menu-bar">
+        <li class="ajs-button normal">
+         <a class="aui-button aui-button-subtle view" href="/wiki/spaces/DZ/pages/36667724/OpenBanking+OpenID+Dynamic+Client+Registration+Specification+-+v1.0.0-rc2" id="viewPageLink" rel="nofollow" title="">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-back-page">
+           </span>
+           View Page
+          </span>
+         </a>
+        </li>
+        <li class="normal ajs-menu-item">
+         <a aria-haspopup="true" aria-label="More actions" aria-owns="action-menu" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" data-container="#navigation" href="#" id="action-menu-link">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-more">
+           </span>
+          </span>
+         </a>
+         <div aria-hidden="true" class="aui-dropdown2 aui-style-default" id="action-menu">
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-modify first" id="action-menu-system.content.action-modify">
+            <li>
+             <a class="action-export-word" href="/wiki/exportword?pageId=36667724" id="action-export-word-link" rel="nofollow" title="">
+              <span>
+               Export to Word
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="https://openbanking.atlassian.net/wiki/spaces/flyingpdf/pdfpageexport.action?pageId=36667724&amp;atl_token=440a17db837b27f1769019bd3a27c43953e7be74" id="action-export-pdf-link" rel="nofollow" title="">
+              <span>
+               Export to PDF
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="/wiki/pages/viewinfo.action?pageId=36667724" id="action-archive-link" rel="nofollow" title="">
+              <span>
+               Archive
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-primary" id="action-menu-system.content.action-primary">
+            <li>
+             <a class="action-view-history" href="/wiki/spaces/DZ/history/36667724" id="action-view-history-link" rel="nofollow" title="">
+              <span>
+               Version history
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="change-page-ownership" href="/wiki" id="change-page-ownership-link" rel="nofollow" title="">
+              <span>
+               View ownership
+              </span>
+             </a>
+            </li>
+            <li>
+             <a accesskey="t" class="action-view-attachments" href="/wiki/pages/viewpageattachments.action?pageId=36667724" id="view-attachments-link" rel="nofollow" title="View Attachments">
+              <span>
+               A
+               <u>
+                t
+               </u>
+               tachments (4)
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-info" href="/wiki/pages/viewinfo.action?pageId=36667724" id="view-page-info-link" rel="nofollow" title="">
+              <span>
+               Content Information
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-source popup-link" href="/wiki/plugins/viewsource/viewpagesrc.action?pageId=36667724" id="action-view-source-link" rel="nofollow" title="">
+              <span>
+               View Source
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-secondary" id="action-menu-system.content.action-secondary">
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-pdf ap-module-key-web-item-export-pdf-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-pdf/com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher?page.id=36667724&amp;space.key=DZ&amp;content.id=36667724&amp;content.version=6&amp;page.type=page&amp;page.title=OpenBanking%20OpenID%20Dynamic%20Client%20Registration%20Specification%20-%20v1.0.0-rc2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=6" id="com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll PDF Exporter" height="16" src="https://scroll-pdf.us.exporter.k15t.app/static/assets/images/pdf/PDF_white_16px.svg" title="Export with Scroll PDF Exporter" width="16"/>
+              <span>
+               Export with Scroll PDF Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-office ap-module-key-web-item-export-office-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-office/com.k15t.scroll.scroll-office__web-item-export-office-launcher?page.id=36667724&amp;space.key=DZ&amp;content.id=36667724&amp;content.version=6&amp;page.type=page&amp;page.title=OpenBanking%20OpenID%20Dynamic%20Client%20Registration%20Specification%20-%20v1.0.0-rc2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=6" id="com.k15t.scroll.scroll-office__web-item-export-office-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll Word Exporter" height="16" src="https://scroll-word.us.exporter.k15t.app/static/assets/images/office/OFCE_white_16px.svg" title="Export with Scroll Word Exporter" width="16"/>
+              <span>
+               Export with Scroll Word Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="ap-dialog ap-plugin-key-com.lucidchart.confluence.plugins.lucid-confluence ap-module-key-lucid-gliffy-page-conversion-menuitem ap-link-webitem" href="/wiki/plugins/servlet/ac/com.lucidchart.confluence.plugins.lucid-confluence/gliffyConversion?pageId={page.id}&amp;page.id=36667724&amp;space.key=DZ&amp;content.id=36667724&amp;content.version=6&amp;page.type=page&amp;page.title=OpenBanking%20OpenID%20Dynamic%20Client%20Registration%20Specification%20-%20v1.0.0-rc2&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=6" id="com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem" rel="nofollow" title="">
+              <span>
+               Convert Gliffy Diagrams
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="pagetitle with-breadcrumbs" id="title-heading">
+       <div aria-label="Breadcrumb" id="breadcrumb-section" role="navigation">
+        <ol id="breadcrumbs">
+         <li class="first">
+          <span class="">
+           <a href="/wiki/spaces/DZ/pages">
+            Content
+           </a>
+          </span>
+          <li id="ellipsis" title="Show all breadcrumbs">
+           <button aria-label="Show all breadcrumb links" class="unstyled-button" type="button">
+            <span>
+             <strong>
+              …
+             </strong>
+            </span>
+           </button>
+          </li>
+          <li class="hidden-crumb">
+           <span class="">
+            <a href="/wiki/spaces/DZ/overview">
+             Developer Zone
+            </a>
+           </span>
+           <li class="hidden-crumb">
+            <span class="">
+             <a href="/wiki/spaces/DZ/pages/16385802/Specifications">
+              Specifications
+             </a>
+            </span>
+            <li class="hidden-crumb">
+             <span class="">
+              <a href="/wiki/spaces/DZ/pages/23922689/ARCHIVE+-+Specifications">
+               ARCHIVE - Specifications
+              </a>
+             </span>
+             <li>
+              <span class="">
+               <a href="/wiki/spaces/DZ/pages/36667724/OpenBanking+OpenID+Dynamic+Client+Registration+Specification+-+v1.0.0-rc2">
+                OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2
+               </a>
+              </span>
+             </li>
+            </li>
+           </li>
+          </li>
+         </li>
+        </ol>
+       </div>
+       <h1 class="with-breadcrumbs" id="title-text">
+        Content Comparison
+       </h1>
+      </div>
+     </div>
+     <!-- \#main-header -->
+     <div class="page view-information" id="content">
+      <div id="action-messages">
+      </div>
+      <div class="diff-menu">
+       <h2 class="diff-title">
+        Versions Compared
+       </h2>
+       <div class="page-navigation section">
+        <table class="page-version">
+         <tbody class="page-version-tbody">
+          <tr>
+           <th class="assistive">
+            Version
+           </th>
+           <td class="version-title">
+            <a class="page version-navigation view-historical-version-trigger" href="viewpage.action?pageId=1300824071">
+             <span class="assistive">
+              Old Version
+             </span>
+             <span class="version">
+              5
+             </span>
+            </a>
+           </td>
+           <td class="version-title">
+            <a class="page version-navigation" href="viewpage.action?pageId=36667724">
+             <span class="assistive">
+              New Version
+             </span>
+             <span class="version">
+              Current
+             </span>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Changes made by
+           </th>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/5a1d3ae15ba27e1b07e9cf65">
+              John Heaton-Armstrong (Unlicensed)
+             </a>
+            </p>
+           </td>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/557058:19250dc2-3562-4dc6-8f26-1ca935de11e1">
+              Chris Michael
+             </a>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Saved on
+           </th>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Thu Jan 18 14:45:53 UTC 2018">
+              Jan 18, 2018
+             </time>
+            </p>
+           </td>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Wed Feb 05 08:36:30 UTC 2020">
+              Feb 05, 2020
+             </time>
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <div class="diff-navigation nav">
+         <ul>
+          <li>
+           <a class="previous version-navigation" href="diffpages.action?originalId=83526375&amp;pageId=1300824071">
+            <span>
+             Previous Change: Difference between versions 4 and 5
+            </span>
+           </a>
+          </li>
+          <li>
+           <a class="all version-navigation" href="/wiki/spaces/DZ/history/36667724">
+            <span>
+             View Version History
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="legend">
+        <h2 class="legend-title">
+         Key
+        </h2>
+        <ul>
+         <li>
+          <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+           This line was added.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-removed" data-a11y-after="End of deleted content" data-a11y-before="Start of deleted content">
+           This line was removed.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           Formatting was changed.
+          </span>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="wiki-content" id="page-diffs">
+       <p class="auto-cursor-target diff-block-target">
+        <style>
+         [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-0">gu45ob5wql</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-0">udhhhyie9l</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-1">#333333</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-1">#555555</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-2">gu45ob5wql</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-2">udhhhyie9l</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-3">#cccccc</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-3">#aaaaaa</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-4">mnkdh5j0ma</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-4">jrmg6dt24y</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-5">#555555</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-5">#009999</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-6">mnkdh5j0ma</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-6">jrmg6dt24y</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-7">#aaaaaa</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-7">#66ffff</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-8">stb8rd381f</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-8">g0ubyf696t</span>]{color:#990000} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-9">stb8rd381f</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-9">g0ubyf696t</span>]{color:#ff6666}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-10">onqx2hbmv4</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-10">k2knx26pbm</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-11">#009999</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-11">#555555</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-12">onqx2hbmv4</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-12">k2knx26pbm</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-13">#66ffff</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-13">#aaaaaa</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-14">cxkpogrs8k</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-14">e6jv5uuq4u</span>]{color:#009999} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-15">cxkpogrs8k</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-15">e6jv5uuq4u</span>]{color:#66ffff}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-16">fzg3kxjmmt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-16">uhttg8jl0e</span>]{color:#a61717} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-17">fzg3kxjmmt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-17">uhttg8jl0e</span>]{color:#e85959}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-18">cnzghknr1k</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-18">jrwegtbpze</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-19">#990000</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-19">#333333</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-20">cnzghknr1k</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-20">jrwegtbpze</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-21">#ff6666</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-21">#cccccc</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-22">zi6vnqlhtt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-22">h699msxxis</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-23">#555555</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-23">#990000</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-24">zi6vnqlhtt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-24">h699msxxis</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-25">#aaaaaa</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-25">#ff6666</span>}
+        </style>
+        <br/>
+       </p>
+       <table class="diff-macro diff-block-context">
+        <thead>
+         <tr>
+          <th class="diff-macro-title">
+           <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/macrobrowser/dropdown/info.png);">
+           </span>
+           Info
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="diff-macro-properties">
+           <table>
+            <tbody>
+             <tr>
+              <th>
+               title
+              </th>
+              <td>
+               Please Note
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+        <tbody>
+         <tr>
+          <td class="diff-macro-body">
+           <p>
+            The MASTER location for this profile is located here:
+            <a class="external-link" href="https://bitbucket.org/openid/obuk/src/4630771db004da59992fb201641f5c4ff2c881f1/uk-openbanking-registration-profile.md?at=master&amp;fileviewer=file-view-default" rel="nofollow">
+             https://bitbucket.org/openid/obuk/src/4630771db004da59992fb201641f5c4ff2c881f1/uk-openbanking-registration-profile.md?at=master&amp;fileviewer=file-view-default
+            </a>
+           </p>
+           <p>
+            Version Control is located here:
+            <a class="external-link" href="https://bitbucket.org/openid/obuk/commits/all" rel="nofollow">
+             https://bitbucket.org/openid/obuk/commits/all
+            </a>
+           </p>
+           <p>
+            Git Commit Reference: 8-12-17 - 4630771
+           </p>
+           <p>
+            All changes are tracked as GIT commits for 100% transparency and visibility. Ideally comments, issues and pull requests will raised against the OIDF git repository however comments raised below as comments or on feedback pages will be responded too and incorporated during a transition period.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="diff-block-context">
+        <table class="diff-macro bodyless">
+         <thead>
+          <tr>
+           <th class="diff-macro-title">
+            <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/macrobrowser/dropdown/toc.png);">
+            </span>
+            Table of Contents
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="diff-macro-properties">
+            <table>
+             <tbody>
+              <tr>
+               <th>
+                outline
+               </th>
+               <td>
+                true
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </p>
+       <h1 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-VersionControl">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-0">
+         Version Control
+        </span>
+       </h1>
+       <div class="table-wrap diff-block-target diff-block-context">
+        <table class="wrapped relative-table confluenceTable" style="width: 98.063%;">
+         <colgroup>
+          <col style="width: 8.8363%;"/>
+          <col style="width: 10.4089%;"/>
+          <col style="width: 11.6819%;"/>
+          <col style="width: 68.8932%;"/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh">
+            <p>
+             Version
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Date
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Author
+            </p>
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <p>
+             Comments
+            </p>
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd">
+            v0.9.0
+           </td>
+           <td class="confluenceTd">
+            <div class="content-wrapper">
+             <p>
+              <time class="date-past" datetime="2017-08-29">
+               29 Aug 2017
+              </time>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd">
+            <a class="confluence-link unresolved" href="#">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-1">
+              Ralph Bragg
+             </span>
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Initial draft for internal review
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            v1.0.0-rc1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <div class="content-wrapper">
+             <p>
+              <time class="date-past" datetime="2017-11-09">
+               09 Nov 2017
+              </time>
+             </p>
+            </div>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <a class="confluence-link unresolved" href="#">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-2">
+              Ralph Bragg
+             </span>
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            For review
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            v1.0.0-rc2
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2017-12-07">
+             07 Dec 2017
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <a class="confluence-userlink user-mention" data-account-id="557058:f5357d4b-cddd-4cb9-a049-8ffeeee1bcc0" data-base-url="https://openbanking.atlassian.net/wiki" href="https://openbanking.atlassian.net/wiki/people/557058:f5357d4b-cddd-4cb9-a049-8ffeeee1bcc0?ref=confluence" target="_blank">
+             Ralph Bragg (Unlicensed)
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <div class="content-wrapper">
+             <p>
+              Updated to amend "
+              <span data-colorid="jrwegtbpze">
+               <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-3">
+                organisation_competent_authority_claims" from an array to an object, so that it matches the Open Banking Directory implementation as approved by TDA on
+               </span>
+               <time class="date-past" datetime="2017-12-07">
+                <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+                 07 Dec 2017
+                </span>
+               </time>
+               <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+               </span>
+              </span>
+             </p>
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h1 class="diff-block-target diff-block-context" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-Introduction">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-4">
+         Introduction
+        </span>
+       </h1>
+       <p class="diff-block-context">
+        This specification defines two mechanisms by which a Primary Technical Contact (PTC) for a Trusted Third Party (TPP) may submit a Software Statement Assertion (SSA) to an Account Servicing Payment Services Provider (ASPSP) for the purposes of receiving a client credential enabling access to UK OpenBanking APIs on behalf of ASPSP Customers. The automated mechanism profiles [RFC7591]. The manual mechanism uses web single sign-on for secure access by the PTC to a portal operated by the ASPSP that is based on the original PTC credentials used to generate the SSA.
+       </p>
+       <p class="diff-block-context">
+        <span class="confluence-embedded-file-wrapper">
+         <img alt="Registration Overview" class="confluence-embedded-image confluence-external-resource" data-image-src="https://bytebucket.org/openid/obuk/raw/2c1b46f63d1f56031b673051ac9fe4dd257d18d5/images/registration-profile/registration-overview.png" loading="lazy" src="https://bytebucket.org/openid/obuk/raw/2c1b46f63d1f56031b673051ac9fe4dd257d18d5/images/registration-profile/registration-overview.png"/>
+        </span>
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-Terminology">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-5">
+         Terminology
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        This specification uses the terms "access token", "authorization code", "authorization endpoint", "authorization grant", "authorization server", "client", "client identifier", "client secret", "grant type", "protected resource", "redirection URI", "refresh token", "resource owner", "resource server", "response type", and "token endpoint" defined by OAuth 2.0 [RFC6749] and uses the term "Claim" defined by JSON Web Token (JWT) [RFC7519].
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        <strong>
+         TPP Client Software
+        </strong>
+        <span>
+        </span>
+        - software implementing an OAuth2 client, interacting with an ASPSP registration endpoint.
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SoftwareStatementAssertion(SSA)">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-6">
+         Software Statement Assertion (SSA)
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        The SSA is a JSON Web Token (JWT) containing client metadata about an instance of TPP client software. The JWT is issued and signed by the OpenBanking Directory.
+       </p>
+       <p class="diff-block-context">
+        A large number of claims that OpenID Connect OPs could support are detailed
+        <span>
+        </span>
+        <a class="external-link" href="https://openid.net/specs/openid-connect-registration-1_0.html#ClientMetadata" rel="nofollow">
+         https://openid.net/specs/openid-connect-registration-1_0.html#ClientMetadata
+        </a>
+        <span>
+        </span>
+        and should be followed if not explicitly referenced below.
+       </p>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SSAPayload">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-7">
+         SSA Payload
+        </span>
+       </h4>
+       <p class="diff-block-context">
+        The payload of an OpenBanking SSA MUST be a compliant software statement according to [RFC7591]. The SSA MUST also be a compliant JWT according to [RFC7519]. The following metadata profiles the metadata in [RFC7591] and [RFC7519]:
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh" style="text-align: left;">
+            Metadata
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Description
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Default values
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             organisation_competent_authority_claims
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Authorisations granted to the organsiation by an NCA
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_status
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Included to cater for voluntary withdrawal from OB scenarios
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Active, Revoked or Withdrawn
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_id
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            The Unique TPP or ASPSP ID held by OpenBanking.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_name
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Legal Entity Identifier or other known organisation name
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_contacts
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            JSON array of objects containing a triplet of name, email, and phone number
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_jwks_endpoint
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Contains all active signing and network certs for the organisation
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             org_jwks_revoked_endpoint
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Contains all revoked signing and network certs for the organisation
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             ob_registry_tos
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A link to the OB registries terms of service page
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SSAheader">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-8">
+         SSA header
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        The SSA header MUST comply with [RFC7519].
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh" style="text-align: left;">
+            Metadata
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Description
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Comments
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             typ
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            MUST be set to JWT
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             alg
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            MUST be set to ES256 or PS256
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             kid
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            The kid will be kept the same as the "x5t" parameter. (X.509 Certificate SHA-1 Thumbprint) of the signing certificate.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ExampleSSA">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-9">
+         Example SSA
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        The elements defined in the software statement will consist of the following values.
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <div class="codehilite diff-block-context">
+        <pre>{
+    "typ": "JWT",
+    "alg": "ES256",
+    "kid": "ABCD1234"
+}
+{
+    "iss": "OpenBanking Ltd",
+    "iat": 1492756331,
+    "jti": "id12345685439487678",
+    "software_environment": "production",
+    "software_mode": "live",
+    "software_id": "65d1f27c-4aea-4549-9c21-60e495a7a86f",
+    "software_client_id": "OpenBanking TPP Client Unique ID",
+    "software_client_name": "Amazon Prime Movies",
+    "software_client_description": "Amazon Prime Movies is a moving streaming service",
+    "software_version": "2.2",
+    "software_client_uri": "https://prime.amazon.com",
+    "software_redirect_uris":
+    [
+        "https://prime.amazon.com/cb",
+        "https://prime.amazon.co.uk/cb"
+    ],
+    "software_roles": [
+        "PISP",
+        "AISP"
+    ],
+    "organisation_competent_authority_claims": [
+      {
+        "authority_id": "FMA", // Austrian Financial Market Authority
+        "registration_id": "111111",
+        "status": "Active",
+        "authorisations":  [
+                {
+                    "member_state": "GBR",
+                        "roles": [
+                            "PISP",
+                            "AISP"
+                    ]
+                },
+                {
+                    "member_state": "ROI",
+                        "roles": [
+                            "PISP"
+                    ]
+                }
+            ]
+      }
+    ],
+
+    "software_logo_uri": "https://prime.amazon.com/logo.png",
+    "org_status": "Active",
+    "org_id": "Amazon TPPID",
+    "org_name": "OpenBanking TPP Registered Name",
+    "org_contacts": [
+      {
+        "name": "contact name",
+        "email": "contact@contact.com",
+        "phone": "+447890130558"
+        "type": "business"
+      },
+      {
+        "name": "contact name",
+        "email": "contact@contact.com",
+        "phone": "+447890130558",
+        "type": "technical"
+      }
+    ],
+    "org_jwks_endpoint": "https://jwks.openbanking.org.uk/org_id/org_id.jkws",
+    "org_jwks_revoked_endpoint": "https://jwks.openbanking.org.uk/org_id/revoked/org_id.jkws",
+    "software_jwks_endpoint": "https://jwks.openbanking.org.uk/org_id/software_id.jkws",
+    "software_jwks_revoked_endpoint": "https://jwks.openbanking.org.uk/org_id/revoked/software_id.jkws",
+    "software_policy_uri": "https://tpp.com/policy.html",
+    "software_tos_uri": "https://tpp.com/tos.html",
+    "software_on_behalf_of_org": "https://api.openbanking.org.uk/scim2/OBTrustedPaymentParty/1234567789",
+    "ob_registry_tos": "https://registry.openbanking.org.uk/tos.html"
+
+}
+{
+    Signature
+}
+</pre>
+       </div>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-AutomatedClientRegistration">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-10">
+         Automated Client Registration
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        A TPP MAY use automated client registration to submit an SSA to an ASPSP in exchange for client credentials for use as a client against an OAuth 2.0 Authorization Server. It is RECOMMENDED for ASPSPs to support the automated client registration mechanism.
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        The TPP must only present the SSA to an ASPSP over a mutually authenticated TLS channel using a certificate issued by the OB. In this case, the combination of possession of the SSA, the possession of private keys referenced in the SSA and ability to present it over a channel that can be validated as belonging to the same TPP organization, is a strong barrier for attackers. Unlike RFC7591 the client registration request will be of type JWT where the registration request itself is a signed jwt.
+       </p>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ClientRegistrationEndpoint">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-11">
+         Client Registration Endpoint
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        If an ASPSP supports automated client registration, the ASPSP MUST operate an [RFC7591] compliant registration endpoint.
+        <span>
+        </span>
+        <em>
+         The client registration endpoint MUST be protected by transport-layer security (TLS 1.2 or better)
+         <span>
+         </span>
+        </em>
+        The transport layer MUST be mutually authenticated using certificates chaining to the OpenBanking certificate authority
+        <span>
+        </span>
+        <em>
+         The ASPSP registration endpoint MUST accept HTTP POST messages with request parameters encoded in the entity body using the "application/jwt" content-type.
+         <span>
+         </span>
+        </em>
+        The ASPSP registration endpoint SHOULD accept registration attempts from any mutually authenticated channel whose certificate chains to the OpenBanking certificate authority and is not revoked.
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-RequestValidation">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-12">
+         Request Validation
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        Prior to issuing a client registration response, the ASPSP MUST perform the following checks
+        <span>
+        </span>
+        <em>
+         The ASPSP SHOULD check whether the TPP that initiated the TLS connection is the same TPP as listed in the SSA.
+         <span>
+         </span>
+        </em>
+        In the case where a gateway or other piece of infrastructure pre-terminates the MATLS channel in front of the registration endpoint, the certificate used to initiate the connection or some part of that certificate (such as DN &amp; Issuer) SHOULD be made available to the ASPSP for validation against the claims in the SSA.
+        <span>
+        </span>
+        <em>
+         The registration request MUST be signed with a key contained in the JWKS referenced in the SSA included with the request. This ensures that a holder-of-key proof-of-possession is performed proving that the TPP app was the originally intended recipient of the SSA when the OB issued it.
+         <span>
+         </span>
+        </em>
+        The SSA MUST be validated according to [RFC7519], including validation of the signature and validity window.
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <ul class="diff-block-context">
+        <li>
+         <p>
+          SSA Lifetime
+         </p>
+        </li>
+        <li>
+         <p>
+          The SSA's Lifetime will be short, typically less than 10 minutes. TPPs will be able to retrieve SSAs from OB using client_credentials grant so there should be no need for a SSA to be long lived.
+         </p>
+        </li>
+       </ul>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SupportedextensionstoRFC7591">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-13">
+         Supported extensions to RFC7591
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        Section for the support sections / profile enhancements on RFC7591 e.g OIDC client reg profile, reg profile enhancments for mtls token end point auth
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ClientRegistrationRequest">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-14">
+         Client Registration Request
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        To register as a client at an ASPSP, the TPP sends an HTTP POST to the ASPSP registration endpoint.
+        <span>
+        </span>
+        <em>
+         The request MUST be presented in the format of a [RFC7519] compliant JWT.
+         <span>
+         </span>
+        </em>
+        The request MUST use the HTTP POST method, using the application/jwt method. * The JWT MUST be signed using algorithms specified in [FAPI-RW] Section 8.6.
+       </p>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-RequestClaims">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-15">
+         Request Claims
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        The client registration request MUST contain the following claims in the JWT payload unless designated as Optional. The TPP MAY add additional claims to the JWT payload. The ASPSP MAY ignore claims not in the chart below. If a claim name matches a specified claim in any of [RFC7519], [RFC7591], or [FAPI], the usage must also match the specification.
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh" style="text-align: left;">
+            Claim
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Description
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Source Specification
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Optional
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Comments
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            <br/>
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            <br/>
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            iss
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Request Issuer (The TPP)
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            iat
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Time of issuance of request
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            exp
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Request Expiration time
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            aud
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Request audience (The ASPSP)
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            jti
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            JWT ID
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            redirect_uris
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Registered URIs the TPP will use to interact with the ASPSP AS
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [OIDC-R]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            MUST match or be a subset of the software_redirect_uris claim in the SSA
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            token_endpoint_auth_method
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Specifies which token endpoint authentication method the TPP wants to use
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7591]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            private_key_jwt : if requested the OP should extract the TPPs JWKS location from the software statement assertion included.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            grant_types
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A JSON array specifying what the TPP can request to be supplied to the token endpoint as exchange for an access token
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7591]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            response_types
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A JSON array specifying what the TPP can request to be returned from the ASPSP authorisation endpoint.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7591]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            YES
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            ASPSPs MAY reject anything other than
+            <span>
+            </span>
+            <code>
+             code
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            software_id
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            OB Organisation ID
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7591]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            YES
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            If specified, the software_id in the request MUST match the software_id specified in the SSA. ASPSPs can choose to allow multiple registrations for a given software client name and may take the software_id from either the SSA or the TPP as a hint only.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            scope
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            scopes the client is asking for (if not specified, default scopes are assigned by the AS)
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7591]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            YES
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Minimum scope should be openid + whatever scopes are appropriate for the softwares PSD2 Role.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            software_statement
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            SSA issued by OpenBanking identifier
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [RFC7519]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            application_type
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            web or mobile
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [OIDC-R]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            MUST be
+            <span>
+            </span>
+            <code>
+             web
+            </code>
+            <span>
+            </span>
+            if specified.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            id_token_signed_response_alg
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Algorithm which the TPP expects to sign the id_token, if an id_token is returned.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [OIDC-R]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Supported values MUST comply with [FAPI-RW] Section 8.6.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            request_object_signing_alg
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Algorithm which the TPP expects to sign the request object if a request object will be part of the authorization request sent to the ASPSP.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            [OIDC-R]
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            NO
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Supported values MUST comply with [FAPI-RW] Section 8.6.
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SUPPORTEDTOKENENDPOINTAUTHENTICATIONMETHODS">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-16">
+         SUPPORTED TOKEN ENDPOINT AUTHENTICATION METHODS
+        </span>
+       </h4>
+       <p class="diff-block-context">
+        The TPP MUST choose one of the following token endpoint authentication methods:
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        <strong>
+         HTTP POST Client Authentication
+        </strong>
+        <span>
+        </span>
+        A TPP choosing to use HTTP Basic Authentication method MUST set the token_endpoint_auth_method claim in the registration request to
+        <span>
+        </span>
+        <code>
+         client_secret_post
+        </code>
+        <span>
+        </span>
+        as per [rfc6749] section 2.3.1.
+       </p>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SUPPORTEDGRANTTYPES">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-17">
+         SUPPORTED GRANT TYPES
+        </span>
+       </h4>
+       <p class="diff-block-context">
+        The TPP MUST specify one or more of the following values in the grant_types claim. Values MUST be encoded as a JSON array. ASPSPs MAY reject anything other than
+        <span>
+        </span>
+        <code>
+         client_credentials
+        </code>
+        or
+        <span>
+        </span>
+        <code>
+         authorization_code
+        </code>
+        .
+        <span>
+        </span>
+        <em>
+         <code>
+          authorization_code
+         </code>
+         <span>
+         </span>
+        </em>
+        <code>
+         refresh_token
+        </code>
+        <span>
+        </span>
+        *
+        <span>
+        </span>
+        <code>
+         client_credentials
+        </code>
+       </p>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SUPPORTEDRESPONSETYPES">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-18">
+         SUPPORTED RESPONSE TYPES
+        </span>
+       </h4>
+       <p class="diff-block-context">
+        A TPP MAY specify response_types in the request. Values MUST be encoded as a JSON array. In the case this value is omitted, and any grant type that utilizes the authorisation endpoint is also specified, the default response_types array contains the single value of
+        <span>
+        </span>
+        <code>
+         code
+        </code>
+        . ASPSPs SHOULD support
+        <span>
+        </span>
+        <code>
+         code id_token
+        </code>
+        <span>
+        </span>
+        and MAY support
+        <span>
+        </span>
+        <code>
+         code
+        </code>
+        .
+        <br/>
+        Supported response_types include:
+        <span>
+        </span>
+        <em>
+         <code>
+          code
+         </code>
+         <span>
+         </span>
+        </em>
+        <code>
+         code id_token
+        </code>
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SupportedRequestURIs">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-19">
+         Supported Request URIs
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        The TPP MAY specify a JSON array of [RFC3986] compliant redirect URIs in the request using the redirect_uris metadata element. Every value in the redirect_uris JSON array MUST adhere to the following rules: * The URI MUST use the https scheme * The URI MUST NOT contain a host with a value of localhost * The URI MUST exactly match a URI within the software_redirect_uris element of the SSA as described in Section 6.2.1 of [RFC3986] (Simple String Comparison). If the request_uris metadata element is omitted from the request, the entire contents of the software_redirect_uris element in the SSA are considered to be requested by the TPP.
+       </p>
+       <h2 class="diff-block-target diff-block-context" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ExampleRequest">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-20">
+         Example Request
+        </span>
+       </h2>
+       <div class="codehilite diff-block-target diff-block-context">
+        <pre><span class="nf" data-colorid="h699msxxis"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-21">POST</span></span> <span class="nn" data-colorid="udhhhyie9l"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-22">/register</span></span> <span class="kr">HTTP</span><span class="o">/</span><span class="m" data-colorid="jrmg6dt24y"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-23">1.1</span></span>
+<span class="na legacy-color-text-teal1">Content-Type</span><span class="o">:</span> <span class="l">application/jwt</span>
+<span class="na legacy-color-text-teal1">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+<span class="na legacy-color-text-teal1">Host</span><span class="o">:</span> <span class="l">auth.bankone.com</span>
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJREFtYXpvbiIsImlhdCI6MTQ5OTgwNTg0OCwiZXhwIjoxNTMxMzQxODQ4LCJhdWQiOiJodHRwczovL2F1dGhuLmxsb3lkc2JhbmsuY29tIiwic3ViIjoiaHR0cHM6Ly9hdXRobi5sbG95ZHNiYW5rLmNvbSIsImNsaWVudF9pZCI6IklEQW1hem9uMSIsInNvZnR3YXJlX3N0YXRlbWVudCI6ImV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5leUpwYzNNaU9pSlBjR1Z1UW1GdWEybHVaeUlzSW1saGRDSTZNVFE1T1Rnd05UZzBPQ3dpWlhod0lqb3hOVE14TXpReE9EUTRMQ0poZFdRaU9pSkZlR0Z0Y0d4bElGUlFVQ0lzSW5OMVlpSTZJa1Y0WVcxd2JHVWdWRkJRSWl3aVQySlVVRkJKWkNJNklrbEVRVzFoZW05dUlpd2lUMkpVVUZCU2IyeGxJam9pVUVsVFVDSjkuUnJydEpYbmZmSzVjOHJJeEczUm93QXNRZWNlSDNvWlFXTWJwZ0hENzhPOCJ9.VRckIjwgB9ahNTPK6GcDzCfqbU9mkvoOu-B_2jHdKzs
+</pre>
+       </div>
+       <h2 class="diff-block-target diff-block-context" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ExampleDecodedRegistrationRequest(NonNormativeJWTdecodedForIllustration)">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-24">
+         Example Decoded Registration Request (Non Normative JWT decoded For Illustration)
+        </span>
+       </h2>
+       <div class="codehilite diff-block-target diff-block-context">
+        <pre><span class="nf" data-colorid="g0ubyf696t"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-25">POST</span></span> <span class="nn" data-colorid="k2knx26pbm"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-26">/register</span></span> <span class="kr">HTTP</span><span class="o">/</span><span class="m" data-colorid="e6jv5uuq4u"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-27">1.1</span></span>
+     <span class="l">Content-Type: application/jwt</span>
+     <span class="l">Accept: application/json</span>
+     <span class="l">Host: authn.lloyds.co.uk</span>
+<span class="err" data-colorid="uhttg8jl0e"><span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-28">{</span></span>
+    "typ": "JWT",
+    "alg": "ES256",
+    "kid": "ABCD1234"
+}
+{
+    "iss": "Amazon TPPID",
+    "iat": 1492760444,
+    "exp": 1524296444,
+    "aud": "https://authn.lloyds.co.uk",
+    "scope": "openid makepayment",
+    "token_endpoint_auth_method": "private_key_jwt",
+    "grant_types": ["authorization_code", "refresh_token", "client_credentials"],
+    "response_types": ["code"],
+    "id_token_signed_response_alg": "ES256",
+    "request_object_signing_alg": "ES256",
+    "software_id": "65d1f27c-4aea-4549-9c21-60e495a7a86f",
+    "software_statement":     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJPcGVuQmFua2luZyBMdGQiLCJpYXQiOjE0OTI3NTYzMzEsImV4cCI6MTQ5Mjc1NzU1MCwiYXVkIjoiT3BlbkJhbmtpbmcgVFBQIFVuaXF1ZSBJRCIsInN1YiI6Ik9wZW5CYW5raW5nIFRQUCBTb2Z0d2FyZSBVbmlxdWUgSUQiLCJjbGllbnRfbmFtZSI6IkFtYXpvbiBQcmltZSBMdGQiLCJjbGllbnRfdXJpIjoiaHR0cHM6Ly9wcmltZS5hbWF6b24uY29tIiwidHBwX3NvZnR3YXJlX2lkIjoiT3BlbkJhbmtpbmcgVFBQIFNvZnR3YXJlIFVuaXF1ZSBJRCIsInRwcF9zb2Z0d2FyZV9yb2xlcyI6WyJQSVNQIiwiQUlTUCJdLCJ0cHBfcm9sZXMiOlsiUElTUCIsIkFJU1AiLCJQSUlTUCJdLCJ0cHBfaWQiOiJPcGVuQmFua2luZyBUUFAgVW5pcXVlIElEIiwidHBwX25hbWUiOiJPcGVuQmFua2luZyBUUFAgUmVnaXN0ZXJlZCBOYW1lIiwidHBwX2NvbXBldGVudF9hdXRob3JpdHkiOiJPcGVuQmFua2luZyBUUFAgUmVnaXN0ZXJlZCBDb21wZXRlbnQgQXV0aG9yaXR5IiwidHBwX2NvbXBldGVudF9hdXRob3JpdHlfaWQiOiJPcGVuQmFua2luZyBUUFAgUmVnaXN0ZXJlZCBBdXRob3JpdHkgSUQiLCJ0cHBfcHRjX25hbWUiOiJPcGVuQmFua2luZyBUUFAgUmVnaXN0ZXJlZCBQcmltYXJ5IFRlY2huaWNhbCBDb250YWN0IE5hbWUiLCJ0cHBfcHRjX2VtYWlsIjoiT3BlbkJhbmtpbmcgVFBQIFJlZ2lzdGVyZWQgUHJpbWFyeSBUZWNobmljYWwgQ29udGFjdCBFbWFpbCIsInRwcF9qd2tzX2VuZHBvaW50IjoiaHR0cHM6Ly9qd2tzLm9wZW5iYW5raW5nLm9yZy51ay90cHBfaWQuamt3cyJ9.dtWXOW7uAc-jM_-wZNyNvN3dkgd4yV6KkdS_6rbNRUBD15_rWO1FARF7WcjFmSvlZZrT-njf9CmJKbhl7DuXIw"
+}
+{
+    Signature
+}
+</pre>
+       </div>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <ul class="diff-block-context">
+        <li>
+         OPs MAY NOT support optional values listed below that are asserted by the TPP.
+        </li>
+        <li>
+         OPs MAY NOT adopt values asserted by the TPP that are also contained in the software statement
+        </li>
+        <li>
+         OPs SHALL reject requests if the requested configuration is not supported by the OP. e.g token_endpoint_auth_method requested should match one listed on the well-known configuration endpoint.
+        </li>
+       </ul>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-RegistrationRequestValidation">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-29">
+         Registration Request Validation
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        An ASPSP MUST return an error response if any of the following requirements are not met: - The registration request assertion MUST contain a software statement attribute as client metadata. - The signature of the software statement assertion MUST validate against the OpenBanking JWKS or JWKS URI distributed and validated out of band of the current registration request - The signature of the registration request assertion MUST successfully validate against the JWKS URI specified in the
+        <span>
+        </span>
+        <code>
+         software_jwks_endpoint
+        </code>
+        <span>
+        </span>
+        attribute of the software statement assertion (SSA). - If the request assertion specifies a
+        <span>
+        </span>
+        <code>
+         redirect_uris
+        </code>
+        <span>
+        </span>
+        metadata element, the array contents MUST match or be a subset of the
+        <span>
+        </span>
+        <code>
+         software_redirect_uris
+        </code>
+        <span>
+        </span>
+        claim in the SSA. - If the request assertion specifies a
+        <span>
+        </span>
+        <code>
+         software_id
+        </code>
+        <span>
+        </span>
+        metadata element, that value MUST match the
+        <span>
+        </span>
+        <code>
+         software_id
+        </code>
+        <span>
+        </span>
+        element in the SSA.
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-CertificateBasedTLSValidation">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-30">
+         Certificate Based TLS Validation
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        As described in [RFC7515] section 4.1.4 all OpenBanking Ltd ecosystem certificates will be issued as X.509 certificates that can be uniquely identified in a JWKS key store by the keyid. The format of the keyid will be aligned to the x5t parameter of the certificate from which the key is extracted as documented in [RFC7515] section 4.1.8.
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <ul class="diff-block-context">
+        <li>
+         The transport layer negotiated by the TPP MUST be mutually authenticated.
+        </li>
+        <li>
+         The client TLS certificate SHOULD chain to a certificate located in the SSA 'org_jwks_endpoint' attribute.
+        </li>
+        <li>
+         The client TLS certificate must contain the following attributes:
+        </li>
+        <li>
+         The Subject DN MUST contain the commonName (CN) attribute and organisationUnit (OU) of the certificate.
+        </li>
+        <li>
+         The CN attribute of the certificate MUST match the
+         <span>
+         </span>
+         <code>
+          software_id
+         </code>
+         <span>
+         </span>
+         specified within the SSA.
+        </li>
+        <li>
+         The OU attribute of the certificate MUST match the
+         <span>
+         </span>
+         <code>
+          org_id
+         </code>
+         <span>
+         </span>
+         specified within the SSA.
+        </li>
+        <li>
+         The Issuer DN MUST be validated ensuring that the issuer was the appropriate Open Banking CA for the environment.
+        </li>
+       </ul>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ClientRegistrationResponse">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-31">
+         Client Registration Response
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        At the time that the ASPSP finishes evaluation of the request, the ASPSP MUST return a client registration response to the TPP that reflects the final ASPSP client onboarding decision.
+       </p>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SuccessfulClientRegistrationResponse">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-32">
+         Successful Client Registration Response
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        In the case where the ASPSP makes a positive determination and creates a client, a Client Information Response MUST be returned to the the TPP conforming to Section 3.2.1 of [RFC7591]. The parameters returned in the response will vary depending on which token endpoint authentication method was specified in the request.
+       </p>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-EXAMPLECLIENTREGISTRATIONRESPONSE">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-33">
+         EXAMPLE CLIENT REGISTRATION RESPONSE
+        </span>
+       </h4>
+       <div class="codehilite diff-block-context">
+        <pre>HTTP/1.1 201 Created
+     Content-Type: application/json
+     Cache-Control: no-store
+     Pragma: no-cache
+
+     {
+      "client_id": "dc-xliXMnoy6LN7Rh2Zu0fZan",
+      "client_name": "Amazon Inc: Amazon Prime Movies Oct 23 2017"
+      "logo_uri": "https://prime.amazon.com/logo.png"
+      "redirect_uris":
+      [
+        "https://prime.amazon.com/cb",
+        "https://prime.amazon.co.uk/cb"
+      ],
+      "id_token_signed_response_alg": "ES256",
+      "request_object_signing_alg": "ES256",
+      "grant_types": ["authorization_code", "refresh_token"],
+      "software_id": "65d1f27c-4aea-4549-9c21-60e495a7a86f",
+      "software_logo_uri": "https://prime.amazon.com/logo.png"
+      "software_client_name": "Amazon Prime Movies",
+      "software_client_name#ja-Jpan-JP":
+         "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u540D",
+      "software_roles": [
+             "PISP",
+             "AISP"
+      ],
+      "scope": "openid makepayment",
+      "token_endpoint_auth_method": "private_key_jwt",
+      "software_jwks_endpoint": "https://jwks.openbanking.org.uk/org_id/software_id.jkws"
+     }
+</pre>
+       </div>
+       <h3 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-UnsuccessfulClientRegistrationResponse">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-34">
+         Unsuccessful Client Registration Response
+        </span>
+       </h3>
+       <p class="diff-block-context">
+        In the case where the ASPSP makes a negative determination and refuses to create a client, the ASPSP MUST return a client registration error response to the TPP conforming to Section 3.2.2 of [RFC7591].
+       </p>
+       <h4 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-EXAMPLECLIENTREGISTRATIONERRORRESPONSE">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-35">
+         EXAMPLE CLIENT REGISTRATION ERROR RESPONSE
+        </span>
+       </h4>
+       <div class="codehilite diff-block-context">
+        <pre>HTTP/1.1 400 Bad Request
+     Content-Type: application/json
+     Cache-Control: no-store
+     Pragma: no-cache
+
+     {
+      "error": "unapproved_software_statement",
+      "error_description": "Some actionable reason why an ASPSP might reject a valid SSA"
+     }  
+</pre>
+       </div>
+       <h1 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-ManualClientRegistration">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-36">
+         Manual Client Registration
+        </span>
+       </h1>
+       <p class="diff-block-context">
+        An ASPSP MAY choose to offer a developer web portal for the purposes of client registration. If an OpenBanking-related web portal is offered, the ASPSP portal MUST act as a [SAML2] or [OIDC] compliant relying party to the OpenBanking Directory, where the PTC will be strongly authenticated.
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-SingleSign-onConfiguration">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-37">
+         Single Sign-on Configuration
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        The OpenBanking Directory Single Sign-on service MUST
+       </p>
+       <ul class="diff-block-context">
+        <li>
+         Act as a [FAPI] compliant OpenID Connect Identity Provider in the Identity Provider role for valid ASPSPs.
+        </li>
+        <li>
+         Act as a [SAML2] Identity Provider compliant to OB supported profiles
+        </li>
+       </ul>
+       <p class="diff-block-context">
+        <span class="confluence-embedded-file-wrapper">
+         <img alt="Secondary GUI SSO" class="confluence-embedded-image confluence-external-resource" data-image-src="https://bytebucket.org/openid/obuk/raw/2c1b46f63d1f56031b673051ac9fe4dd257d18d5/images/registration-profile/registration-gui-swimlane.png" loading="lazy" src="https://bytebucket.org/openid/obuk/raw/2c1b46f63d1f56031b673051ac9fe4dd257d18d5/images/registration-profile/registration-gui-swimlane.png"/>
+        </span>
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-OIDCAvailableClaims">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-38">
+         OIDC Available Claims
+        </span>
+       </h2>
+       <div class="table-wrap diff-block-context">
+        <table class="wrapped confluenceTable">
+         <colgroup>
+          <col/>
+          <col/>
+          <col/>
+         </colgroup>
+         <thead>
+          <tr>
+           <th class="confluenceTh" style="text-align: left;">
+            Metadata
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Description
+           </th>
+           <th class="confluenceTh" style="text-align: left;">
+            Default values
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             tpp_associated
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Is this user associated with at least one TPP in the OpenBanking directory as either a Primary Technical Contact or �Secondary Technical Contact
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            true
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             account_verified
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Has this account been verified by / through OB processes necessary to achieve LoA2 certification of the identity associated with the user credentials
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            true
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             aspsp_associated
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Is this user associated with at least one ASPSP in the OpenBanking directory as either a Primary Technical Contact or �Secondary Technical Contact
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            true
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             sub
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Unique Identifier for the Authenticated User
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            xccsdlkj128789432
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             username
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Unique Identifier for the Authenticated User
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            xccsdlkj128789432
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             status
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Active Inactive flag
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             email
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Email address
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             phone_number
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A contact phone number (mobile) for the user also used as a second means for a authentication during password resets
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             family_name
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Surname or Family name
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             given_name
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Firstname or Given Name
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             name
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            Display or complete name string
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             tpp_associations_list
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A list of the TPP org_id's that this user is associated with in either a PTC or STC capacity
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" style="text-align: left;">
+            <code>
+             aspsp_associations_list
+            </code>
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            A list of the ASPSPS org_id's that this user is associated with in either a PTC or STC capacity
+           </td>
+           <td class="confluenceTd" style="text-align: left;">
+            <br/>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h1 class="diff-block-target diff-block-context" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-References">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-39">
+         References
+        </span>
+       </h1>
+       <h2 class="diff-block-target diff-block-context" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-NormativeReferences">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-40">
+         Normative References
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        [FAPI] "Financial API - Part 1: Read Only API Security Profile"
+        <span>
+        </span>
+        <a class="external-link" href="http://openid.net/specs/openid-financial-api-part-1.html" rel="nofollow">
+         http://openid.net/specs/openid-financial-api-part-1.html
+        </a>
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        [SAML2] "Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) 2.0"
+        <span>
+        </span>
+        <a class="external-link" href="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf" rel="nofollow">
+         https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf
+        </a>
+       </p>
+       <h2 class="diff-block-target" id="OpenBankingOpenIDDynamicClientRegistrationSpecification-v1.0.0-rc2-InformativeReferences">
+        <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-41">
+         Informative References
+        </span>
+       </h2>
+       <p class="diff-block-context">
+        [PSD2] "Payment Services Directive 2"
+        <span>
+        </span>
+        <a class="external-link" href="https://publications.europa.eu/en/publication-detail/-/publication/dd85ef2e-a953-11e5-b528-01aa75ed71a1" rel="nofollow">
+         https://publications.europa.eu/en/publication-detail/-/publication/dd85ef2e-a953-11e5-b528-01aa75ed71a1
+        </a>
+       </p>
+      </div>
+     </div>
+     <div class="hidden" id="space-tools-web-items">
+      <div data-href="/wiki/spaces/viewspacesummary.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="General">
+       General
+      </div>
+      <div data-href="/wiki/pages/reorderpages.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Content">
+       Content
+      </div>
+      <div data-href="/wiki/spaces/listrssfeeds.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Integrations">
+       Integrations
+      </div>
+     </div>
+    </main>
+    <!-- \#main -->
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="37720e3a20d24bfcba7b646d7e125ae5">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-pdf",
+    "uniqueKey":"com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export PDF Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-pdf.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-pdf&addOnKey=com.k15t.scroll.scroll-pdf&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiNiIsImlkIjoiMzY2Njc3MjQifSwic3BhY2UiOnsia2V5IjoiRFoiLCJpZCI6IjE3MjM2MTA1In19fSwiZXhwIjoxNzQ4OTAxODYzLCJpYXQiOjE3NDg5MDA5NjN9.QyL_JtjYgf2NJNNON8rJcgx7KqDK30tnakvqtfkuToI",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"6\",\"id\":\"36667724\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"36667724\",\"space.key\":\"DZ\",\"content.id\":\"36667724\",\"page.type\":\"page\",\"content.version\":\"6\",\"page.title\":\"OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"6\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-pdf.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="37720e3a20d24bfcba7b646d7e125ae5">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-office",
+    "uniqueKey":"com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export Word Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-word.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-office&addOnKey=com.k15t.scroll.scroll-office&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiNiIsImlkIjoiMzY2Njc3MjQifSwic3BhY2UiOnsia2V5IjoiRFoiLCJpZCI6IjE3MjM2MTA1In19fSwiZXhwIjoxNzQ4OTAxODYzLCJpYXQiOjE3NDg5MDA5NjN9.sFPtwXW9HGiEaOXue0lcEZ7TPAoEiyKH65SXxodD9ro",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"6\",\"id\":\"36667724\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"36667724\",\"space.key\":\"DZ\",\"content.id\":\"36667724\",\"page.type\":\"page\",\"content.version\":\"6\",\"page.title\":\"OpenBanking OpenID Dynamic Client Registration Specification - v1.0.0-rc2\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"6\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-word.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+   </div>
+  </div>
+  <!-- flex-flow: row wrap -->
+  <!-- display: flex -->
+  <span id="confluence-server-performance" style="display:none;">
+   {"serverDuration": 499, "requestCorrelationId": "37720e3a20d24bfcba7b646d7e125ae5"}
+  </span>
+ </body>
+</html>

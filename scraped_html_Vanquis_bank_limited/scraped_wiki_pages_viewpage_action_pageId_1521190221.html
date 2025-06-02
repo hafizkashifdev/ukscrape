@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- START-PRELOAD-TAGS -->
+  <!-- CLASSIC-master-4340849 -->
+  <script nonce="c24117f245fb42d0b99e1706f4e99d3e">
+   window.__buildInfo={"FRONTEND_VERSION":"CLASSIC-master-4340849","BUILD_DATE":1748620287055,"EDITOR_VERSION":"207.13.0","RENDERER_VERSION":"118.6.2","ATLASPACK_VERSION":"2.13.9","PUBLIC_PATH":"https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/"};
+  </script>
+  <!-- HEAD -->
+  <!-- JQuery -->
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.966fc25b.js" type="module">
+  </script>
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.runtime.794c0893.js" type="module">
+  </script>
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors.c912fa8e.js" type="module">
+  </script>
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/stable_vendors.41e17947.js" type="module">
+  </script>
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/atl.87332ca0.js" type="module">
+  </script>
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/ShareButton.a989ad1a.js" type="module">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery-migrate" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js">
+  </script>
+  <!-- Files -->
+  <script crossorigin="" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/standalone-navigation-jquery3.79aee824.js" type="module">
+  </script>
+  <!-- Set Referrer -->
+  <meta content="origin" name="referrer"/>
+  <link href="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/compiled.q77maa.css" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet"/>
+  <!-- HEAD -->
+  <!-- END-PRELOAD-TAGS -->
+  <title>
+   Conformance Certification Service - Developer Zone     - Confluence
+  </title>
+  <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="/wiki" id="confluence-context-path" name="confluence-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" id="confluence-base-url" name="confluence-base-url"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" id="atlassian-token" name="atlassian-token"/>
+  <meta content="    DZ
+" id="confluence-space-key" name="confluence-space-key"/>
+  <script nonce="c24117f245fb42d0b99e1706f4e99d3e" type="text/javascript">
+   var contextPath = '/wiki';
+  </script>
+  <meta content="" name="confluence-request-time"/>
+  <meta content="{}" name="ajs-discovered-plugin-features"/>
+  <meta content="253d1d43bcaa5d7fe9029b8bdddf648c2ca4cd0bf061a7a81007b7a40d5ee88f" name="ajs-keyboardshortcut-hash"/>
+  <meta content="true" name="ajs-use-keyboard-shortcuts"/>
+  <meta content="true" id="team-calendars-has-jira-link"/>
+  <meta content="displayTimeFormat12" name="ajs-team-calendars-display-time-format"/>
+  <meta content="false" id="team-calendars-display-week-number"/>
+  <meta content="UTC" id="team-calendars-user-timezone"/>
+  <script id="team-calendars-messages" title="team-calendars-messages" type="text/x-template">
+   <fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sept"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset>
+  </script>
+  <meta content="false" name="ajs-is-confluence-admin"/>
+  <meta content="60000" name="ajs-connection-timeout"/>
+  <meta content="MMM dd, yyyy" name="ajs-date.format"/>
+  <meta content="1521190221" name="ajs-page-id"/>
+  <meta content="1061584956" name="ajs-latest-page-id"/>
+  <meta content="page" name="ajs-content-type"/>
+  <meta content="Conformance Certification Service" name="ajs-page-title"/>
+  <meta content="Conformance Certification Service" name="ajs-latest-published-page-title"/>
+  <meta content="" name="ajs-parent-page-id"/>
+  <meta content="DZ" name="ajs-space-key"/>
+  <meta content="Developer Zone" name="ajs-space-name"/>
+  <meta content="-1" name="ajs-jira-metadata-count"/>
+  <meta content="" name="ajs-from-page-title"/>
+  <meta content="false" name="ajs-can-remove-page"/>
+  <meta content="view" name="ajs-browse-page-tree-mode"/>
+  <meta content="true" name="ajs-shared-drafts"/>
+  <meta content="4bb5ec59-42ff-4088-a410-cc59ea51038d" name="ajs-cloud-id"/>
+  <meta content="/wiki" name="ajs-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" name="ajs-base-url"/>
+  <meta content="1000.0.0-4eacb5f92c50" name="ajs-version-number"/>
+  <meta content="6452" name="ajs-build-number"/>
+  <meta content="" name="ajs-remote-user"/>
+  <meta content="" name="ajs-remote-user-key"/>
+  <meta content="" name="ajs-atlassian-account-id"/>
+  <meta content="false" name="ajs-remote-user-has-licensed-access"/>
+  <meta content="" name="ajs-current-user-fullname"/>
+  <meta content="" name="ajs-current-user-avatar-url"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/profilepics/anonymous.png" name="ajs-current-user-avatar-uri-reference"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_" name="ajs-static-resource-url-prefix"/>
+  <meta content="1048576000" name="ajs-global-settings-attachment-max-size"/>
+  <meta content="en_GB" name="ajs-user-locale"/>
+  <meta content="jira_issues_macro_async_fetch,cc-notifications-live-page-updates,fabric_editor_blank_page,jira_premium_plans_macro_prevent_new_macros,confluence_sanitize_macro_preview_xss,confluence_live_pages_macro_copy_updates,unified.permissions,previews.conversion-service,previews.trigger-all-file-types,confluence.pagenav.deferred,filestore.direct.download,frontend.editor.plugins,previews.sharing,pdf-preview,notification.batch,editor.ajax.save,jquery.feature.detection.cache,confluence.non.polling.index.flush,com.atlassian.growth.shakuni.disabled,confluence.view.edit.transition,confluence.table.resizable,fabric.mentions,react.ui.graph,confluence-inline-comments-dangling-comment,cql.search.screen,previews.sharing.pushstate,filestore.direct.upload,jim.async.vertigo,app-switcher.new,connect.no-applinks,adg3.no.auto.optout.global.colourscheme,confluence.efi.onboarding.new.templates,sidebar.deferred,file-annotations,confluence-inline-comments-resolved,quick-reload-inline-comments-flags,atlassian.aui.raphael.disabled,clc.quick.create,confluence-inline-comments-rich-editor,confluence.sidebar.deferred,collaborative-audit-log,previews.versions,file-annotations.likes,confluence-inline-comments,fusion.bitbucket.rebrand,filestore.thumbnail,rotp.admin.shortcuts,mention.service.userbase.sync.enabled,rotp.project.shortcuts" name="ajs-enabled-dark-features"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" name="ajs-atl-token"/>
+  <meta content="ALACARTE" name="ajs-confluence-flavour"/>
+  <meta content="dd MMM yyyy" name="ajs-user-date-pattern"/>
+  <meta content="false" name="ajs-iframe-allowed-for-spa"/>
+  <meta content="false" name="ajs-content-only"/>
+  <meta content="STANDARD" name="ajs-edition"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="shortcut icon"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="icon" type="image/x-icon"/>
+  <!-- Monolith is still expecting a fallback-mode-jquery3.html file from SPA bundle -->
+  <link href="/wiki/opensearch/osd.action" rel="search" title="Confluence" type="application/opensearchdescription+xml">
+   <!-- Styles -->
+   <script nonce="c24117f245fb42d0b99e1706f4e99d3e">
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:featured-macro-css-resources.featuredMacroCssData"]="{\"io.extensi-confluence-plugin-twitter-connector\":[\"twitter-connector-macro\"],\"com.lucidchart.confluence.plugins.lucid-confluence\":[\"lucidchart\"],\"com.confluence.swagger.api.document\":[\"swagger-integration\"],\"confluence-github-link-macro\":[\"github-link-macro\"],\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio\",\"inc-drawio\",\"drawio-sketch\"],\"org.swift.confluence.table\":[\"attachment-table\",\"csv\",\"table-plus\",\"json-table\",\"advanced-table-viewer\"],\"me.davidsimpson.confluence.addon.bitbucket-issues\":[\"bitbucket-single-commit-macro\",\"bitbucket-commits-macro\",\"bitbucket-snippets-macro\",\"bitbucket-issues-macro\",\"bitbucket-readme-macro\"],\"cello\":[\"trello-board\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-autoconvert-resources.connect-autoconvert-data"]="[{\"macroName\":\"lucidchart\",\"urlParameter\":\"url\",\"matchers\":[\"https://lucid.app/lucidchart/{}/edit{}\"]},{\"macroName\":\"mohamicorp-markdown-url\",\"urlParameter\":\"url\",\"matchers\":[\"http://{}\",\"https://{}\"]},{\"macroName\":\"OneDrive\",\"urlParameter\":\"url\",\"matchers\":[\"https://{}-my.sharepoint.com/{}/{}/personal/{}/_layouts/{}/{}\",\"https://{}-my.sharepoint.com/personal/{}/_layouts/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com:443/{}/{}/personal/{}/{}\",\"https://{}-my.sharepoint.com/personal/{}/Documents/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}/{}\",\"https://{}-my.sharepoint.com/{}/{}/personal/{}/Documents/{}\",\"https://{}.sharepoint.com/{}\",\"https://{}.sharepoint.com/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}/{}\",\"https://{}.sharepoint.com/{}/{}/{}/{}/{}/{}/{}\"]},{\"macroName\":\"trello-card\",\"urlParameter\":\"url\",\"matchers\":[\"https://trello.com/c/{}/{}\",\"https://trello.com/b/{}/{}\",\"https://trello.com/c/{}/{}/\",\"https://trello.com/b/{}/{}/\",\"https://trello.com/b/{}\",\"https://trello.com/c/{}\",\"https://trello.com/b/{}/\",\"https://trello.com/c/{}/\"]},{\"macroName\":\"twitter-connector-macro\",\"urlParameter\":\"url\",\"matchers\":[\"https://twitter.com/{}/timelines/{}\",\"https://twitter.com/{}\",\" https://twitter.com/{}/lists/{}\",\"https://twitter.com/{}/likes\"]},{\"macroName\":\"github-link-macro\",\"urlParameter\":\"link\",\"matchers\":[\"https://github.com/{}\",\"https://github.com/{}/\",\"https://github.com/{}/{}\",\"https://github.com/{}/{}/pull/{}\",\"https://github.com/{}/{}/tree/{}\",\"https://github.com/{}/{}/tree/{}/{}\",\"https://github.com/{}/{}/tree/{}/{}/{}\",\"https://github.com/{}/{}/tree/{}/{}/{}/{}\",\"https://github.com/{}/{}/issues/{}\",\"https://github.com/{}/{}/wiki/{}\",\"https://github.com/{}/{}/projects/{}\",\"https://github.com/{}/{}/blob/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://github.com/{}/{}/blob/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}/{}\",\"https://gist.github.com/{}/{}\",\"https://gist.githubusercontent.com/{}/{}/raw/{}/{}\",\"https://github.com/{}/{}/issues\",\"https://github.com/{}/{}/pulls\",\"https://github.com/{}/{}/milestone/{}\",\"https://github.com/{}/{}/releases\",\"https://github.com/{}/{}/releases/{}\",\"https://github.com/{}/{}/releases/tag/{}\",\"https://github.com/{}/{}/tags\"]}]";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources.connect-content-byline-data"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio-diagram\"],\"com.addonengine.analytics\":[\"space-analytics\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"dialogOptions\":{\"com.k15t.scroll.scroll-office__web-item-export-office-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}},\"com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"}},\"inlineDialogOptions\":{},\"dialogModules\":{\"com.atlassian.confluence.plugins.confluence-office365\":{\"office365\":{\"cacheable\":false,\"options\":{\"size\":\"maximum\",\"chrome\":false},\"key\":\"office365\"}},\"com.k15t.scroll.scroll-office\":{\"k15t-cxp-office-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-office-template-editor\"},\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-export-office\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-office\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"com.k15t.scroll.scroll-pdf\":{\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-export-pdf\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-pdf\"},\"k15t-cxp-dialog-pdf-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-dialog-pdf-template-editor\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-brand-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-brand-dialog\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"org.swift.confluence.table\":{\"table-viewer-fullscreen\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"width\":\"100%\"},\"key\":\"table-viewer-fullscreen\"}},\"confluence-chats-integration\":{\"dialog\":{\"cacheable\":false,\"options\":{},\"key\":\"dialog\"},\"page-config-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"}}}}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+if(window.WRM._dataArrived)window.WRM._dataArrived();
+   </script>
+   <link data-wrm-batch-type="context" data-wrm-key="_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/4717b5ea9dcf07eebf6ecaed970652e143dc6d6d5b277396f008f20eb2d146ff/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/b26bbfc1a5d2e573a60954ff254ced8aa3449b512c578f6b95bbbf20379de506/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/b26bbfc1a5d2e573a60954ff254ced8aa3449b512c578f6b95bbbf20379de506/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;media=print&amp;relative-url=true" media="print" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="org.randombits.confluence.toc:client-side-toc-resources" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d8dc206fe05dd013800d23c42b8f2ef22d9ecebab3eb074c4c169d59993c14f1/_/download/batch/org.randombits.confluence.toc:client-side-toc-resources/org.randombits.confluence.toc:client-side-toc-resources.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-resources" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/ce2e0c82081bbdc2e1d2a2de1af9c6e091828034d17c38f15ec943103d72916c/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-resources/com.atlassian.confluence.plugins.confluence-labels:labels-resources.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:aui-forms" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/9a658364077ee786eaf82681e467641fe8957ee35f0bb4998087b280fbe45817/_/download/batch/confluence.web.resources:aui-forms/confluence.web.resources:aui-forms.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-sidebar" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/be1a0f9511403efab098ae05d13741b954061736d63980f8950eda35743ce25c/_/download/batch/com.atlassian.auiplugin:aui-sidebar/com.atlassian.auiplugin:aui-sidebar.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="c24117f245fb42d0b99e1706f4e99d3e" rel="stylesheet" type="text/css"/>
+   <!-- Dynamically generated colors styles -->
+   <!-- Scripts -->
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="_super" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cbc479ef16c9294c01e5c11c3a460727e14a5dbb9ea60f3aec6d28522483b157/_/download/contextbatch/js/_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/424fcbb5305a6a35a804f5c6e90f508cf689f9e53d8000fd0ecf5a7c95ffb948/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,viewcontent,main,atl.general,page,atl.comments,-_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;highlightactions=true&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="org.randombits.confluence.toc:client-side-toc-resources" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/ef0296e2795f08ce8e8ee7d7937c80733a8f2f2dc61bc55b3811eb4904a77232/_/download/batch/org.randombits.confluence.toc:client-side-toc-resources/org.randombits.confluence.toc:client-side-toc-resources.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-resources" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/ecad5866e8b814df66becef4b9ac10f9f0377e62c07491b50f0dba08ee9ab8d3/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-resources/com.atlassian.confluence.plugins.confluence-labels:labels-resources.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/27c98227b63bfacd096084c50bce73b5c8bb3474f58f9ca89d69f6b7a8877608/_/download/batch/com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy/com.atlassian.confluence.plugins.confluence-labels:labels-editor-legacy.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:breadcrumbs" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/98cfd6888d222026ba2e847d3157d0603e04ee8c6e49cada89a75375b7a41dc7/_/download/batch/confluence.web.resources:breadcrumbs/confluence.web.resources:breadcrumbs.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:ajs-raf" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/92491fd54a35a5cfd79992635311a910eaa840da13b971dc1630da8f3cffa266/_/download/batch/com.atlassian.auiplugin:ajs-raf/com.atlassian.auiplugin:ajs-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-is-input" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d142b935c16781a34a3d3c7ac45bcf62b8aefa05959c0ed2449714e6cd02160b/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-vendor-raf-raf" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/5c10ee22191b4d0afdb606690d2f2cd850f01a480e772a08562ab9deaffce57f/_/download/batch/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cf13df64397bd462047b299484cbd27c0cc94f12fb0040fd9ac93fed3aff67ba/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/c9d9c3b2c6b6f083bf0687811156bb6fe97ebfe1e0751984278f519b766da40d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-sidebar" nonce="c24117f245fb42d0b99e1706f4e99d3e" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1482efa05fe564f5eae52ef9342e22bc7ed1bd026417497edbd66010b8b881ce/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-sidebar/com.atlassian.auiplugin:internal-src-js-aui-sidebar.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <meta content="Confluence" name="ajs-site-title">
+    <link href="https://openbanking.atlassian.net/wiki/spaces/DZ/pages/1061584956/Conformance+Certification+Service" rel="canonical"/>
+    <link href="https://openbanking.atlassian.net/wiki/x/TYWrWg" rel="shortlink"/>
+    <meta content="[null:Conformance Certification Service]" name="wikilink"/>
+    <meta content="15" name="page-version"/>
+    <meta content="15" name="ajs-page-version"/>
+   </meta>
+  </link>
+ </head>
+ <body class="theme-default content-type-page aui-layout aui-theme-default" id="com-atlassian-confluence">
+  <script nonce="c24117f245fb42d0b99e1706f4e99d3e">
+   var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+  </script>
+  <div class="banner-spacer-container">
+  </div>
+  <div data-main-container="" style="display:flex;">
+   <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+   </div>
+   <div data-flex-container="" style="flex-flow: row wrap; width: 100%">
+    <div data-main-content="" style="flex: 1 100%">
+    </div>
+    <!-- PARCEL -->
+    <!-- START-FRAGMENT standalone-navigation-jquery3.html -->
+    <style nonce="c24117f245fb42d0b99e1706f4e99d3e">
+     body,body.aui-layout{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif}body{background-color:var(--ds-surface,#fff);margin:0;padding:0;font-size:14px}#main,#admin-content,#custom-content-container,.ap-servlet-placeholder{opacity:0}a{text-decoration:none}h1{font-weight:400}
+    </style>
+    <!-- END-FRAGMENT standalone-navigation-jquery3.html-->
+    <div id="header-precursor">
+     <div class="cell">
+     </div>
+    </div>
+    <!-- \#header -->
+    <main class="aui-page-panel" id="main">
+     <div class="connect-theme-background-cover">
+     </div>
+     <div id="main-header">
+      <content tag="content-navigation">
+       <div class="content-navigation view" id="navigation">
+        <meta content="1521190221" name="ajs-page-id"/>
+        <ul class="ajs-menu-bar">
+         <li class="normal ajs-menu-item">
+          <a aria-haspopup="true" aria-label="More actions" aria-owns="action-menu" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" data-container="#navigation" href="#" id="action-menu-link">
+           <span>
+            <span class="aui-icon aui-icon-small aui-iconfont-more">
+            </span>
+           </span>
+          </a>
+          <div aria-hidden="true" class="aui-dropdown2 aui-style-default" id="action-menu">
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-modify first" id="action-menu-system.content.action-modify">
+             <li>
+              <a class="" href="https://openbanking.atlassian.net/wiki/spaces/flyingpdf/pdfpageexport.action?pageId=1521190221&amp;atl_token=440a17db837b27f1769019bd3a27c43953e7be74" id="action-export-pdf-link" rel="nofollow" title="">
+               <span>
+                Export to PDF
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-primary" id="action-menu-system.content.action-primary">
+             <li>
+              <a class="action-view-history" href="/wiki/spaces/DZ/history/1061584956" id="action-view-history-link" rel="nofollow" title="">
+               <span>
+                Version history
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="change-page-ownership" href="/wiki" id="change-page-ownership-link" rel="nofollow" title="">
+               <span>
+                View ownership
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="" href="/wiki" id="view-resolved-comments" rel="nofollow" title="">
+               <span>
+                Resolved comments
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="action-view-info" href="/wiki/pages/viewinfo.action?pageId=1521190221" id="view-page-info-link" rel="nofollow" title="">
+               <span>
+                Content Information
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="action-view-source popup-link" href="/wiki/plugins/viewsource/viewpagesrc.action?pageId=1521190221" id="action-view-source-link" rel="nofollow" title="">
+               <span>
+                View Source
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="aui-dropdown2-section">
+            <ul class="section-system.content.action-secondary" id="action-menu-system.content.action-secondary">
+             <li>
+              <a class="ap-dialog ap-plugin-key-com.lucidchart.confluence.plugins.lucid-confluence ap-module-key-lucid-gliffy-page-conversion-menuitem ap-link-webitem" href="/wiki/plugins/servlet/ac/com.lucidchart.confluence.plugins.lucid-confluence/gliffyConversion?pageId={page.id}&amp;page.id=1521190221&amp;space.key=DZ&amp;content.id=1521190221&amp;content.version=15&amp;page.type=page&amp;page.title=Conformance%20Certification%20Service&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=15" id="com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem" rel="nofollow" title="">
+               <span>
+                Convert Gliffy Diagrams
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </content>
+      <div class="pagetitle with-breadcrumbs" id="title-heading">
+       <div aria-label="Breadcrumb" id="breadcrumb-section" role="navigation">
+        <ol id="breadcrumbs">
+         <li class="first">
+          <span class="">
+           <a href="/wiki/spaces/DZ/pages">
+            Content
+           </a>
+          </span>
+          <li>
+           <span class="">
+            <a href="/wiki/spaces/DZ/overview">
+             Developer Zone
+            </a>
+           </span>
+          </li>
+         </li>
+        </ol>
+       </div>
+       <a class="assistive" href="#page-banner-end">
+        Skip to end of banner
+       </a>
+       <div class="assistive" id="page-banner-start">
+       </div>
+       <div id="page-metadata-banner">
+        <ul class="banner">
+         <li class="noprint" id="system-content-items">
+          <a class="hidden" href="" id="content-metadata-page-restrictions-hidden" title="Unrestricted">
+          </a>
+         </li>
+         <li class="page-metadata-item noprinthas-button" id="content-metadata-jira-wrapper">
+          <a class="aui-button aui-button-subtle content-metadata-jira tipsy-disabled hidden" href="" id="content-metadata-jira" title="">
+           <span>
+            Jira links
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <a class="assistive" href="#page-banner-start">
+        Go to start of banner
+       </a>
+       <div class="assistive" id="page-banner-end">
+       </div>
+       <h1 class="with-breadcrumbs" id="title-text">
+        <a href="/wiki/pages/viewpage.action?pageId=1521190221">
+         Conformance Certification Service
+        </a>
+       </h1>
+      </div>
+     </div>
+     <!-- \#main-header -->
+     <div class="page view" id="content">
+      <div id="action-messages">
+      </div>
+      <a class="assistive" href="#page-metadata-end">
+       Skip to end of metadata
+      </a>
+      <div class="assistive" id="page-metadata-start">
+      </div>
+      <div class="page-metadata">
+       <ul>
+        <li class="page-metadata-modification-info">
+         Created by
+         <span class="author">
+          <a class="url fn" href="/wiki/people/557058:19250dc2-3562-4dc6-8f26-1ca935de11e1">
+           Chris Michael
+          </a>
+         </span>
+         , last modified on
+         <a class="last-modified" href="/pages/diffpagesbyversion.action?pageId=1521190221&amp;selectedPageVersions=14&amp;selectedPageVersions=15" title="Show changes">
+          Dec 11, 2019
+         </a>
+        </li>
+       </ul>
+      </div>
+      <a class="assistive" href="#page-metadata-start">
+       Go to start of metadata
+      </a>
+      <div class="assistive" id="page-metadata-end">
+      </div>
+      <div class="aui-message warning" id="page-history-warning">
+       <p>
+        <span class="aui-icon icon-warning">
+        </span>
+        <strong>
+         You are viewing an old version of this content. View the
+         <strong>
+          <a href="/wiki/spaces/DZ/pages/1061584956/Conformance+Certification+Service">
+           current version
+          </a>
+          .
+         </strong>
+        </strong>
+       </p>
+       <p class="page-history-view">
+        <a href="/wiki/pages/diffpagesbyversion.action?pageId=1061584956&amp;originalVersion=15&amp;revisedVersion=16">
+         Compare with Current
+        </a>
+        <a href="/wiki/spaces/DZ/history/1061584956">
+         View Version History
+        </a>
+       </p>
+       <p class="version-navigation-block">
+        <a class="version-navigation aui-button view-historical-version-trigger" href="/wiki/pages/viewpage.action?pageId=1193902334&amp;navigatingVersions=true">
+         « Previous
+        </a>
+        <span class="current-version-margin">
+         <strong>
+          Version 15
+         </strong>
+        </span>
+        <a class="version-navigation aui-button" href="/wiki/spaces/DZ/pages/1061584956/Conformance+Certification+Service" id="current-navigation">
+         Current »
+        </a>
+       </p>
+      </div>
+      <div class="wiki-content" id="main-content">
+       <p>
+        <style>
+         [data-colorid=hoz0an3sir]{color:#212121} html[data-color-mode=dark] [data-colorid=hoz0an3sir]{color:#dedede}[data-colorid=szhpb1jxk2]{color:#212121} html[data-color-mode=dark] [data-colorid=szhpb1jxk2]{color:#dedede}[data-colorid=b3m4uh7myn]{color:#212121} html[data-color-mode=dark] [data-colorid=b3m4uh7myn]{color:#dedede}
+        </style>
+        Open Banking Limited (hereafter known as OBIE) provide a suite of Conformance Tools to help Implementers (which includes Account Providers, Third-Party Providers, Vendors and Technical Service Providers) test that they have implemented each part of the OBIE Standard correctly.
+       </p>
+       <p>
+        OBIE offers a Conformance Certification Service to allow Implementers to use these tools to self-attest, so that OBIE can then validate and publish a Conformance Certificate. These Conformance Certificates can be used by Implementers as evidence to the ecosystem (including Regulators) that they have followed the OBIE Standard correctly.
+       </p>
+       <p>
+        Initially, the focus is to enable ASPSPs to use these Conformance Certificates as evidence that they have followed the OBIE Standard without deviation when applying to their National Competent Authority (NCA) for an exemption from a contingency mechanism.
+       </p>
+       <div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="1529615f-b0a8-4738-8910-630a3a0ef9a1" data-macro-name="info">
+        <span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon">
+        </span>
+        <div class="confluence-information-macro-body">
+         <p>
+          <span>
+           The details of this service do not form part of any contract but explain the process and how OBIE expects Implementers to engage. Implementers should be aware that these details may be updated by OBIE from time to time. Details of any changes will be set out in the Version Control section below.
+          </span>
+         </p>
+        </div>
+       </div>
+       <p>
+        <span>
+        </span>
+       </p>
+       <div class="toc-macro client-side-toc-macro conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-id="3e734051-28c0-4b4f-99a8-772201ab619d" data-macro-name="toc">
+       </div>
+       <p>
+       </p>
+       <h1 id="ConformanceCertificationService-1.Versioncontrol">
+        <span>
+         1. Version control
+        </span>
+       </h1>
+       <div class="table-wrap">
+        <table class="relative-table wrapped confluenceTable" style="width: 100.0%;">
+         <colgroup>
+          <col style="width: 5.4409%;"/>
+          <col style="width: 9.50594%;"/>
+          <col style="width: 9.56848%;"/>
+          <col style="width: 75.4847%;"/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            <p>
+             Version
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Date
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Author
+            </p>
+           </th>
+           <th class="confluenceTh">
+            <p>
+             Comments
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <p>
+             1.0
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <div class="content-wrapper">
+             <time class="date-past" datetime="2019-04-26">
+              26 Apr 2019
+             </time>
+            </div>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             OBIE
+            </p>
+           </td>
+           <td class="confluenceTd">
+            <p>
+             Initial baselined version
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            1.1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2019-07-10">
+             10 Jul 2019
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OBIE
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Minor update to include further clarity of difference between OBIE and OIDF security profile conformance
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            1.2
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2019-10-07">
+             07 Oct 2019
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OBIE
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Update to the range of Conformance Tools and Certificates available
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            1.3
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2019-11-26">
+             26 Nov 2019
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OBIE
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Update to the range of Conformance Tools and Certificates available (DCR)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h1 id="ConformanceCertificationService-2.Overview">
+        <span>
+         2. Overview
+        </span>
+       </h1>
+       <p>
+        The following table shows the range of Conformance Tools and Conformance Certificates that are offered by OBIE.
+       </p>
+       <p>
+        The Conformance Tools are all available under the
+        <span>
+         <a class="external-link" href="https://www.openbanking.org.uk/open-licence/" rel="nofollow">
+          MIT Open Licence
+         </a>
+         without charge. Implementers can purchase any of the Certification Services listed below.
+        </span>
+       </p>
+       <p>
+        It is up to each Implementer to determine which endpoints, data fields, functionality, brands, products and unique tests need to be covered by each Conformance Certificate. OBIE will validate and publish Conformance Certificates based on the information provided by the Implementer. For example, each ASPSP will need to determine the number of dedicated interfaces that it has in consultation with the NCA. It is entirely between the NCA and each ASPSP as to what is considered a dedicated interface. It is then up to the ASPSP to decide which Conformance Certificates it would like to support its application(s) to the NCA for an exemption.
+       </p>
+       <div class="table-wrap">
+        <table class="relative-table wrapped confluenceTable" style="width: 100.0%;">
+         <colgroup>
+          <col style="width: 16.9481%;"/>
+          <col style="width: 20.7004%;"/>
+          <col style="width: 11.1945%;"/>
+          <col style="width: 31.1445%;"/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            Type
+           </th>
+           <th class="confluenceTh">
+            Conformance Certificates
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <strong>
+             Fee per Conformance Certificate
+            </strong>
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <strong>
+             Number of Conformance Certificates needed
+            </strong>
+           </th>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <a data-linked-resource-id="1061650703" data-linked-resource-type="page" data-linked-resource-version="15" href="/wiki/spaces/DZ/pages/1061650703/Security+Profile+Conformance">
+             Security Profile Conformance
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span data-colorid="szhpb1jxk2">
+             Financial Grade API (FAPI) Conformance Certificates *
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            See
+            <a class="external-link" href="https://openid.net/certification/fees/" rel="nofollow">
+             https://openid.net/certification/fees/
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span data-colorid="b3m4uh7myn">
+             Client-Initiated Backchannel Authentication (CIBA)
+             <span data-colorid="hoz0an3sir">
+              Conformance Certificates *
+             </span>
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            See
+            <a class="external-link" href="https://openid.net/certification/fees/" rel="nofollow">
+             https://openid.net/certification/fees/
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <a data-linked-resource-id="1061716467" data-linked-resource-type="page" data-linked-resource-version="8" href="/wiki/spaces/DZ/pages/1061716467/Functional+Conformance">
+             Functional Conformance
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Functional Conformance Certificates: AIS
+           </td>
+           <td class="confluenceTd" colspan="1">
+            £1,000
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Functional Conformance Certificates: PIS
+           </td>
+           <td class="confluenceTd" colspan="1">
+            £1,000
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Functional Conformance Certificates: CBPII
+           </td>
+           <td class="confluenceTd" colspan="1">
+            £1,000
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <a data-linked-resource-id="1193869584" data-linked-resource-type="page" data-linked-resource-version="1" href="/wiki/spaces/DZ/pages/1193869584/Dynamic+Client+Registration+Conformance">
+             Dynamic Client Registration Conformance
+            </a>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Dynamic Client Registration Conformance Certificates
+           </td>
+           <td class="confluenceTd" colspan="1">
+            £1,000
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per base URL (e.g.
+            <a class="external-link" href="http://api.bank.com" rel="nofollow">
+             api.bank.com
+            </a>
+            ).
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd">
+            <a data-linked-resource-id="1061847657" data-linked-resource-type="page" data-linked-resource-version="3" href="/wiki/spaces/DZ/pages/1061847657/Customer+Experience+Guidelines+Conformance">
+             Customer Experience Guidelines Conformance
+            </a>
+           </td>
+           <td class="confluenceTd">
+            Customer Experience Guidelines Conformance Certificates
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Price on application
+           </td>
+           <td class="confluenceTd" colspan="1">
+            One per branded set of customer journeys.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p>
+        Included in the above fee for each Conformance Certificate, OBIE will provide a limited amount of support during UK office hours to help the Implementer use the Conformance Tool(s) and complete the submission process. This will not include detailed technical support in implementing any element of the OBIE Standard. This does not require, nor is not dependent on any other Support Service which may be purchased separately from OBIE.
+       </p>
+       <p>
+        *Please visit the
+        <a class="external-link" href="https://openid.net/certification/" rel="nofollow">
+         Open ID Foundation
+        </a>
+        for Financial Grade API (FAPI) and Client Initiated Backchannel Authentication (CIBA) Certificates.
+       </p>
+       <h1 id="ConformanceCertificationService-3.HowtogetaConformanceCertificate">
+        <span>
+         3. How to get a Conformance Certificate
+        </span>
+       </h1>
+       <p>
+        Though the process differs slightly by Conformance Certificate type, the general process is as follows:
+       </p>
+       <ol>
+        <li>
+         Implementer downloads relevant Conformance Tool or Checklist and completes all required tests.
+         <ol>
+          <li>
+           <a class="external-link" href="https://bitbucket.org/openbankingteam/conformance-suite/src/develop/" rel="nofollow">
+            Functional Conformance Tool for AIS, PIS and CBPII
+           </a>
+          </li>
+          <li>
+           <a class="external-link" href="https://bitbucket.org/openbankingteam/conformance-dcr/src/develop/" rel="nofollow">
+            Dynamic Client Registration Tool
+           </a>
+          </li>
+         </ol>
+        </li>
+        <li>
+         <span class="inline-comment-marker" data-ref="a20219c3-ccf8-468e-b892-11c0855ba9c3">
+          Implementer signs relevant order form (including agreeing terms and conditions and payment terms) to order a Conformance Certificate.
+         </span>
+        </li>
+        <li>
+         <p>
+          Implementer purchases a Conformance Certification Service from OBIE via the Service Desk
+          <a class="external-link" href="https://openbanking.atlassian.net/servicedesk/customer/portal/1/group/1/create/135" rel="nofollow">
+           Conformance Certification Order Form
+          </a>
+         </p>
+        </li>
+        <li>
+         OBIE validates Conformance Certificate Request.
+        </li>
+        <li>
+         Implementer uploads all required supporting evidence together with a signed
+         <a data-linked-resource-container-id="1061584956" data-linked-resource-container-version="16" data-linked-resource-content-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" data-linked-resource-default-alias="OBIE Self Certification Form.docx" data-linked-resource-id="1081770224" data-linked-resource-type="attachment" data-linked-resource-version="1" data-nice-type="Microsoft Word Document" href="/wiki/download/attachments/1061584956/OBIE%20Self%20Certification%20Form.docx?version=1&amp;modificationDate=1556879226369&amp;cacheVersion=1&amp;api=v2">
+          Self Certification Form
+         </a>
+         .
+        </li>
+        <li>
+         OBIE will provide support to the Implementer during the validation period, as detailed above.
+        </li>
+        <li>
+         OBIE publishes Conformance Certificate and notifies Implementer.
+        </li>
+       </ol>
+       <p>
+        Once a Conformance Certificate has been published by OBIE, no further support will be provided to the Implementer and the Certificate Request will be marked as ‘Closed’.
+       </p>
+       <p>
+        To re-apply for the same Conformance Certificate, or to request a new Conformance Certificate, the Implementer will need to sign a new order form to re-start the above process.
+       </p>
+       <p>
+        Conformance Certificates for ASPSP implementations will only be published based on production (“live”) environments. The Conformance Tools can be run against pre-production environments and if an Implementer wishes to purchase a Conformance Certificate for pre-production or testing/sandbox environments this can be discussed bilaterally with OBIE, based on the costs and service levels as stated above.
+       </p>
+       <h1 id="ConformanceCertificationService-4.ValidationofConformanceCertificateRequests">
+        <span>
+         4. Validation of Conformance Certificate Requests
+        </span>
+       </h1>
+       <p>
+        Each Conformance Certificate requires different evidence to be submitted to OBIE, the detail of which is provided in the relevant pages accessible from the table above.
+       </p>
+       <p>
+        For the Functional and Security Profile Conformance Certificates, the Conformance Tools run automated tests once the tools are configured by the relevant Implementer, producing a set of binary results (pass/fail). OBIE will review both the results of the tests, and also the tests run by the Implementer. OBIE will not provide support to resolve failures in any of these tests as part of the Conformance Certification Service.
+       </p>
+       <p>
+        For the CEG, video evidence and a completed CEG Checklist will be submitted by the applicant which will be reviewed and assessed by the Office of the Trustee. The cost of this service is more than for other Conformance Certificates as it requires more manual review given the subjective nature of applications. For CEG Conformance Certificates OBIE anticipate more dialogue during the review process, and will support this.
+       </p>
+       <h1 id="ConformanceCertificationService-5.PublicationofConformanceCertificates">
+        <span>
+         5. Publication of Conformance Certificates
+        </span>
+       </h1>
+       <p>
+        OBIE provides an online platform where these Conformance Certificates and supporting material are published and can be viewed and/or downloaded by other Participants and Regulators (including NCAs). This service can thus be used by ASPSPs as supporting evidence in their application to their NCA for an exemption from the provision of a contingency mechanism.
+       </p>
+       <p>
+        OBIE will publish Conformance Certificates marked with one of the following two statuses:
+       </p>
+       <ul>
+        <li>
+         <strong>
+          <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-id="a0eda831-bb15-4c1b-993a-5dbdd074c784" data-macro-name="status">
+           CERTIFIED
+          </span>
+         </strong>
+         Conformance Certificates will only be marked as ‘Certified’ if Implementers conform completely to all required or mandatory elements of the relevant OBIE Standard. If an Implementer also conforms to recommendations or optional elements of the relevant OBIE Standard, then these will also be marked on the relevant Conformance Certificate, e.g. meeting the OBIE recommended benchmarks for performance and availability.
+        </li>
+        <li>
+         <strong>
+          <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-id="4afd4c04-f642-4a8c-82f7-753f7750f37d" data-macro-name="status">
+           PARTIAL
+          </span>
+         </strong>
+         If an Implementer only partially conforms, i.e. fails one or more test(s) or does not complete all required/mandatory elements, then they can still request OBIE to publish the results which will show where the Implementer has deviated from the relevant OBIE Standard. The Conformance Certificate will be published but with a status of ‘Partial’.
+        </li>
+       </ul>
+       <p>
+        <span>
+         The issuance and publication of Conformance Certificates are at the sole discretion of OBIE.
+        </span>
+       </p>
+       <h1 id="ConformanceCertificationService-6.Renewalandrevocation">
+        <span>
+         6. Renewal and revocation
+        </span>
+       </h1>
+       <p>
+        Conformance Certificates published by OBIE will have no fixed expiry date, however, they will be clearly marked as to which version of the relevant OBIE Standard they apply to.
+       </p>
+       <p>
+        If the Implementer makes any changes to their API interface which would cause a change in the Conformance Certificate status, for example introducing a new version of the OBIE Standard which includes a breaking change for TPPs, the Implementer should re-apply for a new Conformance Certificate, and, if so, will need to sign a new order form and pay the relevant fee to purchase this.
+       </p>
+       <p>
+        If any information provided by the Implementer changes, or is discovered to be inaccurate, the Implementer must immediately notify OBIE to request that the Conformance Certificate is revoked.
+       </p>
+       <p>
+        OBIE may also revoke a Conformance Certificate at any time at its absolute discretion.
+       </p>
+       <p>
+        Once a Conformance Certificate is revoked, it cannot be re-instated.
+       </p>
+       <p>
+        OBIE will maintain a publicly available online record of all revoked Conformance Certificates.
+       </p>
+       <h1 id="ConformanceCertificationService-7.Managingdisputes">
+        <span>
+         7. Managing disputes
+        </span>
+       </h1>
+       <p>
+        Disputes or complaints raised by the Implementer will be subject to the following conditions:
+       </p>
+       <ul>
+        <li>
+         The Implementer must have followed the process as defined in section 3 above, including the purchase of a Conformance Certification Service and submission of a Conformance Certificate Request with all required evidence.
+        </li>
+        <li>
+         As defined in section 5 above, OBIE will publish the Conformance Certificate with a status of ‘Certified’ (for 100% Conformance) or ‘Partial’ (if requested by the Implementer).
+        </li>
+        <li>
+         The decision to grant a status of ‘Certified’ or ‘Partial’ will rest solely with OBIE.
+        </li>
+        <li>
+         Where the Implementer does not agree with the status granted by OBIE, OBIE will provide support to discuss the results and help the Implementer with the submission process within the limits of the level of support offered for each type of Conformance Certificate as defined in section 2 above.
+        </li>
+        <li>
+         If it can be demonstrated that the dispute is due to an error or omission in the relevant Conformance Tool or Checklist provided by OBIE, then OBIE will fix the error and allow the Implementer to re-test and re-submit the Conformance Certificate Request at no additional cost to the Implementer.
+        </li>
+        <li>
+         If not, then OBIE’s decision will be final.
+        </li>
+       </ul>
+       <p>
+        Disputes or complaints from other Participants who disagree with the issuance of a particular Conformance Certificate will be subject to the following conditions:
+       </p>
+       <ul>
+        <li>
+         The Participant must be enrolled with OBIE as either an ASPSP or TPP.
+        </li>
+        <li>
+         The Participant must raise a ticket via the OBIE Service Desk and provide evidence to challenge the issuance.
+        </li>
+        <li>
+         OBIE will make an assessment and, as defined in section 6 above, OBIE may ask the Implementer to revoke an existing Conformance Certificate and/or re-apply for a new Conformance Certificate. In extreme circumstances, OBIE may revoke the Conformance Certificate.
+        </li>
+       </ul>
+       <p>
+        OBIE will not respond to disputes or complaints relating to Conformance Certificates issued/published by any other entity (e.g. the Open ID Foundation), and these must be raised with the relevant entity directly.
+       </p>
+       <h1 id="ConformanceCertificationService-8.Needhelp?">
+        <span>
+         8. Need help?
+        </span>
+       </h1>
+       <p>
+        Implementers who have purchased a Certification Service can get support relating to this Service via the
+        <span>
+         <a class="external-link" href="https://openbanking.atlassian.net/servicedesk/customer/portals" rel="nofollow">
+          OBIE Service Desk
+         </a>
+         .
+        </span>
+        All Participants who have Support Services included as part of their Services with OBIE can also get general support via the
+        <span>
+         <a class="external-link" href="https://openbanking.atlassian.net/servicedesk/customer/portals" rel="nofollow">
+          OBIE Service Desk
+         </a>
+         <span>
+          .
+         </span>
+        </span>
+       </p>
+       <p>
+        <br/>
+       </p>
+      </div>
+      <div class="no-print" id="likes-and-labels-container">
+       <div id="likes-section">
+       </div>
+       <div class="pageSection group" id="labels-section">
+        <div class="labels-section-content content-column" entityid="1521190221" entitytype="page">
+         <div class="labels-content">
+          <ul class="label-list label-list-right">
+           <li class="no-labels-message">
+            No labels
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="pageSection group" id="comments-section">
+      </div>
+     </div>
+     <div class="hidden" id="space-tools-web-items">
+      <div data-href="/wiki/spaces/viewspacesummary.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="General">
+       General
+      </div>
+      <div data-href="/wiki/pages/reorderpages.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Content">
+       Content
+      </div>
+      <div data-href="/wiki/spaces/listrssfeeds.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Integrations">
+       Integrations
+      </div>
+     </div>
+     <div id="custom-content-footer">
+      <p>
+       © Open Banking Limited 2019 |
+       <a class="external-link" href="https://www.openbanking.org.uk/open-licence" rel="nofollow">
+        https://www.openbanking.org.uk/open-licence
+       </a>
+       |
+       <a class="external-link" href="https://www.openbanking.org.uk" rel="nofollow">
+        https://www.openbanking.org.uk
+       </a>
+      </p>
+     </div>
+    </main>
+    <!-- \#main -->
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="c24117f245fb42d0b99e1706f4e99d3e">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-pdf",
+    "uniqueKey":"com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export PDF Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-pdf.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-pdf&addOnKey=com.k15t.scroll.scroll-pdf&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7InNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9LCJjb250ZW50Ijp7InR5cGUiOiJwYWdlIiwidmVyc2lvbiI6IjE1IiwiaWQiOiIxNTIxMTkwMjIxIn19fSwiZXhwIjoxNzQ4OTAyMzcxLCJpYXQiOjE3NDg5MDE0NzF9.ssTUXO4Xwot62a7wRQHWLaBgbllbAuVcmLRAN__JJy8",    "structuredContext": "{\"confluence\":{\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"},\"content\":{\"type\":\"page\",\"version\":\"15\",\"id\":\"1521190221\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"1521190221\",\"content.id\":\"1521190221\",\"space.key\":\"DZ\",\"page.type\":\"page\",\"content.version\":\"15\",\"page.title\":\"Conformance Certification Service\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"15\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-pdf.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="c24117f245fb42d0b99e1706f4e99d3e">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-office",
+    "uniqueKey":"com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export Word Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-word.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-office&addOnKey=com.k15t.scroll.scroll-office&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7InNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9LCJjb250ZW50Ijp7InR5cGUiOiJwYWdlIiwidmVyc2lvbiI6IjE1IiwiaWQiOiIxNTIxMTkwMjIxIn19fSwiZXhwIjoxNzQ4OTAyMzcxLCJpYXQiOjE3NDg5MDE0NzF9.Yn1MfNuhQeXTIbN2xQaEH7UqnZ_9gEGKxlvCGyn5tfY",    "structuredContext": "{\"confluence\":{\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"},\"content\":{\"type\":\"page\",\"version\":\"15\",\"id\":\"1521190221\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"1521190221\",\"content.id\":\"1521190221\",\"space.key\":\"DZ\",\"page.type\":\"page\",\"content.version\":\"15\",\"page.title\":\"Conformance Certification Service\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"15\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-word.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+   </div>
+  </div>
+  <!-- flex-flow: row wrap -->
+  <!-- display: flex -->
+  <span id="confluence-server-performance" style="display:none;">
+   {"serverDuration": 249, "requestCorrelationId": "c24117f245fb42d0b99e1706f4e99d3e"}
+  </span>
+ </body>
+</html>

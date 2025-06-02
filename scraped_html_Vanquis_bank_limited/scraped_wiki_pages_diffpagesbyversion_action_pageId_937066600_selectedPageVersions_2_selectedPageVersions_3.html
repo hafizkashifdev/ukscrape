@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- START-PRELOAD-TAGS -->
+  <!-- CLASSIC-master-4340849 -->
+  <script nonce="fbe7043a2ae84140ae022b41bff406b9">
+   window.__buildInfo={"FRONTEND_VERSION":"CLASSIC-master-4340849","BUILD_DATE":1748620287055,"EDITOR_VERSION":"207.13.0","RENDERER_VERSION":"118.6.2","ATLASPACK_VERSION":"2.13.9","PUBLIC_PATH":"https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/"};
+  </script>
+  <!-- HEAD -->
+  <!-- JQuery -->
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.966fc25b.js" type="module">
+  </script>
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/dashboard-spa-container-jquery3.runtime.794c0893.js" type="module">
+  </script>
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors.c912fa8e.js" type="module">
+  </script>
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/stable_vendors.41e17947.js" type="module">
+  </script>
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/atl.87332ca0.js" type="module">
+  </script>
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/ShareButton.a989ad1a.js" type="module">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js">
+  </script>
+  <script crossorigin="" data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery-migrate" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js">
+  </script>
+  <!-- Files -->
+  <script crossorigin="" nonce="fbe7043a2ae84140ae022b41bff406b9" src="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/standalone-navigation-jquery3.79aee824.js" type="module">
+  </script>
+  <!-- Set Referrer -->
+  <meta content="origin" name="referrer"/>
+  <link href="https://cc-fe-bifrost-canary.prod-east.frontend.public.atl-paas.net/assets/master/compiled.q77maa.css" nonce="fbe7043a2ae84140ae022b41bff406b9" rel="stylesheet"/>
+  <!-- HEAD -->
+  <!-- END-PRELOAD-TAGS -->
+  <title>
+   Content Comparison - Dynamic Client Registration - v3.1 (v.2 vs v.3) - Developer Zone     - Confluence
+  </title>
+  <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="/wiki" id="confluence-context-path" name="confluence-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" id="confluence-base-url" name="confluence-base-url"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" id="atlassian-token" name="atlassian-token"/>
+  <meta content="    DZ
+" id="confluence-space-key" name="confluence-space-key"/>
+  <script nonce="fbe7043a2ae84140ae022b41bff406b9" type="text/javascript">
+   var contextPath = '/wiki';
+  </script>
+  <meta content="noindex,nofollow" name="robots"/>
+  <meta content="noarchive" name="robots"/>
+  <meta content="" name="confluence-request-time"/>
+  <meta content="{}" name="ajs-discovered-plugin-features"/>
+  <meta content="ae093d1a9fb91e2b714db85b91cce431dbc32ef3280f44e3c5f7055def6f0a20" name="ajs-keyboardshortcut-hash"/>
+  <meta content="true" name="ajs-use-keyboard-shortcuts"/>
+  <meta content="true" id="team-calendars-has-jira-link"/>
+  <meta content="displayTimeFormat12" name="ajs-team-calendars-display-time-format"/>
+  <meta content="false" id="team-calendars-display-week-number"/>
+  <meta content="UTC" id="team-calendars-user-timezone"/>
+  <script id="team-calendars-messages" title="team-calendars-messages" type="text/x-template">
+   <fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sept"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset>
+  </script>
+  <meta content="false" name="ajs-is-confluence-admin"/>
+  <meta content="60000" name="ajs-connection-timeout"/>
+  <meta content="MMM dd, yyyy" name="ajs-date.format"/>
+  <meta content="937066600" name="ajs-page-id"/>
+  <meta content="937066600" name="ajs-latest-page-id"/>
+  <meta content="page" name="ajs-content-type"/>
+  <meta content="Dynamic Client Registration - v3.1" name="ajs-page-title"/>
+  <meta content="Dynamic Client Registration - v3.1" name="ajs-latest-published-page-title"/>
+  <meta content="ARCHIVE - Specifications" name="ajs-parent-page-title"/>
+  <meta content="23922689" name="ajs-parent-page-id"/>
+  <meta content="DZ" name="ajs-space-key"/>
+  <meta content="Developer Zone" name="ajs-space-name"/>
+  <meta content="" name="ajs-from-page-title"/>
+  <meta content="false" name="ajs-can-remove-page"/>
+  <meta content="4bb5ec59-42ff-4088-a410-cc59ea51038d" name="ajs-cloud-id"/>
+  <meta content="/wiki" name="ajs-context-path"/>
+  <meta content="https://openbanking.atlassian.net/wiki" name="ajs-base-url"/>
+  <meta content="1000.0.0-4eacb5f92c50" name="ajs-version-number"/>
+  <meta content="6452" name="ajs-build-number"/>
+  <meta content="" name="ajs-remote-user"/>
+  <meta content="" name="ajs-remote-user-key"/>
+  <meta content="" name="ajs-atlassian-account-id"/>
+  <meta content="false" name="ajs-remote-user-has-licensed-access"/>
+  <meta content="" name="ajs-current-user-fullname"/>
+  <meta content="" name="ajs-current-user-avatar-url"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/profilepics/anonymous.png" name="ajs-current-user-avatar-uri-reference"/>
+  <meta content="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_" name="ajs-static-resource-url-prefix"/>
+  <meta content="1048576000" name="ajs-global-settings-attachment-max-size"/>
+  <meta content="en_GB" name="ajs-user-locale"/>
+  <meta content="cc-notifications-live-page-updates,jira_issues_macro_async_fetch,confluence_live_pages_macro_copy_updates,confluence_sanitize_macro_preview_xss,jira_premium_plans_macro_prevent_new_macros,fabric_editor_blank_page,editor.ajax.save,notification.batch,pdf-preview,previews.sharing,frontend.editor.plugins,filestore.direct.download,confluence.pagenav.deferred,previews.trigger-all-file-types,previews.conversion-service,unified.permissions,rotp.project.shortcuts,mention.service.userbase.sync.enabled,rotp.admin.shortcuts,filestore.thumbnail,fusion.bitbucket.rebrand,confluence-inline-comments,file-annotations.likes,previews.versions,collaborative-audit-log,confluence.sidebar.deferred,confluence-inline-comments-rich-editor,clc.quick.create,atlassian.aui.raphael.disabled,quick-reload-inline-comments-flags,confluence-inline-comments-resolved,file-annotations,sidebar.deferred,confluence.efi.onboarding.new.templates,adg3.no.auto.optout.global.colourscheme,connect.no-applinks,app-switcher.new,jim.async.vertigo,filestore.direct.upload,previews.sharing.pushstate,cql.search.screen,confluence-inline-comments-dangling-comment,react.ui.graph,fabric.mentions,confluence.table.resizable,confluence.view.edit.transition,com.atlassian.growth.shakuni.disabled,confluence.non.polling.index.flush,jquery.feature.detection.cache" name="ajs-enabled-dark-features"/>
+  <meta content="440a17db837b27f1769019bd3a27c43953e7be74" name="ajs-atl-token"/>
+  <meta content="ALACARTE" name="ajs-confluence-flavour"/>
+  <meta content="dd MMM yyyy" name="ajs-user-date-pattern"/>
+  <meta content="false" name="ajs-iframe-allowed-for-spa"/>
+  <meta content="false" name="ajs-content-only"/>
+  <meta content="STANDARD" name="ajs-edition"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="shortcut icon"/>
+  <link href="/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/12/_/favicon-update.ico" rel="icon" type="image/x-icon"/>
+  <!-- Monolith is still expecting a fallback-mode-jquery3.html file from SPA bundle -->
+  <link href="/wiki/opensearch/osd.action" rel="search" title="Confluence" type="application/opensearchdescription+xml">
+   <!-- Styles -->
+   <script nonce="fbe7043a2ae84140ae022b41bff406b9">
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{\"com.mxgraph.confluence.plugins.diagramly\":[\"drawio-diagram\"],\"com.addonengine.analytics\":[\"space-analytics\"]}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"dialogOptions\":{\"com.k15t.scroll.scroll-office__web-item-export-office-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}},\"com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"}},\"inlineDialogOptions\":{},\"dialogModules\":{\"com.atlassian.confluence.plugins.confluence-office365\":{\"office365\":{\"cacheable\":false,\"options\":{\"size\":\"maximum\",\"chrome\":false},\"key\":\"office365\"}},\"com.k15t.scroll.scroll-office\":{\"k15t-cxp-office-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-office-template-editor\"},\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-export-office\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-office\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"com.k15t.scroll.scroll-pdf\":{\"k15t-cxp-download-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-download-template-dialog\"},\"k15t-cxp-template-info-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-template-info-dialog\"},\"k15t-cxp-delete-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-delete-template-dialog\"},\"k15t-cxp-api-token-create-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-api-token-create-dialog\"},\"k15t-cxp-move-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-move-template-dialog\"},\"k15t-cxp-export-pdf\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-export-pdf\"},\"k15t-cxp-dialog-pdf-template-editor\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-dialog-pdf-template-editor\"},\"k15t-cxp-copy-template-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-copy-template-dialog\"},\"k15t-cxp-brand-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-brand-dialog\"},\"k15t-cxp-general-confirm\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"chrome\":false,\"width\":\"100%\"},\"key\":\"k15t-cxp-general-confirm\"}},\"org.swift.confluence.table\":{\"table-viewer-fullscreen\":{\"cacheable\":false,\"options\":{\"height\":\"100%\",\"width\":\"100%\"},\"key\":\"table-viewer-fullscreen\"}},\"confluence-chats-integration\":{\"dialog\":{\"cacheable\":false,\"options\":{},\"key\":\"dialog\"},\"page-config-dialog\":{\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"}}}}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+if(window.WRM._dataArrived)window.WRM._dataArrived();
+   </script>
+   <link data-wrm-batch-type="context" data-wrm-key="_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/4717b5ea9dcf07eebf6ecaed970652e143dc6d6d5b277396f008f20eb2d146ff/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="fbe7043a2ae84140ae022b41bff406b9" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="fbe7043a2ae84140ae022b41bff406b9" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/0dd4d287acfe27f1da923a9f88560296f542e983e1f1e473615d702eeadbaf78/_/download/contextbatch/css/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;media=print&amp;relative-url=true" media="print" nonce="fbe7043a2ae84140ae022b41bff406b9" rel="stylesheet" type="text/css"/>
+   <link data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-sidebar" href="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/be1a0f9511403efab098ae05d13741b954061736d63980f8950eda35743ce25c/_/download/batch/com.atlassian.auiplugin:aui-sidebar/com.atlassian.auiplugin:aui-sidebar.css?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;relative-url=true" media="all" nonce="fbe7043a2ae84140ae022b41bff406b9" rel="stylesheet" type="text/css"/>
+   <!-- Dynamically generated colors styles -->
+   <!-- Scripts -->
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.6.1-conf-custom-m04.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-external="" data-wrm-key="com.atlassian.plugins.jquery:jquery" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//cc-fe-bifrost.prod-east.frontend.public.atl-paas.net/assets/master/vendors/3.4.0-migrate-conf-custom-03.js" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="_super" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cbc479ef16c9294c01e5c11c3a460727e14a5dbb9ea60f3aec6d28522483b157/_/download/contextbatch/js/_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="context" data-wrm-key="pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/226cb897b7033af38cf4d83b58f064d9bf1aa9ea27dfd1473c20a71a8a2fee46/_/download/contextbatch/js/pagediffs,main,atl.general,atl.confluence.plugins.pagetree-desktop,page,-_super/batch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="confluence.web.resources:breadcrumbs" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/98cfd6888d222026ba2e847d3157d0603e04ee8c6e49cada89a75375b7a41dc7/_/download/batch/confluence.web.resources:breadcrumbs/confluence.web.resources:breadcrumbs.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:ajs-raf" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/92491fd54a35a5cfd79992635311a910eaa840da13b971dc1630da8f3cffa266/_/download/batch/com.atlassian.auiplugin:ajs-raf/com.atlassian.auiplugin:ajs-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-is-input" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d142b935c16781a34a3d3c7ac45bcf62b8aefa05959c0ed2449714e6cd02160b/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input/com.atlassian.auiplugin:internal-src-js-aui-internal-is-input.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-trigger" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/2c4e87b76afb638e7aeb774669c0993cf8f918f7b8f3a567806aed3eece585bb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-trigger/com.atlassian.auiplugin:internal-src-js-aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-trigger" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/e9932d6b309e6704fc54630b89829236f3c44fa45fdb1c7cc45779ca9f86e0b6/_/download/batch/com.atlassian.auiplugin:aui-trigger/com.atlassian.auiplugin:aui-trigger.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-attributes" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/039b9ae634e4a301db91d8837f64fd5cf49806bbd12519a91fc46533f2b930cb/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes/com.atlassian.auiplugin:internal-src-js-aui-internal-attributes.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/63d0e95e71fb8f28b920125845402c0c46687f94f1ab8e2727d463e5d7baf30d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer/com.atlassian.auiplugin:internal-src-js-aui-internal-enforcer.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/d5b76e4a74329c24960b37292fcd45e167b2d3ead953533a62b885399c1e13b7/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2/com.atlassian.auiplugin:internal-src-js-aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:aui-inline-dialog2" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/35b967c790841bf2ccc6ca40831e21db64f16ba735f00ec5957c6c529085fe7b/_/download/batch/com.atlassian.auiplugin:aui-inline-dialog2/com.atlassian.auiplugin:aui-inline-dialog2.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-vendor-raf-raf" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/5c10ee22191b4d0afdb606690d2f2cd850f01a480e772a08562ab9deaffce57f/_/download/batch/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf/com.atlassian.auiplugin:internal-src-js-vendor-raf-raf.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/cf13df64397bd462047b299484cbd27c0cc94f12fb0040fd9ac93fed3aff67ba/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch/com.atlassian.auiplugin:internal-src-js-aui-internal-has-touch.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/c9d9c3b2c6b6f083bf0687811156bb6fe97ebfe1e0751984278f519b766da40d/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery/com.atlassian.auiplugin:internal-src-js-aui-internal-mediaQuery.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <script data-initially-rendered="" data-wrm-batch-type="resource" data-wrm-key="com.atlassian.auiplugin:internal-src-js-aui-sidebar" nonce="fbe7043a2ae84140ae022b41bff406b9" src="//dayak6fulr4vl.cloudfront.net/openbanking.atlassian.net/wiki/s/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855-CDN/1692848390/h/1482efa05fe564f5eae52ef9342e22bc7ed1bd026417497edbd66010b8b881ce/_/download/batch/com.atlassian.auiplugin:internal-src-js-aui-sidebar/com.atlassian.auiplugin:internal-src-js-aui-sidebar.js?assetVersion=1000.0.0-4eacb5f92c5019827&amp;externals=__local-default__&amp;locale=en-GB" type="text/javascript">
+   </script>
+   <link href="https://openbanking.atlassian.net/wiki/spaces/DZ/pages/937066600/Dynamic+Client+Registration+-+v3.1" rel="canonical"/>
+   <link href="https://openbanking.atlassian.net/wiki/x/aIDaNw" rel="shortlink"/>
+   <meta content="[DZ:Dynamic Client Registration - v3.1]" name="wikilink"/>
+   <meta content="3" name="page-version"/>
+   <meta content="3" name="ajs-page-version"/>
+  </link>
+ </head>
+ <body class="theme-default content-type-page aui-layout aui-theme-default" id="com-atlassian-confluence">
+  <script nonce="fbe7043a2ae84140ae022b41bff406b9">
+   var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+  </script>
+  <div class="banner-spacer-container">
+  </div>
+  <div data-main-container="" style="display:flex;">
+   <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+   </div>
+   <div data-flex-container="" style="flex-flow: row wrap; width: 100%">
+    <div data-main-content="" style="flex: 1 100%">
+    </div>
+    <!-- PARCEL -->
+    <!-- START-FRAGMENT standalone-navigation-jquery3.html -->
+    <style nonce="fbe7043a2ae84140ae022b41bff406b9">
+     body,body.aui-layout{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif}body{background-color:var(--ds-surface,#fff);margin:0;padding:0;font-size:14px}#main,#admin-content,#custom-content-container,.ap-servlet-placeholder{opacity:0}a{text-decoration:none}h1{font-weight:400}
+    </style>
+    <!-- END-FRAGMENT standalone-navigation-jquery3.html-->
+    <div id="header-precursor">
+     <div class="cell">
+     </div>
+    </div>
+    <!-- \#header -->
+    <main class="aui-page-panel" id="main">
+     <div class="connect-theme-background-cover">
+     </div>
+     <div id="main-header">
+      <div class="content-navigation view-information" id="navigation">
+       <ul class="ajs-menu-bar">
+        <li class="ajs-button normal">
+         <a class="aui-button aui-button-subtle view" href="/wiki/spaces/DZ/pages/937066600/Dynamic+Client+Registration+-+v3.1" id="viewPageLink" rel="nofollow" title="">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-back-page">
+           </span>
+           View Page
+          </span>
+         </a>
+        </li>
+        <li class="normal ajs-menu-item">
+         <a aria-haspopup="true" aria-label="More actions" aria-owns="action-menu" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" data-container="#navigation" href="#" id="action-menu-link">
+          <span>
+           <span class="aui-icon aui-icon-small aui-iconfont-more">
+           </span>
+          </span>
+         </a>
+         <div aria-hidden="true" class="aui-dropdown2 aui-style-default" id="action-menu">
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-modify first" id="action-menu-system.content.action-modify">
+            <li>
+             <a class="action-export-word" href="/wiki/exportword?pageId=937066600" id="action-export-word-link" rel="nofollow" title="">
+              <span>
+               Export to Word
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="https://openbanking.atlassian.net/wiki/spaces/flyingpdf/pdfpageexport.action?pageId=937066600&amp;atl_token=440a17db837b27f1769019bd3a27c43953e7be74" id="action-export-pdf-link" rel="nofollow" title="">
+              <span>
+               Export to PDF
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="" href="/wiki/pages/viewinfo.action?pageId=937066600" id="action-archive-link" rel="nofollow" title="">
+              <span>
+               Archive
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-primary" id="action-menu-system.content.action-primary">
+            <li>
+             <a class="action-view-history" href="/wiki/spaces/DZ/history/937066600" id="action-view-history-link" rel="nofollow" title="">
+              <span>
+               Version history
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="change-page-ownership" href="/wiki" id="change-page-ownership-link" rel="nofollow" title="">
+              <span>
+               View ownership
+              </span>
+             </a>
+            </li>
+            <li>
+             <a accesskey="t" class="action-view-attachments" href="/wiki/pages/viewpageattachments.action?pageId=937066600" id="view-attachments-link" rel="nofollow" title="View Attachments">
+              <span>
+               A
+               <u>
+                t
+               </u>
+               tachments (0)
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-info" href="/wiki/pages/viewinfo.action?pageId=937066600" id="view-page-info-link" rel="nofollow" title="">
+              <span>
+               Content Information
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="action-view-source popup-link" href="/wiki/plugins/viewsource/viewpagesrc.action?pageId=937066600" id="action-view-source-link" rel="nofollow" title="">
+              <span>
+               View Source
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="aui-dropdown2-section">
+           <ul class="section-system.content.action-secondary" id="action-menu-system.content.action-secondary">
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-pdf ap-module-key-web-item-export-pdf-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-pdf/com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher?page.id=937066600&amp;space.key=DZ&amp;content.id=937066600&amp;content.version=3&amp;page.type=page&amp;page.title=Dynamic%20Client%20Registration%20-%20v3.1&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=3" id="com.k15t.scroll.scroll-pdf__web-item-export-pdf-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll PDF Exporter" height="16" src="https://scroll-pdf.us.exporter.k15t.app/static/assets/images/pdf/PDF_white_16px.svg" title="Export with Scroll PDF Exporter" width="16"/>
+              <span>
+               Export with Scroll PDF Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="webitem system-present-webitem ap-dialog ap-plugin-key-com.k15t.scroll.scroll-office ap-module-key-web-item-export-office-launcher ap-link-webitem" href="/plugins/servlet/ac/com.k15t.scroll.scroll-office/com.k15t.scroll.scroll-office__web-item-export-office-launcher?page.id=937066600&amp;space.key=DZ&amp;content.id=937066600&amp;content.version=3&amp;page.type=page&amp;page.title=Dynamic%20Client%20Registration%20-%20v3.1&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=3" id="com.k15t.scroll.scroll-office__web-item-export-office-launcher" rel="nofollow" title="Export">
+              <img alt="Export with Scroll Word Exporter" height="16" src="https://scroll-word.us.exporter.k15t.app/static/assets/images/office/OFCE_white_16px.svg" title="Export with Scroll Word Exporter" width="16"/>
+              <span>
+               Export with Scroll Word Exporter
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="ap-dialog ap-plugin-key-com.lucidchart.confluence.plugins.lucid-confluence ap-module-key-lucid-gliffy-page-conversion-menuitem ap-link-webitem" href="/wiki/plugins/servlet/ac/com.lucidchart.confluence.plugins.lucid-confluence/gliffyConversion?pageId={page.id}&amp;page.id=937066600&amp;space.key=DZ&amp;content.id=937066600&amp;content.version=3&amp;page.type=page&amp;page.title=Dynamic%20Client%20Registration%20-%20v3.1&amp;space.id=17236105&amp;content.type=page&amp;user.isExternalCollaborator=false&amp;page.version=3" id="com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem" rel="nofollow" title="">
+              <span>
+               Convert Gliffy Diagrams
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="pagetitle with-breadcrumbs" id="title-heading">
+       <div aria-label="Breadcrumb" id="breadcrumb-section" role="navigation">
+        <ol id="breadcrumbs">
+         <li class="first">
+          <span class="">
+           <a href="/wiki/spaces/DZ/pages">
+            Content
+           </a>
+          </span>
+          <li id="ellipsis" title="Show all breadcrumbs">
+           <button aria-label="Show all breadcrumb links" class="unstyled-button" type="button">
+            <span>
+             <strong>
+              …
+             </strong>
+            </span>
+           </button>
+          </li>
+          <li class="hidden-crumb">
+           <span class="">
+            <a href="/wiki/spaces/DZ/overview">
+             Developer Zone
+            </a>
+           </span>
+           <li class="hidden-crumb">
+            <span class="">
+             <a href="/wiki/spaces/DZ/pages/16385802/Specifications">
+              Specifications
+             </a>
+            </span>
+            <li class="hidden-crumb">
+             <span class="">
+              <a href="/wiki/spaces/DZ/pages/23922689/ARCHIVE+-+Specifications">
+               ARCHIVE - Specifications
+              </a>
+             </span>
+             <li>
+              <span class="">
+               <a href="/wiki/spaces/DZ/pages/937066600/Dynamic+Client+Registration+-+v3.1">
+                Dynamic Client Registration - v3.1
+               </a>
+              </span>
+             </li>
+            </li>
+           </li>
+          </li>
+         </li>
+        </ol>
+       </div>
+       <h1 class="with-breadcrumbs" id="title-text">
+        Content Comparison
+       </h1>
+      </div>
+     </div>
+     <!-- \#main-header -->
+     <div class="page view-information" id="content">
+      <div id="action-messages">
+      </div>
+      <div class="diff-menu">
+       <h2 class="diff-title">
+        Versions Compared
+       </h2>
+       <div class="page-navigation section">
+        <table class="page-version">
+         <tbody class="page-version-tbody">
+          <tr>
+           <th class="assistive">
+            Version
+           </th>
+           <td class="version-title">
+            <a class="page version-navigation view-historical-version-trigger" href="viewpage.action?pageId=937820410">
+             <span class="assistive">
+              Old Version
+             </span>
+             <span class="version">
+              2
+             </span>
+            </a>
+           </td>
+           <td class="version-title">
+            <a class="page version-navigation" href="viewpage.action?pageId=937066600">
+             <span class="assistive">
+              New Version
+             </span>
+             <span class="version">
+              Current
+             </span>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Changes made by
+           </th>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/557058:4441630f-54a0-47b2-bcd9-f2b1b5fa6f83">
+              Freddi Gyara (Unlicensed)
+             </a>
+            </p>
+           </td>
+           <td>
+            <p class="metadata author">
+             <a class="url fn" href="/wiki/people/557058:4441630f-54a0-47b2-bcd9-f2b1b5fa6f83">
+              Freddi Gyara (Unlicensed)
+             </a>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <th class="assistive">
+            Saved on
+           </th>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Fri Nov 30 10:21:23 UTC 2018">
+              Nov 30, 2018
+             </time>
+            </p>
+           </td>
+           <td>
+            <p class="metadata modified">
+             <time datetime="Fri Nov 30 10:30:11 UTC 2018">
+              Nov 30, 2018
+             </time>
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <div class="diff-navigation nav">
+         <ul>
+          <li>
+           <a class="previous version-navigation" href="diffpages.action?originalId=937590946&amp;pageId=937820410">
+            <span>
+             Previous Change: Difference between versions 1 and 2
+            </span>
+           </a>
+          </li>
+          <li>
+           <a class="all version-navigation" href="/wiki/spaces/DZ/history/937066600">
+            <span>
+             View Version History
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="legend">
+        <h2 class="legend-title">
+         Key
+        </h2>
+        <ul>
+         <li>
+          <span class="diff-html-added" data-a11y-after="End of added content" data-a11y-before="Start of added content">
+           This line was added.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-removed" data-a11y-after="End of deleted content" data-a11y-before="Start of deleted content">
+           This line was removed.
+          </span>
+         </li>
+         <li>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           Formatting was changed.
+          </span>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="wiki-content" id="page-diffs">
+       <p class="diff-block-target diff-block-context">
+        <style>
+         [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-0">x5i6rhs07z</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-0">rqz6whpwwr</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-1">x5i6rhs07z</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-1">rqz6whpwwr</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-2">lw39ihqhws</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-2">umkco1g5f2</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-3">lw39ihqhws</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-3">umkco1g5f2</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-4">sizsmy3omy</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-4">gtpqbr957r</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-5">sizsmy3omy</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-5">gtpqbr957r</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-6">bsobcvzqyh</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-6">za77ytcp73</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-7">bsobcvzqyh</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-7">za77ytcp73</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-8">dg8ybcs7dy</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-8">rlb8fif4kh</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-9">dg8ybcs7dy</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-9">rlb8fif4kh</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-10">xkqvlxdpwn</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-10">sa478ieuav</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-11">xkqvlxdpwn</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-11">sa478ieuav</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-12">mygfi4zs5m</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-12">tsxz2fw4zx</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-13">mygfi4zs5m</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-13">tsxz2fw4zx</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-14">pcylut1z4g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-14">pmgun00jrm</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-15">pcylut1z4g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-15">pmgun00jrm</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-16">buxoij5lr9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-16">uqwd1n7vdt</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-17">buxoij5lr9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-17">uqwd1n7vdt</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-18">yoak7dl97p</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-18">f9lbroe4ug</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-19">yoak7dl97p</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-19">f9lbroe4ug</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-20">viuepxmiuk</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-20">w3otxk0qv1</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-21">#091e42</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-21">#333333</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-22">viuepxmiuk</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-22">w3otxk0qv1</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-23">#bdd2f6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-23">#cccccc</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-24">zsn2mmrwfm</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-24">chjvu3bpo3</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-25">zsn2mmrwfm</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-25">chjvu3bpo3</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-26">ffvv09cti9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-26">bfme92k58c</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-27">ffvv09cti9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-27">bfme92k58c</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-28">ciun7rc0ma</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-28">sqv3hkmbvv</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-29">ciun7rc0ma</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-29">sqv3hkmbvv</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-30">j7zc1ownf8</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-30">th0cnyqghb</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-31">j7zc1ownf8</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-31">th0cnyqghb</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-32">uviyvknuj3</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-32">pnzl12owdy</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-33">uviyvknuj3</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-33">pnzl12owdy</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-34">yrcw1mxcv2</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-34">bsjx0lfz7s</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-35">#333333</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-35">#091e42</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-36">yrcw1mxcv2</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-36">bsjx0lfz7s</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-37">#cccccc</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-37">#bdd2f6</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-38">bjzuacekh9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-38">p56ek4p6su</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-39">bjzuacekh9</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-39">p56ek4p6su</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-40">p8f46o0uwj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-40">msbpru4751</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-41">p8f46o0uwj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-41">msbpru4751</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-42">equ5pwxt19</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-42">muhbw4qrwu</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-43">equ5pwxt19</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-43">muhbw4qrwu</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-44">mmm2swqv71</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-44">f6pggap6nd</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-45">mmm2swqv71</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-45">f6pggap6nd</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-46">kqwvd346xt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-46">ekasy3yz6s</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-47">#091e42</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-47">#333333</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-48">kqwvd346xt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-48">ekasy3yz6s</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-49">#bdd2f6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-49">#cccccc</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-50">rpqjboxd2d</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-50">wjmtcdlc2d</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-51">rpqjboxd2d</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-51">wjmtcdlc2d</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-52">y0krr7plsp</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-52">mirfwlfwox</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-53">y0krr7plsp</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-53">mirfwlfwox</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-54">z5c3k2it19</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-54">bdgicyzeys</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-55">z5c3k2it19</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-55">bdgicyzeys</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-56">dxhnkbdccq</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-56">f8sm7boj4c</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-57">dxhnkbdccq</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-57">f8sm7boj4c</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-58">qvvqlrq51g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-58">epu7v4phk1</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-59">qvvqlrq51g</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-59">epu7v4phk1</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-60">h4bt05jf8l</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-60">u1wjsku2ix</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-61">h4bt05jf8l</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-61">u1wjsku2ix</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-62">ac88xc64e6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-62">v2cf1are8u</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-63">ac88xc64e6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-63">v2cf1are8u</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-64">g3nsakvttp</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-64">er9m6rgy6w</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-65">#333333</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-65">#091e42</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-66">g3nsakvttp</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-66">er9m6rgy6w</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-67">#cccccc</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-67">#bdd2f6</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-68">usz76w62hg</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-68">i5mgff4u1s</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-69">usz76w62hg</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-69">i5mgff4u1s</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-70">rzfcre53nj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-70">wc5l8xa1h0</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-71">rzfcre53nj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-71">wc5l8xa1h0</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-72">lehes5ar2l</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-72">qdns8ahf9w</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-73">lehes5ar2l</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-73">qdns8ahf9w</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-74">ndk3iy56zh</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-74">f229ty1x4u</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-75">ndk3iy56zh</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-75">f229ty1x4u</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-76">t7zyvavoho</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-76">ri07xwoe76</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-77">t7zyvavoho</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-77">ri07xwoe76</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-78">b0lov0zepj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-78">sdofnewk5q</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-79">b0lov0zepj</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-79">sdofnewk5q</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-80">lptfv38bgi</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-80">yz6hbh4f63</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-81">lptfv38bgi</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-81">yz6hbh4f63</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-82">f1mfq0eys6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-82">jockpgrssp</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-83">#091e42</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-83">#333333</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-84">f1mfq0eys6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-84">jockpgrssp</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-85">#bdd2f6</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-85">#cccccc</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-86">lpsehcocgt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-86">ixqoqwfu3k</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-87">lpsehcocgt</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-87">ixqoqwfu3k</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-88">bfcoeb295h</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-88">h7xuh9qe03</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-89">bfcoeb295h</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-89">h7xuh9qe03</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-90">locmfabzqz</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-90">lk9yasp3ee</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-91">#333333</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-91">#091e42</span>} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-92">locmfabzqz</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-92">lk9yasp3ee</span>]{color:<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-93">#cccccc</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-93">#bdd2f6</span>}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-94">hbsgjk5w28</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-94">fpxkcsizfr</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-95">hbsgjk5w28</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-95">fpxkcsizfr</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-96">kb9httkgc4</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-96">hvlv2r1c4v</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-97">kb9httkgc4</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-97">hvlv2r1c4v</span>]{color:#cccccc}[data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-98">x1c2f93tiq</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-98">uv017cvydg</span>]{color:#333333} html[data-color-mode=dark] [data-colorid=<span class="diff-html-removed" data-a11y-before="Start of deleted content" data-a11y-after="End of deleted content" id="removed-diff-99">x1c2f93tiq</span><span class="diff-html-added" data-a11y-before="Start of added content" data-a11y-after="End of added content" id="added-diff-99">uv017cvydg</span>]{color:#cccccc}
+        </style>
+        <span data-colorid="msbpru4751">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-0">
+         </span>
+         <table class="diff-macro bodyless diff-html-changed">
+          <thead>
+           <tr>
+            <th class="diff-macro-title">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+              <span class="icon macro-placeholder-icon" style="background-image: url(https://openbanking.atlassian.net/wiki/s/1278487926/6452/4eacb5f92c50e462e05d8495026101b66b1f3f9c/_/images/icons/macrobrowser/dropdown/toc.png);">
+              </span>
+              Table of Contents
+             </span>
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="diff-macro-properties">
+             <table>
+              <tbody>
+               <tr>
+                <th>
+                 <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+                  outline
+                 </span>
+                </th>
+                <td>
+                 <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+                  true
+                 </span>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </span>
+       </p>
+       <h1 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-VersionControl">
+        <span data-colorid="pmgun00jrm">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-1">
+          Version Control
+         </span>
+        </span>
+       </h1>
+       <div class="table-wrap diff-block-target diff-block-context">
+        <table class="wrapped relative-table confluenceTable" style="width: 86.0512%;">
+         <colgroup>
+          <col style="width: 9.71787%;"/>
+          <col style="width: 10.6583%;"/>
+          <col style="width: 12.7743%;"/>
+          <col style="width: 66.8495%;"/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            <span data-colorid="p56ek4p6su">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-2">
+              Version
+             </span>
+            </span>
+           </th>
+           <th class="confluenceTh">
+            <span data-colorid="jockpgrssp">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-3">
+              Date
+             </span>
+            </span>
+           </th>
+           <th class="confluenceTh">
+            <span data-colorid="h7xuh9qe03">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-4">
+              Author
+             </span>
+            </span>
+           </th>
+           <th class="confluenceTh">
+            <span data-colorid="sa478ieuav">
+             <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-5">
+              Comments
+             </span>
+            </span>
+           </th>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            3.1-draft3
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2018-09-07">
+             07 Sep 2018
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OB R/W API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span data-colorid="bsjx0lfz7s">
+              <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-6">
+               First draft that picks up from where The Open Banking OpenID Dynamic Client Registration v1.0.0 left off.
+              </span>
+             </span>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            3.1-draft4
+           </td>
+           <td class="confluenceTd" colspan="1">
+            30-Oct-2018
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OB R/W API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <strong>
+              Overview
+             </strong>
+            </p>
+            <p>
+             - added a sentence to state that some client management aspects will be covered by the specification
+            </p>
+            <p>
+             <strong>
+              Basics / Of JWS and JWKS
+             </strong>
+            </p>
+            <p>
+             - changed "the following
+             <strong>
+              two
+             </strong>
+             limitations" to "the following
+             <s>
+              two
+             </s>
+             limitations"
+            </p>
+            <p>
+             <strong>
+              Endpoints
+             </strong>
+            </p>
+            <p>
+             - Added a table of endpoints
+            </p>
+            <p>
+             - Introduced endpoints for PUT, GET and DELETE operations
+            </p>
+            <p>
+             <strong>
+              Endpoints / POST
+             </strong>
+            </p>
+            <p>
+             - Changed "responds with a JWS description" to "responds with a JSON description" in keeping with the current specification
+            </p>
+            <p>
+             <strong>
+              Authentication
+             </strong>
+            </p>
+            <p>
+             Section split into two parts for authentication of different types of requests
+            </p>
+            <p>
+             <strong>
+              Data Model /
+             </strong>
+             <strong>
+              OBClientRegistrationRequest1
+             </strong>
+            </p>
+            <p>
+             Updated section with relevant details on lengths, regex etc.
+            </p>
+            <p>
+             Updated section to state situations when ASPSPs may change the request parameters or reject requests
+            </p>
+            <p>
+             <strong>
+              Data Model /
+             </strong>
+             <strong>
+              OBClientRegistrationRequest1/Data Dictionary
+             </strong>
+            </p>
+            <p>
+             <strong>
+              response_types
+             </strong>
+             : Modified to state that default value should be code id_token
+            </p>
+            <p>
+             <strong>
+              software_id
+             </strong>
+             : Modified to state that this must be a UUID
+            </p>
+            <p>
+             <strong>
+              software_statement:
+             </strong>
+             Updated to state that the data model for OB issued software statements are documented as prt of the directory specifications
+            </p>
+            <p>
+             Added
+             <strong>
+              token_endpoint_auth_signing_alg
+             </strong>
+            </p>
+            <p>
+             Updated description of how DN should be matched.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            3.1-RC1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2018-09-14">
+             14 Sep 2018
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OB R/W API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Data Dictionary
+            </p>
+            <p>
+             - Updated the definition of the
+             <code>
+              iss
+             </code>
+             claim to state "For SSAs issued by the OB Directory, this must be the software_id". This brings it in line with the current usage of iss.
+            </p>
+            <p>
+             - Updated the definition of the
+             <code>
+              response_types
+             </code>
+             claim to clarify situations in which the requested response types can be rejected
+            </p>
+            <p>
+             - Updated the definition of the
+             <code>
+              software_id
+             </code>
+             claim and removed "
+             <span class="legacy-color-text-blue3">
+              client name and may take the software_id from either the SSA or the TPP as a hint only."
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              Removed references to Article 34 and PSD2 in POST Operations section.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              Updated links to Swagger specification.
+             </span>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            3.1
+            <span class="diff-html-removed" data-a11y-after="End of deleted content" data-a11y-before="Start of deleted content" id="removed-diff-100">
+             -RC1
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <time class="date-past" datetime="2018-11-30">
+             30 Nov 2018
+            </time>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            OB R/W API Team
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p style="text-align: left;">
+             Version 3.1 final release.
+            </p>
+            <p style="text-align: left;">
+             No changes from Version 3.1 RC1.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h1 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-Overview">
+        <span data-colorid="wc5l8xa1h0">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-7">
+          Overview
+         </span>
+        </span>
+       </h1>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="umkco1g5f2">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-8">
+          This specification defines the APIs for a TPP to submit a Software Statement Assertion to an ASPSP for the purpose of creating OAuth clients that are registered with ASPSP.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="chjvu3bpo3">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-9">
+          The document goes on to identify a set of situations when a TPP may need to modify the client. The ASPSPs may implement optional APIs defined here to achieve that behaviour or implement a service management capability to deal with these changes.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="f9lbroe4ug">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-10">
+          The API supercedes the Open Banking OpenID Connect (OIDC) Dynamic Client Registration Profile.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-context">
+        This follows on from recommendations made in
+        <a data-linked-resource-id="619643199" data-linked-resource-type="page" data-linked-resource-version="7" href="/wiki/spaces/WOR/pages/619643199">
+         /wiki/spaces/WOR/pages/619643199
+        </a>
+        :
+       </p>
+       <blockquote class="diff-block-context">
+        <p>
+         <strong>
+          6.3.4 Dynamic Client Registration
+         </strong>
+        </p>
+        <p>
+         It is the opinion of the OBIE that ASPSPs will need to ensure that TPPs can be registered in a seamless, ideally fully automated basis with registrations processed and TPP responses provided in real-time to avoid the perception / imposition of obstacles. Capability is already provided by the OBIE to support this via the Participant Identification API.
+        </p>
+        <p>
+         <strong>
+          6.4.2 Re-registration at ASPSPs
+         </strong>
+        </p>
+        <p>
+         As a result of impact 6.3.1 or 6.3.2, TPPs may be required to re-onboard with ASPSPs that upgrade their Authorisation server capabilities. OBIE suggests that future delivery phases determine the materiality of this issue and the feasibility of ASPSPs parallel running solutions to enable a smooth migration. It is the expectation of IESG TPP representatives that steps be taken to avoid re-registration requirements.
+        </p>
+       </blockquote>
+       <h2 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-DocumentStructure">
+        <span data-colorid="v2cf1are8u">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-11">
+          Document Structure
+         </span>
+        </span>
+       </h2>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="w3otxk0qv1">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-12">
+          This document consists of the following parts:
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="rlb8fif4kh">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-13">
+           Overview:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Provides an overview of the scope of the API and the key decisions and principles that contributed to the specification.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="sdofnewk5q">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-14">
+           Basics:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Identifies the resources, operations that are permitted on those resources, and various special cases.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="sqv3hkmbvv">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-15">
+           Endpoints:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Provides the list of endpoints for the API specification.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="bfme92k58c">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-16">
+           Authentication:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Specifies the means for TPPs to authenticate themselves prior to calling the APIs
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="i5mgff4u1s">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-17">
+           Swagger Specifications:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Provides links to the swagger specifications for the APIs.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="uqwd1n7vdt">
+         <strong>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-18">
+           Usage Examples:
+          </span>
+         </strong>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          Examples for how the APIs can be used
+         </span>
+        </span>
+       </p>
+       <h1 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-Basics">
+        <span data-colorid="f8sm7boj4c">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-19">
+          Basics
+         </span>
+        </span>
+       </h1>
+       <h2 class="diff-block-context" id="DynamicClientRegistration-v3.1-ProblemSpace">
+        Problem Space
+       </h2>
+       <p class="diff-block-context">
+        The Open Banking Read/Write API standard relies on FAPI-RW as a means for authenticating PSUs and TPPs. To enable this capability a TPP must register one or more
+        <em>
+         clients
+        </em>
+        with the ASPSP.
+       </p>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        <a class="external-link" href="https://tools.ietf.org/html/rfc7592" rel="nofollow">
+         RFC 7592
+        </a>
+        : OAuth 2.0 Dynamic Client Registration Management Protocol
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="lk9yasp3ee">
+         <a class="external-link" href="https://openid.net/specs/openid-connect-registration-1_0.html" rel="nofollow">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-20">
+           OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 1
+          </span>
+         </a>
+        </span>
+        <span data-colorid="er9m6rgy6w">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-21">
+         </span>
+        </span>
+       </p>
+       <h2 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-SoftwareStatement">
+        <span data-colorid="za77ytcp73">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-22">
+          Software Statement
+         </span>
+        </span>
+       </h2>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="ekasy3yz6s">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-23">
+          RFC 7591 defines a Software Statement as
+         </span>
+        </span>
+       </p>
+       <blockquote class="diff-block-context">
+        <pre class="newpage">Software Statement
+      A digitally signed or MACed JSON Web Token (JWT) [<a class="external-link" href="https://tools.ietf.org/html/rfc7519" rel="nofollow">RFC7519</a>] that
+      asserts metadata values about the client software.  In some cases,
+      a software statement will be issued directly by the client
+      developer.  In other cases, a software statement will be issued by
+      a third-party organization for use by the client developer.  In
+      both cases, the trust relationship the authorization server has
+      with the issuer of the software statement is intended to be used
+      as an input to the evaluation of whether the registration request
+      is accepted.  A software statement can be presented to an
+      authorization server as part of a client registration request.</pre>
+       </blockquote>
+       <p class="diff-block-target">
+        <span data-colorid="tsxz2fw4zx">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-24">
+          In our context, a Software Statement may be issued by any actor that is trusted by the authorisation server. This may include, but is not limited to:
+         </span>
+        </span>
+       </p>
+       <ul class="diff-block-context" style="list-style-type: square;">
+        <li>
+         The TPP itself
+        </li>
+        <li>
+         The Directory solution provided by OBIE
+        </li>
+        <li>
+         Another Directory service provider
+        </li>
+       </ul>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <p class="diff-block-context">
+        Where ASPSPs accept self-signed SSAs, they must specify this on their Developer Portal along with the claims that it expects to be included in the SSA.
+       </p>
+       <h2 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-Discovery">
+        <span data-colorid="yz6hbh4f63">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-25">
+          Discovery
+         </span>
+        </span>
+       </h2>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="th0cnyqghb">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-26">
+          The URL of the registration end-point should be advertised on the ASPSP's OIDC Discovery Endpoint using the
+         </span>
+         <code>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           registration_endpoint
+          </span>
+         </code>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          claim as defined in
+         </span>
+         <a class="external-link" href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata" rel="nofollow">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata
+          </span>
+         </a>
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+          .
+         </span>
+        </span>
+       </p>
+       <h2 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-OfJWS&amp;JWKS">
+        <span data-colorid="ri07xwoe76">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-27">
+          Of JWS &amp; JWKS
+         </span>
+        </span>
+       </h2>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="ixqoqwfu3k">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-28">
+          The request payload for a Dynamic Client Registration call and the software statement included in the call is structured as a JWS.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="u1wjsku2ix">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-29">
+          In order to verify the contents of the request and the SSA the ecosystem has to rely on a set of JSON Web Key Stores (JWKS) that store the public part of key used to sign the JWT.
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="muhbw4qrwu">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-30">
+          The structure and URL of the JWKS must be agreed between the SSA issuer and its consumers (TPPs and ASPSPs).
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="bdgicyzeys">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-31">
+          The mechanism for determining the key that is used is not part of this specification but is subject to the following limitations:
+         </span>
+        </span>
+       </p>
+       <ul class="diff-block-target diff-block-context">
+        <li>
+         <span data-colorid="wjmtcdlc2d">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-32">
+           The public key must not be embedded in the payload itself (e.g. by using
+          </span>
+          <code>
+           <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+            x5c
+           </span>
+          </code>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           claim in the JOSE header)
+          </span>
+         </span>
+        </li>
+        <li>
+         <span data-colorid="gtpqbr957r">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-33">
+           The URL for the JWKS must not be embedded in the payload itself (e.g. by using
+          </span>
+          <code>
+           <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+            x5u
+           </span>
+          </code>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           claim in the JOSE header)
+          </span>
+         </span>
+        </li>
+        <li>
+         <span data-colorid="f229ty1x4u">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-34">
+           The JWKS must be secured over TLS using TLS 1.2 and the FAPI approved set of ciphers as defined in
+          </span>
+          <a class="external-link" href="https://openid.net/specs/openid-financial-api-part-2.html#tls-considerations" rel="nofollow">
+           <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+            https://openid.net/specs/openid-financial-api-part-2.html#tls-considerations
+           </span>
+          </a>
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           .
+          </span>
+         </span>
+        </li>
+       </ul>
+       <h1 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-Endpoints">
+        <span data-colorid="mirfwlfwox">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-35">
+          Endpoints
+         </span>
+        </span>
+       </h1>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="pnzl12owdy">
+         <span style="text-decoration: none;">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-36">
+           This section provides a list of available API endpoints for Dynamic Client Registration
+          </span>
+         </span>
+         <span style="text-decoration: none;">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content">
+           .
+          </span>
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="f6pggap6nd">
+         <span style="text-decoration: none;">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-37">
+           The ASPSP may have a different URL for the endpoints as long as it is advertised appropriately in the ASPSP's Discovery endpoint.
+          </span>
+         </span>
+        </span>
+       </p>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="rqz6whpwwr">
+         <span style="text-decoration: none;">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-38">
+           The ASPSP must have the same URL for all the HTTP operations on that endpoint.
+          </span>
+         </span>
+        </span>
+       </p>
+       <div class="table-wrap diff-block-context">
+        <p class="auto-cursor-target">
+         <br/>
+        </p>
+        <div class="table-wrap">
+         <table class="wrapped relative-table tablesorter tablesorter-default confluenceTable" style="width: 1199.0px;">
+          <colgroup>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+           <col style="width: 0.0px;"/>
+          </colgroup>
+          <tbody>
+           <tr class="tablesorter-headerRow">
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              HTTP Operation
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Endpoint
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Mandatory ?
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Scope
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Grant Type
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Message Signing
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Idempotency Key
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Request Object
+             </div>
+            </th>
+            <th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" colspan="1" scope="col" style="text-align: left;">
+             <div class="tablesorter-header-inner">
+              Response Object
+             </div>
+            </th>
+           </tr>
+           <tr>
+            <td class="confluenceTd" style="text-align: left;">
+             POST
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             POST /register
+            </td>
+            <td class="confluenceTd" style="text-align: left;">
+             Conditional
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             <span>
+              OBClientRegistrationRequest1
+             </span>
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             <p>
+              OBClientRegistrationResponse1
+             </p>
+            </td>
+           </tr>
+           <tr>
+            <td class="confluenceTd" style="text-align: left;">
+             GET
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             GET
+             <span>
+             </span>
+             /register/{ClientId}
+            </td>
+            <td class="confluenceTd" style="text-align: left;">
+             Optional
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             Client Credentials
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             <p>
+              OBClientRegistrationResponse1
+             </p>
+            </td>
+           </tr>
+           <tr>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             PUT
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             PUT /register/{ClientId}
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             Optional
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             Client Credentials
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             OBClientRegistrationRequest1
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             OBClientRegistrationResponse1
+            </td>
+           </tr>
+           <tr>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             DELETE
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             DELETE /register/{ClientId}
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             Optional
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             Client Credentials
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             No
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+            <td class="confluenceTd" colspan="1" style="text-align: left;">
+             NA
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+        <p class="auto-cursor-target">
+         <br/>
+        </p>
+       </div>
+       <p class="diff-context-placeholder">
+        ...
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="relative-table wrapped confluenceTable" style="width: 70.7956%;">
+         <colgroup>
+          <col style="width: 18.9707%;"/>
+          <col style="width: 11.2747%;"/>
+          <col style="width: 11.7364%;"/>
+          <col style="width: 18.1626%;"/>
+          <col style="width: 8.54257%;"/>
+          <col style="width: 14.1991%;"/>
+          <col style="width: 11.544%;"/>
+          <col style="width: 5.34873%;"/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            Name
+           </th>
+           <th class="confluenceTh">
+            Occurrence
+           </th>
+           <th class="confluenceTh" colspan="1">
+            XPath
+           </th>
+           <th class="confluenceTh">
+            EnhancedDefinition
+           </th>
+           <th class="confluenceTh">
+            Class
+           </th>
+           <th class="confluenceTh">
+            Codes
+           </th>
+           <th class="confluenceTh">
+            Pattern
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Location
+           </th>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             iss
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             1..1
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             iss
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Identifier for the TPP.
+             <br/>
+             <br/>
+             This value must be unique for each TPP registered by the issuer of the SSA.
+             <br/>
+             <br/>
+             The value must be a Base62 encoded GUID.
+            </p>
+            <p>
+             For SSAs issued by the OB Directory, this must be the software_id
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             String (18)
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             ^[0-9a-zA-Z]{1,18}$
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Request only
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             iat
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             1..1
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             iat
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             The time at which the request was issued by the TPP expressed as "seconds since the epoch"
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Integer
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Unix timestamp
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Request only
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             exp
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             1..1
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             exp
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             The time at which the request expires expressed as seconds since the epoch.
+             <br/>
+             <br/>
+             An ASPSP processing the request must reject requests where the current time is greater than the time specified in the claim.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Integer
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Unix timestamp
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Request only
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             aud
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             1..1
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             aud
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             The audience for the request.
+             <br/>
+             This should be the unique identifier for the ASPSP issued by the issuer of the software statement.
+             <br/>
+             An ASPSP processing the software statement may validate the value of the claim and reject software statements for which the ASPSP is not the audience.
+            </p>
+            <p>
+             The value must be a Base62 encoded GUID.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (18)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            ^[0-9a-zA-Z]{1,18}$
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Request only
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             jti
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             1..1
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             jti
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             A unique identifier for the JWT.
+             <br/>
+             The value must be a UUIDv4 GUID.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             String (36)
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            `^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$`
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Request only
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            client_id
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             0..1 (request)
+            </p>
+            <p>
+             1..1 (response)
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            client_id
+           </td>
+           <td class="confluenceTd" colspan="1">
+            The client identifier generated by the ASPSP
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (36)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            client_secret
+           </td>
+           <td class="confluenceTd" colspan="1">
+            0..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            client_secret
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             A shared secret generated by the ASPSP.
+            </p>
+            <p>
+             The ASPSP may choose not to generate the client_secret if it does not support client authentication mechanisms that require it.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (36)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Response
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            redirect_uris
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..*
+           </td>
+           <td class="confluenceTd" colspan="1">
+            redirect_uris
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span class="legacy-color-text-blue3">
+              Registered URIs the TPP will use to interact with the ASPSP AS.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              <span class="legacy-color-text-blue3">
+               If the software statement defines a master set of redirect URIs, this must match or be a subset of the redirect URIs  in the SSA.
+              </span>
+             </span>
+            </p>
+            <p>
+             Each of the URIs must adhere to the following rules:
+            </p>
+            <ul>
+             <li>
+              <span class="legacy-color-text-blue3">
+               The URI MUST use the https scheme
+              </span>
+             </li>
+             <li>
+              <span class="legacy-color-text-blue3">
+               The URI MUST NOT contain a host with a value of localhost
+              </span>
+             </li>
+             <li>
+              <span class="legacy-color-text-blue3">
+               If the request_uris metadata element is omitted from the request, the entire contents of the software_redirect_uris element in the SSA are considered to be requested by the TPP.
+              </span>
+             </li>
+            </ul>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             String[]
+            </p>
+            <p>
+             (Each string upto 256)
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            URL
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            token_endpoint_auth_method
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span class="legacy-color-text-blue3">
+              <span class="legacy-color-text-blue3">
+               Specifies which Token endpoint authentication method the TPP wants to use.
+              </span>
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              private_key_jwt : if requested the OP should extract the TPPs JWKS location from the software statement assertion included.
+             </span>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (32)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             private_key_jwt
+            </p>
+            <p>
+             tls_client_auth
+            </p>
+            <p>
+             client_secret_basic
+            </p>
+            <p>
+             client_secret_post
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            grant_types
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..*
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span class="legacy-color-text-blue3">
+             A JSON array specifying what the TPP can request to be supplied to the token endpoint as exchange for an access token
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String[] (32)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             client_credentials
+            </p>
+            <p>
+             authorization_code
+            </p>
+            <p>
+             refresh_token
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            response_types
+           </td>
+           <td class="confluenceTd" colspan="1">
+            0..*
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span class="legacy-color-text-blue3">
+              A JSON array specifying what the TPP can request to be returned from the ASPSP authorisation endpoint.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              <span class="legacy-color-text-blue3">
+               ASPSPs MAY reject the request if any of the requested
+               <code>
+                response_type
+               </code>
+               s are not supported by it (as advertised at its .well-known end-points)
+              </span>
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              <code style="text-align: left;">
+               Defaults to code id_token if not specified.
+              </code>
+             </span>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String[] (32)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             code
+            </p>
+            <p>
+             code id_token
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            software_id
+           </td>
+           <td class="confluenceTd" colspan="1">
+            0..*
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span class="legacy-color-text-blue3">
+              If specified, the software_id in the request MUST match the software_id specified in the SSA.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              ASPSPs can choose to allow multiple registrations for a given software statement.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              The Software ID must be represented as a Base62 UUID
+             </span>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (18)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            ^[0-9a-zA-Z]{1,18}$
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            scope
+           </td>
+           <td class="confluenceTd" colspan="1">
+            0..*
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <span class="legacy-color-text-blue3">
+             Scopes the client is asking for (if not specified, default scopes are assigned by the AS)
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String[] (32)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <br/>
+            </p>
+            <p>
+             <br/>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            software_statement
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Software statement assertion issued by the issuer.
+            </p>
+            <p>
+             The data model for the software statements issued by the Open Banking directory are documented as part of the Directory Specification.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             JWS
+            </p>
+            <p>
+             <br/>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            application_type
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             String (32)
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             web
+            </p>
+            <p>
+             mobile
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            id_token_signed_response_alg
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Algorithm which the TPP expects to sign the id_token, if an id_token is returned.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (5)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Supported values as constrained by FAPI-RW
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            <span class="legacy-color-text-blue3">
+             request_object_signing_alg
+            </span>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Algorithm which the TPP expects to sign the request object if a request object will be part of the authorization request sent to the ASPSP.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (5)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Supported values as constrained by FAPI-RW
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            token_endpoint_auth_signing_alg
+           </td>
+           <td class="confluenceTd" colspan="1">
+            1..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Algorithm which the TPP uses to authenticate with the token endpoint if using private_key_jwt or client_id_jwt
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (5)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Supported values as constrained by FAPI-RW
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+          <tr>
+           <td class="confluenceTd" colspan="1">
+            tls_client_auth_dn
+           </td>
+           <td class="confluenceTd" colspan="1">
+            0..1
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             <span class="legacy-color-text-blue3">
+              This value must be set iff
+              <code>
+               token_endpoint_auth_method
+              </code>
+              is set to
+              <code>
+               tls_client_auth
+              </code>
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              The
+              <span>
+              </span>
+             </span>
+             <code>
+              tls_client_auth_dn
+             </code>
+             <span class="legacy-color-text-blue3">
+              claim MUST contain the DN of the certificate that the TPP will present to the ASPSP token endpoint.
+             </span>
+            </p>
+            <p>
+             <span class="legacy-color-text-blue3">
+              The ASPSP may decide to match only a part of the DN so that the match is based only on the part of the DN that will be immutable for the TPP across all EIDAS certificates issued to it.
+             </span>
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            String (128)
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <br/>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Both
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h2 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-ErrorStructure">
+        <span data-colorid="qdns8ahf9w">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-39">
+          Error Structure
+         </span>
+        </span>
+       </h2>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="uv017cvydg">
+         <span class="legacy-color-text-blue3">
+          <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-40">
+           In the case where the ASPSP makes a negative determination and refuses to create a client, the ASPSP MUST return a client registration error response to the TPP conforming to Section 3.2.2 of [RFC7591].
+          </span>
+         </span>
+        </span>
+       </p>
+       <h2 class="diff-block-context" id="DynamicClientRegistration-v3.1-DataMapping">
+        Data Mapping
+       </h2>
+       <p class="diff-block-context">
+        This section of the specification is non-normative. The objective is to provide an overview of the various data items in the ecosystem and how they flow across from one to the other.
+       </p>
+       <div class="table-wrap diff-block-context">
+        <table class="relative-table wrapped confluenceTable" style="width: 90.0429%;">
+         <colgroup>
+          <col style="width: 5.41481%;"/>
+          <col style="width: 12.7051%;"/>
+          <col style="width: 13.3101%;"/>
+          <col style="width: 10.9204%;"/>
+          <col style="width: 10.7691%;"/>
+          <col style="width: 8.92385%;"/>
+          <col style="width: 13.2194%;"/>
+          <col style="width: 11.8884%;"/>
+          <col style="width: 12.7051%;"/>
+         </colgroup>
+         <tbody>
+          <tr>
+           <th class="confluenceTh">
+            Data Item
+           </th>
+           <th class="confluenceTh">
+            Description
+           </th>
+           <th class="confluenceTh">
+            NCA
+           </th>
+           <th class="confluenceTh">
+            ETSI format EIDAS Certificate
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Open Banking Directory Record
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Open Banking Directory SSA
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Registration Request
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Client Record
+           </th>
+           <th class="confluenceTh" colspan="1">
+            Access Token
+           </th>
+          </tr>
+          <tr>
+           <th class="confluenceTh">
+            NCA Registration ID
+           </th>
+           <th class="confluenceTh">
+            <p>
+             A unique and immutable identifier for a TPP.
+            </p>
+            <p>
+             The ID is publicly available and visible to all entities
+            </p>
+           </th>
+           <td class="confluenceTd">
+            <p>
+             The NCA is responsible for issuing the ID.
+            </p>
+            <p>
+             Notes:
+            </p>
+            <ul style="list-style-type: square;">
+             <li>
+              There are some NCAs in Europe that currently do not issue a unique identifier for TPPs.
+             </li>
+             <li>
+              The FCA currently mutates the ID when a new role is added to a TPP. However, they have confirmed that this practice will be discontinued and each organisation will have a single immutable registration number.
+             </li>
+            </ul>
+           </td>
+           <td class="confluenceTd">
+            The NCA registration number is embedded in the Subject field of EIDAS certificates that follow the ETSI standard.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Each PSP in the OB Directory has a unique NCA ID associated with it
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Included
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Where the client uses MTLS for token endpoint authentication, the NCA registration id forms a part of the
+             <code>
+              tls_client_auth_dn
+             </code>
+             claim.
+            </p>
+            <p>
+             This is used to bind the client to a specific DN in the certificate used to establish the TLS session.
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Referenced
+           </td>
+           <td class="confluenceTd" colspan="1">
+            In situations where the token endpoint is protected by MTLS, the client is verified by binding the registered
+            <code>
+             tls_client_auth_dn
+            </code>
+            claim with the DN of the certificate used to establish the TLS session
+           </td>
+          </tr>
+          <tr>
+           <th class="confluenceTh">
+            org_id
+           </th>
+           <th class="confluenceTh">
+            A unique and immutable identifier for a PSP issued by a Federation Trust Service Provider such as the Open Banking Directory.
+           </th>
+           <td class="confluenceTd">
+            NA
+           </td>
+           <td class="confluenceTd">
+            org_id will not be specified on an EIDAS certificate
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Issued and maintained by the Directory
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Included in the software statement
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Specified in the
+            <code>
+             iss
+            </code>
+            claim
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Referenced
+           </td>
+           <td class="confluenceTd" colspan="1">
+            NA
+           </td>
+          </tr>
+          <tr>
+           <th class="confluenceTh">
+            software_id
+           </th>
+           <th class="confluenceTh">
+            <p>
+             A unique and immutable identifier for a piece of software belonging to a PSP.
+            </p>
+            <p>
+             The identifier is issued by a Federation Trust Service Provider such as the Open Banking Directory.
+            </p>
+            <p>
+             A PSP may register one or more software statements.
+            </p>
+            <p>
+             A software statement can only belong to a single PSP
+            </p>
+           </th>
+           <td class="confluenceTd">
+            NA
+           </td>
+           <td class="confluenceTd">
+            Not specified on EIDAS certificates
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Issued and maintained by the Directory
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Included in the software statement
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Not specified in the request object
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Referenced
+           </td>
+           <td class="confluenceTd" colspan="1">
+            NA
+           </td>
+          </tr>
+          <tr>
+           <th class="confluenceTh" colspan="1">
+            scope
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <p>
+             A PSP may be registered as a PISP or AISP with the NCA.
+            </p>
+            <p>
+             This is reflected in the scopes that the TPP can have.
+            </p>
+           </th>
+           <td class="confluenceTd" colspan="1">
+            Registration type - PISP/AISP
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Specified in the EIDAS certificates
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Maintains a reference of the roles permitted for a TPP.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Included
+           </td>
+           <td class="confluenceTd" colspan="1">
+            <p>
+             Specified in the
+             <code>
+              scope
+             </code>
+             claimed.
+            </p>
+            <p>
+             This must be a subset of the scopes in the SSA
+            </p>
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Associated with specific scope that the TPP has.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Associated with a sub-set of the scopes permitted to the client
+           </td>
+          </tr>
+          <tr>
+           <th class="confluenceTh" colspan="1">
+            client_id
+           </th>
+           <th class="confluenceTh" colspan="1">
+            <p>
+             A unique and immutable identifier that identifies a specific OIDC client.
+            </p>
+            <p>
+             The identifier shared between the ASPSP and TPP.
+            </p>
+            <p>
+             A TPP may have multiple clients (and client_ids) with each ASPSP.
+            </p>
+           </th>
+           <td class="confluenceTd" colspan="1">
+            NA
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Not specified on EIDAS certificates
+           </td>
+           <td class="confluenceTd" colspan="1">
+            NA
+           </td>
+           <td class="confluenceTd" colspan="1">
+            NA
+           </td>
+           <td class="confluenceTd" colspan="1">
+            A TPP may request for a specific client_id to be issued to it. The ASPSP may ignore the claim.
+           </td>
+           <td class="confluenceTd" colspan="1">
+            Unique (to the the ASPSP) and immutable identifier
+           </td>
+           <td class="confluenceTd" colspan="1">
+            An access token is issued to a specific client.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <h1 class="diff-block-target diff-block-context" id="DynamicClientRegistration-v3.1-SwaggerSpecification">
+        <span data-colorid="fpxkcsizfr">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-41">
+          Swagger Specification
+         </span>
+        </span>
+       </h1>
+       <p class="diff-block-target diff-block-context">
+        <span data-colorid="hvlv2r1c4v">
+         <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-42">
+          The Swagger Specification for the Dynamic Client Registration API can be downloaded from the following links:
+         </span>
+        </span>
+       </p>
+       <ul class="diff-block-target diff-block-context">
+        <li>
+         <span data-colorid="epu7v4phk1">
+          <a class="external-link" href="https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1-RC1/dist/client-registration-swagger.json" rel="nofollow">
+           <span class="diff-html-changed" data-a11y-after="End of changed content" data-a11y-before="Start of changed content" id="changed-diff-43">
+            JSON
+           </span>
+          </a>
+         </span>
+        </li>
+        <li>
+         <a href="//raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1-RC1/dist/client-registration-swagger.yaml" rel="nofollow">
+          YAML
+         </a>
+        </li>
+       </ul>
+       <p class="diff-block-context">
+        <br/>
+       </p>
+       <p class="diff-block-context">
+        <br/>
+       </p>
+      </div>
+     </div>
+     <div class="hidden" id="space-tools-web-items">
+      <div data-href="/wiki/spaces/viewspacesummary.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="General">
+       General
+      </div>
+      <div data-href="/wiki/pages/reorderpages.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Content">
+       Content
+      </div>
+      <div data-href="/wiki/spaces/listrssfeeds.action?key=$generalUtil.urlEncode($helper.spaceKeyOrAlias)" data-label="Integrations">
+       Integrations
+      </div>
+     </div>
+    </main>
+    <!-- \#main -->
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="fbe7043a2ae84140ae022b41bff406b9">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-pdf",
+    "uniqueKey":"com.k15t.scroll.scroll-pdf__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export PDF Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-pdf.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-pdf&addOnKey=com.k15t.scroll.scroll-pdf&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMyIsImlkIjoiOTM3MDY2NjAwIn0sInNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9fX0sImV4cCI6MTc0ODkwMTg1OSwiaWF0IjoxNzQ4OTAwOTU5fQ.6uirKf6uHexqZCf3L8tD8xkJVNYVbrtIE2NMCGCnscs",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"3\",\"id\":\"937066600\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"937066600\",\"space.key\":\"DZ\",\"content.id\":\"937066600\",\"page.type\":\"page\",\"content.version\":\"3\",\"page.title\":\"Dynamic Client Registration - v3.1\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"3\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-pdf.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+    <div class="ap-container" id="ap-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     <div class="ap-content" id="embedded-com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel">
+     </div>
+     <script class="ap-iframe-body-script" nonce="fbe7043a2ae84140ae022b41bff406b9">
+      (function(){
+    var data = {
+    "addon_key":"com.k15t.scroll.scroll-office",
+    "uniqueKey":"com.k15t.scroll.scroll-office__k15t-cxp-integration-web-panel",
+    "key":"k15t-cxp-integration-web-panel",
+     "moduleType":"webPanels",      "moduleLocation":"atl.footer",      "title":"Export Word Launcher",     "cp":"/wiki",
+            "general":"",
+    "w":"100%",
+    "h":"0",
+    "url":"https://scroll-word.us.exporter.k15t.app/static/assets/integration/index.html?moduleKey=k15t-cxp-integration-web-panel&dialogKey=k15t-cxp-export-office&addOnKey=com.k15t.scroll.scroll-office&moduleType=webPanel&v=2025-05-09-1530",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6IjUxMTJlMmRjLTRlNmItMzJkMS04YWFiLTkxNTI5NzI3MjE5MiIsImNvbnRleHQiOnsidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb3BlbmJhbmtpbmcuYXRsYXNzaWFuLm5ldFwvd2lraSJ9LCJjb25mbHVlbmNlIjp7ImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMyIsImlkIjoiOTM3MDY2NjAwIn0sInNwYWNlIjp7ImtleSI6IkRaIiwiaWQiOiIxNzIzNjEwNSJ9fX0sImV4cCI6MTc0ODkwMTg1OSwiaWF0IjoxNzQ4OTAwOTU5fQ.MknlRJtdofdHsSSN-_zwORmL2Elv9AU51W0HRFqPrL8",    "structuredContext": "{\"confluence\":{\"content\":{\"type\":\"page\",\"version\":\"3\",\"id\":\"937066600\"},\"space\":{\"key\":\"DZ\",\"id\":\"17236105\"}},\"url\":{\"displayUrl\":\"https://openbanking.atlassian.net/wiki\"}}",
+    "contentClassifier":"",
+    "productCtx":"{\"page.id\":\"937066600\",\"space.key\":\"DZ\",\"content.id\":\"937066600\",\"page.type\":\"page\",\"content.version\":\"3\",\"page.title\":\"Dynamic Client Registration - v3.1\",\"space.id\":\"17236105\",\"content.type\":\"page\",\"user.isExternalCollaborator\":\"false\",\"page.version\":\"3\"}",
+    "timeZone":"UTC",
+    "origin":"https://scroll-word.us.exporter.k15t.app",
+    "hostOrigin":"https://openbanking.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+     </script>
+    </div>
+   </div>
+  </div>
+  <!-- flex-flow: row wrap -->
+  <!-- display: flex -->
+  <span id="confluence-server-performance" style="display:none;">
+   {"serverDuration": 595, "requestCorrelationId": "fbe7043a2ae84140ae022b41bff406b9"}
+  </span>
+ </body>
+</html>

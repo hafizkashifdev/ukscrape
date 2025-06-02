@@ -1,0 +1,1661 @@
+Message-ID: &lt;1756678593.31.1748901571434@8020220e306e&gt;
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_30_1508208012.1748901571433"
+
+------=_Part_30_1508208012.1748901571433
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+<html xmlns="3D'urn:w3-org-ns:HTML'" xmlns:o="3D'urn:schemas-microsoft-com:office:office'" xmlns:v="3D'urn:schemas-microsoft-com:vml'" xmlns:w="3D'urn:schemas-microsoft-com:office:word'">
+ <head>
+  <meta "="" charset="utf-8" content='3D"text/html;' http-equiv='3D"Content-Type"'/>
+  <title>
+   Open Data API Dashboard
+  </title>
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+  <style>
+   <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+  </style>
+ </head>
+ <body>
+  <h1>
+   Open Data API Dashboard
+  </h1>
+  <div class='3D"Section1"'>
+   <div class='3D"contentLayout2"'>
+    <div bar"="" class='3D"columnLayout' data-layout='3D"two-right-side=' two-right-sidebar"="">
+     <div class='3D"cell' data-type='3D"normal"' normal"="">
+      <div class='3D"innerCell"'>
+       <div class='3D"confluence-information-macro' confluence-information-macro-inf='ormation"'>
+        <span aui-icon-small="" aui-iconfont-info="" class='3D"aui-icon' confluence-informa='tion-macro-icon"'>
+        </span>
+        <div class='3D"confluence-information-macro-body"'>
+         <p>
+          <span class='3D"legacy-color-text-default"'>
+           This API Dashboard provides a =
+list of Open Data API end points. This data includes product informati=
+on, ATM and branch locations plus information and metrics about service qua=
+lity.
+          </span>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div aside"="" class='3D"cell' data-type='3D"aside"'>
+      <div class='3D"innerCell"'>
+       <div 1px;"="" class='3D"panel"' style='3D"border-width:'>
+        <div class='3D"panelContent"'>
+         <p>
+          <a data-linked-r='esource-type=3D"page"' data-linked-res='ource-id=3D"441614754"' data-linked-resource-version='3D"21209"' href='3D"/wiki/spaces/DZ/pages/441614754/API+Downtime"'>
+           API Downtime
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class='3D"columnLayout' data-layout='3D"single"' single"="">
+     <div class='3D"cell' data-type='3D"normal"' normal"="">
+      <div class='3D"innerCell"'>
+       <h1 id='3D"OpenDataAPIDashboard-Agreement"'>
+        <span>
+         Agreement
+        </span>
+       </h1>
+       <p>
+        Please confirm that you have read, understood and agreed to the
+        <a class='=3D"external-link"' href='3D"https://www.openbanking.org.uk/open-licence/"' re='l=3D"nofollow"'>
+         Open Banking Ltd Terms and Conditions and Open Data Licence.=
+        </a>
+       </p>
+       <h1 class='3D"auto-cursor-target"' id='3D"OpenDataAPIDashboard-Space"'>
+        <span cl='ass=3D"legacy-color-text-inverse"'>
+         Space
+        </span>
+       </h1>
+       <div class='3D"expand-container"' id='3D"expander-857183695"'>
+        <div class='3D"expand-control"' id='3D"expander-control-857183695"'>
+         <span class='3D"expand-control-icon"'>
+          <img b67179c0632ad2c87bd0cd4d1a"="" c='lass=3D"expand-control-image"' height='3D"16"' src='3D"e6985768c0fe87bcb9bb547d1a007e6ffdb842=' style='3D"vertical-align:middle;"' width='3D"16"'/>
+         </span>
+         <span class='=3D"expand-control-text"'>
+          I agree, click here for Product Information &amp; =
+FCA Metrics API endpoints
+         </span>
+        </div>
+        <div class='3D"expand-content"' id='3D"expander-content-857183695"'>
+         <div 1px;"="" class='3D"panel"' style='3D"border-width:'>
+          <div class='3D"panelContent"'>
+           <h2 id='3D"OpenDataAPIDashboard-ProductInformation&amp;FCAMetrics"'>
+            Product I=
+nformation &amp; FCA Metrics
+           </h2>
+           <p>
+            <span class='3D"legacy-color-text-default"'>
+             <a class='3D"external-link"' hre='f=3D"https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/maste=' participant_store.json"="" r="" rel='3D"nofollow"'>
+              Download the JSON list
+             </a>
+             =
+or view the endpoints directly below.
+            </span>
+           </p>
+           <p>
+            <br/>
+           </p>
+           <div class='3D"table-wrap"'>
+            <table 82.='2148%;"' class='3D"relative-table' confluencetable"="" style='3D"width:' wrapped="">
+             <colgroup>
+              <col 25.5276%;"="" style='3D"width:'/>
+              <col 8.71341%;"="" style='3D"width:'/>
+              <col 9.59837%;"="" style='3D"width:'/>
+              <col 7.76038%;"="" style='3D"width:'/>
+              <col 9.66644%;"="" style='3D"width:'/>
+              <col 9.66644%;"="" style='3D"width:'/>
+              <col 9.66644%;"="" style='3D"width:'/>
+              <col 10.143%;"="" style='3D"width:'/>
+              <col 9.258%;"="" style='3D"width:'/>
+             </colgroup>
+             <tbody>
+              <tr>
+               <th class='3D"confluenceTh"' colspan='3D"1"'>
+                Provider
+               </th>
+               <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                ATM&lt;=
+/th&gt;
+                <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                 Bran=
+ch
+                </th>
+                <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                 PCA&lt;=
+/th&gt;
+                 <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                  BCA&lt;=
+/th&gt;
+                  <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                   SME&lt;=
+/th&gt;
+                   <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                    CCC&lt;=
+/th&gt;
+                    <th class='3D"confluenceTh"' colspan='3D"1"'>
+                     FCA Metrics PCA
+                    </th>
+                    <th class='3D"confluenceTh"' colspan='3D"1"'>
+                     FCA Metrics BCA
+                    </th>
+                   </th>
+                  </th>
+                 </th>
+                </th>
+               </th>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Allied Irish Bank (GB)
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <span 1d"="" class='3D"_2w='>
+                 <a class='3D"external-link"' href='3D"https://openapi.aibgb.co.uk/open-ban=' king="" personal-current-accounts"="" rel='3D"nofollow"' v2.2="">
+                  v2.2
+                 </a>
+                </span>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a bgb.co.uk="" business-current-accounts"="" class='3D"external-link"' href='3D"https://openapi.ai=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.=
+2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a bgb.co.uk="" class='3D"external-link"' href='3D"https://openapi.ai=' open-banking="" rel='3D"nofollow"' unsecured-sme-loans"="" v2.2="">
+                   v2.2
+                  </a>
+                  &lt;=
+/span&gt;
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <br/>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.aibgb.co.uk/o=' pen-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 &lt;=
+/span&gt;
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Bank of Ireland (UK)
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.ba=' nkofireland.com="" open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a class='3D"external-link"' follow"="" href='=3D"https://openapi.bankofireland.com/open-banking/v2.2/branches"' rel='3D"no='>
+                    v2.2
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a class='3D"external-link"' counts"="" href='=3D"https://openapi.bankofireland.com/open-banking/v2.2/personal-current-ac=' rel='3D"nofollow"'>
+                    v2.2
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a class='3D"external-link"' counts"="" href='=3D"https://openapi.bankofireland.com/open-banking/v2.2/business-current-ac=' rel='3D"nofollow"'>
+                    v2.2
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a "="" class='3D"external-link"' href='=3D"https://openapi.bankofireland.com/open-banking/v2.2/unsecured-sme-loans=' rel='3D"nofollow"'>
+                    v2.2
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a ards"="" class='3D"external-link"' href='=3D"https://openapi.bankofireland.com/open-banking/v2.2/commercial-credit-c=' rel='3D"nofollow"'>
+                    v2.2
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .com="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.bankofireland=' open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                  <!--=
+span-->
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .com="" bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.bankofireland=' open-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                  <!--=
+span-->
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Bank of Scotland
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://api.bankof=' open-banking="" rel='3D"nofollow"' scotland.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://api.bankof=' open-banking="" rel='3D"nofollow"' scotland.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a "="" class='3D"external-link"' href='3D"https://api.bankof=' open-banking="" personal-current-accounts"="" rel='3D"nofollow=' scotland.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <p center;"="" style='3D"text-align:'>
+                 <a api.bankofscotland.co.uk="" business-current-accounts"="" class='3D"external-link"' href='3D"https:/=' open-banking="" rel='=3D"nofollow"' v2.2="">
+                  v2.2
+                 </a>
+                </p>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://api.bankof=' open-banking="" rel='3D"nofollow"' scotland.co.uk="" unsecured-sme-loans"="" v2.2="">
+                   v2.2=
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' commercial-credit-cards"="" href='3D"https://api.bankof=' open-banking="" rel='3D"nofollow"' scotland.co.uk="" v2.2="">
+                   =
+v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .uk="" class='3D"external-link"' fca-service-metrics="" href='3D"https://api.bankofscotland.co=' open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .uk="" bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://api.bankofscotland.co=' open-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Barclays Bank
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" barclays="" class='3D"external-link"' href='3D"https://atlas.api.=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a branches"="" class='3D"external-link"' href='3D"https://atlas.api.barclays/open-banking/=' rel='3D"nofollow"' v2.2="">
+                  v2.2
+                 </a>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <a 6ik1hawwilcjxvci6mn0%3d%7c1000&amp;sdata="3DHFewLIKumQwq7jXNrAgct%2B9UDnS8hw=" al-link"="" b0f28b08d96098c42a%7c3450fc49f14b45629b6a03faee2a42c4%7c0%7c0%7c63764703150="9959411%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=" class='3D"extern=' cli="ck" href='3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttp=' if="" link."="" nv12vjusxgtb0%3d&amp;reserved='3D0"' or="" rel='3D"nofollow"' s%3a%2f%2fatlas.api.barclays%2fopen-banking%2fv2.4%2fpersonal-current-accou="nts&amp;data=3D04%7C01%7CFreddi.Gyara%40openbanking.org.uk%7C3e996ef5a12e46=" tap="" this="" title='3D"Original' trust="" url:="https://atlas.api.barclays/open-banking/v2.4/personal-current-accounts." you="">
+                 v2.4
+                </a>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a business-current-accounts"="" class='3D"external-link"' href='3D"https://atlas.api.barclays/open-banking/=' rel='3D"nofollow"' v2.4="">
+                  v2.4
+                 </a>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <a 08d96098c42a%7c3450fc49f14b45629b6a03faee2a42c4%7c0%7c0%7c63764703150994941="5%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1ha=" =="" al-link"="" atlas.api.barclays="" class='3D"extern=' click="" href='3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttp=' https:="" if="" ig5hs%3d&amp;reserved='3D0"' link."="" open-banking="" or="" rel='3D"nofollow"' s%3a%2f%2fatlas.api.barclays%2fopen-banking%2fv2.4%2funsecured-sme-loans&am="p;data=3D04%7C01%7CFreddi.Gyara%40openbanking.org.uk%7C3e996ef5a12e46b0f28b=" tap="" this="" title='3D"Original' trust="" unsecured-sme-loans.="" url:="" v2.4="" wwilcjxvci6mn0%3d%7c1000&amp;sdata="3D5qxkQmDCf824WvkjZqLz8uf4P6qj8RZYm74qtw=" y="ou">
+                 v2.4
+                </a>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a class='3D"external-link"' commercial-credit-cards"="" href='3D"https://atlas.api.barclays/open-banking/=' rel='3D"nofollow"' v2.4="">
+                  v2.4
+                 </a>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' en-banking="" fca-service-metrics="" href='3D"https://atlas.api.barclays/op=' pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 <!--=
+span-->
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' en-banking="" fca-service-metrics="" href='3D"https://atlas.api.barclays/op=' rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 <!--=
+span-->
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                <p>
+                 Danske Bank
+                </p>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a anskebank.com="" atms"="" class='3D"external-link"' href='3D"https://obp-data.d=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a anskebank.com="" branches"="" class='3D"external-link"' href='3D"https://obp-data.d=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a class='3D"external-link"' href='3D"https://obp-data.danskebank.com/open-ban=' king="" personal-current-accounts"="" rel='3D"nofollow"' v2.2="">
+                  v2.2
+                 </a>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a anskebank.com="" business-current-accounts"="" class='3D"external-link"' href='3D"https://obp-data.d=' open-banking="" rel='3D"nofollow"=' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a class='3D"external-link"' href='3D"https://obp-data.danskebank.com/open-ban=' king="" rel='3D"nofollow"' unsecured-sme-loans"="" v2.2="">
+                  v2.2
+                 </a>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://obp-data.danskebank.c=' om="" open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://obp-data.danskebank.c=' om="" open-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Allied Irish Bank (NI) (First Trust Bank)
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.fi=' open-banking="" rel='3D"nofollow"' rsttrustbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://openapi.fi=' open-banking="" rel='3D"nofollow"' rsttrustbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.fi=' llow"="" open-banking="" personal-current-accounts"="" rel='3D"nofo=' rsttrustbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a business-current-accounts"="" class='3D"external-link"' href='3D"https://openapi.fi=' llow"="" open-banking="" rel='3D"nofo=' rsttrustbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.fi=' open-banking="" rel='3D"nofollow"' rsttrustbank.co.uk="" unsecured-sme-loans"="" v2.2="">
+                   =
+v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.firsttrustban=' k.co.uk="" open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.firsttrustban=' k.co.uk="" open-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Halifax
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://api.halifa=' open-banking="" rel='3D"nofollow"' v2.2="" x.co.uk="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <a 2.2="" branches"="" class='3D"external-link"' href='3D"https://api.halifax.co.uk/open-banking/v=' rel='3D"nofollow"'>
+                  v2.2
+                 </a>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <p center;"="" style='3D"text-align:'>
+                 <a api.halifax.co.uk="" class='3D"external-link"' href='3D"https:/=' llow"="" open-banking="" personal-current-accounts"="" rel='3D"nofo=' v2.2="">
+                  v2.2
+                 </a>
+                </p>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://api.halifax.co.uk/ope=' n-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                HSBC Group
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://api.hsbc.c=' om="" open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://api.hsbc.c=' om="" open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://api.hsbc.c=' om="" open-banking="" personal-current-accounts"="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                  <!--=
+span-->
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a business-current-accounts"="" class='3D"external-link"' href='3D"https://api.hsbc.c=' om="" open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                  <!--=
+span-->
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://api.hsbc.c=' om="" open-banking="" rel='3D"nofollow"' unsecured-sme-loans"="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <a class='3D"external-link"' href='3D"https://api.hsbc.com/open-banking/v2.2/c=' ommercial-credit-cards"="" rel='3D"nofollow"'>
+                  v2.2
+                 </a>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://api.hsbc.com/open-ban=' king="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+                &lt;=
+/td&gt;
+                <td class='3D"confluenceTd"' colspan='3D"1"'>
+                 <span class='3D"_2w1d"'>
+                  <span class='=3D"_2w1d"'>
+                   <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://api.hsbc.com/open-ban=' king="" rel='3D"nofollow"' v1.0="">
+                    v1.0
+                   </a>
+                  </span>
+                 </span>
+                 &lt;=
+/td&gt;
+                </td>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Lloyds Bank
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" bank.com="" class='3D"external-link"' href='3D"https://api.lloyds=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a bank.com="" branches"="" class='3D"external-link"' href='3D"https://api.lloyds=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' colspan='3D"1"' style='3D"text-align:'>
+                <a c='lass=3D"external-link"' href='3D"https://api.lloydsbank.com/open-banking/v2.2=' personal-current-accounts"="" rel='3D"nofollow"'>
+                 v2.2
+                </a>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a bank.com="" business-current-accounts"="" class='3D"external-link"' href='3D"https://api.lloyds=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2=
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a bank.com="" class='3D"external-link"' href='3D"https://api.lloyds=' open-banking="" rel='3D"nofollow"' unsecured-sme-loans"="" v2.2="">
+                   v2.2
+                  </a>
+                  <!--=
+span-->
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a bank.com="" class='3D"external-link"' commercial-credit-cards"="" href='3D"https://api.lloyds=' open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2
+                   <!--=
+a-->
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' en-banking="" fca-service-metrics="" href='3D"https://api.lloydsbank.com/op=' pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 <!--=
+span-->
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' en-banking="" fca-service-metrics="" href='3D"https://api.lloydsbank.com/op=' rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 <!--=
+span-->
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Nationwide Building Society
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" rel='3D"nofollow"' tionwide.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://locations.=' nationwidebranches.co.uk="" open-banking="" rel='3D"nofollow"' v2.2="">
+                   v2.2&lt;=
+/a&gt;
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a "="" class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" personal-current-accounts"="" rel='3D"nofollow=' tionwide.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .uk="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.nationwide.co=' open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                NatWest
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" rel='3D"nofollow"' twest.com="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" rel='3D"nofollow"' twest.com="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" personal-current-accounts"="" rel='3D"nofollow"' twest.com="" v2.2="">
+                   v2.=
+2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' colspan='3D"1"' style='3D"text-align:'>
+                <a 2="" business-current-accounts"="" c='lass=3D"external-link"' href='3D"https://openapi.natwest.com/open-banking/v2.=' rel='3D"nofollow"'>
+                 v2.2
+                </a>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.na=' open-banking="" rel='3D"nofollow"' twest.com="" unsecured-sme-loans"="" v2.2="">
+                   v2.2
+                  </a>
+                  &lt;=
+/span&gt;
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' commercial-credit-cards"="" href='3D"https://openapi.na=' open-banking="" rel='3D"nofollow"' twest.com="" v2.2="">
+                   v2.2&lt;=
+/a&gt;
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.natwest.com/o=' pca"="" pen-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 &lt;=
+/span&gt;
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.natwest.com/o=' pen-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                 &lt;=
+/span&gt;
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"'>
+                Royal Bank of Scotland
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.rb=' open-banking="" rel='3D"nofollow"' s.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://openapi.rb=' open-banking="" rel='3D"nofollow"' s.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.rb=' open-banking="" personal-current-accounts"="" rel='3D"nofollow"' s.co.uk="" v2.2="">
+                   v2.2&lt;=
+/a&gt;
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a business-current-accounts"="" class='3D"external-link"' href='3D"https://openapi.rb=' open-banking="" rel='3D"nofollow"' s.co.uk="" v2.2="">
+                   v2.2&lt;=
+/a&gt;
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.rb=' open-banking="" rel='3D"nofollow"' s.co.uk="" unsecured-sme-loans"="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' commercial-credit-cards"="" href='3D"https://openapi.rb=' open-banking="" rel='3D"nofollow"' s.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.rbs.co.uk/ope=' n-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.rbs.co.uk/ope=' n-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Santander UK
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' external="" g.santander.co.uk="" href='3D"https://openbankin=' open-banking="" rel='3D"nofollow"' sanuk="" v2.2="">
+                   v=
+2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' external="" g.santander.co.uk="" href='3D"https://openbankin=' open-banking="" rel='3D"nofollo=' sanuk="" v2.2="" w"="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' external="" g.santander.co.uk="" href='3D"https://openbankin=' open-banking="" personal-current-account='s"' rel='3D"nofollow"' sanuk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a business-current-account='s"' class='3D"external-link"' external="" g.santander.co.uk="" href='3D"https://openbankin=' open-banking="" rel='3D"nofollow"' sanuk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' colspan='3D"1"' style='3D"text-align:'>
+                <a c='lass=3D"external-link"' href='3D"https://openbanking.santander.co.uk/sanuk/ex=' open-banking="" rel='3D"nofollow"' ternal="" unsecured-sme-loans"="" v2.2="">
+                 v2.2
+                </a>
+                <td center;"="" class='3D"confluenceTd"' colspan='3D"1"' style='3D"text-align:'>
+                 <div>
+                  <span class='3D"_2w1d"'>
+                   <a class='3D"external-link"' commercial-credit-cards"='rel=3D"nofollow"' external="" g.santander.co.uk="" href='3D"https://openbankin=' open-banking="" sanuk="" v2.2="">
+                    v2.2
+                   </a>
+                  </span>
+                 </div>
+                </td>
+                <td class='3D"confluenceTd"' colspan='3D"1"'>
+                 <span class='3D"_2w1d"'>
+                  <span class='=3D"_2w1d"'>
+                   <a .co.uk="" class='3D"external-link"' external="" fca-service-metrics="" href='3D"https://openbanking.santander=' ollow"="" open-banking="" pca"="" rel='3D"nof=' sanuk="" v1.0="">
+                    v1.0
+                   </a>
+                  </span>
+                 </span>
+                </td>
+                <td class='3D"confluenceTd"' colspan='3D"1"'>
+                 <span class='3D"_2w1d"'>
+                  <span class='=3D"_2w1d"'>
+                   <a .co.uk="" bca"="" class='3D"external-link"' external="" fca-service-metrics="" href='3D"https://openbanking.santander=' ollow"="" open-banking="" rel='3D"nof=' sanuk="" v1.0="">
+                    v1.0
+                   </a>
+                  </span>
+                 </span>
+                </td>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' left;"="" style='3D"text-align:'>
+                Ulster Bank
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a atms"="" class='3D"external-link"' href='3D"https://openapi.ul=' open-banking="" rel='3D"nofollow"' sterbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a branches"="" class='3D"external-link"' href='3D"https://openapi.ul=' open-banking="" rel='3D"nofollow"' sterbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a "="" class='3D"external-link"' href='3D"https://openapi.ul=' open-banking="" personal-current-accounts"="" rel='3D"nofollow=' sterbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a "="" business-current-accounts"="" class='3D"external-link"' href='3D"https://openapi.ul=' open-banking="" rel='3D"nofollow=' sterbank.co.uk="" v2.2="">
+                   v2.2
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <a class='3D"external-link"' href='3D"https://openapi.ul=' open-banking="" rel='3D"nofollow"' sterbank.co.uk="" unsecured-sme-loans"="" v2.2="">
+                   v2.2=
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .uk="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.ulsterbank.co=' open-banking="" pca"="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <span class='3D"_2w1d"'>
+                 <span class='=3D"_2w1d"'>
+                  <a .uk="" bca"="" class='3D"external-link"' fca-service-metrics="" href='3D"https://openapi.ulsterbank.co=' open-banking="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Clydesdale Bank PLC
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <a "https:="" api-ib.cybservices.co.uk="" banks="" cb="" class='3D"external-link"' fca-s='ervice-metrics/pca"' href="3D=" ibapi="" open-banking="" rel='3D"nofollow"' v1.0="" v2="">
+                 v1.0
+                </a>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <a "https:="" api-ib.cybservices.co.uk="" banks="" cb="" class='3D"external-link"' fca-s='ervice-metrics/bca"' href="3D=" ibapi="" open-banking="" rel='3D"nofollow"' v1.0="" v2="">
+                 v1.0
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Yorkshire Bank
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <a "https:="" api-ib.cybservices.co.uk="" banks="" class='3D"external-link"' fca-s='ervice-metrics/pca"' href="3D=" ibapi="" open-banking="" rel='3D"nofollow"' v1.0="" v2="" yb="">
+                 v1.0
+                </a>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <a "https:="" api-ib.cybservices.co.uk="" banks="" class='3D"external-link"' fca-s='ervice-metrics/bca"' href="3D=" ibapi="" open-banking="" rel='3D"nofollow"' v1.0="" v2="" yb="">
+                 v1.0
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                Virgin Money
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <a "https:="" api-ib.cybservices.co.uk="" banks="" class='3D"external-link"' fca-s='ervice-metrics/pca"' href="3D=" ibapi="" open-banking="" rel='3D"nofollow"' v1.0="" v2="" vm="">
+                 v1.0
+                </a>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <br/>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class='3D"columnLayout' data-layout='3D"single"' single"="">
+     <div class='3D"cell' data-type='3D"normal"' normal"="">
+      <div class='3D"innerCell"'>
+       <div class='3D"expand-container"' id='3D"expander-2141438588"'>
+        <div class='3D"expand-control"' id='3D"expander-control-2141438588"'>
+         <span class='3D"expand-control-icon"'>
+          <img b67179c0632ad2c87bd0cd4d1a"="" c='lass=3D"expand-control-image"' height='3D"16"' src='3D"e6985768c0fe87bcb9bb547d1a007e6ffdb842=' style='3D"vertical-align:middle;"' width='3D"16"'/>
+         </span>
+         <span class='=3D"expand-control-text"'>
+          I agree, click here for CMA Service Quality Indica=
+tor API endpoints
+         </span>
+        </div>
+        <div class='3D"expand-content"' id='3D"expander-content-2141438588"'>
+         <div 1px;"="" class='3D"panel"' style='3D"border-width:'>
+          <div class='3D"panelContent"'>
+           <h2 id='3D"OpenDataAPIDashboard-CMAServiceQualityIndicators"'>
+            CMA Service Qua=
+lity Indicators
+           </h2>
+           <p>
+            <span class='3D"legacy-color-text-default"'>
+             <a class='3D"external-link"' cmasqi_store.json"="" hre='f=3D"https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/maste=' r="" rel='3D"nofollow"'>
+              Download the JSON list
+             </a>
+             or vi=
+ew the endpoints directly below.
+            </span>
+           </p>
+           <div class='3D"table-wrap"'>
+            <table 69.='4631%;"' class='3D"relative-table' confluencetable"="" style='3D"width:' wrapped="">
+             <colgroup>
+              <col 30.3787%;"="" style='3D"width:'/>
+              <col 22.5624%;"="" style='3D"width:'/>
+              <col 24.2546%;"="" style='3D"width:'/>
+              <col 22.8042%;"="" style='3D"width:'/>
+             </colgroup>
+             <tbody>
+              <tr>
+               <th class='3D"confluenceTh"' colspan='3D"1"'>
+                Type
+               </th>
+               <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                Area=
+               </th>
+               <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                Full=
+               </th>
+               <th center;"="" class='3D"confluenceTh"' colspan='3D"1"' style='3D"text-align:'>
+                Aggr=
+egated
+               </th>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' left;"="" rowspan='3D"2"' style='3D"text-align:'>
+                PCA
+                <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                 GB
+                </td>
+                <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                 <span 1d"="" class='3D"_2w='>
+                  <span class='3D"_2w1d"'>
+                   <a =="" area="" class='3D"external-link"' cma-service-quality-metrics="" enbanking.org.uk="" export-type="" full="" gb="" href='3D"https://sqm.op=' latest"="" pca="" product-type="" rel='3D"nofollow"' v1.0="" wave="">
+                    v1.0
+                   </a>
+                  </span>
+                 </span>
+                </td>
+                <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                 <span 1d"="" class='3D"_2w='>
+                  <span class='3D"_2w1d"'>
+                   <a =="" aggregated="" area="" class='3D"external-link"' cma-service-quality-metrics="" enbanking.org.uk="" export-type="" gb="" href='3D"https://sqm.op=' latest"="" pca="" product-type="" rel='3D"nofollow"' v1.0="" wave="">
+                    v1.0
+                   </a>
+                  </span>
+                 </span>
+                 =
+                </td>
+               </td>
+              </tr>
+              <tr>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                NI
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <span 1d"="" class='3D"_2w='>
+                 <span class='3D"_2w1d"'>
+                  <a =="" area="" class='3D"external-link"' cma-service-quality-metrics="" enbanking.org.uk="" export-type="" full="" href='3D"https://sqm.op=' latest"="" ni="" pca="" product-type="" rel='3D"nofollow"' v1.0="" wave="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <span 1d"="" class='3D"_2w='>
+                 <span class='3D"_2w1d"'>
+                  <a =="" aggregated="" area="" class='3D"external-link"' cma-service-quality-metrics="" enbanking.org.uk="" export-type="" href='3D"https://sqm.op=' latest"="" ni="" pca="" product-type="" rel='3D"nofollow"' v1.0="" wave="">
+                   v1.0
+                  </a>
+                 </span>
+                </span>
+                =
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' rowspan='3D"2"'>
+                BCA
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                GB
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a -type="" area="" bca="" class='3D"external-link"' export-type="" full="" gb="" href='=3D"https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product=' latest"="" rel='3D"nofollow"' wave="">
+                    v1.0
+                   </a>
+                   <!--=
+span-->
+                  </span>
+                 </span>
+                </div>
+               </td>
+               <td center;"="" class='3D"confluenceTd"' style='3D"text-align:'>
+                <div>
+                 <span class='3D"_2w1d"'>
+                  <span class='3D"_2w1d"'>
+                   <a -type="" aggregated="" area="" bca="" class='3D"external-link"' export-type="" gb="" href='=3D"https://sqm.openbanking.org.uk/cma-service-quality-metrics/v1.0/product=' latest"="" rel='3D"nofollow"' wave="">
+                    v1.0=
+                   </a>
+                  </span>
+                 </span>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 NI
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a area="" bca="" class='3D"external-link"' cma-service-quality-metrics="" expo='rt-type/full/wave/latest"' href='3D"https://sqm.openba=' ni="" nking.org.uk="" product-type="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </div>
+               </td>
+               <td class='3D"confluenceTd"' colspan='3D"1"'>
+                <div center;"="" style='3D"text-align:'>
+                 <span class='3D"_2w1d"'>
+                  <a area="" bca="" class='3D"external-link"' cma-service-quality-metrics="" expo='rt-type/aggregated/wave/latest"' href='3D"https://sqm.openba=' ni="" nking.org.uk="" product-type="" rel='3D"nofollow"' v1.0="">
+                   v1.0
+                  </a>
+                 </span>
+                </div>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+------=_Part_30_1508208012.1748901571433
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e6985768c0fe87bcb9bb547d1a007e6ffdb842b67179c0632ad2c87bd0cd4d1a
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_30_1508208012.1748901571433--

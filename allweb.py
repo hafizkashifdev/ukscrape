@@ -2,17 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import time
-from urllib.parse import urljoin, urlparse, urldefrag
+from urllib.parse import urljoin, urlparse, urldefrag, unquote
 from collections import deque
 import urllib.robotparser
+import re
 
 # === CONFIGURATION ===
-START_URL = "https://developer.aib.ie/apis"
-OUTPUT_DIR = "scraped_html"
+START_URL = "https://openbanking.atlassian.net/wiki/spaces/DZ/overview"
+OUTPUT_DIR = "scraped_html_Vanquis_bank_limited"
 BATCH_SIZE = 10
 DELAY_SECONDS = 1
 BYPASS_ROBOTS_TXT = True  # Set to False to honor robots.txt
-ASSET_EXTENSIONS = [".pdf", ".css", ".js", ".png", ".jpg", ".jpeg", ".svg", ".ico", ".woff", ".ttf"]
 
 # === SETUP ===
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -27,12 +27,23 @@ session.headers.update({
 })
 
 # === SAFE FILENAME CREATOR ===
-def safe_filename(link):
-    parsed = urlparse(link)
-    path = parsed.path.strip("/").replace("/", "_") or "index"
+def safe_filename(url):
+    """
+    Create a safe filename from URL by decoding and replacing unsafe chars.
+    """
+    parsed = urlparse(url)
+    # Decode URL-encoded path and query
+    path = unquote(parsed.path).strip("/").replace("/", "_") or "index"
     if parsed.query:
-        path += "_" + parsed.query.replace("=", "_").replace("&", "_")
-    return f"scraped_{path}.html"
+        query_decoded = unquote(parsed.query)
+        # Replace anything not alphanumeric or underscore with underscore
+        query_safe = re.sub(r'[^a-zA-Z0-9_]', '_', query_decoded)
+        path += "_" + query_safe
+
+    # Replace any leftover unsafe chars in path (like {, }, %, ?, &, =) with underscore
+    safe_path = re.sub(r'[^a-zA-Z0-9_\-]', '_', path)
+
+    return f"scraped_{safe_path}.html"
 
 # === SAVE HTML TO FILE ===
 def save_html(content, filename, page_url):
@@ -42,26 +53,11 @@ def save_html(content, filename, page_url):
     print(f"[HTML] Saved: {filepath}")
     saved_pages.append((filename, page_url))
 
-# === DOWNLOAD ASSETS ===
-def is_asset(url):
-    return any(url.lower().endswith(ext) for ext in ASSET_EXTENSIONS)
-
-def download_asset(url):
-    try:
-        response = session.get(url, timeout=10)
-        filename = os.path.basename(urlparse(url).path) or "unnamed_asset"
-        asset_path = os.path.join(OUTPUT_DIR, filename)
-        with open(asset_path, "wb") as f:
-            f.write(response.content)
-        print(f"[ASSET] Downloaded: {asset_path}")
-    except Exception as e:
-        print(f"[ERROR] Asset failed: {url} | {e}")
-
 # === DEDUPLICATE URL ===
 def normalize_url(url):
     return urldefrag(url.rstrip("/"))[0]
 
-# === AUTO-CLICK COOKIES ===
+# === AUTO-CLICK COOKIES (simulated) ===
 def handle_cookie_popup(soup):
     cookie_buttons = soup.find_all("button")
     for button in cookie_buttons:
@@ -87,19 +83,22 @@ def scrape_page(link, base_domain):
         filename = safe_filename(link)
         save_html(page_soup.prettify(), filename, link)
 
-        # Find all potential asset or page links
-        for tag in page_soup.find_all(["a", "link", "script", "img"], href=True) + page_soup.find_all(src=True):
-            href = tag.get("href") or tag.get("src")
-            if not href or href.startswith("mailto:") or href.startswith("javascript:"):
+        # Find all <a> tags with href only
+        for a_tag in page_soup.find_all("a", href=True):
+            href = a_tag.get("href")
+
+            if not href:
+                continue
+            # Ignore mailto: and javascript: links
+            if href.startswith("mailto:") or href.startswith("javascript:"):
                 continue
 
             full_url = urljoin(link, href)
             normalized_url = normalize_url(full_url)
             parsed_url = urlparse(normalized_url)
 
-            if is_asset(normalized_url):
-                download_asset(normalized_url)
-            elif parsed_url.netloc == base_domain and normalized_url not in visited:
+            # Only enqueue URLs on the same domain and not visited
+            if parsed_url.netloc == base_domain and normalized_url not in visited:
                 to_visit.append(normalized_url)
 
     except Exception as e:

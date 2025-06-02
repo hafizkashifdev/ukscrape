@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 (x64) (http://www.altova.com) -->
+<!-- by Open Banking Ltd (OBIE) -->
+<!-- release version 1.2.4 (9/2/2017) -->
+<xs:schema attributeformdefault="unqualified" elementformdefault="qualified" vc:minversion="1.1" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="openBankingATM">
+  <xs:complextype>
+   <xs:sequence>
+    <xs:element maxoccurs="1" minoccurs="1" name="Organisation" type="org">
+    </xs:element>
+    <xs:element minoccurs="0" name="BranchIdentification" type="Max35Text">
+    </xs:element>
+    <xs:element maxoccurs="1" minoccurs="1" name="ATMID" type="Max35Text">
+    </xs:element>
+    <xs:element maxoccurs="1" minoccurs="0" name="LocationCategory" type="OB_LocationCategory1Code">
+    </xs:element>
+    <xs:element maxoccurs="1" minoccurs="0" name="SiteID" type="Max35Text">
+    </xs:element>
+    <xs:element maxoccurs="1" minoccurs="0" name="SiteName" type="Max35Text">
+    </xs:element>
+    <xs:element name="Address" type="PostalAddress">
+    </xs:element>
+    <xs:element name="GeographicLocation" type="GeographicCoordinates">
+    </xs:element>
+    <xs:element maxoccurs="unbounded" minoccurs="0" name="AccessibilityTypes" type="OB_AccessibilityTypes1Code">
+    </xs:element>
+    <xs:element maxoccurs="unbounded" minoccurs="1" name="SupportedLanguages" type="xs:string">
+    </xs:element>
+    <xs:element maxoccurs="unbounded" minoccurs="1" name="ATMServices" type="OB_ATMServices1Code">
+    </xs:element>
+    <xs:element maxoccurs="unbounded" minoccurs="0" name="AdditionalATMServices" type="Max350Text">
+    </xs:element>
+    <xs:element maxoccurs="unbounded" minoccurs="1" name="Currency" type="ActiveOrHistoricCurrency">
+    </xs:element>
+    <xs:element maxoccurs="1" minoccurs="0" name="MinimumValueDispensed" type="OB_MinimumValueDispensed1Code">
+    </xs:element>
+   </xs:sequence>
+  </xs:complextype>
+ </xs:element>
+ <xs:complextype name="GeographicCoordinates">
+  <xs:sequence>
+   <xs:element name="Lat" type="Degree">
+   </xs:element>
+   <xs:element name="Long" type="Degree">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:simpletype name="Degree">
+  <xs:restriction base="xs:decimal">
+   <xs:totaldigits value="11">
+   </xs:totaldigits>
+   <xs:fractiondigits value="8">
+   </xs:fractiondigits>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max15Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="15">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:complextype name="PostalAddress">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="1" name="StrtNm" type="Max70Text">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="BldgNb" type="Max350Text">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="PstCd" type="Max16Text">
+   </xs:element>
+   <xs:element minoccurs="0" name="OptionalAddressField" type="Max350Text">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="TwnNm" type="Max35Text">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="CtrySubDvsn" type="Max35Text">
+   </xs:element>
+   <xs:element name="Ctry" type="CountryCode">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:simpletype name="ISODate">
+  <xs:restriction base="xs:date">
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="ISOTime">
+  <xs:restriction base="xs:time">
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="AnyBICIdentifier">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z]{6,6}[A-Z2-9][A-NP-Z0-9]([A-Z0-9]{3,3}){0,1}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="CountryCode">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z]{2,2}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="LanguageCode">
+  <xs:restriction base="xs:string">
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max10000Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="10000">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max100KBinary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="102400">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max104Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="104">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max10Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="10">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max140Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="140">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max140Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="140">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max16Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="16">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max20000Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="20000">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max350Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="350">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max35Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="35">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max35Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="35">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max37Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="37">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max3NumericText">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[0-9]{1,3}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max3Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="3">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max45Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="45">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max5000Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="5000">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max500Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="500">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max500Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="500">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max6Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="6">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max70Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="70">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max76Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="76">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_LocationCategory1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Airport">
+   </xs:enumeration>
+   <xs:enumeration value="BankSpecialisedOutlet">
+   </xs:enumeration>
+   <xs:enumeration value="BranchExternal">
+   </xs:enumeration>
+   <xs:enumeration value="BranchInternal">
+   </xs:enumeration>
+   <xs:enumeration value="BranchLobby">
+   </xs:enumeration>
+   <xs:enumeration value="BureauDeChange">
+   </xs:enumeration>
+   <xs:enumeration value="CoachStation">
+   </xs:enumeration>
+   <xs:enumeration value="CommercialSpaceInternal">
+   </xs:enumeration>
+   <xs:enumeration value="ConvenienceStore">
+   </xs:enumeration>
+   <xs:enumeration value="ExhibitionCentre">
+   </xs:enumeration>
+   <xs:enumeration value="FactoryOrOffice">
+   </xs:enumeration>
+   <xs:enumeration value="FillingStation">
+   </xs:enumeration>
+   <xs:enumeration value="FinancialInstitution">
+   </xs:enumeration>
+   <xs:enumeration value="GovernmentOffice">
+   </xs:enumeration>
+   <xs:enumeration value="Hospital">
+   </xs:enumeration>
+   <xs:enumeration value="Hotel">
+   </xs:enumeration>
+   <xs:enumeration value="KioskPod">
+   </xs:enumeration>
+   <xs:enumeration value="LeisureCentre">
+   </xs:enumeration>
+   <xs:enumeration value="PleasurePark">
+   </xs:enumeration>
+   <xs:enumeration value="PublicHouse">
+   </xs:enumeration>
+   <xs:enumeration value="RailwayStation">
+   </xs:enumeration>
+   <xs:enumeration value="RemoteUnit">
+   </xs:enumeration>
+   <xs:enumeration value="RetailerDepartmentStore">
+   </xs:enumeration>
+   <xs:enumeration value="RetailerOutlet">
+   </xs:enumeration>
+   <xs:enumeration value="SeaportTerminal">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceStation">
+   </xs:enumeration>
+   <xs:enumeration value="ShoppingCentreExternal">
+   </xs:enumeration>
+   <xs:enumeration value="ShoppingCentreInternal">
+   </xs:enumeration>
+   <xs:enumeration value="StorageDepot">
+   </xs:enumeration>
+   <xs:enumeration value="SupermarketExternal">
+   </xs:enumeration>
+   <xs:enumeration value="SupermarketInternal">
+   </xs:enumeration>
+   <xs:enumeration value="UndergroundRailwayStation">
+   </xs:enumeration>
+   <xs:enumeration value="UniversityOrCollege">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_AccessibilityTypes1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AudioCashMachine">
+   </xs:enumeration>
+   <xs:enumeration value="AutomaticDoors">
+   </xs:enumeration>
+   <xs:enumeration value="ChairAccess">
+   </xs:enumeration>
+   <xs:enumeration value="DriveThru">
+   </xs:enumeration>
+   <xs:enumeration value="ExternalRamp">
+   </xs:enumeration>
+   <xs:enumeration value="InductionLoop">
+   </xs:enumeration>
+   <xs:enumeration value="InternalRamp">
+   </xs:enumeration>
+   <xs:enumeration value="LevelAccess">
+   </xs:enumeration>
+   <xs:enumeration value="LowerLevelCounter">
+   </xs:enumeration>
+   <xs:enumeration value="WheelchairAccess">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_MinimumValueDispensed1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Ł5">
+   </xs:enumeration>
+   <xs:enumeration value="Ł10">
+   </xs:enumeration>
+   <xs:enumeration value="Ł20">
+   </xs:enumeration>
+   <xs:enumeration value="Ł50">
+   </xs:enumeration>
+   <xs:enumeration value="Ł100">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_ATMServices1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Balance">
+   </xs:enumeration>
+   <xs:enumeration value="BillPayments">
+   </xs:enumeration>
+   <xs:enumeration value="CashDeposits">
+   </xs:enumeration>
+   <xs:enumeration value="CashWithdrawal">
+   </xs:enumeration>
+   <xs:enumeration value="CharityDonation">
+   </xs:enumeration>
+   <xs:enumeration value="ChequeBookRequest">
+   </xs:enumeration>
+   <xs:enumeration value="ChequeDeposits">
+   </xs:enumeration>
+   <xs:enumeration value="FastCash">
+   </xs:enumeration>
+   <xs:enumeration value="MiniStatement">
+   </xs:enumeration>
+   <xs:enumeration value="MobileBankingRegistration">
+   </xs:enumeration>
+   <xs:enumeration value="MobilePaymentRegistration">
+   </xs:enumeration>
+   <xs:enumeration value="MobilePhoneTopUp">
+   </xs:enumeration>
+   <xs:enumeration value="OrderStatement">
+   </xs:enumeration>
+   <xs:enumeration value="PINActivation">
+   </xs:enumeration>
+   <xs:enumeration value="PINChange">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:complextype name="ActiveOrHistoricCurrency">
+  <xs:simplecontent>
+   <xs:extension base="ActiveOrHistoricCurrencyCode">
+    <xs:attribute name="Ccy" type="ActiveOrHistoricCurrencyCode" use="required">
+    </xs:attribute>
+   </xs:extension>
+  </xs:simplecontent>
+ </xs:complextype>
+ <xs:simpletype name="ActiveOrHistoricCurrencyCode">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z]{3,3}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:complextype name="org">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="1" name="ParentOrganisation" type="OB_OrganisationIdentification1">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="Brand" type="OB_Brand1">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="OB_OrganisationIdentification1">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="0" name="LEI" type="LEIIdentifier">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="BIC" type="AnyBICIdentifier">
+   </xs:element>
+   <xs:element name="OrganisationName" type="OB_OrganisationName1">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="OB_OrganisationName1">
+  <xs:sequence>
+   <xs:element name="LegalName" type="Max35Text">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:simpletype name="LEIIdentifier">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z0-9]{18,18}[0-9]{2,2}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:complextype name="OB_Brand1">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="1" name="TrademarkIPOCode" type="TrademarkIPOCode">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="TrademarkID" type="Max35Text">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:simpletype name="TrademarkIPOCode">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="UK">
+   </xs:enumeration>
+   <xs:enumeration value="EU">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+</xs:schema>

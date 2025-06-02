@@ -1,0 +1,2705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html dir="ltr" lang="en" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+ <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <link href="https://developer.aib.ie/sites/all/themes/aib_apigee_responsive_theme/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+   <meta content="API Documentation Payments API EndPoint Field Name Xpath Description Category Validation Rules All Scheduled Payments Permission XXX/Data/Permission Specifies the Open Banking service request types. Mandatory We will only accept permission code 'Create'. All Endpoints (Excluding File Payments) ReadRefundAccount XXX/ReadRefundAccount Specifies to share the refund account" name="description">
+    <meta content="Drupal 7 (https://www.drupal.org)" name="generator">
+     <link href="https://developer.aib.ie/supplementary-specification-information-roi" rel="canonical"/>
+     <link href="https://developer.aib.ie/node/2531" rel="shortlink"/>
+     <title>
+      Allied Irish Bank Developer Portal | Supplementary Specification Information
+     </title>
+     <style>
+      @import url("https://developer.aib.ie/modules/system/system.base.css?sl5mo5");
+     </style>
+     <style>
+      @import url("https://developer.aib.ie/profiles/apigee/themes/apigee_responsive/css/bootstrap.min.css?sl5mo5");
+     </style>
+     <style>
+      @import url("https://developer.aib.ie/modules/field/theme/field.css?sl5mo5");
+@import url("https://developer.aib.ie/profiles/apigee/modules/contrib/logintoboggan/logintoboggan.css?sl5mo5");
+@import url("https://developer.aib.ie/modules/node/node.css?sl5mo5");
+@import url("https://developer.aib.ie/profiles/apigee/modules/contrib/views/css/views.css?sl5mo5");
+@import url("https://developer.aib.ie/profiles/apigee/modules/contrib/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?sl5mo5");
+     </style>
+     <style>
+      @import url("https://developer.aib.ie/profiles/apigee/modules/contrib/ctools/css/ctools.css?sl5mo5");
+@import url("https://developer.aib.ie/profiles/apigee/modules/custom/devconnect/smartdocs/css/smartdocs.css?sl5mo5");
+     </style>
+     <style>
+      @import url("https://developer.aib.ie/profiles/apigee/themes/apigee_responsive/css/style.css?sl5mo5");
+@import url("https://developer.aib.ie/sites/all/themes/aib_apigee_responsive_theme/css/aib_apigee_responsive_theme.css?sl5mo5");
+     </style>
+     <style>
+      .navbar-nav > li > span > span.caret{border-bottom-color:#FFFFFF;border-top-color:#FFFFFF;color:#FFFFFF;}.faq .collapsed{display:block !important;}body header.navbar{background-color:#FF4300;}body header.navbar{border-color:#FF4300;}body .navbar-inverse .navbar-toggle,body .navbar-inverse .navbar-collapse:focus,body .navbar-inverse .navbar-toggle:hover,body .navbar-inverse .navbar-toggle:focus,body .navbar-inverse .navbar-nav > .open > a,body .navbar-inverse .navbar-nav > .open > a:hover,body .navbar-inverse .navbar-nav > .open > a:focus,body .navbar-default .navbar-toggle:hover,body .navbar-default .navbar-toggle:active,body .navbar-default .navbar-toggle:focus,body .navbar-default .navbar-collapse,body .navbar-default .navbar-collapse:hover,body .navbar-default .navbar-collapse:focus,body .navbar-default .navbar-nav > .open > a,body .navbar-default .navbar-nav > .open > a:hover,body .navbar-default .navbar-nav > .open > a:focus,body header.navbar.navbar-nav > .open > a,body header.navbar.navbar-nav > .open > a:hover,body header.navbar.navbar-nav > .open > a:focus{border-color:#FF4300;background-color:#FF4300;}body .navbar-inverse .navbar-nav > .open > a:hover{color:#FFFFFF;}body header.navbar .nav > li > a{color:#FFFFFF;}body header.navbar .nav > li > a:hover{background-color:#E02E01;}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form,.navbar-inverse .navbar-toggle,.navbar-default .navbar-collapse,.navbar-default .navbar-form,.navbar-default .navbar-toggle,header.navbar.navbar-collapse,header.navbar.navbar-form,header.navbar.navbar-toggle{border-color:#E02E01;}.navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:active,.navbar-default .navbar-toggle:focus,.navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus,header.navbar.navbar-nav > .open > a,header.navbar.navbar-nav > .open > a:hover,header.navbar.navbar-nav > .open > a:focus{background-color:#E02E01;}body header.navbar .nav .active > a,body .navbar .nav .active > a:hover,.navbar.navbar-fixed-top #main-menu li a:hover{background-color:#E02E01;}body header.navbar .nav > li > a:hover{color:#FFFFFF;}body a{color:#137AAA;}body a:hover{color:#0B4965;}body .footer{background-color:#FFFFFF;}body .footer .navbar ul.footer-links > li > a{color:#0B4965;}body .footer .navbar ul.footer-links > li > a:hover{color:#0B4965;}body .btn{background-color:#009FD0;}body .btn{color:#FFFFFF;}body .btn:hover,body .btn:focus,body .btn:active,body .open .dropdown-toggle.btn{background-color:;color:;}.navbar-nav > li > span{color:#FFFFFF;}.navbar-nav > li > span:hover{color:#FFFFFF;}.navbar-nav > li.expanded span:hover,.navbar-nav > li.expanded.active{background-color:#E02E01;}.navbar-nav > li > span > span.caret{border-bottom-color:#FFFFFF;border-top-color:#FFFFFF;color:#FFFFFF;}.modal-body #user-register-form .form-type-password.col-md-4{width:100%;}body #push{height:100px;}body #resource_URL input,#method_content [data-role='method_url_container'],#method_content .url_container > p > span,[data-role='method_url_container'] span span span.template_param{font-family:Courier,'Courier New',monospace;}
+     </style>
+     <!-- HTML5 element support for IE6-8 -->
+     <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+     <script src="https://cdn.cookielaw.org/consent/5f7507ac-a99a-409b-80cc-0926391c2616/OtAutoBlock.js">
+     </script>
+     <script>
+     </script>
+     <script charset="UTF-8" data-domain-script="5f7507ac-a99a-409b-80cc-0926391c2616" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript">
+     </script>
+     <script>
+      function OptanonWrapper() { }
+     </script>
+     <script defer="defer" src="https://developer.aib.ie/sites/default/files/google_tag/global/google_tag.default.script.js?sl5mo5">
+     </script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+     </script>
+     <script>
+      window.jQuery || document.write("<script src='/profiles/apigee/modules/contrib/jquery_update/replace/jquery/2.2/jquery.min.js'>\x3C/script>")
+     </script>
+     <script>
+      jQuery.migrateMute=true;jQuery.migrateTrace=false;
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/modules/contrib/jquery_update/replace/jquery-migrate/1/jquery-migrate.min.js?v=1">
+     </script>
+     <script src="https://developer.aib.ie/misc/jquery-extend-3.4.0.js?v=2.2.4">
+     </script>
+     <script src="https://developer.aib.ie/misc/jquery-html-prefilter-3.5.0-backport.js?v=2.2.4">
+     </script>
+     <script src="https://developer.aib.ie/misc/jquery.once.js?v=1.2">
+     </script>
+     <script src="https://developer.aib.ie/misc/drupal.js?sl5mo5">
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/modules/contrib/jquery_update/js/jquery_browser.js?v=0.0.1">
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570">
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/themes/apigee_responsive/js/bootstrap.min.js?sl5mo5">
+     </script>
+     <script src="https://developer.aib.ie/misc/form-single-submit.js?v=7.101">
+     </script>
+     <script>
+      // close script tag for SecKit protection
+      //--><!]]>
+     </script>
+     <script src="/sites/all/modules/contrib/seckit/js/seckit.document_write.js" type="text/javascript">
+     </script>
+     <link href="/sites/all/modules/contrib/seckit/css/seckit.no_body.css" id="seckit-clickjacking-no-body" media="all" rel="stylesheet" type="text/css"/>
+     <!-- stop SecKit protection -->
+     <noscript>
+      <link href="/sites/all/modules/contrib/seckit/css/seckit.noscript_tag.css" id="seckit-clickjacking-noscript-tag" media="all" rel="stylesheet" type="text/css"/>
+      <div id="seckit-noscript-tag">
+       Sorry, you need to enable JavaScript to visit this website.
+      </div>
+     </noscript>
+     <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      // open script tag to avoid syntax errors
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/modules/contrib/captcha/captcha.js?sl5mo5">
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/modules/contrib/bootstrap_modal_forms/js/bootstrap_modal_forms.forms.js?sl5mo5">
+     </script>
+     <script src="https://developer.aib.ie/profiles/apigee/themes/apigee_responsive/js/global.js?sl5mo5">
+     </script>
+     <script src="https://developer.aib.ie/sites/all/themes/aib_apigee_responsive_theme/js/aib_apigee_responsive_theme.js?sl5mo5">
+     </script>
+     <script>
+      jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"aib_apigee_responsive_theme","theme_token":"KrD3RGmicx7jRUvWHds6UCeufZ9AUTC8duOcgiQyfrg","js":{"profiles\/apigee\/themes\/bootstrap\/js\/bootstrap.js":1,"https:\/\/cdn.cookielaw.org\/consent\/5f7507ac-a99a-409b-80cc-0926391c2616\/OtAutoBlock.js":1,"0":1,"1":1,"public:\/\/google_tag\/global\/google_tag.default.script.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/2.2.4\/jquery.min.js":1,"2":1,"3":1,"profiles\/apigee\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/apigee\/modules\/contrib\/jquery_update\/js\/jquery_browser.js":1,"profiles\/apigee\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/apigee\/themes\/apigee_responsive\/js\/bootstrap.min.js":1,"misc\/form-single-submit.js":1,"4":1,"profiles\/apigee\/modules\/contrib\/captcha\/captcha.js":1,"profiles\/apigee\/modules\/contrib\/bootstrap_modal_forms\/js\/bootstrap_modal_forms.forms.js":1,"profiles\/apigee\/themes\/apigee_responsive\/js\/global.js":1,"sites\/all\/themes\/aib_apigee_responsive_theme\/js\/aib_apigee_responsive_theme.js":1},"css":{"modules\/system\/system.base.css":1,"profiles\/apigee\/themes\/bootstrap\/css\/overrides.css":1,"profiles\/apigee\/themes\/apigee_responsive\/css\/bootstrap.min.css":1,"modules\/field\/theme\/field.css":1,"profiles\/apigee\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"profiles\/apigee\/modules\/contrib\/views\/css\/views.css":1,"profiles\/apigee\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"profiles\/apigee\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/apigee\/modules\/custom\/devconnect\/smartdocs\/css\/smartdocs.css":1,"profiles\/apigee\/themes\/apigee_responsive\/css\/style.css":1,"sites\/all\/themes\/aib_apigee_responsive_theme\/css\/aib_apigee_responsive_theme.css":1,"0":1}},"urlIsAjaxTrusted":{"\/supplementary-specification-information-roi":true,"\/search\/node":true},"bootstrap_modal_forms":{"login":{"identifier":"login","url":"user\/login","open_onload":false},"register":{"identifier":"register","url":"user\/register","open_onload":false}},"bootstrap_modal_forms_current_path":"node\/2531","bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"top","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});
+     </script>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2531 node-type-page domain-developer-aib-ie logo_standard">
+  <div id="skip-link">
+   <a class="element-invisible element-focusable" href="#main-content">
+    Skip to main content
+   </a>
+  </div>
+  <div class="region region-page-top">
+   <noscript aria-hidden="true">
+    <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-M2JRPNS" style="display:none;visibility:hidden" width="0">
+    </iframe>
+   </noscript>
+  </div>
+  <div class="eupopup eupopup-top">
+  </div>
+  <header class="navbar navbar-fixed-top navbar-inverse" id="navbar" role="banner">
+   <div class="container">
+    <div class="navbar-header">
+     <a class="logo navbar-btn pull-left" href="/" title="Home">
+      <!-- <img src="https://developer.aib.ie/sites/all/themes/aib_apigee_responsive_theme/logo.png" alt="Allied Irish Bank Developer Portal" /> -->
+      <!-- devportal customization -->
+      <!-- Print AIB LOGO (for ROI and AIBGB): -->
+      <svg height="50" id="Layer_1" style="vertical-align:middle;enable-background:new 0 0 80 80;" version="1.1" viewbox="0 0 80 80" width="50" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+       <style type="text/css">
+        .st0{fill:url(#SVGID_1_);} .st1{fill:#FFFFFF;}
+       </style>
+       <lineargradient gradienttransform="matrix(-1 0 0 -1 10115.0938 871.1676)" gradientunits="userSpaceOnUse" id="SVGID_1_" x1="10141.9521" x2="10008.6191" y1="764.309" y2="897.6423">
+        <stop offset="0" style="stop-color:#602973">
+        </stop>
+        <stop offset="0.1189" style="stop-color:#682976">
+        </stop>
+        <stop offset="0.3277" style="stop-color:#7C2B7B">
+        </stop>
+        <stop offset="0.5998" style="stop-color:#9D2F85">
+        </stop>
+        <stop offset="0.824" style="stop-color:#BF3593">
+        </stop>
+        <stop offset="0.9884" style="stop-color:#C758A1">
+        </stop>
+       </lineargradient>
+       <rect class="st0" height="80" width="80">
+       </rect>
+       <path class="st1" d="M60.2,35.7c0,6-6.9,8.2-12.5,8.2H32.1c-5.6,0-12.5-2.2-12.5-8.2c0-7.7,7.8-7,6-12c5.7,1.8,1,6,0.3,8.2 c-0.8,2.6,1.3,6,6.2,6c0.8,0,3.4,0,6.3,0v-4.5h-7.5l2.3-2.3h5.1v-2.6C31.1,27,32.9,18.9,23,18.1c-3.3-0.3-2.1-6.7-1.8-7.7 c0.1-0.3,0.3-0.4,0.6-0.1c12.3,10.6,19.2,7.3,22.3,5.3c1.5-0.9,3.6-3.2,5.2-3.2c1.3,0,2.4,0.8,2.9,1.1c0.5,0.4,5,3.7,5,3.7 s-3.2,0-5.1,1.3c-4,2.9-4.7,8.7-10.6,9.9v2.6h5.1l2.3,2.3h-7.5v4.5c3.3,0,6.2,0,6.3,0c4.9,0,7-3.4,6.2-6c-0.7-2.2-5.4-6.4,0.3-8.2 C52.4,28.7,60.2,28,60.2,35.7z M48.2,15.8c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4 C48.8,14.5,48.2,15.1,48.2,15.8z">
+       </path>
+       <path class="st1" d="M42.8,68c-0.5-0.4-0.8-1.2-0.8-2.2l0-15.8c0-0.4-0.3-0.7-0.7-0.7h-4.5v0.9l0.2,0.1c0.1,0,0.1,0.1,0.2,0.1 c0.5,0.4,0.8,1.2,0.8,2.2l0,15.8c0,0.4,0.3,0.7,0.7,0.7h4.5v-0.9L43,68.1C42.9,68.1,42.8,68,42.8,68z M26.9,49.3h-2.8l-7.8,19.7 h4.1l1.8-4.6h7.7l1.8,4.6h4.1l-7.4-18.7C28.1,49.7,27.5,49.3,26.9,49.3z M23.5,61l2.5-6.1l2.5,6.1H23.5z M58.3,58.9 c1.4-1,2.3-2.5,2.3-4.2c0-2.7-2.4-5.4-6.3-5.4c-0.5,0-8.1,0-8.1,0v19.7h1.2c0,0,7.6,0,8.1,0c3.9,0,6.3-2.6,6.3-5.4 C61.8,61.6,60.4,59.7,58.3,58.9z M49.9,52.7h4.5c1.3,0,2.4,1.1,2.4,2.4c0,1.3-1,2.3-2.3,2.4h-4.7V52.7z M55.7,65.7h-5.8v-4.7h5.8 c1.3,0,2.3,1.1,2.3,2.4C58,64.6,57,65.7,55.7,65.7z">
+       </path>
+      </svg>
+     </a>
+     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+    </div>
+    <div class="navbar-collapse collapse">
+     <nav role="navigation">
+      <ul class="menu nav navbar-nav full-menu primary-nav hidden-xs">
+       <li class="first leaf">
+        <a href="/api-product-overview-ROI">
+         API Product Overview
+        </a>
+       </li>
+       <li class="leaf">
+        <a href="/faq-page">
+         Support
+        </a>
+       </li>
+       <li class="last leaf">
+        <a href="/apis">
+         API Documentation
+        </a>
+       </li>
+      </ul>
+      <ul class="menu nav navbar-nav mobile-menu primary-nav visible-xs">
+       <li class="first leaf">
+        <a href="/api-product-overview-ROI">
+         API Product Overview
+        </a>
+       </li>
+       <li class="leaf">
+        <a href="/faq-page">
+         Support
+        </a>
+       </li>
+       <li class="last leaf">
+        <a href="/apis">
+         API Documentation
+        </a>
+       </li>
+      </ul>
+      <ul class="menu nav navbar-nav pull-right account-menu">
+       <li class="">
+        <a href="/user/register">
+         Register
+        </a>
+       </li>
+       <li class="">
+        <a href="/user/login">
+         Login
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <div class="master-container">
+   <div class="jumbotron position-relative mb-0">
+    <div class="container position-relative z-2">
+     <h1 class="grey-07">
+      Supplementary Specification Information
+     </h1>
+     <div id="ebs-heading-bkg">
+     </div>
+    </div>
+    <div class="hidden-xs" id="parallelogram-front">
+    </div>
+    <div class="hidden-xs" id="parallelogram-back">
+    </div>
+    <div class="visible-xs" id="rectangle">
+    </div>
+   </div>
+   <div class="page-content">
+    <div class="main-container container">
+     <header id="page-header" role="banner">
+     </header>
+     <div class="row">
+      <section class="col-sm-12">
+       <div class="region region-content">
+        <section class="block block-system clearfix" id="block-system-main">
+         <div about="/supplementary-specification-information-roi" class="node node-page node-promoted clearfix" id="node-2531" typeof="sioc:Item foaf:Document">
+          <span class="rdf-meta element-hidden" content="Supplementary Specification Information" property="dc:title">
+          </span>
+          <span class="rdf-meta element-hidden" content="0" datatype="xsd:integer" property="sioc:num_replies">
+          </span>
+          <div class="content">
+           <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+             <div class="field-item even" property="content:encoded">
+              <style type="text/css">
+               .dp-monospace {
+  font-family: Courier, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000 !important;
+  word-break: break-all;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+              </style>
+              <div class="row">
+               <div class="col-md-12">
+                <h4 class="fs-20 text-bold purple-core mb-20 text-center">
+                 API Documentation
+                </h4>
+               </div>
+               <div class="col-md-12">
+                <div class="panel-group" id="sandbox-accordion">
+                 <div class="panel panel-default">
+                  <div class="panel-heading" id="headingSandbox01">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapsePaymentsAccordion">
+                     Payments API
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapsePaymentsAccordion">
+                   <div class="panel-body">
+                    <table class="table table-hover fs-14">
+                     <thead>
+                      <tr>
+                       <th>
+                        EndPoint
+                       </th>
+                       <th width="15%">
+                        Field Name
+                       </th>
+                       <th width="20%">
+                        Xpath
+                       </th>
+                       <th>
+                        Description
+                       </th>
+                       <th>
+                        Category
+                       </th>
+                       <th width="25%">
+                        Validation Rules
+                       </th>
+                      </tr>
+                     </thead>
+                     <tbody>
+                      <tr>
+                       <th scope="row">
+                        All Scheduled Payments
+                       </th>
+                       <td class="dp-monospace">
+                        Permission
+                       </td>
+                       <td class="dp-monospace">
+                        XXX/Data/Permission
+                       </td>
+                       <td>
+                        Specifies the Open Banking service request types.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        We will only accept permission code 'Create'.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints (Excluding File Payments)
+                       </th>
+                       <td class="dp-monospace">
+                        ReadRefundAccount
+                       </td>
+                       <td class="dp-monospace">
+                        XXX/ReadRefundAccount
+                       </td>
+                       <td>
+                        Specifies to share the refund account details with PISP
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        If populated as 'Yes', we will provide the the Creditor and Creditor Agent details in the refund block of our response.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Payments
+                       </th>
+                       <td class="dp-monospace">
+                        EndToEndIdentification
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomestic2/EndToEndIdentification
+                       </td>
+                       <td>
+                        Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        <p>
+                         For SEPA payments, Customer to provide unique reference to enable reconciliation by the creditor. E.g. Creditor Narrative.
+                        </p>
+                        <p>
+                         For Bill payments, Customer to provide unique Biller Account or Invoice number to enable reconciliation by the Service Provider / Merchant.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Scheduled Payment
+                       </th>
+                       <td class="dp-monospace">
+                        EndToEndIdentification
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternationalScheduled2/EndToEndIdentification
+                       </td>
+                       <td>
+                        Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        Customer to provide unique reference to enable reconciliation by the creditor. If no value provided then AIB will populate the Customer name (i.e. Debtor Name) in the EndToEndIdentification field and will travel with the payment. E.g. Creditor Narrative.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        International Payment
+                       </th>
+                       <td class="dp-monospace">
+                        EndToEndIdentification
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational/EndToEndIdentification
+                       </td>
+                       <td>
+                        Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        <p>
+                         Customer to provide unique reference to enable reconciliation by the creditor. E.g. Creditor Narrative
+                        </p>
+                        <p>
+                         Only 30 characters will travel with the SWIFT instruction to the recipient bank.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        International Scheduled Payment
+                       </th>
+                       <td class="dp-monospace">
+                        EndToEndIdentification
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternationalScheduled2/EndToEndIdentification
+                       </td>
+                       <td>
+                        Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        <p>
+                         Customer to provide unique reference to enable reconciliation by the creditor. If no value provided then AIB will populate the value "NOT PROVIDED" in the EndToEndIdentification field and will travel with the payment. E.g. Creditor Narrative.
+                        </p>
+                        <p>
+                         This field is only offered to Business / Corporate customers.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Purpose
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/Purpose
+                       </td>
+                       <td>
+                        Specifies the external purpose code in the format of character string with a maximum length of 4 characters.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For Non SEPA payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        ExtendedPurpose
+                       </td>
+                       <td class="dp-monospace">
+                        XXX/ExtendedPurpose
+                       </td>
+                       <td>
+                        Specifies the purpose of an international payment, when there is no corresponding 4 character code available in the ISO20022 list of Purpose Codes.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all International payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Domestic Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        LocalInstrument
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomestic2/LocalInstrument
+                       </td>
+                       <td>
+                        This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB will not process the LocalInstrument Code value supplied in the Consent. AIB will derive payment clearing option using the internal payment processing rules. Value (if tag is provided) must be provided from an OB defined list.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        LocalInstrument
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/LocalInstrument
+                       </td>
+                       <td>
+                        This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB will not process the LocalInstrument Code value supplied in the Consent. AIB will derive the payment clearing option using the internal payment processing rules. Value (if tag is provided) must be provided from an OB defined list.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        ChargeBearer
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/ChargeBearer
+                       </td>
+                       <td>
+                        Specifies which party/parties will bear the charges associated with the processing of the payment transaction. BorneByCreditor, BorneByDebtor, FollowingServiceLevel, Shared.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        <p>
+                         BorneByDebtor: Only be used when the beneficiary bank is outside EEA. If customer select this charging option, your account will be debited with the AIB charges and with all other bank charges when the notification is received from the relevant bank (s). This charging option is only available to Business/Corporate customers.
+                        </p>
+                        <p>
+                         Shared: Payments to EEA countries must be sent using this charging option. And this option can be used for international payments where the beneficiary bank is outside EEA.
+                        </p>
+                        <p>
+                         ServiceLevel or BorneByCreditor: AIB will reject the Consent with this charging option.
+                        </p>
+                        <p>
+                         AIB default the value with "Shared" if tag or no value present.
+                        </p>
+                        <p>
+                         <strong>
+                          Personal Customers:
+                         </strong>
+                         Only "Shared" supported for Personal customers.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Scheduled Payments
+                       </th>
+                       <td class="dp-monospace">
+                        RequestedExecutionDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        XXX/RequestedExecutionDateTime
+                       </td>
+                       <td>
+                        Date at which the initiating party requests the clearing agent to process the payment. Usage: This is the date on which the debtor's account is to be debited.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        AIB will accept consents with requested execution date up to 180 days into the future.Consent will be rejected, if the RequestedExecutionDateTime has expired at the time of consent.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        InstructionPriority
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/InstructionPriority
+                       </td>
+                       <td>
+                        Indicator of the urgency or order of importance that the instructing party would like the instructed party to apply to the processing of the instruction.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        AIB default the priority as "Normal" if tag or value not present. All the payments with "Urgent" priority will be processed through Swift.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        CurrencyOfTransfer
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CurrencyOfTransfer
+                       </td>
+                       <td>
+                        Specifies the currency of the to be transferred amount, which is different from the currency of the debtor's account.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        <p>
+                         AIB supports different set of currencies for their Personal &amp; Business customers on basis of InstructionPriority. AIB will reject the Consent if request receive with currency that is not supported for respectibe type of customers.
+                        </p>
+                        <p>
+                         <strong>
+                          Personal Customer:
+                         </strong>
+                         Refer below AIB link for supported currencies
+                         <a href="https://aib.ie/help-and-guidance/international-payments-faqs" title="International Payments FAQs">
+                          https://aib.ie/help-and-guidance/international-payments-faqs
+                         </a>
+                         .
+                        </p>
+                        <p>
+                         <strong>
+                          Business / Corporate Customer:
+                         </strong>
+                         Refer below AIB link for supported currencies
+                         <a href="https://business.aib.ie/help/international-payments-faq" title="International Payments FAQs">
+                          https://business.aib.ie/help/international-payments-faq.
+                         </a>
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        DestinationCountryCode
+                       </td>
+                       <td class="dp-monospace">
+                        XXX/DestinationCountryCode
+                       </td>
+                       <td>
+                        Country in which Credit Account is domiciled. Nation with its own government.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        For all payments, this information is mandatory
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Currency
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/InstructedAmount/Currency
+                       </td>
+                       <td>
+                        A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 "Codes for the representation of currencies and funds".
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        <p>
+                         <strong>
+                          For Personal Customers:
+                         </strong>
+                         Instructed Currency should be same as CurrencyOfTransfer. If this is not true, AIB will reject the Consent.
+                        </p>
+                        <p>
+                         <strong>
+                          For Business / Corporate Customers:
+                         </strong>
+                         If Instructed Currency is not same as CurrencyOf Transfer, then it should be same as Debit Account Currency. If this is not true, AIB will reject the Consent.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        ExchangeRateInformation
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/ExchangeRateInformation
+                       </td>
+                       <td>
+                        Provides details on the currency exchange rate and contract.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        This block is only required to process the Cross Currency payment using Dealer or Forward Contract Rate (pre-agreed rate with AIB only). And this services is only offers to Business / Corporate customers.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        UnitCurrency
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/ExchangeRateInformation/UnitCurrency
+                       </td>
+                       <td>
+                        Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        Value must be "EUR"
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        RateType
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/ExchangeRateInformation/RateType
+                       </td>
+                       <td>
+                        Specifies the type used to complete the currency exchange.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        Agreed: Only be used when customer wants to process the payment using Dealer or Forward Contract Rate If Rate Type equals Agreed, then values in ExchangeRateInformation or Forward Contract block are mandatory. Actual / Indicative: AIB will reject the Consent with these RateType values
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        ContractIdentification
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternationalScheduled2/ExchangeRateInformation/ContractIdentification
+                       </td>
+                       <td>
+                        Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        The field should be used to supply a unique and unambiguous Dealer Reference.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        ForwardContract
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/SupplementaryData/ForwardContract
+                       </td>
+                       <td>
+                        FX rate contract agreed for conversion of an amount from one currency to another.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        This block is only required to process the Cross Currency payment using Forward Contract Rate (i.e. pre-agreed rate with AIB only). AIB supports upto 5 Forward Contracts for a payment.
+                        <font color="#000000" face="Segoe UI" size="2">
+                         This services is only offers to Business / Corporate customers.
+                        </font>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Reference
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/RemittanceInformation/Reference
+                       </td>
+                       <td>
+                        Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For FPS payments, Customer to provide unique reference to enable reconciliation by the creditor. Please note that only the 18 characters will travel with payment to the recipient bank. For Non FPS payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Domestic Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Unstructured
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomestic2/RemittanceInformation/Unstructured
+                       </td>
+                       <td>
+                        Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all payments, the information contained in this tag will travel with the payment to the recipient bank.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Unstructured
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/RemittanceInformation/Unstructured
+                       </td>
+                       <td>
+                        Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        <p>
+                         For all payments, the information contained in this tag will travel with the payment to the recipient bank.
+                        </p>
+                        <p>
+                         For payments to outside Republic of Ireland, this field is mandatory. Field must contain a purpose of payment e.g. wages. Failure to provide a clear payment purpose can result in the payment being delayed or rejected. Please note that only the 105 characters will travel with the payment to the recipient bank.
+                        </p>
+                        <p>
+                         For FPS payments, only 70 characters will travel with the payment to the recipient bank.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        Unstructured
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/SupplementaryData/RemittanceInformation/Unstructured
+                       </td>
+                       <td>
+                        Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all payments, the information contained in this tag will travel with the payment to the recipient bank.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        SchemeName
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/DebtorAccount/SchemeName
+                       </td>
+                       <td>
+                        Name of the identification scheme, in a coded form as published in an external list.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all ROI Customer initiated payments, Debtor account must be in IBAN format.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Name
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/CreditorAccount/Name
+                       </td>
+                       <td>
+                        The account name is the name or names of the account owner(s) represented at an account level.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        For all payments, the information contained in this tag will travel with the payment as a Creditor Name to the recipient bank. Incorrect Creditor Name might be resulted into payment rejection.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Name
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/Creditor/Name
+                       </td>
+                       <td>
+                        Name by which a party is known and which is usually used to identify that party.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor AddressType
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/AddressType
+                       </td>
+                       <td>
+                        Identifies the nature of the postal address.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor Department
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/Department
+                       </td>
+                       <td>
+                        Identification of a division of a large organisation or building.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor SubDepartment
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/SubDepartment
+                       </td>
+                       <td>
+                        Identification of a sub-division of a large organisation or building.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor StreetName
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/StreetName
+                       </td>
+                       <td>
+                        Name of a street or thoroughfare.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor BuildingNumber
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/BuildingNumber
+                       </td>
+                       <td>
+                        Number that identifies the position of a building on a street.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor PostCode
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/PostCode
+                       </td>
+                       <td>
+                        Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor TownName
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/TownName
+                       </td>
+                       <td>
+                        Name of a built-up area, with defined boundaries, and a local government.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor CountrySubDivision
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/CountrySubDivision
+                       </td>
+                       <td>
+                        Identifies a subdivision of a country such as state, region, county.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor Country
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/Country
+                       </td>
+                       <td>
+                        Nation with its own government.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Domestic Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor AddressLine
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/AddressLine
+                       </td>
+                       <td>
+                        Information that locates and identifies a specific address, as defined by postal services, presented in free format text.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        Information in this block will travel with payment if available.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Creditor AddressLine
+                       </td>
+                       <td class="dp-monospace">
+                        XXXX/PostalAddress/AddressLine
+                       </td>
+                       <td>
+                        Information that locates and identifies a specific address, as defined by postal services, presented in free format text.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        The information in this block will travel with payment. Please note that only the 105 characters (AddressLine 1 &amp; 2) will travel with the payment to the recipient bank.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Payments
+                       </th>
+                       <td class="dp-monospace">
+                        SchemeName
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticScheduled2/CreditorAccount/SchemeName
+                       </td>
+                       <td>
+                        Identification assigned by an institution to identify an account. This identification is known by the account owner.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        For SEPA payments, the SchemeName must be IBAN.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        International Payment
+                       </th>
+                       <td class="dp-monospace">
+                        Name
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/Name
+                       </td>
+                       <td>
+                        Name by which an agent is known and which is usually used to identify that agent.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        Creditor Agent Name will travel with CreditorAgent/PostalAddress/AddressLine if provided. In certain scenarios, this information will not travel if UK.OBIE.BICFI and IE.AIB.LCC is populated.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        SchemeName
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/SchemeName
+                       </td>
+                       <td>
+                        Name of the identification scheme, in a coded form as published in an external list.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        <p>
+                         AIB supports below values:
+                         <br/>
+                         - UK.OBIE.BICFI,
+                         <br/>
+                         - UK.OBIE.NCC.[ISO3166-aplha2-CountryCode]
+                         <br/>
+                         - UK.OBIE.LCC.
+                        </p>
+                        <p>
+                         In case of "UK.OBIE.BICFI", customer must provide the valid BIC ( 8 or 11 characters) in Identification field (OBInternational2/CreditorAgent/Identification).
+                        </p>
+                        <p>
+                         In case of "UK.OBIE.LCC.[ISO3166-aplha2-CountryCode]", customer must provide the valid Bank Code in Identification field (OBInternational2/CreditorAgent/Identification).
+                        </p>
+                        <p>
+                         AIB will reject the Consent if only SchemeName or only Identification is provided.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        PostalAddress
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress
+                       </td>
+                       <td>
+                        Information that locates and identifies a specific address, as defined by postal services.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        Addressline information in this block will travel with payment if available
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        AddressType
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/AddressType
+                       </td>
+                       <td>
+                        Identifies the nature of the postal address.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Department
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/Department
+                       </td>
+                       <td>
+                        Identification of a division of a large organisation or building.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        SubDepartment
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/SubDepartment
+                       </td>
+                       <td>
+                        Identification of a sub-division of a large organisation or building.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        StreetName
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/StreetName
+                       </td>
+                       <td>
+                        Name of a street or thoroughfare.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        BuildingNumber
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/BuildingNumber
+                       </td>
+                       <td>
+                        Number that identifies the position of a building on a street.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        PostCode
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/PostCode
+                       </td>
+                       <td>
+                        Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        TownName
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/TownName
+                       </td>
+                       <td>
+                        Name of a built-up area, with defined boundaries, and a local government.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        CountrySubDivision
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/CountrySubDivision
+                       </td>
+                       <td>
+                        Identifies a subdivision of a country such as state, region, county.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        For all payments, the information will not travel with the payment.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        Country
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/Country
+                       </td>
+                       <td>
+                        Nation with its own government.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all payments, this information is optional
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All International Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        AddressLine
+                       </td>
+                       <td class="dp-monospace">
+                        OBInternational2/CreditorAgent/PostalAddress/AddressLine
+                       </td>
+                       <td>
+                        Information that locates and identifies a specific address, as defined by postal services, presented in free format text.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        Information in this block will travel with payment if available. Please note that only the 105 characters (AddressLine 1 &amp; 2) will travel with the payment to the recipient bank.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        AuthorisationType
+                       </td>
+                       <td class="dp-monospace">
+                        Authorisation/AuthorisationType
+                       </td>
+                       <td>
+                        Level of authentications require to authorise the consent
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        For all payments, only "Any" value is supported by AIB. AIB default the AuthorisationType as "Any" if tag or no value present. AIB will reject the payment request if value is other than "Any".
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        CompletionDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        Authorisation/CompletionDateTime
+                       </td>
+                       <td>
+                        Defined the date time for the payment order authorisation to be completed
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB does not support this field. AIB will reject the Consent if any value is populated.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        FirstPaymentDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/FirstPaymentDateTime
+                       </td>
+                       <td>
+                        The date on which the first payment for a Standing Order schedule will be made
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        AIB will reject the Consent with value in this field if it is same as Today's or past date
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        RecurringPaymentDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/RecurringPaymentDateTime
+                       </td>
+                       <td>
+                        The date on which the first recurring payment for a Standing Order schedule will be made.
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB does not support this field. AIB will reject the Consent if any value is populated.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        NumberOfPayments
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/NumberOfPayments
+                       </td>
+                       <td>
+                        Number of the payments that will be made in completing this frequency sequence including any executed since the sequence start date.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        AIB only supports maximum 4 digits (i.e. upto 9999 recurring payments for a Standing Order).
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        FinalPaymentDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/FinalPaymentDateTime
+                       </td>
+                       <td>
+                        The date on which the final payment for a Standing Order schedule will be made.
+                       </td>
+                       <td>
+                        Conditional
+                       </td>
+                       <td>
+                        <p>
+                         AIB supports recurring payments upto 35 years. And will reject the consent if request receive to setup the standing order for more than 35 years.
+                        </p>
+                        <p>
+                         AIB supports either "FinalPaymentDateTime" or "NumberOfPayments" to setup a Standing Order. And will reject the Consent if AIB recieve the values in both the fields.
+                        </p>
+                        <p>
+                         AIB will reject the Consent if value in "FinalPaymentAmount" block is available and there is no value in "FinalPaymentDateTime" tag.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        Frequency
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/Frequency
+                       </td>
+                       <td>
+                        Frequency of Payments for a Standing Order
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        AIB does not support below values:
+                        <br/>
+                        - EvryDay or EvryWorkgDay,
+                        <br/>
+                        - IntrvlDay,
+                        <br/>
+                        - QtrDay (ENGLISH, SCOTTISH or RECEIVED), - WkInMnthDay.
+                        <br/>
+                        And will reject the consent if AIB receive any of the above values. 3rd Attribute in the schedule code should match with value in "FirstPaymentDateTime" field. In case of mismatch, AIB will reject the Consent.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        Domestic Standing Order
+                       </th>
+                       <td class="dp-monospace">
+                        Reference
+                       </td>
+                       <td class="dp-monospace">
+                        OBDomesticStandingOrder3/Reference
+                       </td>
+                       <td>
+                        Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        <p>
+                         This field is mandatory to capture the unique creditor narrative that can be referred for reconciliation purpose.
+                        </p>
+                        <p>
+                         AIB supports only 18 characters and will truncate if length is more than 18 characters.
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        All Endpoints
+                       </th>
+                       <td class="dp-monospace">
+                        SCASupportData
+                       </td>
+                       <td class="dp-monospace">
+                        OBWriteInternationalConsent5/Data/SCASupportData
+                       </td>
+                       <td>
+                        Supporting Data provided by TPP, when requesting SCA Exemption.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        AIB will accept and store the data, but it will not use or validate this block for Payment Initiation.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        FileReference
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/FileReference
+                       </td>
+                       <td>
+                        Reference for the file.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        Customer to provide a unique reference to enable reconciliation. AIB supports only 18 alphanumeric characters and will truncate if length is more than 18 characters
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        LocalInstrument
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/LocalInstrument
+                       </td>
+                       <td>
+                        This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB will not process the LocalInstrument Code value supplied in the Consent. AIB will derive the payment clearing option using the internal payment processing rules provided in the file. Value (if tag is provided) must be provided from an OB defined list.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        RequestedExecutionDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/RequestedExecutionDateTime
+                       </td>
+                       <td>
+                        <p>
+                         Date at which the initiating party requests the clearing agent to process the payment.
+                        </p>
+                        <p>
+                         Usage: This is the date on which the debtor's account is to be debited.
+                        </p>
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        AIB will reject the Consent if date in this field is a past date or if the date is greater than 30 days.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        Identification
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/DebtorAccount/Identification
+                       </td>
+                       <td>
+                        Identification assigned by an institution to identify an account. This identification is known by the account owner.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        The field is mandatory and must include the Customer OIN.
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        SchemeName
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/DebtorAccount/SchemeName
+                       </td>
+                       <td>
+                        Name of the identification scheme, in a coded form as published in an external list.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        The SchemeName must be "IE.AIB.OIN".
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        FileType
+                       </td>
+                       <td>
+                        OBFile2/FileType
+                       </td>
+                       <td>
+                        Specifies the payment file type.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        For ROI should always be IE.AIB.XML
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        NumberOfTransactions
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/NumberOfTransactions
+                       </td>
+                       <td>
+                        Number of individual transactions contained in the payment information group.
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        AIB will reject the Consent if the value in this field is not the same as the total number of transactions in the file (irrespective of the currency)
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        ControlSum
+                       </td>
+                       <td class="dp-monospace">
+                        OBFile2/ControlSum
+                       </td>
+                       <td>
+                        Total of all individual amounts included in the group, irrespective of currencies.
+                       </td>
+                       <td>
+                        Mandatory
+                       </td>
+                       <td>
+                        AIB will reject the Consent if the value in this field is not the same as total amount in the file (irrespective of the currency)
+                       </td>
+                      </tr>
+                      <tr>
+                       <th>
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        AuthorisationType
+                       </td>
+                       <td class="dp-monospace">
+                        OBWriteFileConsent3/Data/Authorisation/AuthorisationType
+                       </td>
+                       <td>
+                        Level of authentications require to authorise the consent
+                       </td>
+                       <td>
+                        Optional
+                       </td>
+                       <td>
+                        <p>
+                         For all payments, only "Any" value is supported by AIB. AIB default the AuthorisationType as "Any" if tag or no value is present.
+                        </p>
+                        <p>
+                         AIB will reject the payment request if the value is other than "Any".
+                        </p>
+                       </td>
+                      </tr>
+                      <tr>
+                       <th scope="row">
+                        File Payments
+                       </th>
+                       <td class="dp-monospace">
+                        CompletionDateTime
+                       </td>
+                       <td class="dp-monospace">
+                        OBWriteFileConsent3/Data/Authorisation/CompletionDateTime
+                       </td>
+                       <td>
+                        Defined the date time for the payment order authorisation to be completed
+                       </td>
+                       <td>
+                        Not Required
+                       </td>
+                       <td>
+                        AIB does not support this field. AIB will reject the Consent if any value is populated.
+                       </td>
+                      </tr>
+                     </tbody>
+                    </table>
+                    <div class="text-center bt bg-grey-01 pb-10">
+                     <p class="text-bold mt-30">
+                      Supported Character Set:
+                     </p>
+                     <p class="dp-monospace">
+                      a b c d e f g h i j k l m n o p q r s t u v w x y z
+                     </p>
+                     <p class="dp-monospace">
+                      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                     </p>
+                     <p class="dp-monospace">
+                      0 1 2 3 4 5 6 7 8 9
+                     </p>
+                     <p class="dp-monospace">
+                      / –. , ‘
+                     </p>
+                     <p class="dp-monospace pb-10">
+                      Space
+                     </p>
+                    </div>
+                    <div>
+                     <p class="text-bold mt-30">
+                      Special Rules:
+                     </p>
+                     <table class="table table-hover fs-14">
+                      <thead>
+                       <tr>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <th scope="row">
+                         FPS/CHAPS
+                        </th>
+                        <td>
+                         Only Customer with their account in Branch 238590 can initiate FPS/CHAPS payments with priority as Urgent
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Bank Code Requirement
+                        </th>
+                        <td>
+                         PISP should provide the Bank code for below countries &amp; currencies:
+                         <br/>
+                         USD (US)
+                         <br/>
+                         AUD (Australia)
+                         <br/>
+                         CAD (Canada)
+                         <br/>
+                         ZAR (South Africa)
+                         <br/>
+                         GBP (UK)
+                         <br/>
+                         INR (India)
+                         <br/>
+                         NZD (New Zealand)
+                         <br/>
+                         Bank Code format is available on below link:
+                         <br/>
+                         <a href="https://aib.ie/our-products/current-accounts/international-payments/country-specific-receiver-bank" title="Country Specific Receiver Bank">
+                          https://aib.ie/our-products/current-accounts/international-payments/country-specific-receiver-bank
+                         </a>
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Domestic Endpoint
+                        </th>
+                        <td>
+                         PISP to use Domestic Endpoint only for:
+                         <br/>
+                         - SEPA Payments (EUR payments to SEPA Reachable Creditor Agent) OR EUR Account Transfer within AIB.
+                         <br/>
+                         - CurrencyofTransfer is EUR
+                         <br/>
+                         - Debit Account should be in EUR
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         International Scheduled Payment Endpoint
+                        </th>
+                        <td>
+                         International Scheduled payment is only supported for Business / Corporate customers. AIB will reject the International Scheduled Payment Consent for Personal customers and UK Customers.
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         International Endpoint
+                        </th>
+                        <td>
+                         PISP to use International Endpoint to :
+                         <br/>
+                         - Initiate AccountTransfer involving FX or transfer in non-Domestic Currencies within AIB Group.
+                         <br/>
+                         - Initiate International Payments.
+                         <br/>
+                         - Initiate FPS/CHAPS payment for NSC 238590.
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="panel-heading" id="headingSandbox02">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapseTimeoutAccordion">
+                     Timeout values
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapseTimeoutAccordion">
+                   <div class="panel-body">
+                    <div>
+                     <table class="table table-hover fs-14">
+                      <thead>
+                       <tr>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <th scope="row">
+                         Access token
+                         <br/>
+                         (client credentials grant type)
+                        </th>
+                        <td>
+                         60 minutes
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Access token
+                         <br/>
+                         (authorisation code grant type)
+                        </th>
+                        <td>
+                         5 minutes
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Authorization code
+                        </th>
+                        <td>
+                         20 seconds
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         SCA reauthorisation
+                        </th>
+                        <td>
+                         Every 180 days
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Entering user credentials (customer journey)
+                        </th>
+                        <td>
+                         If the user is idle for 3 minutes and 50 seconds, they are displayed an inactive screen.
+                         <br/>
+                         In addition to the 3m50s if the user remains idle, they will be automatically timed out after 1 minute.
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </div>
+                    <div>
+                     <p class="text-bold mt-30">
+                      Timeout values for international payments:
+                     </p>
+                     <table class="table table-hover fs-14">
+                      <thead>
+                       <tr>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <th scope="row">
+                         Access token for international payments
+                         <br/>
+                         (authorisation code grant type)
+                        </th>
+                        <td>
+                         40 seconds
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row">
+                         Authorization code for international payments
+                        </th>
+                        <td>
+                         30 seconds
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="panel-heading" id="headingSandbox03">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapseEnumerationsAccordion">
+                     Enumerations supported in ROI
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapseEnumerationsAccordion">
+                   <div class="panel-body">
+                    <p>
+                     Endpoint: Transactions Endpoint (Account Information Services)
+                    </p>
+                    <p>
+                     Reference: OBReadTransaction6/Data/Transaction/CreditorAccount
+                    </p>
+                    <p>
+                     Within the CreditorAccount block the following enumerations are supported:
+                    </p>
+                    <ul>
+                     <li>
+                      ROI.PSD.IBAN
+                     </li>
+                     <li>
+                      ROI.PSD.PAN
+                     </li>
+                     <li>
+                      ROI.PSD.SortCodeAccountNumber
+                     </li>
+                     <li>
+                      ROI.PSD.P2P
+                     </li>
+                    </ul>
+                   </div>
+                  </div>
+                  <div class="panel-heading" id="headingSandbox04">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapseCmaPermissionsAccordion">
+                     Supporting CMA permissions (AISP Consent)
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapseCmaPermissionsAccordion">
+                   <div class="panel-body">
+                    <p>
+                     The following CMA permissions are supported:
+                    </p>
+                    <ul>
+                     <li>
+                      accounts
+                     </li>
+                     <li>
+                      balances
+                     </li>
+                     <li>
+                      transactions
+                     </li>
+                    </ul>
+                    <p class="text-bold mt-30">
+                     Example scope in the consent setup request:
+                    </p>
+                    <pre>
+<code>{
+  "Data": {
+    "Permissions": [
+      "ReadAccountsDetail",
+      "ReadBalances",
+      "ReadTransactionsDetail",
+      "ReadTransactionsCredits",
+      "ReadTransactionsDebits",
+<strong>      "ReadBeneficiariesDetail"</strong>,
+<strong>      "ReadDirectDebits"</strong>,
+<strong>      "ReadStandingOrdersDetail"</strong>,
+<strong>      "ReadProducts"</strong>
+    ],
+    "ExpirationDateTime": "2020-12-01T00:30:44.954Z",
+    "TransactionFromDateTime": "2019-11-01T08:59:52.482Z",
+    "TransactionToDateTime": "2019-12-01T08:59:52.482Z"
+  },
+  "Risk": {}
+}</code></pre>
+                    <p>
+                    </p>
+                    <p>
+                     <strong>
+                      Handling Credit Cards:
+                     </strong>
+                    </p>
+                    <p>
+                     These permissions are not supported for Credit Cards. Where the scope of the API request includes all or any one of these CMA permissions, the customer will not have the ability to select their credit card(s) within the OAuth redirect. The OAuth redirect will display non-Credit Card accounts only where CMA permissions are included in the scope.
+                    </p>
+                    <p>
+                     In order to share both credit card data and data on accounts (current and/or deposit) where CMA permissions are included, TPPs will require two apps defined on the AIB gateway within the region they wish to operate in i.e. if working with GB clients and utilising the GB API suite, two apps will be required on the AIB GB environment.
+                    </p>
+                    <p>
+                    </p>
+                    <table class="table table-hover fs-14" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 1046px; margin-bottom: 20px;">
+                     <thead style="box-sizing: border-box;">
+                      <tr style="box-sizing: border-box;">
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);">
+                        S No
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);" width="10%">
+                        AIB Frequency
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);" width="12%">
+                        Acceptable Codes
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);" width="15%">
+                        Additional Check
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);">
+                        RP_FREQ
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);">
+                        RP_INTERVAL
+                       </th>
+                       <th style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: bottom; border-top: 0px; border-bottom: 2px solid rgb(221, 221, 221);">
+                        RP_DAY_OF_MONTH
+                       </th>
+                      </tr>
+                     </thead>
+                     <tbody style="box-sizing: border-box;">
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        1
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Weekly
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlWkDay:01:01-07
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the week provided must match the day of $.Data.Initiation.FirstPaymentDateTime.
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        D
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        7
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        0
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        2
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Fortnightly
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlWkDay:02:01-07
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the week provided must match the day of $.Data.Initiation.FirstPaymentDateTime.
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        D
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        14
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        0
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        3
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Every 4 weeks
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlWkDay:04:01-07
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the week provided must match the day of $.Data.Initiation.FirstPaymentDateTime.td&gt;
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        D
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        28
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        0
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        4
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Monthly
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:01:01-31 or IntrvlMnthDay:01:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        1
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        5
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Every 2 Months
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:02:01-31 or IntrvlMnthDay:02:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime.
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        2
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        6
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Quarterly
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:03:01-31 or IntrvlMnthDay:03:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime.
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        3
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        7
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Every 4 months
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:04:01-31 or IntrvlMnthDay:04:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime.
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        4
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        8
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Half Yearly
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:06:01-31 or IntrvlMnthDay:06:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        6
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                      <tr style="box-sizing: border-box;">
+                       <th scope="row" style="box-sizing: border-box; text-align: left; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        9
+                       </th>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Annually
+                       </td>
+                       <td class="dp-monospace" style="box-sizing: border-box; line-height: 1.42857; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        IntrvlMnthDay:12:01-31 or IntrvlMnthDay:12:-05
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Day in the month provided must match the day of $.Data.Initiation.FirstPaymentDateTime
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        M
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        12
+                       </td>
+                       <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border-top: 1px solid rgb(221, 221, 221);">
+                        Date value from FirstPaymentDateTime
+                       </td>
+                      </tr>
+                     </tbody>
+                    </table>
+                   </div>
+                  </div>
+                  <div class="panel-heading" id="headingSandbox05">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapseAibDoesNotSupportAccordion">
+                     AIB does not support below values
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapseAibDoesNotSupportAccordion">
+                   <div class="panel-body">
+                    <div>
+                     <ul style="font-size: 16px; box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(72, 72, 72); font-family: AspiraWeb; background-color: rgb(255, 255, 255);">
+                      <li style="box-sizing: border-box;">
+                       EvryDay or EvryWorkgDay.
+                      </li>
+                      <li style="box-sizing: border-box;">
+                       QtrDay (ENGLISH, SCOTTISH or RECEIVED).
+                      </li>
+                      <li style="box-sizing: border-box;">
+                       WkInMnthDay
+                      </li>
+                     </ul>
+                     <p style="font-size: 16px; box-sizing: border-box; margin: 0px 0px 10px 18pt; color: rgb(72, 72, 72); font-family: AspiraWeb; background-color: rgb(255, 255, 255);">
+                      And will reject the consent if AIB receive any of the above values
+                     </p>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="panel-heading" id="headingSandbox06">
+                   <h4 class="panel-title">
+                    <a class="d-block text-bold" data-parent="#sandbox-accordion" data-toggle="collapse" href="#collapseDomesticResponse">
+                     Domestic response
+                    </a>
+                   </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapseDomesticResponse">
+                   <div class="panel-body">
+                    <div>
+                     <p style="font-size: 16px; box-sizing: border-box; margin: 0px 0px 10px 18pt; color: rgb(72, 72, 72); font-family: AspiraWeb; background-color: rgb(255, 255, 255);">
+                      3rd Attribute in the schedule code should match with value in "FirstPaymentDateTime" field. In case of mismatch, AIB will reject the Consent.
+                     </p>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <!-- /.block -->
+       </div>
+      </section>
+     </div>
+    </div>
+   </div>
+   <div id="push">
+   </div>
+   <footer class="footer">
+    <div class="region region-footer">
+     <section class="block block-aib-custom-home clearfix" id="block-aib-custom-home-aib-custom-footer">
+      <div class="col-md-12">
+       <div class="container">
+        <div class="row pt-10 pb-10 text-center col-md-offset-1">
+         <div class="col-sm-4 col-md-4 col-lg-2">
+          <a class="link-footer" href="/terms-of-use-ROI">
+           Terms of Use
+          </a>
+         </div>
+         <div class="col-sm-4 col-md-3 col-lg-2">
+          <a class="link-footer" href="/cookie-policy-ROI">
+           Cookie Policy
+          </a>
+         </div>
+         <div class="col-sm-4 col-md-4 col-lg-4">
+          <a class="link-footer" href="/developer-portal-privacy-statement-ROI">
+           Developer Portal Privacy Statement
+          </a>
+         </div>
+         <div class="col-sm-4 col-md-4 col-lg-2">
+          <a class="link-footer" href="/site-legal-notice-ROI">
+           Website Terms of Use
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row p-16 bt copy-background">
+        <div class="col-md-12 text-center white fs-12">
+         Allied Irish Banks, p.l.c. is regulated by the Central Bank of Ireland. Registered in the Republic of Ireland, Number 24173. Registered Office: 10 Molesworth Street, Dublin 2.
+         <br/>
+         © 2018 Allied Irish Banks, p.l.c. All rights reserved.
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- /.block -->
+    </div>
+   </footer>
+  </div>
+  <div class="region region-page-bottom">
+   <div aria-hidden="true" aria-labelledby="loginLabel" class="modal fade" id="login" role="dialog" tabindex="-1">
+    <div class="modal-dialog" style="">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+        ×
+       </button>
+       <h4 class="modal-title" id="loginLabel">
+        Log in
+       </h4>
+      </div>
+      <div class="modal-body">
+       <form accept-charset="UTF-8" action="/user/login?destination=node/2531" id="user-login" method="post">
+        <div>
+         <div class="form-item form-item-name form-type-textfield form-group">
+          <label class="control-label" for="edit-name">
+           Username or e-mail address
+           <span class="form-required" title="This field is required.">
+            *
+           </span>
+          </label>
+          <input autocomplete="off" class="form-control form-text required" data-toggle="tooltip" id="edit-name" maxlength="60" name="name" size="60" title="You may login with either your assigned username or your e-mail address." type="text" value=""/>
+         </div>
+         <div class="form-item form-item-pass form-type-password form-group">
+          <label class="control-label" for="edit-pass">
+           Password
+           <span class="form-required" title="This field is required.">
+            *
+           </span>
+          </label>
+          <input autocomplete="off" class="form-control form-text required" data-toggle="tooltip" id="edit-pass" maxlength="128" name="pass" size="60" title="The password field is case sensitive." type="password"/>
+         </div>
+         <input name="form_build_id" type="hidden" value="form-vMnhCnqWiHlpqxg03P_-Pknyatvm_a4m1iz3ksyboYw"/>
+         <input name="form_id" type="hidden" value="user_login"/>
+         <div class="form-actions form-wrapper form-group" id="edit-actions">
+          <button class="btn btn-primary form-submit icon-before" id="edit-submit" name="op" type="submit" value="Log in">
+           <span aria-hidden="true" class="icon glyphicon glyphicon-log-in">
+           </span>
+           Log in
+          </button>
+         </div>
+         <br/>
+         <br/>
+         <a href="/user/password">
+          Forgot your password?
+         </a>
+         <br/>
+         <br/>
+        </div>
+       </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div aria-hidden="true" aria-labelledby="registerLabel" class="modal fade" id="register" role="dialog" tabindex="-1">
+    <div class="modal-dialog" style="">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+        ×
+       </button>
+       <h4 class="modal-title" id="registerLabel">
+        Register a new user
+       </h4>
+      </div>
+      <div class="modal-body">
+       <form accept-charset="UTF-8" action="/user/register?destination=node/2531" class="user-info-from-cookie" enctype="multipart/form-data" id="user-register-form" method="post">
+        <div>
+         <div class="field-type-text field-name-field-first-name field-widget-text-textfield form-wrapper form-group" id="edit-field-first-name">
+          <div id="field-first-name-add-more-wrapper">
+           <div class="form-item form-item-field-first-name-und-0-value form-type-textfield form-group">
+            <label class="control-label" for="edit-field-first-name-und-0-value">
+             First Name
+             <span class="form-required" title="This field is required.">
+              *
+             </span>
+            </label>
+            <input class="text-full form-control form-text required" id="edit-field-first-name-und-0-value" maxlength="255" name="field_first_name[und][0][value]" size="60" type="text" value=""/>
+           </div>
+          </div>
+         </div>
+         <div class="field-type-text field-name-field-last-name field-widget-text-textfield form-wrapper form-group" id="edit-field-last-name">
+          <div id="field-last-name-add-more-wrapper">
+           <div class="form-item form-item-field-last-name-und-0-value form-type-textfield form-group">
+            <label class="control-label" for="edit-field-last-name-und-0-value">
+             Last Name
+             <span class="form-required" title="This field is required.">
+              *
+             </span>
+            </label>
+            <input class="text-full form-control form-text required" id="edit-field-last-name-und-0-value" maxlength="255" name="field_last_name[und][0][value]" size="60" type="text" value=""/>
+           </div>
+          </div>
+         </div>
+         <div class="form-wrapper form-group" id="edit-account">
+          <div class="form-item form-item-name form-type-textfield form-group">
+           <label class="control-label" for="edit-name--2">
+            Username
+            <span class="form-required" title="This field is required.">
+             *
+            </span>
+           </label>
+           <input class="username form-control form-text required" data-toggle="tooltip" id="edit-name--2" maxlength="60" name="name" size="60" title="Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores." type="text" value=""/>
+          </div>
+          <div class="form-item form-item-mail form-type-textfield form-group">
+           <label class="control-label" for="edit-mail">
+            Work email address
+            <span class="form-required" title="This field is required.">
+             *
+            </span>
+           </label>
+           <input class="form-control form-text required" data-toggle="tooltip" id="edit-mail" maxlength="254" name="mail" size="60" title="A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail." type="text" value=""/>
+          </div>
+         </div>
+         <input name="form_build_id" type="hidden" value="form-TKEg9IIe_PIR76Eat2OtqXILjHs3Mpl1hcwb-GTkyek"/>
+         <input name="form_id" type="hidden" value="user_register_form"/>
+         <br/>
+         <br/>
+         <strong>
+          Please read our
+          <a href="terms-of-use-ROI">
+           Terms of Use
+          </a>
+          before you complete registration.
+         </strong>
+         <br/>
+         <br/>
+         <div id="terms-field">
+         </div>
+         <fieldset class="captcha panel panel-default form-wrapper" id="bootstrap-panel">
+          <legend class="panel-heading">
+           <span class="panel-title fieldset-legend">
+            CAPTCHA
+           </span>
+          </legend>
+          <div class="panel-body" id="bootstrap-panel-body">
+           <div class="help-block">
+            This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.
+           </div>
+           <input name="captcha_sid" type="hidden" value="92061896"/>
+           <input name="captcha_token" type="hidden" value="5e8bdba51ce591205dfaf49d262973af"/>
+           <img alt="Image CAPTCHA" class="img-responsive" height="60" src="/image_captcha?sid=92061896&amp;ts=1748898874" title="Image CAPTCHA" typeof="foaf:Image" width="360"/>
+           <div class="form-item form-item-captcha-response form-type-textfield form-group">
+            <label class="control-label" for="edit-captcha-response--2">
+             What code is in the image?
+             <span class="form-required" title="This field is required.">
+              *
+             </span>
+            </label>
+            <input class="form-control form-text required" data-toggle="tooltip" id="edit-captcha-response--2" maxlength="128" name="captcha_response" size="15" title="Enter the characters shown in the image." type="text" value=""/>
+           </div>
+          </div>
+         </fieldset>
+         <div class="form-actions form-wrapper form-group" id="edit-actions--2">
+          <button class="btn btn-success form-submit" id="edit-submit--2" name="op" type="submit" value="Create new account">
+           Create new account
+          </button>
+         </div>
+        </div>
+       </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://developer.aib.ie/profiles/apigee/themes/bootstrap/js/bootstrap.js?sl5mo5">
+  </script>
+ </body>
+</html>

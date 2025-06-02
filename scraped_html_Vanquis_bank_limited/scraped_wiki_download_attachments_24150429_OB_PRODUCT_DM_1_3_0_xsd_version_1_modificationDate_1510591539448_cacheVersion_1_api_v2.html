@@ -1,0 +1,2327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 sp2 (x64) (http://www.altova.com) by Paul Venables (UK Payments Administration Ltd) -->
+<!-- by Open Banking Ltd (OBIE) -->
+<!-- release version 1.3.0 (03/03/2017) -->
+<xs:schema attributeformdefault="unqualified" elementformdefault="qualified" vc:minversion="1.1" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="openBankingProduct">
+  <xs:annotation>
+   <xs:documentation>
+    Comment describing your root element
+   </xs:documentation>
+  </xs:annotation>
+  <xs:complextype>
+   <xs:choice>
+    <xs:element name="CurrentAccount" type="ca">
+    </xs:element>
+    <xs:element name="SMELoan" type="smel">
+    </xs:element>
+    <xs:element name="CommercialCreditCard" type="ccc">
+    </xs:element>
+   </xs:choice>
+  </xs:complextype>
+ </xs:element>
+ <xs:complextype name="ca">
+  <xs:sequence>
+   <xs:element name="Organisation" type="org">
+   </xs:element>
+   <xs:element name="ProductType" type="OB_CAProductType1Code">
+   </xs:element>
+   <xs:element name="ProductName" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="ProductSegment" type="OB_CAProductSegment1Code">
+   </xs:element>
+   <xs:element name="InternationalPaymentsSupported" type="xs:boolean">
+   </xs:element>
+   <xs:element name="ProductIdentifier" type="xs:string">
+   </xs:element>
+   <xs:element name="CardWithdrawalLimit" type="Amount">
+   </xs:element>
+   <xs:element name="ProductDescription" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="TsandCs" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="AccessChannels" type="OB_AccessChannels1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="CardType" type="OB_CardType1Code">
+   </xs:element>
+   <xs:element name="Contactless" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="MobileWallet" type="OB_MobileWallet1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CardNotes" type="xs:string">
+   </xs:element>
+   <xs:element name="ChequeBookAvailable" type="xs:boolean">
+   </xs:element>
+   <xs:element name="CreditScoringPartOfAccountOpeningForGettingAnAccount" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CreditScoringPartOfAccountOpeningIsAHardOrSoftCreditScore" type="OB_CurrentAccountAccountOpeningCreditScoring1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CreditScoringPartOfAccountOpeningText" type="xs:string">
+   </xs:element>
+   <xs:element name="CreditScoringPartOfAccountOpeningForIDVerification" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CreditScoringPartOfAccountOpeningIDVerificationIsAHardOrSoftCreditScore" type="OB_CurrentAccountAccountOpeningCreditScoring1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CreditScoringPartOfAccountOpeningIDVerificationText" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumMonthlyCharge" type="Amount">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="ProductURL" type="xs:anyURI">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="Ccy" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element name="OverdraftOffered" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="Feature" type="Feature">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="CAPricing" type="caprice">
+   </xs:element>
+   <xs:element name="Eligibility" type="eli">
+   </xs:element>
+   <xs:element name="CreditInterest" type="inter">
+   </xs:element>
+   <xs:element minoccurs="0" name="Overdraft" type="ovd">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="FeesAndCharges" type="feesch">
+   </xs:element>
+   <xs:element name="Benefits" type="bene">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="smel">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="1" name="Organisation" type="org">
+   </xs:element>
+   <xs:element name="ProductName" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="ProductIdentifier" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="ArrearsTreatment" type="xs:string">
+   </xs:element>
+   <xs:element name="ProductTypeName" type="OB_SMELProductType1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="ProductURL" type="xs:anyURI">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="ProductSegment" type="OB_SMELProductSegment1Code">
+   </xs:element>
+   <xs:element name="ProductDescription" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="TsandCs" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="CustomerAccessChannels" type="OB_CustomerAccessChannels1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="Ccy" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element name="MinimumLoanterm" type="xs:integer">
+   </xs:element>
+   <xs:element name="MaximumLoanterm" type="xs:integer">
+   </xs:element>
+   <xs:element name="MinimumLoanAmount" type="Amount">
+   </xs:element>
+   <xs:element name="MaximumLoanAmount" type="Amount">
+   </xs:element>
+   <xs:element name="PaymentHoliday" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="LoanItem" type="loait">
+   </xs:element>
+   <xs:element name="Eligibility" type="eli">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="FeesAndCharges" type="feesch">
+   </xs:element>
+   <xs:element name="Benefits" type="bene">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="ccc">
+  <xs:sequence>
+   <xs:element name="Organisation" type="org">
+   </xs:element>
+   <xs:element name="ProductName" type="xs:string">
+   </xs:element>
+   <xs:element name="ProductType" type="OB_SMECCProductType1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="ProductSegment" type="OB_SMECCProductSegment1Code">
+   </xs:element>
+   <xs:element name="ProductIdentifier" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="ProductURL" type="xs:anyURI">
+   </xs:element>
+   <xs:element name="Description" type="xs:string">
+   </xs:element>
+   <xs:element name="KeyFeatures" type="xs:string">
+   </xs:element>
+   <xs:element name="PaymentHoliday" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="PaymentHolidayDescription" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="OtherKeyFeatures" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="TsandCs" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="Details" type="cccgr">
+   </xs:element>
+   <xs:element name="Eligibility" type="eli">
+   </xs:element>
+   <xs:element name="Benefits" type="bene">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="loait">
+  <xs:sequence>
+   <xs:element name="ProductState" type="OB_ProductState1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="LoanPricing" type="loapri">
+   </xs:element>
+   <xs:element name="CCARegulatedEntity" type="xs:boolean">
+   </xs:element>
+   <xs:element name="IsALowInterestRepaymentStartPossible" type="xs:boolean">
+   </xs:element>
+   <xs:element name="IsThisAnInterestOnlyLoan" type="xs:boolean">
+   </xs:element>
+   <xs:element name="WillTheLoanBePaidInTrancheDrawdowns" type="xs:boolean">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="loapri">
+  <xs:sequence>
+   <xs:element name="SizeIncrement" type="OB_InterestTierSME1Code">
+   </xs:element>
+   <xs:element name="LoanLengthIncrement" type="OB_LoanLengthIncrement1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" name="RepaymentFrequency" type="OB_RepaymentFrequency1Code">
+   </xs:element>
+   <xs:element name="LoanSizeBandLower" type="Amount">
+   </xs:element>
+   <xs:element name="LoanSizeBandUpper" type="Amount">
+   </xs:element>
+   <xs:element name="LoanLengthIncrementLower" type="xs:integer">
+   </xs:element>
+   <xs:element name="LoanLengthIncrementUpper" type="xs:integer">
+   </xs:element>
+   <xs:element name="IndicativeRate" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="RateComparisonType" type="OB_RateComparisonType1Code">
+   </xs:element>
+   <xs:element name="Negotiable" type="xs:boolean">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="eli">
+  <xs:sequence>
+   <xs:element name="AgeRestricted" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumAge" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumAge" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumAgeToOpen" type="xs:integer">
+   </xs:element>
+   <xs:element name="OtherFinancialHoldingRequired" type="xs:boolean">
+   </xs:element>
+   <xs:element name="Description" type="xs:string">
+   </xs:element>
+   <xs:element name="IncomeTurnoverRelated" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="SingleJointIncome" type="OB_SingleJointIncome1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumIncomeTurnoverAmount" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumIncomeTurnoverCurrency" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element minoccurs="0" name="IncomeCondition" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinIncomeTurnoverPaidIntoAccount" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumIncomeFrequency" type="OB_MinIncomeFrequency1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="AnnualBusinessTurnover" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="AnnualBusinessTurnoverCurrency" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element name="ResidencyRestricted" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="ResidencyRestrictedRegion" type="OB_ResidencyRestrictedRegion1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaxNumberOfAccounts" type="xs:string">
+   </xs:element>
+   <xs:element name="ThirdSectorOrganisations" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumDeposit" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="OpeningDepositMinimum" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="OpeningDepositMinimumCurrency" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumOperatingBalanceExists" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumOperatingBalance" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumOperatingBalanceCurrency" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumOpeningAmount" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="OpeningDepositMaximumAmount" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="OpeningDepositMaximumCurrency" type="ActiveOrHistoricCurrencyCode">
+   </xs:element>
+   <xs:element minoccurs="0" name="EligibilityName" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="EligibilityType" type="OB_EligibilityType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="EligibilityNotes" type="xs:string">
+   </xs:element>
+   <xs:element name="PreviousBankruptcy" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="MarketingEligibility" type="OB_MarketingEligibility1Code">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="Feature">
+  <xs:sequence>
+   <xs:element name="ExistingFeature" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="ProductState" type="OB_ProductState1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="FeatureDetails" type="FeatureDetails">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="FeatureDetails">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="FeatureSubType" type="OB_FeatureSubType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeatureType" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeatureName" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeatureDescription" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeatureValue" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="CriteriaType" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="feesch">
+  <xs:sequence>
+   <xs:element name="ProductState" type="OB_ProductState1Code">
+   </xs:element>
+   <xs:element name="Fees" type="fees">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="ovd">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="OverdraftProductState" type="OB_ProductState1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="OverdraftTierBandSet" type="ovdtierbandset">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeNegotiableIndicator" type="OB_Negotiable1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="FeesAndCharges" type="OvdFeeChargesTyp">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumMonthlyOverdraftCharge" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="OverdraftType" type="OB_OverdraftType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="Term" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="Notes" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="inter">
+  <xs:sequence>
+   <xs:element name="CreditCharged" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CreditInterestGroup" type="crintgr">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="crintgr">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="InterestTierSubType" type="OB_InterestTierSubType1Code">
+   </xs:element>
+   <xs:element name="CreditInterestItem" type="crit">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="crit">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartDate" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="EndDate" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="CalculationFrequency" type="OB_CalculationFrequency1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="PaymentMethod" type="OB_PaymentMethod1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="InterestRateType" type="OB_InterestRateType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FixedInterestLength" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="CalculationMethod" type="OB_CalculationMethod1Code">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="InterestTiers" type="crinti">
+   </xs:element>
+   <xs:element minoccurs="0" name="InterestNotes" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="crinti">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="InterestTier" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="TierValueMinimum" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="DailyChargeForMinimum" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="TierValueMaximum" type="Max15Text">
+   </xs:element>
+   <xs:element minoccurs="0" name="DailyChargeForMaximum" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="Rate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="RateComparisonType" type="OB_RateComparisonType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="APRAERRate" type="Percentage">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="bene">
+  <xs:sequence>
+   <xs:element name="Benefit" type="xs:boolean">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="BenefitGroup" type="bengr">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="bengr">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="BenefitSubType" type="OB_BenefitSubType1Code">
+   </xs:element>
+   <xs:element name="BenefitItem" type="beit">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="beit">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="BenefitDetail" type="bede">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="bede">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="BenefitType" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="BenefitName" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="BenefitValue" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="DefaultToAccounts" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="BenefitID" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="CriteriaType" type="OB_CriteriaType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumCriteria" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumCriteria" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="Counter" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="BenefitDescription" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="PromotionStartDate" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="PromotionEndDate" type="xs:date">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="ovdtierbandset">
+  <xs:sequence>
+   <xs:element name="CMADefinedIndicator" type="xs:boolean">
+   </xs:element>
+   <xs:element name="ArrangementType" type="OB_OverdraftArrangementType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="ArrangementOtherType" type="OtherCodeType">
+   </xs:element>
+   <xs:element minoccurs="0" name="TierBandSetIdentification" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="EAR" type="Percentage">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="FeesAndCharges" type="OvdFeeChargesTyp">
+   </xs:element>
+   <xs:element minoccurs="0" name="BufferAmount" type="Amount">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="OverdraftTierBand" type="ovdtierband">
+   </xs:element>
+   <xs:element minoccurs="0" name="Notes" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="fees">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeLowerTier" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeHigherTier" type="xs:integer">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="1" name="FeeDetails" type="feesubsh">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="feesubsh">
+  <xs:sequence>
+   <xs:element name="FeeSubType" type="OB_FeeSubType1Code">
+   </xs:element>
+   <xs:element name="FeeDetail" type="feedet">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="feedet">
+  <xs:sequence>
+   <xs:element name="FeeType" type="OB_FeeType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="Other" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="1" name="FeeSubDetails" type="Feesubdet">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="Feesubdet">
+  <xs:sequence>
+   <xs:element name="FeeFrequency" type="OB_FeeFrequency1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeAmount" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeMin" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeMax" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeRate" type="Percentage">
+   </xs:element>
+   <xs:element name="Negotiable" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="RepresentativeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeLowerTier" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeHigherTier" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeesAndChargesNotes" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="ovdtierband">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="TierBandIdentification" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="1" name="TierValueMinimum" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="1" name="TierValueMaximum" type="Max15Text">
+   </xs:element>
+   <xs:element minoccurs="0" name="EAR" type="Percentage">
+   </xs:element>
+   <xs:element maxoccurs="unbounded" minoccurs="0" name="FeesAndCharges" type="OvdFeeChargesTyp">
+   </xs:element>
+   <xs:element minoccurs="0" name="Notes" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="tiertyp">
+  <xs:choice>
+   <xs:element minoccurs="0" name="ArrangedOverdraftTier" type="Max10Text">
+   </xs:element>
+   <xs:element minoccurs="0" name="UnarrangedOverdraftTier" type="Max10Text">
+   </xs:element>
+  </xs:choice>
+ </xs:complextype>
+ <xs:complextype name="OvdFeeChargesTyp">
+  <xs:sequence>
+   <xs:element minoccurs="1" name="FeeChargeType" type="OB_OverdraftFeeChargeType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeOtherType" type="OtherCodeType">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeAmount" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeRateType" type="OB_OverdraftFeeChargeRateType1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeRateOtherType" type="OtherCodeType">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeApplicationFrequency" type="OB_OverdraftFeeChargeFrequency1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeOtherApplicationFrequency" type="OtherCodeType">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeCalculationFrequency" type="OB_OverdraftFeeChargeFrequency1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeeChargeOtherCalculationFrequency" type="OtherCodeType">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="OtherCodeType">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="Code" type="CodeMnemonic">
+   </xs:element>
+   <xs:element minoccurs="0" name="Name" type="Max256Text">
+   </xs:element>
+   <xs:element minoccurs="0" name="Description" type="xs:string">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="caprice">
+  <xs:sequence>
+   <xs:element name="ProductState" type="OB_ProductState1Code">
+   </xs:element>
+   <xs:element name="CAPricingItem" type="cadetail">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="cadetail">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="ExchangeRateAdjustment" type="Percentage">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="cccgr">
+  <xs:sequence>
+   <xs:element name="CCSubType" type="OB_CCSubType1Code">
+   </xs:element>
+   <xs:element name="CommercialCreditCardItem" type="cccit">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="cccit">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="StartPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="StopPromotionOrFutureTerms" type="xs:date">
+   </xs:element>
+   <xs:element minoccurs="0" name="LengthPromotionalInDays" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="DateOfChange" type="xs:date">
+   </xs:element>
+   <xs:element name="MinimumCreditLimit" type="Amount">
+   </xs:element>
+   <xs:element name="RepaymentFrequency" type="OB_RepaymentFrequency1Code">
+   </xs:element>
+   <xs:element name="APRRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="BalanceTransferInterestRatePeriod" type="OB_BalanceTransferInterestRatePeriod1Code">
+   </xs:element>
+   <xs:element name="PurchaseRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="BalanceTransferRate" type="Percentage">
+   </xs:element>
+   <xs:element name="CashAdvanceRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="OverLimitFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="MaximumNumberOfCardsPermitted" type="xs:string">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="CardScheme" type="OB_CardScheme1Code">
+   </xs:element>
+   <xs:element minoccurs="0" name="AbilityToSetIndividualLimits" type="xs:boolean">
+   </xs:element>
+   <xs:element name="AccessToOnlineDataReportingTool" type="xs:boolean">
+   </xs:element>
+   <xs:element name="CashWithdrawalsAllowed" type="xs:boolean">
+   </xs:element>
+   <xs:element name="ConvenienceCheque" type="xs:boolean">
+   </xs:element>
+   <xs:element name="DaysInterestFreeCreditIfPaymentFull" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="AnnualAccountFeeType" type="xs:string">
+   </xs:element>
+   <xs:element name="IssuingEmergencyCardsFees" type="Amount">
+   </xs:element>
+   <xs:element name="AnnualFeeAmount" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="ChequeFeePercent" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="CashbackPercent" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="FeesOnCheque" type="Amount">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="MinimumRepaymentPercentage" type="Percentage">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="0" name="MinimumRepaymentAmount" type="Amount">
+   </xs:element>
+   <xs:element name="PaymentDaysAfterStatement" type="xs:integer">
+   </xs:element>
+   <xs:element minoccurs="0" name="AllocationofRepayment" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="RepaymentNotes" type="xs:string">
+   </xs:element>
+   <xs:element minoccurs="0" name="MinimumLendingAmount" type="Amount">
+   </xs:element>
+   <xs:element name="StatementAtAccountLevel" type="xs:boolean">
+   </xs:element>
+   <xs:element name="StatementAtPersonalLevel" type="xs:boolean">
+   </xs:element>
+   <xs:element minoccurs="0" name="PaymentSchemeExchangeRate" type="Percentage">
+   </xs:element>
+   <xs:element name="ExchangeRateAdjustment" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="PaymentSchemeExchangeFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="PaymentSchemeExchangeFeeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingTransactionFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingTransactionFeeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingPurchaseFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingPurchaseFeeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingCashFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="NonSterlingCashFeeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="ForeignPurchaseFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="ForeignPurchaseFeeRate" type="Percentage">
+   </xs:element>
+   <xs:element minoccurs="0" name="ForeignCashFee" type="Amount">
+   </xs:element>
+   <xs:element minoccurs="0" name="ForeignCashFeeRate" type="Percentage">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="org">
+  <xs:sequence>
+   <xs:element maxoccurs="1" minoccurs="1" name="ParentOrganisation" type="OB_OrganisationIdentification1">
+   </xs:element>
+   <xs:element maxoccurs="1" minoccurs="1" name="Brand" type="OB_Brand1">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="ActiveOrHistoricCurrencyAndAmount">
+  <xs:simplecontent>
+   <xs:extension base="ActiveOrHistoricCurrencyCode">
+    <xs:attribute name="Ccy" type="ActiveOrHistoricCurrencyCode" use="required">
+    </xs:attribute>
+   </xs:extension>
+  </xs:simplecontent>
+ </xs:complextype>
+ <xs:complextype name="OB_OrganisationName1">
+  <xs:sequence>
+   <xs:element name="LegalName" type="Max35Text">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="OB_OrganisationIdentification1">
+  <xs:sequence>
+   <xs:element minoccurs="0" name="LEI" type="LEIIdentifier">
+   </xs:element>
+   <xs:element minoccurs="0" name="BIC" type="AnyBICIdentifier">
+   </xs:element>
+   <xs:element name="OrganisationName" type="OB_OrganisationName1">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:complextype name="OB_Brand1">
+  <xs:sequence>
+   <xs:element name="TrademarkIPOCode" type="TrademarkIPOCode">
+   </xs:element>
+   <xs:element name="TrademarkID" type="Max35Text">
+   </xs:element>
+  </xs:sequence>
+ </xs:complextype>
+ <xs:simpletype name="Max350Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="350">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max256Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="256">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max35Binary">
+  <xs:restriction base="xs:base64Binary">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="35">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max35Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="35">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max10Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="10">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Max15Text">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="1">
+   </xs:minlength>
+   <xs:maxlength value="15">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="ActiveOrHistoricCurrencyCode">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z]{3,3}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Amount">
+  <xs:restriction base="xs:decimal">
+   <xs:totaldigits value="12">
+   </xs:totaldigits>
+   <xs:fractiondigits value="2">
+   </xs:fractiondigits>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="AnyBICIdentifier">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z]{6,6}[A-Z2-9][A-NP-Z0-9]([A-Z0-9]{3,3}){0,1}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="CodeMnemonic">
+  <xs:restriction base="xs:string">
+   <xs:minlength value="4">
+   </xs:minlength>
+   <xs:maxlength value="4">
+   </xs:maxlength>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="LEIIdentifier">
+  <xs:restriction base="xs:string">
+   <xs:pattern value="[A-Z0-9]{18,18}[0-9]{2,2}">
+   </xs:pattern>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="Percentage">
+  <xs:restriction base="xs:decimal">
+   <xs:totaldigits value="7">
+   </xs:totaldigits>
+   <xs:fractiondigits value="4">
+   </xs:fractiondigits>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="TrademarkIPOCode">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="UK">
+   </xs:enumeration>
+   <xs:enumeration value="EU">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_EligibilityType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AnyBusinessCustomer">
+   </xs:enumeration>
+   <xs:enumeration value="BusinessOnly">
+   </xs:enumeration>
+   <xs:enumeration value="CreditCard">
+   </xs:enumeration>
+   <xs:enumeration value="CreditScoring">
+   </xs:enumeration>
+   <xs:enumeration value="EmailAddress">
+   </xs:enumeration>
+   <xs:enumeration value="ExistingCustomers">
+   </xs:enumeration>
+   <xs:enumeration value="IdAndV">
+   </xs:enumeration>
+   <xs:enumeration value="Mortgage">
+   </xs:enumeration>
+   <xs:enumeration value="NoArrearsOnLoan">
+   </xs:enumeration>
+   <xs:enumeration value="NoCustomerInArrears">
+   </xs:enumeration>
+   <xs:enumeration value="NoOverOverdraftThirtyDays">
+   </xs:enumeration>
+   <xs:enumeration value="NoSoleUkAccountOrBankrupt">
+   </xs:enumeration>
+   <xs:enumeration value="NTB">
+   </xs:enumeration>
+   <xs:enumeration value="NTBBusiness">
+   </xs:enumeration>
+   <xs:enumeration value="SoleStudentAccount">
+   </xs:enumeration>
+   <xs:enumeration value="SoleUkAccount">
+   </xs:enumeration>
+   <xs:enumeration value="StudentsOnly">
+   </xs:enumeration>
+   <xs:enumeration value="TwoMonthsOfCourseStart">
+   </xs:enumeration>
+   <xs:enumeration value="UCASFulltimeTwoYears">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_ResidencyRestrictedRegion1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="EEA">
+   </xs:enumeration>
+   <xs:enumeration value="EFTA">
+   </xs:enumeration>
+   <xs:enumeration value="England">
+   </xs:enumeration>
+   <xs:enumeration value="EU">
+   </xs:enumeration>
+   <xs:enumeration value="NorthernIreland">
+   </xs:enumeration>
+   <xs:enumeration value="RepublicOfIreland">
+   </xs:enumeration>
+   <xs:enumeration value="Scotland">
+   </xs:enumeration>
+   <xs:enumeration value="UK">
+   </xs:enumeration>
+   <xs:enumeration value="Wales">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CustomerAccessChannels1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Branch">
+   </xs:enumeration>
+   <xs:enumeration value="MobileBankingApp">
+   </xs:enumeration>
+   <xs:enumeration value="Online">
+   </xs:enumeration>
+   <xs:enumeration value="Phone">
+   </xs:enumeration>
+   <xs:enumeration value="Post">
+   </xs:enumeration>
+   <xs:enumeration value="PostOffice">
+   </xs:enumeration>
+   <xs:enumeration value="Text">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_AccessChannels1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="ATM">
+   </xs:enumeration>
+   <xs:enumeration value="Branch">
+   </xs:enumeration>
+   <xs:enumeration value="BusinessCommercialCentre">
+   </xs:enumeration>
+   <xs:enumeration value="CallCentre">
+   </xs:enumeration>
+   <xs:enumeration value="MobileApps">
+   </xs:enumeration>
+   <xs:enumeration value="MobileBanking">
+   </xs:enumeration>
+   <xs:enumeration value="Online">
+   </xs:enumeration>
+   <xs:enumeration value="Phone">
+   </xs:enumeration>
+   <xs:enumeration value="Post">
+   </xs:enumeration>
+   <xs:enumeration value="PostOffice">
+   </xs:enumeration>
+   <xs:enumeration value="RelationshipManager">
+   </xs:enumeration>
+   <xs:enumeration value="Text">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CardType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="BasicCard">
+   </xs:enumeration>
+   <xs:enumeration value="BusinessQuickLodgeCard">
+   </xs:enumeration>
+   <xs:enumeration value="Cashcard">
+   </xs:enumeration>
+   <xs:enumeration value="ContactlessCashcard">
+   </xs:enumeration>
+   <xs:enumeration value="ContactlessDebitMastercard">
+   </xs:enumeration>
+   <xs:enumeration value="ContactlessDebitVisa">
+   </xs:enumeration>
+   <xs:enumeration value="DebitMastercard">
+   </xs:enumeration>
+   <xs:enumeration value="VisaDebit">
+   </xs:enumeration>
+   <xs:enumeration value="DepositCard">
+   </xs:enumeration>
+   <xs:enumeration value="OperatorCard">
+   </xs:enumeration>
+   <xs:enumeration value="POCACard">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CardScheme1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Cashcard">
+   </xs:enumeration>
+   <xs:enumeration value="CreditMastercard">
+   </xs:enumeration>
+   <xs:enumeration value="CreditVisa">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_MobileWallet1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AndroidPay">
+   </xs:enumeration>
+   <xs:enumeration value="ApplePay">
+   </xs:enumeration>
+   <xs:enumeration value="IssuerMobileApp">
+   </xs:enumeration>
+   <xs:enumeration value="MobileBankingApp">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+   <xs:enumeration value="PayM">
+   </xs:enumeration>
+   <xs:enumeration value="SamsungPay">
+   </xs:enumeration>
+   <xs:enumeration value="VodafoneWallet">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CurrentAccountAccountOpeningCreditScoring1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Hard">
+   </xs:enumeration>
+   <xs:enumeration value="Soft">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_OverdraftFeeChargeType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Periodic">
+   </xs:enumeration>
+   <xs:enumeration value="Minimum">
+   </xs:enumeration>
+   <xs:enumeration value="Maximum">
+   </xs:enumeration>
+   <xs:enumeration value="Setup">
+   </xs:enumeration>
+   <xs:enumeration value="Review">
+   </xs:enumeration>
+   <xs:enumeration value="Renewal">
+   </xs:enumeration>
+   <xs:enumeration value="MinimumSetup">
+   </xs:enumeration>
+   <xs:enumeration value="MaximumSetup">
+   </xs:enumeration>
+   <xs:enumeration value="Total">
+   </xs:enumeration>
+   <xs:enumeration value="Item">
+   </xs:enumeration>
+   <xs:enumeration value="EmergencyLending">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_InterestTierSME1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Ł5000">
+   </xs:enumeration>
+   <xs:enumeration value="Ł10000">
+   </xs:enumeration>
+   <xs:enumeration value="Ł15000">
+   </xs:enumeration>
+   <xs:enumeration value="Ł20000">
+   </xs:enumeration>
+   <xs:enumeration value="Ł25000">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+   <xs:enumeration value="TierMaximum">
+   </xs:enumeration>
+   <xs:enumeration value="TierMinimum">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_FeeFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AcademicTerm">
+   </xs:enumeration>
+   <xs:enumeration value="AccountClosing">
+   </xs:enumeration>
+   <xs:enumeration value="AccountOpening">
+   </xs:enumeration>
+   <xs:enumeration value="AtTimeOfLoanRepayment">
+   </xs:enumeration>
+   <xs:enumeration value="ChargingPeriod">
+   </xs:enumeration>
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="EveryFiveBusinessDays">
+   </xs:enumeration>
+   <xs:enumeration value="Item">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="OnAccountAnniversary">
+   </xs:enumeration>
+   <xs:enumeration value="PerHour">
+   </xs:enumeration>
+   <xs:enumeration value="PerOccurrence">
+   </xs:enumeration>
+   <xs:enumeration value="PerSheet">
+   </xs:enumeration>
+   <xs:enumeration value="PerTransactionAmount">
+   </xs:enumeration>
+   <xs:enumeration value="PerTransactionPercentage">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="SixMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="StartOfLoan">
+   </xs:enumeration>
+   <xs:enumeration value="StatementMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="Weekly">
+   </xs:enumeration>
+   <xs:enumeration value="Yearly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_FeeType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+   <xs:enumeration value="ATMDonation">
+   </xs:enumeration>
+   <xs:enumeration value="ATMDeposATMPaidIn">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCertBalance">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadConVisaCredit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadConVisaDebit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMCardnetEnvIn">
+   </xs:enumeration>
+   <xs:enumeration value="ATMCashGroupATMCreditCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMCashNonGroupATMCredittcard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMCashGroupATMDebitCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMCashNonGroupATMDebitcard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMConGroupATM">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroad">
+   </xs:enumeration>
+   <xs:enumeration value="ATMForeignCashDebCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadGoldVisaDebit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMSpainCashCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMSpainDebitCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMSpainConversionDebitCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMSpainConversionCashCard">
+   </xs:enumeration>
+   <xs:enumeration value="ATMNonSterlingWithdrawal">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadVisaCredit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadVisaDebit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMAbroadConVisaGoldDebit">
+   </xs:enumeration>
+   <xs:enumeration value="ATMWithdrawCash">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLineAncilliary">
+   </xs:enumeration>
+   <xs:enumeration value="BACSBatch">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLineFile">
+   </xs:enumeration>
+   <xs:enumeration value="BACSFileItem">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLineSetup">
+   </xs:enumeration>
+   <xs:enumeration value="BACSItem">
+   </xs:enumeration>
+   <xs:enumeration value="BACSItemInterbranch">
+   </xs:enumeration>
+   <xs:enumeration value="BACSBulkBatch">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLineOverlimit">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLinePayment">
+   </xs:enumeration>
+   <xs:enumeration value="BACSRecallItem">
+   </xs:enumeration>
+   <xs:enumeration value="BACSOnLineService">
+   </xs:enumeration>
+   <xs:enumeration value="BACSBulkInternet">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebSmartCard">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebWebInit">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELirDebWebInit">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebOverlimit">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebPayment">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebService">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELDirDebAncilliary">
+   </xs:enumeration>
+   <xs:enumeration value="BACSDirectItemProfile">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELAncilliary">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELSmartCard">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELFile">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELSetup">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELOverlimit">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELPayment">
+   </xs:enumeration>
+   <xs:enumeration value="BACSTELService">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutBranch">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSCancellation">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutOnlineDepositAcc">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSIn">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutInterBank">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSInterBank">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutPost">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutInterBranch">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOut">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutOnline">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSandForeignPay">
+   </xs:enumeration>
+   <xs:enumeration value="CHAPSOutManual">
+   </xs:enumeration>
+   <xs:enumeration value="CardCardReplacement">
+   </xs:enumeration>
+   <xs:enumeration value="DraftsCounter">
+   </xs:enumeration>
+   <xs:enumeration value="DraftsBankers">
+   </xs:enumeration>
+   <xs:enumeration value="DraftsIntlPayableAbroad">
+   </xs:enumeration>
+   <xs:enumeration value="DraftsLostStolen">
+   </xs:enumeration>
+   <xs:enumeration value="CardPersonalisedCard">
+   </xs:enumeration>
+   <xs:enumeration value="DraftsIntlStoppedCancelled">
+   </xs:enumeration>
+   <xs:enumeration value="EuroChqXLess">
+   </xs:enumeration>
+   <xs:enumeration value="EuroChqXPlus">
+   </xs:enumeration>
+   <xs:enumeration value="FPSOutFutureDated">
+   </xs:enumeration>
+   <xs:enumeration value="FPSOutImmediate">
+   </xs:enumeration>
+   <xs:enumeration value="FPSOut">
+   </xs:enumeration>
+   <xs:enumeration value="FPSOutOwn">
+   </xs:enumeration>
+   <xs:enumeration value="FPSInBranch">
+   </xs:enumeration>
+   <xs:enumeration value="FPSUKPayUrgent">
+   </xs:enumeration>
+   <xs:enumeration value="LegalArticlesReport">
+   </xs:enumeration>
+   <xs:enumeration value="LegalSealing">
+   </xs:enumeration>
+   <xs:enumeration value="LegalBondAndGuarantee">
+   </xs:enumeration>
+   <xs:enumeration value="LegalCourtOrder">
+   </xs:enumeration>
+   <xs:enumeration value="LegalCoSearch">
+   </xs:enumeration>
+   <xs:enumeration value="LegalDepositAssignment">
+   </xs:enumeration>
+   <xs:enumeration value="LegalGuaranteePrep">
+   </xs:enumeration>
+   <xs:enumeration value="LegalLifePolicyPrepCo">
+   </xs:enumeration>
+   <xs:enumeration value="LegalLifePolicyPrepPersonal">
+   </xs:enumeration>
+   <xs:enumeration value="LegalPriorityPariPassu">
+   </xs:enumeration>
+   <xs:enumeration value="LegalSubordinationAgreement">
+   </xs:enumeration>
+   <xs:enumeration value="DirDebDirectDebitAdmin">
+   </xs:enumeration>
+   <xs:enumeration value="DirDebDirectDebitCancel">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayBIBForeignLimit">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayCreditTransCust">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayCreditTransNonCust">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayUrgentPaymentForeign">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayExpressMoneyMover">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayEEAPayUrgent">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayIrishPayUrgent">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayEEAPay">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignIn1CPlus">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignPaymentInUKAcc">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignCharge">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignCancellation">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignStandardEUEuroBIC">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayFXFeeRate">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignInternet">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeign">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignInbound">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayFXPaymentOut">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignInSub1C">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayFXRate">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignStandardEUEuroNoBIC">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayFXPaymentOutIR">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayFXFee">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayPurchaseNonSterling">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayPostPaymentForeign">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayPurchaseRateNonSterling">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayPaymentTracing">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayStandardMoneyMover">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayMT101Transaction">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayTransNonSterling">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayTransRateNonSterling">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignUrgentEUEuroBIC">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayForeignUrgentEUEuroNoBIC">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayUrgentPaymentGroup">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayUrgentPaymentUK">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayUSAPayUrgent">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayCurrencyPurchase">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayWorldpayPayment">
+   </xs:enumeration>
+   <xs:enumeration value="IntlPayCurrencyWithdraw">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayBankDetailsWrong">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayForeignBCNR">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayForeignRecall">
+   </xs:enumeration>
+   <xs:enumeration value="InvGeneralInq">
+   </xs:enumeration>
+   <xs:enumeration value="InvOldInstruction">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayPaymentRecall">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayReturnDebitXVLess">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayReturnDebitXVPlus">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayStopPayment">
+   </xs:enumeration>
+   <xs:enumeration value="InvPayStandingOrdUnpaid">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepAccess">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepDeedMedium">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepingEnvelope">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepingInspection">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepingLargeItem">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepMultipleItems">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepingParcel">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepDeedSmall">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepOneItem">
+   </xs:enumeration>
+   <xs:enumeration value="SafeKeepSafeCustody">
+   </xs:enumeration>
+   <xs:enumeration value="LoanArrangementFeePC">
+   </xs:enumeration>
+   <xs:enumeration value="LoanArrangement">
+   </xs:enumeration>
+   <xs:enumeration value="LoanEarlyRepayment">
+   </xs:enumeration>
+   <xs:enumeration value="LoanLatePayment">
+   </xs:enumeration>
+   <xs:enumeration value="LoanSMEUnsecuredLoan">
+   </xs:enumeration>
+   <xs:enumeration value="LoanTieredArrangement">
+   </xs:enumeration>
+   <xs:enumeration value="NightSafeNightSafeBankOpen">
+   </xs:enumeration>
+   <xs:enumeration value="NightSafeCreditSub5K">
+   </xs:enumeration>
+   <xs:enumeration value="NightSafeNightSafe">
+   </xs:enumeration>
+   <xs:enumeration value="NightSafeNightSafePaidIn">
+   </xs:enumeration>
+   <xs:enumeration value="OverdraftAnnualReview">
+   </xs:enumeration>
+   <xs:enumeration value="OverdraftTempOverdraft">
+   </xs:enumeration>
+   <xs:enumeration value="OverdraftUnauthorisedBorrowing">
+   </xs:enumeration>
+   <xs:enumeration value="POPostOfficeCounterCredit">
+   </xs:enumeration>
+   <xs:enumeration value="POPostOfficeCashCredit">
+   </xs:enumeration>
+   <xs:enumeration value="POPostOfficeCashOut">
+   </xs:enumeration>
+   <xs:enumeration value="POPostOfficeWithdrawal">
+   </xs:enumeration>
+   <xs:enumeration value="ChqBookTheftLossAllStopped">
+   </xs:enumeration>
+   <xs:enumeration value="ChqIssuedCurrencyAcc">
+   </xs:enumeration>
+   <xs:enumeration value="ChqCopy">
+   </xs:enumeration>
+   <xs:enumeration value="ChqDraft">
+   </xs:enumeration>
+   <xs:enumeration value="ChqIn">
+   </xs:enumeration>
+   <xs:enumeration value="ChqDraftSterling">
+   </xs:enumeration>
+   <xs:enumeration value="ChqOutIssued">
+   </xs:enumeration>
+   <xs:enumeration value="ChqSpecialChqPresentation">
+   </xs:enumeration>
+   <xs:enumeration value="ChqCounterCheque">
+   </xs:enumeration>
+   <xs:enumeration value="ChqChequeswithStatement">
+   </xs:enumeration>
+   <xs:enumeration value="ChqStopped">
+   </xs:enumeration>
+   <xs:enumeration value="ChqTrans">
+   </xs:enumeration>
+   <xs:enumeration value="ChqDraftFX">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignCourier">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignNegTenThou">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignNegHundred">
+   </xs:enumeration>
+   <xs:enumeration value="ChequeForeignBankDivi">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignNegFiftyThou">
+   </xs:enumeration>
+   <xs:enumeration value="ChqPensionCheque">
+   </xs:enumeration>
+   <xs:enumeration value="ChequeForeignOtherDivi">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignNegFiveThou">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignNegMax">
+   </xs:enumeration>
+   <xs:enumeration value="ChqForeignGBPMMDPlus">
+   </xs:enumeration>
+   <xs:enumeration value="ChqGiftCheque">
+   </xs:enumeration>
+   <xs:enumeration value="ChqCounterLodgement">
+   </xs:enumeration>
+   <xs:enumeration value="ChqCashDropLodgement">
+   </xs:enumeration>
+   <xs:enumeration value="ChqChequePhotocopy">
+   </xs:enumeration>
+   <xs:enumeration value="ChqPostOfficeCredit">
+   </xs:enumeration>
+   <xs:enumeration value="ChqPostOfficeChequeCollected">
+   </xs:enumeration>
+   <xs:enumeration value="ChqChequeRetrieval">
+   </xs:enumeration>
+   <xs:enumeration value="ChqReconcilliationPerTrans">
+   </xs:enumeration>
+   <xs:enumeration value="ChqSpecialPresentationCount">
+   </xs:enumeration>
+   <xs:enumeration value="ChqSpecialPresentationPTT">
+   </xs:enumeration>
+   <xs:enumeration value="ChqUnpaidCharge">
+   </xs:enumeration>
+   <xs:enumeration value="ChqUnpaidTransIn">
+   </xs:enumeration>
+   <xs:enumeration value="ChqUnpaidTransOut">
+   </xs:enumeration>
+   <xs:enumeration value="ChqUnpaidCheque">
+   </xs:enumeration>
+   <xs:enumeration value="ReportAuditLetter">
+   </xs:enumeration>
+   <xs:enumeration value="ReportFAXAdviceAdditional">
+   </xs:enumeration>
+   <xs:enumeration value="ReportTelAdviceAdditional">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCreditHistory">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCertInterestDuplicate">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCertInterest">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCreditHistoryAdditionalInYear">
+   </xs:enumeration>
+   <xs:enumeration value="ReportForeignStatusEnqElec">
+   </xs:enumeration>
+   <xs:enumeration value="ReportForeignStatusEnq">
+   </xs:enumeration>
+   <xs:enumeration value="ReportCashBackorInterestAnal">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementChqDaily">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementChqFortnightly">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementChqMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementChqWeekly">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementAndDiviChq">
+   </xs:enumeration>
+   <xs:enumeration value="ReportReference">
+   </xs:enumeration>
+   <xs:enumeration value="ReportReferralItem">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementByATM">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementByBranch">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementCopyRegular">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatusEnquiry">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementFrequent">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementCopy1">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementToBranch">
+   </xs:enumeration>
+   <xs:enumeration value="ReportSMSTextMiniStatementorAlert">
+   </xs:enumeration>
+   <xs:enumeration value="ReportStatementFortnightly">
+   </xs:enumeration>
+   <xs:enumeration value="ReportSMSTextMiniStatementWoM">
+   </xs:enumeration>
+   <xs:enumeration value="ReportSMSTextAlertBalance">
+   </xs:enumeration>
+   <xs:enumeration value="ReportSMSTextAlert">
+   </xs:enumeration>
+   <xs:enumeration value="ReportTaxCert">
+   </xs:enumeration>
+   <xs:enumeration value="ReportWeeklyStatement">
+   </xs:enumeration>
+   <xs:enumeration value="ReportTextMessageBanking">
+   </xs:enumeration>
+   <xs:enumeration value="SEPACancellation">
+   </xs:enumeration>
+   <xs:enumeration value="SEPABranch">
+   </xs:enumeration>
+   <xs:enumeration value="SEPACredit">
+   </xs:enumeration>
+   <xs:enumeration value="SEPADirectDebit">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAIn">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAEuro">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAOut">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAUnpaid">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAWinbitsAnnualService">
+   </xs:enumeration>
+   <xs:enumeration value="SEPAWinbitsTransaction">
+   </xs:enumeration>
+   <xs:enumeration value="TransBillPaymentBranch">
+   </xs:enumeration>
+   <xs:enumeration value="TransBillCollect">
+   </xs:enumeration>
+   <xs:enumeration value="TransTelephoneBillPayment">
+   </xs:enumeration>
+   <xs:enumeration value="TransBankPayment">
+   </xs:enumeration>
+   <xs:enumeration value="TransBillPaymentTelephone">
+   </xs:enumeration>
+   <xs:enumeration value="TransCorrespondentBankFee">
+   </xs:enumeration>
+   <xs:enumeration value="TransCreditTransferUKDifferent">
+   </xs:enumeration>
+   <xs:enumeration value="TransCreditTransferUKSame">
+   </xs:enumeration>
+   <xs:enumeration value="TransCredit">
+   </xs:enumeration>
+   <xs:enumeration value="TransCreditTransfer">
+   </xs:enumeration>
+   <xs:enumeration value="TransBranchCredit">
+   </xs:enumeration>
+   <xs:enumeration value="TransDebit">
+   </xs:enumeration>
+   <xs:enumeration value="TransDebCardDeb">
+   </xs:enumeration>
+   <xs:enumeration value="TransUKDirDeb">
+   </xs:enumeration>
+   <xs:enumeration value="TransManualDeb">
+   </xs:enumeration>
+   <xs:enumeration value="TransBuyForeignWithGBP">
+   </xs:enumeration>
+   <xs:enumeration value="TransGoodValueReq">
+   </xs:enumeration>
+   <xs:enumeration value="TransSWIFTOutUKForeign">
+   </xs:enumeration>
+   <xs:enumeration value="TransInconpleteInstruction">
+   </xs:enumeration>
+   <xs:enumeration value="TransManualEntries">
+   </xs:enumeration>
+   <xs:enumeration value="TransManualTrans">
+   </xs:enumeration>
+   <xs:enumeration value="TransNonSterling">
+   </xs:enumeration>
+   <xs:enumeration value="TransPOSSaleForeign">
+   </xs:enumeration>
+   <xs:enumeration value="TransPriPaymentPost">
+   </xs:enumeration>
+   <xs:enumeration value="TransPOSSaleUK">
+   </xs:enumeration>
+   <xs:enumeration value="TransReturnPayment">
+   </xs:enumeration>
+   <xs:enumeration value="TransReconciliationPerTrans">
+   </xs:enumeration>
+   <xs:enumeration value="TransStandingOrdAdmin">
+   </xs:enumeration>
+   <xs:enumeration value="TransStandingOrd">
+   </xs:enumeration>
+   <xs:enumeration value="TransStandingOrdManPay">
+   </xs:enumeration>
+   <xs:enumeration value="TransTravellersChqOtherBank">
+   </xs:enumeration>
+   <xs:enumeration value="TransTravellersChq">
+   </xs:enumeration>
+   <xs:enumeration value="TransTelBusiPriPaymentForeignToUKAcc">
+   </xs:enumeration>
+   <xs:enumeration value="TransTeleItem">
+   </xs:enumeration>
+   <xs:enumeration value="TransTelBusiPriPaymentToGrpAcc">
+   </xs:enumeration>
+   <xs:enumeration value="TransTravellersChqRate">
+   </xs:enumeration>
+   <xs:enumeration value="TransTransferExGroup">
+   </xs:enumeration>
+   <xs:enumeration value="TransUnauthorisedPaidTrans">
+   </xs:enumeration>
+   <xs:enumeration value="TransUrgentPaymentPostal">
+   </xs:enumeration>
+   <xs:enumeration value="TransUnpaidTrans">
+   </xs:enumeration>
+   <xs:enumeration value="TransTelBusiPriPaymentToNonGrpAcc">
+   </xs:enumeration>
+   <xs:enumeration value="TransSWIFTOutNonEEASterling">
+   </xs:enumeration>
+   <xs:enumeration value="AutoAutoCredit">
+   </xs:enumeration>
+   <xs:enumeration value="AutoAutomatedEntries">
+   </xs:enumeration>
+   <xs:enumeration value="AutoAutoCreditPhoneInet">
+   </xs:enumeration>
+   <xs:enumeration value="AutoAutomatedTrans">
+   </xs:enumeration>
+   <xs:enumeration value="AutoDebitCardCommercial">
+   </xs:enumeration>
+   <xs:enumeration value="AutoFPSAutoCredit">
+   </xs:enumeration>
+   <xs:enumeration value="VisaConvertAbroadForeign">
+   </xs:enumeration>
+   <xs:enumeration value="VisaBureauDeChange">
+   </xs:enumeration>
+   <xs:enumeration value="VisaTravellersChqorCurrency">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineInternetBillPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBusinessOnlineEuroPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBusinessOnlineUrgentEuroPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBusinessOnlineForeignPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineInterbankTransfer">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineInterbankPerTransfer">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineInterbranchTransfer">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineInterbranchPerTransfer">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineSubscriptionMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBankingPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBankingSubscription">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePOSSale">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePersonalCustAncillarys">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePersonalCustService">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePersonalCustOverlimits">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineReplacementCardReader">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePersonalCustSetUp">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePersonalCustTransaction">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePaymentinGBPtoUK">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineUrgentPayment">
+   </xs:enumeration>
+   <xs:enumeration value="OnlinePaymentinUSDtoUS">
+   </xs:enumeration>
+   <xs:enumeration value="OnlineBulkDirectDebSterling">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqSent">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqSelf">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqEncashment">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXInwardsCust">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXTransfersROI">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXForwardTrans">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXTransfersBOI">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignExMaintenance">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXInwardsNonCust">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignFXOutwards">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignPurchase">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignStatusRep">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqDraft">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqCLess">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqMLess">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqOther">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqMPlus">
+   </xs:enumeration>
+   <xs:enumeration value="ForeignChqCCC">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCAccountFee">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCAccountFeeMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCAccountFeeQuarterly">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCBalanceHandling">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCFixedTariff">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCBusiDepAccBreakage">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMonitorDaily">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCManagementFee">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMinimumMonthlyFee">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMonitorMonthly">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMonitorWeekly">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCSecurityFee">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMT940AccountFirst">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCMT940AccountSubsequent">
+   </xs:enumeration>
+   <xs:enumeration value="ServiceCOther">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCoinHandling">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashIn">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashInNotUs">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashOut">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashX">
+   </xs:enumeration>
+   <xs:enumeration value="CounterForeignCashMax">
+   </xs:enumeration>
+   <xs:enumeration value="CounterForeignNoteHandling">
+   </xs:enumeration>
+   <xs:enumeration value="CounterForeignCashOut">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashFeeRate">
+   </xs:enumeration>
+   <xs:enumeration value="CounterForeignCashOutTx">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCounterLodgement">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashDropLodgement">
+   </xs:enumeration>
+   <xs:enumeration value="CounterNotesLodged">
+   </xs:enumeration>
+   <xs:enumeration value="CounterNotesOut">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashInOwn">
+   </xs:enumeration>
+   <xs:enumeration value="CounterPaidTrans">
+   </xs:enumeration>
+   <xs:enumeration value="CounterCashFeePercent">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_LoanLengthIncrement1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="1 year">
+   </xs:enumeration>
+   <xs:enumeration value="2 years">
+   </xs:enumeration>
+   <xs:enumeration value="3 years">
+   </xs:enumeration>
+   <xs:enumeration value="4 years">
+   </xs:enumeration>
+   <xs:enumeration value="5 years">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_RepaymentFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="Flexible">
+   </xs:enumeration>
+   <xs:enumeration value="Fortnightly">
+   </xs:enumeration>
+   <xs:enumeration value="HalfYearly">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="Weekly">
+   </xs:enumeration>
+   <xs:enumeration value="Yearly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_SMELProductType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FlexibleBusinessLoan">
+   </xs:enumeration>
+   <xs:enumeration value="SmallBusinessLoan">
+   </xs:enumeration>
+   <xs:enumeration value="SmeUnsecuredLoan">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_SMELProductSegment1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AgricultureSector">
+   </xs:enumeration>
+   <xs:enumeration value="AllSegmentsCorporate">
+   </xs:enumeration>
+   <xs:enumeration value="Business">
+   </xs:enumeration>
+   <xs:enumeration value="Corporate">
+   </xs:enumeration>
+   <xs:enumeration value="FixedGroup">
+   </xs:enumeration>
+   <xs:enumeration value="FlexibleBusinessLoan">
+   </xs:enumeration>
+   <xs:enumeration value="GovernmentScheme">
+   </xs:enumeration>
+   <xs:enumeration value="NewCustomersOnly">
+   </xs:enumeration>
+   <xs:enumeration value="SmallLoan">
+   </xs:enumeration>
+   <xs:enumeration value="SpecialisedSector">
+   </xs:enumeration>
+   <xs:enumeration value="SwitchersOnly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_OverdraftType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Committed">
+   </xs:enumeration>
+   <xs:enumeration value="OnDemand">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_RateComparisonType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AER">
+   </xs:enumeration>
+   <xs:enumeration value="APR">
+   </xs:enumeration>
+   <xs:enumeration value="Gross">
+   </xs:enumeration>
+   <xs:enumeration value="Net">
+   </xs:enumeration>
+   <xs:enumeration value="RepApr">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_PaymentMethod1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Compound">
+   </xs:enumeration>
+   <xs:enumeration value="PayAway">
+   </xs:enumeration>
+   <xs:enumeration value="SelfCredit">
+   </xs:enumeration>
+   <xs:enumeration value="SimpleInterest">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_InterestRateType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Fixed">
+   </xs:enumeration>
+   <xs:enumeration value="Variable">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CalculationMethod1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Banded">
+   </xs:enumeration>
+   <xs:enumeration value="Tiered">
+   </xs:enumeration>
+   <xs:enumeration value="Whole">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_OverdraftArrangementType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Unarranged">
+   </xs:enumeration>
+   <xs:enumeration value="Arranged">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CriteriaType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="CashDeposit">
+   </xs:enumeration>
+   <xs:enumeration value="Deposit">
+   </xs:enumeration>
+   <xs:enumeration value="DirectDebit">
+   </xs:enumeration>
+   <xs:enumeration value="InitialDeposit">
+   </xs:enumeration>
+   <xs:enumeration value="InternetLogon">
+   </xs:enumeration>
+   <xs:enumeration value="MobileLogon">
+   </xs:enumeration>
+   <xs:enumeration value="RegularDeposit">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_OverdraftFeeChargeRateType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Gross">
+   </xs:enumeration>
+   <xs:enumeration value="Net">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_ChargeMethodology1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Banded">
+   </xs:enumeration>
+   <xs:enumeration value="Tiered">
+   </xs:enumeration>
+   <xs:enumeration value="Whole">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_Negotiable1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="No">
+   </xs:enumeration>
+   <xs:enumeration value="Yes">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_BenefitSubType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CCSubType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_InterestTierSubType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_FeeSubType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_FeatureSubType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_ProductState1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="FutureMultipleTerms">
+   </xs:enumeration>
+   <xs:enumeration value="Promotional">
+   </xs:enumeration>
+   <xs:enumeration value="Regular">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CalculationFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="Weekly">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="Half-Yearly">
+   </xs:enumeration>
+   <xs:enumeration value="Yearly">
+   </xs:enumeration>
+   <xs:enumeration value="Overnight">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_InterestRateCalculationFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Annual">
+   </xs:enumeration>
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_OverdraftFeeChargeFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AcademicTerm">
+   </xs:enumeration>
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="Weekly">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="Half-Yearly">
+   </xs:enumeration>
+   <xs:enumeration value="Yearly">
+   </xs:enumeration>
+   <xs:enumeration value="Overnight">
+   </xs:enumeration>
+   <xs:enumeration value="Other">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_MinIncomeFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="AcademicTerm">
+   </xs:enumeration>
+   <xs:enumeration value="HalfYearly">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="Weekly">
+   </xs:enumeration>
+   <xs:enumeration value="Yearly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_InterestApplicationFrequency1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Annual">
+   </xs:enumeration>
+   <xs:enumeration value="Daily">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+   <xs:enumeration value="Quarterly">
+   </xs:enumeration>
+   <xs:enumeration value="StatementDate">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_MarketingEligibility1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="ExistingCustomers">
+   </xs:enumeration>
+   <xs:enumeration value="NewCustomersOnly">
+   </xs:enumeration>
+   <xs:enumeration value="SwitchersOnly">
+   </xs:enumeration>
+   <xs:enumeration value="StartUp">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_SingleJointIncome1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Joint">
+   </xs:enumeration>
+   <xs:enumeration value="SoleIncome">
+   </xs:enumeration>
+   <xs:enumeration value="SoleOrJoint">
+   </xs:enumeration>
+   <xs:enumeration value="Turnover">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_BalanceTransferInterestRatePeriod1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Annual">
+   </xs:enumeration>
+   <xs:enumeration value="Monthly">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_SMECCProductSegment1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Cashback">
+   </xs:enumeration>
+   <xs:enumeration value="Corporate">
+   </xs:enumeration>
+   <xs:enumeration value="General">
+   </xs:enumeration>
+   <xs:enumeration value="Reward">
+   </xs:enumeration>
+   <xs:enumeration value="SME">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_SMECCProductType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="CommercialCreditCards">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CAProductType1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="BCA">
+   </xs:enumeration>
+   <xs:enumeration value="PCA">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+ <xs:simpletype name="OB_CAProductSegment1Code">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Basic">
+   </xs:enumeration>
+   <xs:enumeration value="Business">
+   </xs:enumeration>
+   <xs:enumeration value="General">
+   </xs:enumeration>
+   <xs:enumeration value="Graduate">
+   </xs:enumeration>
+   <xs:enumeration value="International">
+   </xs:enumeration>
+   <xs:enumeration value="Packaged">
+   </xs:enumeration>
+   <xs:enumeration value="Personal">
+   </xs:enumeration>
+   <xs:enumeration value="Premium">
+   </xs:enumeration>
+   <xs:enumeration value="Reward">
+   </xs:enumeration>
+   <xs:enumeration value="SME">
+   </xs:enumeration>
+   <xs:enumeration value="Student">
+   </xs:enumeration>
+   <xs:enumeration value="YoungAdult">
+   </xs:enumeration>
+   <xs:enumeration value="Youth">
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpletype>
+</xs:schema>
