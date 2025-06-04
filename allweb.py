@@ -8,8 +8,8 @@ import urllib.robotparser
 import re
 
 # === CONFIGURATION ===
-START_URL = "https://openbanking.atlassian.net/wiki/spaces/DZ/overview"
-OUTPUT_DIR = "scraped_html_Vanquis_bank_limited"
+START_URL = "https://www.investec.com/en_int.html"
+OUTPUT_DIR = "limited"
 BATCH_SIZE = 10
 DELAY_SECONDS = 1
 BYPASS_ROBOTS_TXT = True  # Set to False to honor robots.txt

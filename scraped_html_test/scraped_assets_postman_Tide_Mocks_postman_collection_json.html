@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "8ca3630d-82b7-4d41-9cee-9ae630cccf04",
+		"name": "Tide Mocks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/consents",
+			"item": [
+				{
+					"name": "POST /consents",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "012aa978-77f2-48d4-ad44-61009f64fa27",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"consents-api-consent-id\", jsonData.consentBody.Data.ConsentId);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"consentType\": \"account-access-consents\",\r\n  \"requestUrl\": \"blah\",\r\n  \"request\":{\r\n    \"Data\": {\r\n      \"Permissions\": [\r\n        \"ReadAccountsDetail\",\r\n        \"ReadBalances\",\r\n        \"ReadBeneficiariesDetail\",\r\n        \"ReadDirectDebits\",\r\n        \"ReadProducts\",\r\n        \"ReadStandingOrdersDetail\",\r\n        \"ReadTransactionsCredits\",\r\n        \"ReadTransactionsDebits\",\r\n        \"ReadTransactionsDetail\",\r\n        \"ReadOffers\",\r\n        \"ReadPAN\",\r\n        \"ReadParty\",\r\n        \"ReadPartyPSU\",\r\n        \"ReadScheduledPaymentsDetail\",\r\n        \"ReadStatementsDetail\"\r\n      ],\r\n      \"ExpirationDateTime\": \"2017-05-02T00:00:00+00:00\",\r\n      \"TransactionFromDateTime\": \"2017-05-03T00:00:00+00:00\",\r\n      \"TransactionToDateTime\": \"2017-12-03T00:00:00+00:00\"\r\n    },\r\n    \"Risk\": {}\r\n  },\r\n  \"requestHeaders\": {\r\n    \"Authorization\": \"Bearer 2YotnFZFEjr1zCsicMWpAA\",\r\n    \"x-fapi-auth-date\": \"Sun, 10 Sep 2017 19:43:31 GMT\",\r\n    \"x-fapi-customer-ip-address\": \"104.25.212.99\",\r\n    \"x-fapi-interaction-id\": \"93bac548-d2de-4546-b106-880a5018460d\",\r\n    \"Content-Type\": \"application/json\",\r\n    \"Accept\": \"application/json\"  \r\n  },\r\n  \"tpp\": {\r\n    \"clientId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"tppId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"obieTppId\": \"0015800001041RHAAY\",\r\n    \"softwareStatementId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"obieSoftwareStatementId\": \"HQuZPIt3ipkh33Uxytox1E\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3333/v1.0/consents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"v1.0",
+								"consents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET  /consents/:consentId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "012aa978-77f2-48d4-ad44-61009f64fa27",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"consents-api-consent-id\", jsonData.consentBody.Data.ConsentId);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3333/v1.0/consents/{{consents-api-consent-id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"v1.0",
+								"consents",
+								"{{consents-api-consent-id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH /consents TO DO",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "012aa978-77f2-48d4-ad44-61009f64fa27",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"consents-api-consent-id\", jsonData.consentBody.Data.ConsentId);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"consentType\": \"account-access-consents\",\r\n  \"requestUrl\": \"blah\",\r\n  \"request\":{\r\n    \"Data\": {\r\n      \"Permissions\": [\r\n        \"ReadAccountsDetail\",\r\n        \"ReadBalances\",\r\n        \"ReadBeneficiariesDetail\",\r\n        \"ReadDirectDebits\",\r\n        \"ReadProducts\",\r\n        \"ReadStandingOrdersDetail\",\r\n        \"ReadTransactionsCredits\",\r\n        \"ReadTransactionsDebits\",\r\n        \"ReadTransactionsDetail\",\r\n        \"ReadOffers\",\r\n        \"ReadPAN\",\r\n        \"ReadParty\",\r\n        \"ReadPartyPSU\",\r\n        \"ReadScheduledPaymentsDetail\",\r\n        \"ReadStatementsDetail\"\r\n      ],\r\n      \"ExpirationDateTime\": \"2017-05-02T00:00:00+00:00\",\r\n      \"TransactionFromDateTime\": \"2017-05-03T00:00:00+00:00\",\r\n      \"TransactionToDateTime\": \"2017-12-03T00:00:00+00:00\"\r\n    },\r\n    \"Risk\": {}\r\n  },\r\n  \"requestHeaders\": {\r\n    \"Authorization\": \"Bearer 2YotnFZFEjr1zCsicMWpAA\",\r\n    \"x-fapi-auth-date\": \"Sun, 10 Sep 2017 19:43:31 GMT\",\r\n    \"x-fapi-customer-ip-address\": \"104.25.212.99\",\r\n    \"x-fapi-interaction-id\": \"93bac548-d2de-4546-b106-880a5018460d\",\r\n    \"Content-Type\": \"application/json\",\r\n    \"Accept\": \"application/json\"  \r\n  },\r\n  \"tpp\": {\r\n    \"clientId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"tppId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"obieTppId\": \"0015800001041RHAAY\",\r\n    \"softwareStatementId\": \"b9137b9a-f95c-4b65-a343-67007fc24867\",\r\n    \"obieSoftwareStatementId\": \"HQuZPIt3ipkh33Uxytox1E\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3333/v1.0/consents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"v1.0",
+								"consents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /consents/:consentId",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "64756051-0f83-483b-8f80-2af0105c0968",
+								"exec": [
+									"const uuid = require('uuid'); ",
+									"",
+									"pm.environment.set(\"interactionId\", uuid.v4());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-fapi-financial-id",
+								"value": "{{obParticipantId}}"
+							},
+							{
+								"key": "x-fapi-interaction-id",
+								"value": "{{interactionId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token-from-client-credentials-grant-accounts}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3333/v1.0/consents/{{consents-api-consent-id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"v1.0",
+								"consents",
+								"{{consents-api-consent-id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/accounts",
+			"item": [
+				{
+					"name": "GET /accounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Access-Key",
+								"value": "801002000000000000000001",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /accounts/{accountId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access-key",
+								"value": "801001000000000000000002",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/accounts/801004000000000000000003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"accounts",
+								"801004000000000000000003"
+							],
+							"query": [
+								{
+									"key": "Access-Key",
+									"value": "801002000000000000000001",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/transactions",
+			"item": [
+				{
+					"name": "GET /timelines",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Access-Key",
+								"value": "801004000000000000000001",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/timelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"timelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /timelines?accountIds=",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access-key",
+								"value": "801001000000000000000001",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/timelines?accountIds=801004000000000000000001,500004000000000000000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"timelines"
+							],
+							"query": [
+								{
+									"key": "accountIds",
+									"value": "801004000000000000000001,500004000000000000000001"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "87773c5f-289a-4685-9a67-edbfceea5555",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4be521c9-a5f0-4531-ba6a-f6112ca98bed",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "/balances",
+			"item": [
+				{
+					"name": "GET /balances",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Access-Key",
+								"value": "801002000000000000000001",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/balances",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"balances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /balances/{accountId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Access-Key",
+								"value": "801002000000000000000001",
+								"type": "text"
+							},
+							{
+								"key": "Client-Key",
+								"value": "isNovember",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/tide-backend/rest/api/v1/balances/801004000000000000000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"tide-backend",
+								"rest",
+								"api",
+								"v1",
+								"balances",
+								"801004000000000000000001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

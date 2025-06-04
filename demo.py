@@ -7,7 +7,7 @@ from collections import deque
 import urllib.robotparser
 
 # === CONFIGURATION ===
-START_URL = "https://developer.aib.ie/apis"
+START_URL = "https://www.investec.com/en_int.html"
 OUTPUT_DIR = "scraped_html"
 BATCH_SIZE = 10
 DELAY_SECONDS = 1
